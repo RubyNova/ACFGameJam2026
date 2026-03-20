@@ -55,6 +55,7 @@ jobs:
           UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
         with:
           targetPlatform: WebGL
+          buildProfile: 'Assets/Settings/Build Profiles/Web - Desktop - Release.asset'
 
       - name: Upload WebGL Build as Artifact
         uses: actions/upload-artifact@v6
