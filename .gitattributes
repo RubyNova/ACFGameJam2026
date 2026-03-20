@@ -1,0 +1,18 @@
+# YAML-based unity files
+*.anim merge=unityyamlmerge eol=lf
+*.asset merge=unityyamlmerge eol=lf
+*.controller merge=unityyamlmerge eol=lf
+*.mat merge=unityyamlmerge eol=lf
+*.meta merge=unityyamlmerge eol=lf
+*.physicsMaterial merge=unityyamlmerge eol=lf
+*.physicsMaterial2D merge=unityyamlmerge eol=lf
+*.prefab merge=unityyamlmerge eol=lf
+*.unity merge=unityyamlmerge eol=lf
+
+# Older binary-based unity files
+LightingData.asset filter=lfs diff=lfs merge=lfs -text
+TerrainData.asset filter=lfs diff=lfs merge=lfs -text
+
+#Auto-genned files
+Assets/Plugins/** linguist-generated
+Packages/packages-lock.json linguist-generated
