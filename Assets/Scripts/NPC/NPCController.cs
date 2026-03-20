@@ -9,18 +9,20 @@ public class NPCController : MonoBehaviour
     private AutoNarrativeController _narrativeController;
     
     [SerializeField]
-    private NarrativeSequence _narrativeSequence;
+    private NarrativeSequence _arrivalNarrativeSequence;
     
     [SerializeField]
-    private bool _readyToTalk;
+    private NarrativeSequence _departureNarrativeSequence;
     
     [SerializeField]
     private float _delayBeforeStartingDialogue = 0.0f;
 
+    private bool _readyToTalk;
+    private bool _readyToLeave;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        StartCoroutine(LaunchDialogueOnDelay());
     }
 
     // Update is called once per frame
@@ -28,12 +30,32 @@ public class NPCController : MonoBehaviour
     {
         if(_readyToTalk)
         {
-            _narrativeController?.ExecuteSequence(_narrativeSequence);
+            _narrativeController?.ExecuteSequence(_arrivalNarrativeSequence);
             _readyToTalk = false;
+        }
+
+        if(_readyToLeave && _departureNarrativeSequence != null)
+        {
+            _narrativeController?.ExecuteSequence(_departureNarrativeSequence);
+            _readyToLeave = false;
+        }
+        else if(_readyToLeave)
+        {
+            _readyToLeave = false;
         }
     }
 
-    public IEnumerator LaunchDialogueOnDelay()
+    public void LaunchNPCArrivalDialogue()
+    {
+        StartCoroutine(LaunchDialogueOnDelay());
+    }
+
+    public void LaunchNPCDepartureDialogue()
+    {
+        _readyToLeave = true;
+    }
+
+    private IEnumerator LaunchDialogueOnDelay()
     {
         yield return new WaitForSeconds(_delayBeforeStartingDialogue);
 

@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CraftingAPI.ItemConfig
   _itemName: Wee
   _shortDescription: Woo
-  _itemIcon: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
+  _itemIcon: {fileID: 21300000, guid: e37dcce74f4c55943b3dab0c093e3e66, type: 3}
   _recipeBookEntryDescription: weeeeeeeeeeeEEEEEEEEEE
   _recipe: []

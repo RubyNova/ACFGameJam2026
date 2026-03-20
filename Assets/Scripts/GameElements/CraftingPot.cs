@@ -35,7 +35,7 @@ namespace GameElements
                 if (result.Success)
                 {
                     _itemToIgnore = Instantiate(_itemInstancePrefab);
-                    _itemToIgnore.GetComponent<ItemInstance>().InitialiseWithItemConfig(instance.BackingConfig);
+                    _itemToIgnore.GetComponent<ItemInstance>().InitialiseWithItemConfig(result.Item);
                     _itemsInPot.Clear();
                 }                
             }

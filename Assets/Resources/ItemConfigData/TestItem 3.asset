@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CraftingAPI.ItemConfig
   _itemName: FINAL FORM
   _shortDescription: This ain't even it
-  _itemIcon: {fileID: -9095717837082945937, guid: bd3cb4af8406d4436a2ae8c2aafe1f8d, type: 3}
+  _itemIcon: {fileID: 21300000, guid: 51093236007f3b04fab1472fb555ae06, type: 3}
   _recipeBookEntryDescription: Reject modernity return to Goku
   _recipe:
   - {fileID: 11400000, guid: ca51518e264cb134e990e161e31353d7, type: 2}
