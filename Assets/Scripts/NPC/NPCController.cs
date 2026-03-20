@@ -1,64 +1,130 @@
 using System.Collections;
 using ACHNarrativeDriver;
 using ACHNarrativeDriver.ScriptableObjects;
+using GameElements;
 using UnityEngine;
 
-public class NPCController : MonoBehaviour
+namespace NPC
 {
-    [SerializeField]
-    private AutoNarrativeController _narrativeController;
-    
-    [SerializeField]
-    private NarrativeSequence _arrivalNarrativeSequence;
-    
-    [SerializeField]
-    private NarrativeSequence _departureNarrativeSequence;
-    
-    [SerializeField]
-    private float _delayBeforeStartingDialogue = 0.0f;
-
-    private bool _readyToTalk;
-    private bool _readyToLeave;
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public class NPCController : MonoBehaviour
     {
-    }
+        [Header("Data Fields")]
+        [SerializeField]
+        private float _delayBeforeStartingDialogue = 0.0f;
 
-    // Update is called once per frame
-    void Update()
-    {
-        if(_readyToTalk)
+        [SerializeField]
+        private NPCPerformanceData _performanceData;
+
+        [Header("Required Objects")]
+        [SerializeField]
+        private AutoNarrativeController _narrativeController;
+        
+        [SerializeField]
+        private NarrativeSequence _arrivalNarrativeSequence;
+        
+        [SerializeField]
+        private NarrativeSequence _departureNarrativeSequence;
+        
+        [SerializeField]
+        private Animator _animator;
+
+        [Header("Reference Objects")]
+        [SerializeField]
+        private AnimationClip _SpawnInAnimation;
+
+        private const string _spawnOutTriggerName = "Leaving";
+
+
+        //TODO: refactor these bools into an enum or something l8r
+        private bool _entering = false;
+        private bool _hasEntered = false;
+        private bool _introduction = false;
+        private bool _leaving = false;
+        private bool _beingServed = false;
+        private float _deltaTimeSeconds = 0.0f;
+
+
+        void Update()
         {
-            _narrativeController?.ExecuteSequence(_arrivalNarrativeSequence);
-            _readyToTalk = false;
+            //animator state
+            if(!_hasEntered)
+            {
+                _entering = _animator.GetCurrentAnimatorStateInfo(0).IsName(_SpawnInAnimation.name);
+                if(!_entering)
+                {
+                    _hasEntered = true;
+                    _introduction = true;
+                }  
+            } 
+
+            //check logic
+            if(_introduction)
+            {
+                _narrativeController?.Finished.AddListener(PrepForServing);
+                _narrativeController?.ExecuteSequence(_arrivalNarrativeSequence);
+                _introduction = false;
+            }
+
+            if(_leaving && _departureNarrativeSequence != null)
+            {
+                _narrativeController.Finished.AddListener(RunGoodbyeAnim);
+                _narrativeController?.ExecuteSequence(_departureNarrativeSequence);
+                _leaving = false;
+            }
+            else if(_leaving)
+            {
+                _leaving = false;
+            }
+
+            if(_beingServed)
+            {
+                _deltaTimeSeconds += Time.deltaTime;
+            }
         }
 
-        if(_readyToLeave && _departureNarrativeSequence != null)
+        public void LaunchNPCArrivalDialogue()
         {
-            _narrativeController?.ExecuteSequence(_departureNarrativeSequence);
-            _readyToLeave = false;
+            StartCoroutine(LaunchDialogueOnDelay());
         }
-        else if(_readyToLeave)
+
+        public void LaunchNPCDepartureDialogue()
         {
-            _readyToLeave = false;
+            _leaving = true;
         }
-    }
 
-    public void LaunchNPCArrivalDialogue()
-    {
-        StartCoroutine(LaunchDialogueOnDelay());
-    }
+        private IEnumerator LaunchDialogueOnDelay()
+        {
+            yield return new WaitForSeconds(_delayBeforeStartingDialogue);
 
-    public void LaunchNPCDepartureDialogue()
-    {
-        _readyToLeave = true;
-    }
+            _introduction = true;
+        }
 
-    private IEnumerator LaunchDialogueOnDelay()
-    {
-        yield return new WaitForSeconds(_delayBeforeStartingDialogue);
+        private void PrepForServing()
+        {
+            _narrativeController.Finished.RemoveListener(PrepForServing);
+            _beingServed = true;
+        }
 
-        _readyToTalk = true;
+        private void RunGoodbyeAnim()
+        {
+            _narrativeController.Finished.RemoveListener(RunGoodbyeAnim);
+            _animator.SetBool(_spawnOutTriggerName, true);
+        }
+    
+        public void DeleteSelf()
+        {
+            Destroy(this.gameObject);
+        }
+
+        private void OnTriggerEnter2D(Collider2D collision)
+        {
+            if(collision.gameObject.GetComponent<ItemInstance>() != null)
+            {
+                //item logic checks can go here but for now we'll just accept anything
+                Destroy(collision.gameObject);
+                _beingServed = false;
+                _leaving = true;
+            }
+        }
     }
 }

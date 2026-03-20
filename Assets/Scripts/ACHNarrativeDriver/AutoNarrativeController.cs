@@ -34,10 +34,11 @@ namespace ACHNarrativeDriver
         
         public NarrativeSequence LastPlayedSequence { get; private set; }
         
-        private InputActionMap _uiInputActionMap;
+        public UnityEvent Finished;
         
         private void Awake()
         {
+            Finished = new();
             _isCurrentlyExecuting = false;
             _currentDialogueIndex = 0;
             _narrativeInterpreter = new();
@@ -64,6 +65,7 @@ namespace ACHNarrativeDriver
                     _dialoguePanel.SetActive(false);
                     _isCurrentlyExecuting = false;
                     _currentNarrativeSequence = null;
+                    Finished.Invoke();
                     return;
                 }
 
@@ -110,7 +112,7 @@ namespace ACHNarrativeDriver
                 yield return _rollingCharacterTime;
             }
 
-            if(targetDialogueInfo.DelayBeforeContinuingInSeconds > 0.0f)
+            if(targetDialogueInfo.DelayBeforeContinuingInSeconds > -0.1f)
             {
                 yield return new WaitForSeconds(targetDialogueInfo.DelayBeforeContinuingInSeconds);
                 ExecuteNextDialogueLine();

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7f8908c837a045e47ac98c38fa85f59d, type: 3}
-  m_Name: TCO-PotionRequestOne
+  m_Name: Heppeh-GoodBye1
   m_EditorClassIdentifier: Assembly-CSharp::ACHNarrativeDriver.ScriptableObjects.NarrativeSequence
   _backgroundSprite: {fileID: 0}
   _nextSequence: {fileID: 0}
@@ -23,36 +23,36 @@ MonoBehaviour:
     _hasSecondCharacterPoseIndex: 0
     _poseIndex: 0
     _poseIndexTwo: 0
-    _text: Hi there.
+    _text: 'Mmmmmmmm.... '
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 3
   - _character: {fileID: 11400000, guid: 24f242ad734f44143b732d723bb4d411, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
     _hasSecondCharacterPoseIndex: 0
     _poseIndex: 0
     _poseIndexTwo: 0
-    _text: Can I haz potion pl0x?
+    _text: 'Yummy potions! '
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 1
   - _character: {fileID: 11400000, guid: 24f242ad734f44143b732d723bb4d411, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
     _hasSecondCharacterPoseIndex: 0
     _poseIndex: 0
     _poseIndexTwo: 0
-    _text: I wan all da flavours, nom nom nom nom...
+    _text: Thanks, pal...
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   _choices: []
-  <SourceScript>k__BackingField: 'Heppeh: Hi there./d2
+  <SourceScript>k__BackingField: 'Heppeh: Mmmmmmmm.... /d3
 
 
-    Heppeh: Can I haz potion
-    pl0x?/d2
+    Heppeh: Yummy potions!
+    /d1
 
 
-    Heppeh: I wan all da flavours, nom nom nom nom.../d2'
+    Heppeh: Thanks, pal...'
