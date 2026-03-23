@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using CraftingAPI;
 using UnityEngine;
@@ -6,6 +7,13 @@ namespace GameElements
 {
     public class CraftingPot : MonoBehaviour
     {
+        [SerializeField]
+        private AudioClip _ingredientInPot;
+        [SerializeField]
+        private AudioClip _createdPotion;
+
+        public event Action<AudioClip> playSound;
+
         [SerializeField]
         private GameObject _itemInstancePrefab;
 
@@ -17,6 +25,7 @@ namespace GameElements
         {
             _itemsInPot = new();
             _itemToIgnore = null;
+            playSound += SoundManager.Instance.PlayAudioClip;
         }
 
         private void OnTriggerEnter2D(Collider2D collision)
@@ -29,11 +38,13 @@ namespace GameElements
             if (collision.gameObject.TryGetComponent<ItemInstance>(out var instance))
             {
                 _itemsInPot.Add(instance.BackingConfig);
+                playSound?.Invoke(_ingredientInPot);
                 Destroy(collision.gameObject);
                 var result = ItemDatabase.Instance.TryCraft(_itemsInPot);
                 
                 if (result.Success)
                 {
+                    playSound?.Invoke(_createdPotion);
                     _itemToIgnore = Instantiate(_itemInstancePrefab);
                     _itemToIgnore.GetComponent<ItemInstance>().InitialiseWithItemConfig(result.Item);
                     _itemsInPot.Clear();
