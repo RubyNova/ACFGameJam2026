@@ -10,6 +10,9 @@
 ## vsc
 .vscode/
 
+## random vs2022 file idk if we need this - Matt J.
+.vsconfig
+
 # User-specific files
 *.rsuser
 *.suo
