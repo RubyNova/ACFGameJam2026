@@ -22,7 +22,10 @@ public class SoundManager : MonoSingleton<SoundManager>
     // Update is called once per frame
     void Update()
     {
-        PlayBGM();
+        if(_audioSource != null && _bgm != null)
+        {
+            PlayBGM();
+        }
     }
 
     public void PlayAudioClip(AudioClip audioClip)
@@ -34,7 +37,7 @@ public class SoundManager : MonoSingleton<SoundManager>
     {
         if(!_audioSource.isPlaying.Equals(_bgm))
         {
-            _audioSource.PlayOneShot(_bgm, _bgmVolume);   
+            _audioSource?.PlayOneShot(_bgm, _bgmVolume);   
         }
     }
 

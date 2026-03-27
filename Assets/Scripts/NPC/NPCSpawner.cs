@@ -1,0 +1,65 @@
+
+using System.Linq;
+using ACHNarrativeDriver;
+using ACHNarrativeDriver.ScriptableObjects;
+using UnityEngine;
+
+namespace NPC
+{
+    public class NPCSpawner : MonoBehaviour
+    {
+        [SerializeField]
+        private NPCCharacter[] _charactersToSpawn;
+
+        [SerializeField]
+        private GameObject _spawnLocationObject;
+
+        [SerializeField]
+        private GameObject _NPCPrefab;
+
+        [SerializeField]
+        private AutoNarrativeController _narrativeController;
+
+        private bool _characterSpawned = false;
+
+        private int _characterSpawnIndex;
+
+        private NPCController _currentCharacterController;
+
+
+
+        void Start()
+        {
+            _characterSpawnIndex = 0;
+        }
+
+
+        void Update()
+        {
+            if(!_characterSpawned)
+            {
+                if(_characterSpawnIndex + 1 > _charactersToSpawn.Count())
+                {
+                    _characterSpawnIndex = 0;
+                    _characterSpawned = true;
+                    return;
+                }
+
+                var npc = Instantiate(_NPCPrefab, _spawnLocationObject.transform.position, Quaternion.identity, transform);
+                _currentCharacterController = npc.GetComponent<NPCController>();
+                _currentCharacterController.NarrativeController = _narrativeController;
+                _currentCharacterController.InitialiseWithNPCConfiguration(_charactersToSpawn[_characterSpawnIndex]);
+                _currentCharacterController.CharacterGoneEvent.AddListener(CharacterGone);
+                
+                _characterSpawnIndex++;
+                _characterSpawned = true;
+            }
+        }
+
+        public void CharacterGone()
+        {
+            _currentCharacterController?.CharacterGoneEvent.RemoveListener(CharacterGone);
+            _characterSpawned = false;
+        }
+    }
+}

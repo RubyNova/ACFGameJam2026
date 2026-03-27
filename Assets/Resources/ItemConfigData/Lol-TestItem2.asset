@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2bf8d2c7cf5fef54cbef8a0d00ca2471, type: 3}
-  m_Name: TestItem 1
+  m_Name: Lol-TestItem2
   m_EditorClassIdentifier: Assembly-CSharp::CraftingAPI.ItemConfig
-  _itemName: Wee
-  _shortDescription: Woo
-  _itemIcon: {fileID: 21300000, guid: e37dcce74f4c55943b3dab0c093e3e66, type: 3}
-  _recipeBookEntryDescription: weeeeeeeeeeeEEEEEEEEEE
+  _itemName: Lol
+  _shortDescription: Lmao
+  _itemIcon: {fileID: 21300000, guid: bed10703d994c2a46ab81ed38d68c411, type: 3}
+  _recipeBookEntryDescription: I'm not even testing this yet, why are you reading
+    this? :D
   _recipe: []

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5a9b9afdf8e59b4082e0231e993318a, type: 3}
+  m_Name: Heppeh-Goku
+  m_EditorClassIdentifier: Assembly-CSharp::NPCCharacter
+  _name: Heppeh
+  _idleSprite: {fileID: 21300000, guid: 0e5c5e78bd50c4a4a9aa31b7a66f6023, type: 3}
+  _arrivalSequence: {fileID: 11400000, guid: 5e8f5b5925a23c34e832e36e7e4b6cb9, type: 2}
+  _departingSequence: {fileID: 11400000, guid: ed5cafa8513df6941955c8d10c92526e, type: 2}
+  _delayBeforeStartingDialogue: 3
+  _animator: {fileID: 9100000, guid: d8034e8aaba9ea345928fbab2399e781, type: 2}
+  _spawnInAnimation: {fileID: 7400000, guid: dd19788569db4db41a8fac48544b7b97, type: 2}
+  _desiredItem: {fileID: 11400000, guid: 61eb908b7e64a6f4494cebcfac2f3f72, type: 2}

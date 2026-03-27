@@ -10,49 +10,49 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7f8908c837a045e47ac98c38fa85f59d, type: 3}
-  m_Name: Heppeh-GoodBye1
+  m_Name: Sappeh-SandRequest
   m_EditorClassIdentifier: Assembly-CSharp::ACHNarrativeDriver.ScriptableObjects.NarrativeSequence
   _backgroundSprite: {fileID: 0}
   _nextSequence: {fileID: 0}
   _musicFiles: []
   _soundEffectFiles: []
   _characterDialoguePairs:
-  - _character: {fileID: 11400000, guid: 24f242ad734f44143b732d723bb4d411, type: 2}
+  - _character: {fileID: 11400000, guid: 962a28b77181db848aa23b24e94162d3, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
     _hasSecondCharacterPoseIndex: 0
     _poseIndex: 0
     _poseIndexTwo: 0
-    _text: 'Mmmmmmmm.... '
-    _leftCharacterTalking: 1
-    _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 3
-  - _character: {fileID: 11400000, guid: 24f242ad734f44143b732d723bb4d411, type: 2}
-    _characterTwo: {fileID: 0}
-    _hasPoseIndex: 0
-    _hasSecondCharacterPoseIndex: 0
-    _poseIndex: 0
-    _poseIndexTwo: 0
-    _text: 'Yummy potions! '
-    _leftCharacterTalking: 1
-    _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 1
-  - _character: {fileID: 11400000, guid: 24f242ad734f44143b732d723bb4d411, type: 2}
-    _characterTwo: {fileID: 0}
-    _hasPoseIndex: 0
-    _hasSecondCharacterPoseIndex: 0
-    _poseIndex: 0
-    _poseIndexTwo: 0
-    _text: 'Thanks, pal... '
+    _text: 'Hey... '
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
     _delayBeforeContinuingInSeconds: 4
+  - _character: {fileID: 11400000, guid: 962a28b77181db848aa23b24e94162d3, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: 'I need to touch some sand... '
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 4
+  - _character: {fileID: 11400000, guid: 962a28b77181db848aa23b24e94162d3, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: '...please.... '
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 3
   _choices: []
-  <SourceScript>k__BackingField: 'Heppeh: Mmmmmmmm.... /d3
+  <SourceScript>k__BackingField: 'Sappeh: Hey... /d4
 
 
-    Heppeh: Yummy potions!
-    /d1
+    Sappeh: I need to touch
+    some sand... /d4
 
 
-    Heppeh: Thanks, pal... /d4'
+    Sappeh: ...please.... /d3'

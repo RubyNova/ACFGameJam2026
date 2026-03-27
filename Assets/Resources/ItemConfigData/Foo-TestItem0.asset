@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2bf8d2c7cf5fef54cbef8a0d00ca2471, type: 3}
-  m_Name: TestItem
+  m_Name: Foo-TestItem0
   m_EditorClassIdentifier: Assembly-CSharp::CraftingAPI.ItemConfig
   _itemName: Foo
   _shortDescription: Bar

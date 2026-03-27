@@ -1,40 +1,33 @@
 using System.Collections;
 using ACHNarrativeDriver;
-using ACHNarrativeDriver.ScriptableObjects;
 using GameElements;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace NPC
 {
     public class NPCController : MonoBehaviour
     {
-        [Header("Data Fields")]
-        [SerializeField]
-        private float _delayBeforeStartingDialogue = 0.0f;
+        // [Header("Data Fields")]
+        // [SerializeField]
+        // private float _delayBeforeStartingDialogue = 0.0f;
 
-        [SerializeField]
-        private NPCPerformanceData _performanceData;
+        // [SerializeField]
+        // private NPCPerformanceData _performanceData;
 
         [Header("Required Objects")]
         [SerializeField]
-        private AutoNarrativeController _narrativeController;
+        private SpriteRenderer _spriteRenderer;
+
         
-        [SerializeField]
-        private NarrativeSequence _arrivalNarrativeSequence;
-        
-        [SerializeField]
-        private NarrativeSequence _departureNarrativeSequence;
-        
+
         [SerializeField]
         private Animator _animator;
 
-        [Header("Reference Objects")]
-        [SerializeField]
-        private AnimationClip _SpawnInAnimation;
-
         private const string _spawnOutTriggerName = "Leaving";
 
-
+        public UnityEvent CharacterGoneEvent = new();
+        public AutoNarrativeController NarrativeController;
         //TODO: refactor these bools into an enum or something l8r
         private bool _entering = false;
         private bool _hasEntered = false;
@@ -43,13 +36,21 @@ namespace NPC
         private bool _beingServed = false;
         private float _deltaTimeSeconds = 0.0f;
 
+        public NPCCharacter NPCConfiguration { get; private set; }
+
+        public void InitialiseWithNPCConfiguration(NPCCharacter npc)
+        {
+            NPCConfiguration = npc;
+            _spriteRenderer.sprite = NPCConfiguration.IdleSprite;
+            _animator.runtimeAnimatorController = NPCConfiguration.AnimController;
+        }
 
         void Update()
         {
             //animator state
             if(!_hasEntered)
             {
-                _entering = _animator.GetCurrentAnimatorStateInfo(0).IsName(_SpawnInAnimation.name);
+                _entering = _animator.GetCurrentAnimatorStateInfo(0).IsName(NPCConfiguration.SpawnInAnimationClip.name);
                 if(!_entering)
                 {
                     _hasEntered = true;
@@ -60,15 +61,15 @@ namespace NPC
             //check logic
             if(_introduction)
             {
-                _narrativeController?.Finished.AddListener(PrepForServing);
-                _narrativeController?.ExecuteSequence(_arrivalNarrativeSequence);
+                NarrativeController?.Finished.AddListener(PrepForServing);
+                NarrativeController?.ExecuteSequence(NPCConfiguration.ArrivalSequence);
                 _introduction = false;
             }
 
-            if(_leaving && _departureNarrativeSequence != null)
+            if(_leaving && NPCConfiguration.DepartingSequence != null)
             {
-                _narrativeController.Finished.AddListener(RunGoodbyeAnim);
-                _narrativeController?.ExecuteSequence(_departureNarrativeSequence);
+                NarrativeController.Finished.AddListener(RunGoodbyeAnim);
+                NarrativeController?.ExecuteSequence(NPCConfiguration.DepartingSequence);
                 _leaving = false;
             }
             else if(_leaving)
@@ -94,20 +95,20 @@ namespace NPC
 
         private IEnumerator LaunchDialogueOnDelay()
         {
-            yield return new WaitForSeconds(_delayBeforeStartingDialogue);
+            yield return new WaitForSeconds(NPCConfiguration.DelayBeforeStartingDialogue);
 
             _introduction = true;
         }
 
         private void PrepForServing()
         {
-            _narrativeController.Finished.RemoveListener(PrepForServing);
+            NarrativeController.Finished.RemoveListener(PrepForServing);
             _beingServed = true;
         }
 
         private void RunGoodbyeAnim()
         {
-            _narrativeController.Finished.RemoveListener(RunGoodbyeAnim);
+            NarrativeController.Finished.RemoveListener(RunGoodbyeAnim);
             _animator.SetBool(_spawnOutTriggerName, true);
         }
     
