@@ -1,7 +1,6 @@
 
 using System.Linq;
 using ACHNarrativeDriver;
-using ACHNarrativeDriver.ScriptableObjects;
 using UnityEngine;
 
 namespace NPC

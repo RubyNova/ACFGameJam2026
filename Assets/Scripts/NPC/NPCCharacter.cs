@@ -1,6 +1,5 @@
 using ACHNarrativeDriver.ScriptableObjects;
 using CraftingAPI;
-using UnityEditor.Animations;
 using UnityEngine;
 
 namespace NPC 
@@ -24,7 +23,7 @@ namespace NPC
         private float _delayBeforeStartingDialogue;
 
         [SerializeField]
-        private AnimatorController _animator;
+        private RuntimeAnimatorController _animator;
 
         [SerializeField]
         private AnimationClip _spawnInAnimation;
@@ -37,7 +36,7 @@ namespace NPC
         public NarrativeSequence ArrivalSequence => _arrivalSequence;
         public NarrativeSequence DepartingSequence => _departingSequence;
         public float DelayBeforeStartingDialogue => _delayBeforeStartingDialogue;
-        public AnimatorController AnimController => _animator;
+        public RuntimeAnimatorController AnimController => _animator;
         public AnimationClip SpawnInAnimationClip => _spawnInAnimation;
 
         public ItemConfig DesiredItem => _desiredItem;
