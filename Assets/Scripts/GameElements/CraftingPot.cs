@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using CraftingAPI;
 using UnityEngine;
+using GameAudio;
 
 namespace GameElements
 {
