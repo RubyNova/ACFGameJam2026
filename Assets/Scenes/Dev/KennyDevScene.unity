@@ -1417,45 +1417,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
---- !u!1 &1725499361
+--- !u!1 &1883782171 stripped
 GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 9138138900583872434, guid: 3d7097b1edec21948b7762f6ab681ebe, type: 3}
+  m_PrefabInstance: {fileID: 3052669037368491947}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1725499363}
-  - component: {fileID: 1725499364}
-  m_Layer: 0
-  m_Name: NarrativeSystem
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1725499363
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1725499361}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.7918, y: 2.13843, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1725499364
+--- !u!114 &2671590625630770539
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1725499361}
+  m_GameObject: {fileID: 9210675667299154971}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f54f4b6c614a0c648b3f8290787f0783, type: 3}
@@ -1478,11 +1451,6 @@ MonoBehaviour:
   Finished:
     m_PersistentCalls:
       m_Calls: []
---- !u!1 &1883782171 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9138138900583872434, guid: 3d7097b1edec21948b7762f6ab681ebe, type: 3}
-  m_PrefabInstance: {fileID: 3052669037368491947}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2853749184577359256
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1493,11 +1461,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4841122208798092431, guid: bba48788e39c5d147982a0d221a38974, type: 3}
       propertyPath: m_LocalScale.x
-      value: 5.1865
+      value: 5.0941806
       objectReference: {fileID: 0}
     - target: {fileID: 4841122208798092431, guid: bba48788e39c5d147982a0d221a38974, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.2133
+      value: 3.1672
       objectReference: {fileID: 0}
     - target: {fileID: 4841122208798092431, guid: bba48788e39c5d147982a0d221a38974, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1632,7 +1600,7 @@ PrefabInstance:
     - target: {fileID: 738546212711536671, guid: cd7cc9733cbda3448a383c515fe4d345, type: 3}
       propertyPath: _narrativeController
       value: 
-      objectReference: {fileID: 1725499364}
+      objectReference: {fileID: 2671590625630770539}
     - target: {fileID: 738546212711536671, guid: cd7cc9733cbda3448a383c515fe4d345, type: 3}
       propertyPath: _charactersToSpawn.Array.size
       value: 2
@@ -1694,6 +1662,38 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd7cc9733cbda3448a383c515fe4d345, type: 3}
+--- !u!4 &6170870416636959989
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9210675667299154971}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.7918, y: 2.13843, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &9210675667299154971
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6170870416636959989}
+  - component: {fileID: 2671590625630770539}
+  m_Layer: 0
+  m_Name: NarrativeSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1708,6 +1708,6 @@ SceneRoots:
   - {fileID: 2853749184577359256}
   - {fileID: 3052669037368491947}
   - {fileID: 287999480}
-  - {fileID: 1725499363}
+  - {fileID: 6170870416636959989}
   - {fileID: 8031982}
   - {fileID: 5095067502441571592}
