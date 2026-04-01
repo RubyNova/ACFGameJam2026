@@ -11,9 +11,12 @@ namespace GameElements
         [SerializeField]
         private GameObject _itemInstancePrefab;
 
-        public void Spawn(Vector2 position)
+        public ItemInstance Spawn(Vector2 position)
         {
-            Instantiate(_itemInstancePrefab, position, Quaternion.identity).GetComponent<ItemInstance>().InitialiseWithItemConfig(_itemToSpawn);
+            var componentToReturn = Instantiate(_itemInstancePrefab, position, Quaternion.identity).GetComponent<ItemInstance>();
+            componentToReturn.InitialiseWithItemConfig(_itemToSpawn);
+
+            return componentToReturn;
         }
     }
 }

@@ -28,6 +28,7 @@ namespace Player
         {
             if (!_shouldTryDrag)
             {
+                _lastHitObject = null;
                 return;
             }
 
@@ -52,8 +53,7 @@ namespace Player
             }
             else if (result.transform.gameObject.TryGetComponent<ItemSpawner>(out var spawner))
             {
-                spawner.Spawn(mousePositionInWorld);
-                _lastHitObject = null;
+                _lastHitObject = spawner.Spawn(mousePositionInWorld);
             }
 
         }
