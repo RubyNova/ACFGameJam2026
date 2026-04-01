@@ -16,11 +16,23 @@ namespace GameUI
         [SerializeField]
         private TextMeshProUGUI _shortDescriptionRenderer;
 
-        public void Init(ItemConfig item)
+        private ItemConfig _item;
+
+        private RecipeBookController _owningController;
+
+        public void Init(ItemConfig item, RecipeBookController owningController)
         {
+            _item = item;
+            _owningController = owningController;
             _iconRenderer.sprite = item.ItemIcon;
             _titleRenderer.text = item.ItemName;
             _shortDescriptionRenderer.text = item.ShortDescription;
+        }
+
+        public void OpenCraftableItemInfo()
+        {
+            gameObject.SetActive(false);
+            _owningController.OpenCraftableItemInfo(_item);
         }
     }
 }

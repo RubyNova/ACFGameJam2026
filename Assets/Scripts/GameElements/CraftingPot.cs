@@ -62,5 +62,7 @@ namespace GameElements
 
             _itemToIgnore = null;
         }
+
+        public void EmptyPot() => _itemsInPot.Clear();
     }
 }
