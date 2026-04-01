@@ -3,28 +3,17 @@ using Utilities;
 
 namespace GameAudio
 {
+    [RequireComponent(typeof(AudioSource))]
     public class SoundManager : MonoSingleton<SoundManager>
     {
-        [SerializeField]
-        private float _bgmVolume = 0.5f;
-        [SerializeField]
-        private float _sfxVolume = 1;
+        private SoundManagerConfig _config;
 
         private AudioSource _audioSource;
-
-        [SerializeField]
-        private AudioClip _bgm;
-
-        // Start is called once before the first execution of Update after the MonoBehaviour is created
-        void Start()
-        {
-            _audioSource = GetComponent<AudioSource>();
-        }
 
         // Update is called once per frame
         void Update()
         {
-            if (_audioSource != null && _bgm != null)
+            if (_audioSource != null && _config.Bgm != null)
             {
                 PlayBGM();
             }
@@ -32,20 +21,21 @@ namespace GameAudio
 
         public void PlayAudioClip(AudioClip audioClip)
         {
-            _audioSource.PlayOneShot(audioClip, _sfxVolume);
+            _audioSource.PlayOneShot(audioClip, _config.SfxVolume);
         }
 
         private void PlayBGM()
         {
-            if (!_audioSource.isPlaying.Equals(_bgm))
+            if (!_audioSource.isPlaying.Equals(_config.Bgm))
             {
-                _audioSource?.PlayOneShot(_bgm, _bgmVolume);
+                _audioSource?.PlayOneShot(_config.Bgm, _config.BgmVolume);
             }
         }
 
         protected override void OnInit()
         {
-
+            _audioSource = GetComponent<AudioSource>();
+            _config = Resources.Load<SoundManagerConfig>("GameAudioConfigData/DefaultSoundConfig");
         }
 
     }
