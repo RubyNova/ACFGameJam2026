@@ -31,7 +31,6 @@ namespace GameUI
 
         public void OpenCraftableItemInfo()
         {
-            gameObject.SetActive(false);
             _owningController.OpenCraftableItemInfo(_item);
         }
     }

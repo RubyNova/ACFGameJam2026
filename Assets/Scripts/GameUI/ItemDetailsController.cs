@@ -30,6 +30,7 @@ public class ItemDetailsController : MonoBehaviour
 
         foreach (RectTransform child in _recipeItemIconContainer)
         {
+            child.GetComponent<Button>().onClick.RemoveAllListeners();
             Destroy(child.gameObject);
         }
 
@@ -37,7 +38,7 @@ public class ItemDetailsController : MonoBehaviour
         {
             var newObject = Instantiate(_ingredientButtonPrefab, _recipeItemIconContainer);
             newObject.GetComponent<Image>().sprite = ingredient.ItemIcon;
+            newObject.GetComponent<Button>().onClick.AddListener(() => Init(ingredient));
         }
-
     }
 }

@@ -13,9 +13,20 @@ namespace GameUI
         private RectTransform _listParent;
 
         [SerializeField]
+        private RectTransform _listScrollView;
+
+        [SerializeField]
         private ItemDetailsController _detailsController;
 
-        private void Start() => ItemDatabase.Instance.ItemDiscovered += OnItemDiscovered;
+        private void Start()
+        {
+            ItemDatabase.Instance.ItemDiscovered += OnItemDiscovered;
+
+            foreach (var item in ItemDatabase.Instance.DiscoveredItems)
+            {
+                OnItemDiscovered(item);
+            }
+        }
 
         private void OnItemDiscovered(ItemConfig item)
         {
@@ -25,6 +36,7 @@ namespace GameUI
 
         public void OpenCraftableItemInfo(ItemConfig item)
         {
+            _listScrollView.gameObject.SetActive(false);
             _detailsController.Init(item);
             _detailsController.gameObject.SetActive(true);
         }
