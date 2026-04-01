@@ -1993,10 +1993,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5353574629046251427, guid: 54a53a84bbf8dcb4db44f1e6a36b3546, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -0.00024414062
-      objectReference: {fileID: 0}
     - target: {fileID: 6155097581166574419, guid: 54a53a84bbf8dcb4db44f1e6a36b3546, type: 3}
       propertyPath: m_Name
       value: RecipeBookUI

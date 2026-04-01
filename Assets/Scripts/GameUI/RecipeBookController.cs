@@ -1,6 +1,7 @@
 using UnityEngine;
 using CraftingAPI;
 using System;
+using System.Collections.Generic;
 
 namespace GameUI
 {
@@ -18,8 +19,16 @@ namespace GameUI
         [SerializeField]
         private ItemDetailsController _detailsController;
 
+        private Stack<Action> _browseHistory;
+
+        private void Awake()
+        {
+            _browseHistory = new();
+        }
+
         private void Start()
         {
+
             ItemDatabase.Instance.ItemDiscovered += OnItemDiscovered;
 
             foreach (var item in ItemDatabase.Instance.DiscoveredItems)
@@ -34,11 +43,37 @@ namespace GameUI
             newObject.GetComponent<CraftableItemDisplayController>().Init(item, this);
         }
 
-        public void OpenCraftableItemInfo(ItemConfig item)
+        public void OpenCraftableItemInfoAndLeaveItemList(ItemConfig item)
+        {
+            CacheBrowseBackAction(() =>
+            {
+                _listScrollView.gameObject.SetActive(true);
+                _detailsController.gameObject.SetActive(false);
+            });
+
+            LeaveItemListNoBackCache(item);
+        }
+
+        public void LeaveItemListNoBackCache(ItemConfig item)
         {
             _listScrollView.gameObject.SetActive(false);
-            _detailsController.Init(item);
+            _detailsController.Init(item, this);
             _detailsController.gameObject.SetActive(true);
+        }
+
+        public void CacheBrowseBackAction(Action action) => _browseHistory.Push(action);
+
+        internal void EnterItemListView()
+        {
+            _listScrollView.gameObject.SetActive(true);
+        }
+
+        public void ProcessBackAction()
+        {
+            if (_browseHistory.TryPop(out var function))
+            {
+                function();
+            }
         }
     }
 }

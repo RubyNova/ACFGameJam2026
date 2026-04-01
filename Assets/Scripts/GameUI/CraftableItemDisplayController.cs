@@ -31,7 +31,7 @@ namespace GameUI
 
         public void OpenCraftableItemInfo()
         {
-            _owningController.OpenCraftableItemInfo(_item);
+            _owningController.OpenCraftableItemInfoAndLeaveItemList(_item);
         }
     }
 }
