@@ -10,8 +10,11 @@ namespace Player
         private Vector2 _mousePosition;
         private Camera _camera;
 
+        private ItemInstance _lastHitObject;
+
         private void Awake()
         {
+            _lastHitObject = null;
             _shouldTryDrag = false;
             _mousePosition = Vector2.zero;
         }
@@ -25,29 +28,42 @@ namespace Player
         {
             if (!_shouldTryDrag)
             {
+                _lastHitObject = null;
                 return;
             }
 
             var mousePositionInWorld = _camera.ScreenToWorldPoint(_mousePosition);
             var result = Physics2D.Raycast(mousePositionInWorld, _camera.transform.forward);
 
-            if (result.collider == null)
+            if (result.collider == null && _lastHitObject == null)
             {
                 return;
             }
 
-            if (result.transform.gameObject.GetComponent<ItemInstance>() != null)
+            if (_lastHitObject != null)
             {
-                var oldPosition = result.transform.position;
-                oldPosition.x = mousePositionInWorld.x;
-                oldPosition.y = mousePositionInWorld.y;
-                result.transform.position = oldPosition;
+                MoveObject(mousePositionInWorld, _lastHitObject);
+                return;
+            }
+
+            if (result.transform.gameObject.TryGetComponent<ItemInstance>(out var item))
+            {
+                MoveObject(mousePositionInWorld, item);
+                _lastHitObject = item;
             }
             else if (result.transform.gameObject.TryGetComponent<ItemSpawner>(out var spawner))
             {
-                spawner.Spawn(mousePositionInWorld);
+                _lastHitObject = spawner.Spawn(mousePositionInWorld);
             }
 
+        }
+
+        private void MoveObject(Vector3 mousePositionInWorld, ItemInstance item)
+        {
+            var oldPosition = item.transform.position;
+            oldPosition.x = mousePositionInWorld.x;
+            oldPosition.y = mousePositionInWorld.y;
+            item.transform.position = oldPosition;
         }
 
         public void OnMousePositionPoll(InputAction.CallbackContext context)

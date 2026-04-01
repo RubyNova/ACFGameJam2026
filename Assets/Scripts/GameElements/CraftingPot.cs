@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using CraftingAPI;
 using UnityEngine;
+using GameAudio;
 
 namespace GameElements
 {
@@ -61,5 +62,7 @@ namespace GameElements
 
             _itemToIgnore = null;
         }
+
+        public void EmptyPot() => _itemsInPot.Clear();
     }
 }
