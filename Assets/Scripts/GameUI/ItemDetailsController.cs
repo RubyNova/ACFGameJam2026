@@ -3,42 +3,70 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ItemDetailsController : MonoBehaviour
+namespace GameUI
 {
-    [SerializeField]
-    private GameObject _ingredientButtonPrefab;
 
-    [SerializeField]
-    private RectTransform _recipeItemIconContainer;
 
-    [SerializeField]
-    private Image _largeIconRenderer;
-
-    [SerializeField]
-    private TextMeshProUGUI _titleTextRenderer;
-
-    [SerializeField]
-    private TextMeshProUGUI _detailsTextRenderer;
-
-    public void Init(ItemConfig item)
+    public class ItemDetailsController : MonoBehaviour
     {
-        _titleTextRenderer.text = item.ItemName;
-        _largeIconRenderer.sprite = item.ItemIcon;
-        _detailsTextRenderer.text = item.RecipeBookEntryDescription;
+        [SerializeField]
+        private GameObject _ingredientButtonPrefab;
 
-        var ingredients = item.Recipe;
+        [SerializeField]
+        private RectTransform _recipeItemIconContainer;
 
-        foreach (RectTransform child in _recipeItemIconContainer)
+        [SerializeField]
+        private Image _largeIconRenderer;
+
+        [SerializeField]
+        private TextMeshProUGUI _titleTextRenderer;
+
+        [SerializeField]
+        private TextMeshProUGUI _detailsTextRenderer;
+
+        private RecipeBookController _recipeBookController;
+
+        private ItemConfig _itemConfig;
+
+        public void Init(ItemConfig item, RecipeBookController recipeBookController)
         {
-            child.GetComponent<Button>().onClick.RemoveAllListeners();
-            Destroy(child.gameObject);
+            _itemConfig = item;
+            _recipeBookController = recipeBookController;
+            _titleTextRenderer.text = item.ItemName;
+            _largeIconRenderer.sprite = item.ItemIcon;
+            _detailsTextRenderer.text = item.RecipeBookEntryDescription;
+
+            var ingredients = item.Recipe;
+
+            foreach (RectTransform child in _recipeItemIconContainer)
+            {
+                child.GetComponent<Button>().onClick.RemoveAllListeners();
+                Destroy(child.gameObject);
+            }
+
+            foreach (var ingredient in ingredients)
+            {
+                // I hate C# lambda capture rules. This is so arse.
+                var itemLocal = item;
+                var controllerLocal = recipeBookController;  
+                var newObject = Instantiate(_ingredientButtonPrefab, _recipeItemIconContainer);
+
+                newObject.GetComponent<Image>().sprite = ingredient.ItemIcon;
+                newObject.GetComponent<Button>().onClick.AddListener(() =>
+                {
+                    _recipeBookController.CacheBrowseBackAction(() => Init(itemLocal, controllerLocal));
+                    Init(ingredient, _recipeBookController);
+                });
+            }
         }
 
-        foreach (var ingredient in ingredients)
+        public void ReturnToItemList()
         {
-            var newObject = Instantiate(_ingredientButtonPrefab, _recipeItemIconContainer);
-            newObject.GetComponent<Image>().sprite = ingredient.ItemIcon;
-            newObject.GetComponent<Button>().onClick.AddListener(() => Init(ingredient));
+            // more lambda capture rule nonsense. Yippie!
+            var itemLocal = _itemConfig;
+            _recipeBookController.CacheBrowseBackAction(() => _recipeBookController.LeaveItemListNoBackCache(itemLocal));
+            gameObject.SetActive(false);
+            _recipeBookController.EnterItemListView();
         }
     }
 }

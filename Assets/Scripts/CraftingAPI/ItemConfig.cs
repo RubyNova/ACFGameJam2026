@@ -1,11 +1,14 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
 namespace CraftingAPI
 {
     [CreateAssetMenu(fileName = "NewItemConfig", menuName = "Crafting API/Create New ItemConfig", order = 1)]
-    public class ItemConfig : ScriptableObject
+    public class ItemConfig : ScriptableObject, IComparable<ItemConfig>
     {
+        public int TransientId { get; set; }
+
         [SerializeField]
         private string _itemName;
 
@@ -30,5 +33,10 @@ namespace CraftingAPI
         public string RecipeBookEntryDescription => _recipeBookEntryDescription;
 
         public IReadOnlyList<ItemConfig> Recipe => _recipe;
+
+        public int CompareTo(ItemConfig other)
+        {
+            return other.TransientId.CompareTo(this.TransientId);
+        }
     }
 }
