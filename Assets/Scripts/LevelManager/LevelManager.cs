@@ -26,7 +26,10 @@ public class LevelManager : MonoSingleton<LevelManager>
         }
     }
 
-
+    public void LoadMainMenu()
+    {
+        StartCoroutine(LoadScene("LukeDevScene"));
+    }
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
