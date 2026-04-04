@@ -39,7 +39,7 @@ public class GameClock : MonoBehaviour
     private bool _moveSkyroll = false;
     
 
-
+    public UnityEvent TickEvent = new();
     public UnityEvent TimerFinished = new();
     public float RemainingTimeInSeconds => (_secondsElapsed >= _secondsBeforeLevelIsOver) ? 0 : _secondsBeforeLevelIsOver - _secondsElapsed;
 
@@ -87,6 +87,7 @@ public class GameClock : MonoBehaviour
             }
         }
 
+        TickEvent.Invoke();
     }
 
     public void StopTimer(bool paused = false, bool completed = false)
