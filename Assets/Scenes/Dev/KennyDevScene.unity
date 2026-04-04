@@ -573,7 +573,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9140e5efceec20149b40b35be2897fb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameClock
-  _secondsBeforeLevelIsOver: 120
+  _secondsBeforeLevelIsOver: 60
   _timescale: 10
   _minuteHandTransform: {fileID: 1940363818}
   _hourHandTransform: {fileID: 1372052166}

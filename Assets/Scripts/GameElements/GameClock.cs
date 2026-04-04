@@ -7,21 +7,12 @@ public class GameClock : MonoBehaviour
     [SerializeField]
     private float _secondsBeforeLevelIsOver;
 
-    [SerializeField]
-    private float _timescale;
-
     [Header("Required - Clock Hand Settings")]
     [SerializeField]
     private Transform _minuteHandTransform;
 
     [SerializeField]
     private Transform _hourHandTransform;
-
-    [SerializeField]
-    private float _hourHandDegreesPerInterval;
-
-    [SerializeField]
-    private float _minuteHandDegreesPerInterval;
 
     [Header("Reference Only - do not preset!")]
     [SerializeField]
@@ -31,6 +22,10 @@ public class GameClock : MonoBehaviour
     
     private float _currentMinuteRotation = 0f;
     private float _currentHourRotation = 0f;
+    private float _hourSpeed = 0f;
+    private float _minuteSpeed = 0f;
+    private const float _hourFinalDegreesOfRotation = -360f;
+    private const float _minuteFinalDegreesOfRotation = -360f * 12f;  
 
     public UnityEvent TimerFinished = new();
 
@@ -40,6 +35,9 @@ public class GameClock : MonoBehaviour
     {
         _currentMinuteRotation = _minuteHandTransform.rotation.z;
         _currentHourRotation = _hourHandTransform.rotation.z;
+
+        _hourSpeed = _hourFinalDegreesOfRotation / _secondsBeforeLevelIsOver;
+        _minuteSpeed = _minuteFinalDegreesOfRotation / _secondsBeforeLevelIsOver;
     }
 
     // Update is called once per frame
@@ -50,14 +48,13 @@ public class GameClock : MonoBehaviour
             _secondsElapsed += Time.deltaTime;
             Debug.Log("Time: "+_secondsElapsed);
 
-            var minuteRotation = _minuteHandDegreesPerInterval * _timescale * Time.deltaTime;
-            _currentMinuteRotation -= minuteRotation;
+            var minuteRotation = _minuteSpeed * Time.deltaTime;
+            _currentMinuteRotation += minuteRotation;
             _minuteHandTransform.localRotation = Quaternion.Euler(0, 0, _currentMinuteRotation);
 
-            var hourRotation = _hourHandDegreesPerInterval * _timescale * Time.deltaTime;
-            _currentHourRotation -= hourRotation;            
+            var hourRotation = _hourSpeed * Time.deltaTime;
+            _currentHourRotation += hourRotation;            
             _hourHandTransform.localRotation = Quaternion.Euler(0, 0, _currentHourRotation);
-
 
             if(_secondsElapsed > _secondsBeforeLevelIsOver)
             {
