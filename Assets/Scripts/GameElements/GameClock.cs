@@ -28,6 +28,7 @@ public class GameClock : MonoBehaviour
     private const float _minuteFinalDegreesOfRotation = -360f * 12f;  
 
     public UnityEvent TimerFinished = new();
+    public float RemainingTimeInSeconds => (_secondsElapsed >= _secondsBeforeLevelIsOver) ? 0 : _secondsBeforeLevelIsOver - _secondsElapsed;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -74,4 +75,6 @@ public class GameClock : MonoBehaviour
             _secondsElapsed = 0f;
         }
     }
+
+    public void StartTimer() => _timerStarted = true;
 }
