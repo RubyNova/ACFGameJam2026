@@ -1,10 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.Assertions.Must;
-using UnityEngine.Events;
 using Utilities;
 
 namespace CraftingAPI
@@ -20,12 +17,13 @@ namespace CraftingAPI
 
         public ItemDatabase()
         {
+            _discoveredItems = new();
             _itemData = Resources.LoadAll<ItemConfig>("ItemConfigData");
             for (int transientId = 0; transientId < _itemData.Length; transientId++)
             {
                 _itemData[transientId].TransientId = transientId;
             }
-            _discoveredItems = new();
+            
         }
 
         public CraftingResult TryCraft(IReadOnlyList<ItemConfig> ingredients)

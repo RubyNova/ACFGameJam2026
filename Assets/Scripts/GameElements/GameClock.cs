@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -14,6 +15,13 @@ public class GameClock : MonoBehaviour
     [SerializeField]
     private Transform _hourHandTransform;
 
+    [Header("Optional - Skyroll Settings")]
+    [SerializeField]
+    private float _finalXPositionForNightSky;
+
+    [SerializeField]
+    private Transform _skyrollTransform;
+
     [Header("Reference Only - do not preset!")]
     [SerializeField]
     private bool _timerStarted;
@@ -27,6 +35,11 @@ public class GameClock : MonoBehaviour
     private const float _hourFinalDegreesOfRotation = -360f;
     private const float _minuteFinalDegreesOfRotation = -360f * 12f;  
 
+    private float _skyrollSpeed = 0f;
+    private bool _moveSkyroll = false;
+    
+
+
     public UnityEvent TimerFinished = new();
     public float RemainingTimeInSeconds => (_secondsElapsed >= _secondsBeforeLevelIsOver) ? 0 : _secondsBeforeLevelIsOver - _secondsElapsed;
 
@@ -39,6 +52,12 @@ public class GameClock : MonoBehaviour
 
         _hourSpeed = _hourFinalDegreesOfRotation / _secondsBeforeLevelIsOver;
         _minuteSpeed = _minuteFinalDegreesOfRotation / _secondsBeforeLevelIsOver;
+
+        if(_skyrollTransform != null)
+        {
+            _moveSkyroll = true;
+            _skyrollSpeed = Math.Abs(_skyrollTransform.localPosition.x - _finalXPositionForNightSky) / _secondsBeforeLevelIsOver;
+        }
     }
 
     // Update is called once per frame
@@ -56,6 +75,12 @@ public class GameClock : MonoBehaviour
             var hourRotation = _hourSpeed * Time.deltaTime;
             _currentHourRotation += hourRotation;            
             _hourHandTransform.localRotation = Quaternion.Euler(0, 0, _currentHourRotation);
+
+            if(_moveSkyroll)
+            {
+                var skyrollPosition = -_skyrollSpeed * Time.deltaTime;
+                _skyrollTransform.localPosition += new Vector3(skyrollPosition,0,0);
+            }
 
             if(_secondsElapsed > _secondsBeforeLevelIsOver)
             {
