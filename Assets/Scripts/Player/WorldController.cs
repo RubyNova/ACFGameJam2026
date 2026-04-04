@@ -1,6 +1,8 @@
 using GameElements;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.EnhancedTouch;
+using Touch = UnityEngine.InputSystem.EnhancedTouch.Touch;
 
 namespace Player
 {
@@ -17,6 +19,8 @@ namespace Player
             _lastHitObject = null;
             _shouldTryDrag = false;
             _mousePosition = Vector2.zero;
+
+            EnhancedTouchSupport.Enable();
         }
 
         private void Start()
@@ -26,6 +30,16 @@ namespace Player
 
         private void Update()
         {
+            if(EnhancedTouchSupport.enabled)
+            {
+                //Experimental touch support
+                var activeTouches = Touch.activeTouches;
+                if(activeTouches.Count > 0)
+                {
+                    _mousePosition = activeTouches[0].finger.screenPosition;
+                }
+            }
+
             if (!_shouldTryDrag)
             {
                 _lastHitObject = null;
@@ -74,6 +88,19 @@ namespace Player
         public void OnMouseLMBDown(InputAction.CallbackContext context)
         {
             _shouldTryDrag = context.ReadValueAsButton();
+        }
+
+        protected void OnEnable()
+        {
+            if(!EnhancedTouchSupport.enabled)
+            {
+                EnhancedTouchSupport.Enable();
+            }
+        }
+
+        protected void OnDisable()
+        {
+            EnhancedTouchSupport.Disable();
         }
     }
 }
