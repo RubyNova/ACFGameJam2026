@@ -19,8 +19,6 @@ namespace NPC
         [SerializeField]
         private SpriteRenderer _spriteRenderer;
 
-        
-
         [SerializeField]
         private Animator _animator;
 
@@ -119,13 +117,24 @@ namespace NPC
 
         private void OnTriggerEnter2D(Collider2D collision)
         {
-            if(collision.gameObject.GetComponent<ItemInstance>() != null)
+            if(collision.gameObject.TryGetComponent<ItemInstance>(out var itemInstance))
             {
-                //item logic checks can go here but for now we'll just accept anything
-                Destroy(collision.gameObject);
-                _beingServed = false;
-                _leaving = true;
+                if(!NPCConfiguration.DesiredItem.ItemName.Equals(itemInstance.BackingConfig.ItemName, System.StringComparison.InvariantCultureIgnoreCase))
+                {
+                    if(NPCConfiguration.NegativeSequenceCount > 0)
+                    {
+                        var sequence = NPCConfiguration.NegativeSequences[Random.Range(0, NPCConfiguration.NegativeSequenceCount - 1)];
+                        NarrativeController.ExecuteSequence(sequence);    
+                    }
+                }
+                else
+                {
+                    _beingServed = false;
+                    _leaving = true;    
+                }
             }
+
+            Destroy(collision.gameObject);
         }
     }
 }

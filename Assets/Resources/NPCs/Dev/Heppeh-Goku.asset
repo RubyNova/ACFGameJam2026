@@ -14,9 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NPCCharacter
   _name: Heppeh
   _idleSprite: {fileID: 21300000, guid: 0e5c5e78bd50c4a4a9aa31b7a66f6023, type: 3}
+  _desiredItem: {fileID: 11400000, guid: 61eb908b7e64a6f4494cebcfac2f3f72, type: 2}
+  _delayBeforeStartingDialogue: 3
   _arrivalSequence: {fileID: 11400000, guid: 5e8f5b5925a23c34e832e36e7e4b6cb9, type: 2}
   _departingSequence: {fileID: 11400000, guid: ed5cafa8513df6941955c8d10c92526e, type: 2}
-  _delayBeforeStartingDialogue: 3
+  _negativeSequences:
+  - {fileID: 11400000, guid: 89a6696c3e6a9f64a928e69ec5411259, type: 2}
   _animator: {fileID: 9100000, guid: d8034e8aaba9ea345928fbab2399e781, type: 2}
   _spawnInAnimation: {fileID: 7400000, guid: dd19788569db4db41a8fac48544b7b97, type: 2}
-  _desiredItem: {fileID: 11400000, guid: 61eb908b7e64a6f4494cebcfac2f3f72, type: 2}
