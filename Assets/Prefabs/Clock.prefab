@@ -27,7 +27,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.36, y: 1.36, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1320447834836187771}
@@ -50,7 +50,9 @@ MonoBehaviour:
   _secondsBeforeLevelIsOver: 60
   _minuteHandTransform: {fileID: 3556565565104976207}
   _hourHandTransform: {fileID: 2443650263365147537}
-  _timerStarted: 1
+  _finalXPositionForNightSky: -30.9
+  _skyrollTransform: {fileID: 0}
+  _timerStarted: 0
   TimerFinished:
     m_PersistentCalls:
       m_Calls: []

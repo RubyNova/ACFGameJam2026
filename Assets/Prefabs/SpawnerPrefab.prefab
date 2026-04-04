@@ -29,7 +29,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.56, y: 0.79, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -107,6 +107,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GameElements.ItemSpawner
   _itemToSpawn: {fileID: 0}
   _itemInstancePrefab: {fileID: 1736434130614050027, guid: eb86db826bd1df24c8945e3817658ff7, type: 3}
+  _zPosition: 0
 --- !u!61 &3006024051306036500
 BoxCollider2D:
   m_ObjectHideFlags: 0
