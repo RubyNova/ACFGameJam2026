@@ -33,6 +33,7 @@ namespace ACHNarrativeDriver
         private RuntimeVariables _narrativeRuntimeVariables;
         
         public NarrativeSequence LastPlayedSequence { get; private set; }
+        public bool SequenceIsPlaying => _isCurrentlyExecuting;
         
         public UnityEvent Finished;
         
@@ -134,8 +135,16 @@ namespace ACHNarrativeDriver
             _dialoguePanel.SetActive(true);
             _TextBox.text = string.Empty;
             _currentNarrativeSequence = targetSequence;
+            _currentDialogueIndex = 0;
             _nextDialogueLineRequested = true;
             _isCurrentlyExecuting = true;
+        }
+
+        public void EndCurrentSequence()
+        {
+            _currentDialogueIndex = _currentNarrativeSequence.CharacterDialoguePairs.Count; 
+            ResetRollingTextRoutine();
+            _currentNarrativeSequence.NextSequence = null;
         }
 
         public void ExecuteNextDialogueLine()

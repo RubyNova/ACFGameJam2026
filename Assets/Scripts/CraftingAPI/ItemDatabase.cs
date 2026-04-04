@@ -17,18 +17,16 @@ namespace CraftingAPI
 
         public ItemDatabase()
         {
-            _discoveredItems = new();
             _itemData = Resources.LoadAll<ItemConfig>("ItemConfigData");
             for (int transientId = 0; transientId < _itemData.Length; transientId++)
             {
                 _itemData[transientId].TransientId = transientId;
             }
-            
+            _discoveredItems = new();
         }
 
         public CraftingResult TryCraft(IReadOnlyList<ItemConfig> ingredients)
         {
-
             var data = _itemData.FirstOrDefault(x => x.Recipe.Count == ingredients.Count && x.Recipe.OrderBy(d => d).SequenceEqual(ingredients.OrderBy(d => d)));
 
             if (data != null && !_discoveredItems.Contains(data))

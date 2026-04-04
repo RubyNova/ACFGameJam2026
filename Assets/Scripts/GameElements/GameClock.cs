@@ -66,7 +66,6 @@ public class GameClock : MonoBehaviour
         if(_timerStarted)
         {
             _secondsElapsed += Time.deltaTime;
-            Debug.Log("Time: "+_secondsElapsed);
 
             var minuteRotation = _minuteSpeed * Time.deltaTime;
             _currentMinuteRotation += minuteRotation;

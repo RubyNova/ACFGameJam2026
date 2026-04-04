@@ -1,5 +1,6 @@
 using System.Collections;
 using ACHNarrativeDriver;
+using ACHNarrativeDriver.ScriptableObjects;
 using GameElements;
 using UnityEngine;
 using UnityEngine.Events;
@@ -124,7 +125,13 @@ namespace NPC
                     if(NPCConfiguration.NegativeSequenceCount > 0)
                     {
                         var sequence = NPCConfiguration.NegativeSequences[Random.Range(0, NPCConfiguration.NegativeSequenceCount - 1)];
-                        NarrativeController.ExecuteSequence(sequence);    
+                        
+                        if(NarrativeController.SequenceIsPlaying)
+                        {
+                            NarrativeController.EndCurrentSequence();
+                        }
+                        
+                        NarrativeController.ExecuteSequence(sequence);
                     }
                 }
                 else
@@ -136,5 +143,6 @@ namespace NPC
 
             Destroy(collision.gameObject);
         }
+
     }
 }
