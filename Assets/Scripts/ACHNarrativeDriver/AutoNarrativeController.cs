@@ -12,7 +12,7 @@ namespace ACHNarrativeDriver
 {
     public class AutoNarrativeController : MonoBehaviour
     {
-        [SerializeField] private float _delayBetweenDialogLines; //-------
+        [SerializeField] private float _delayBetweenDialogLines;
         [SerializeField] private TMP_Text _TextBox;
         [SerializeField] private GameObject _TextBubblePrefab;
         [SerializeField] private GameObject _buttonPrefab;
@@ -114,7 +114,7 @@ namespace ACHNarrativeDriver
                 yield return _rollingCharacterTime;
             }
 
-            if (targetDialogueInfo.DelayBeforeContinuingInSeconds > 0.0f) //-----
+            if (targetDialogueInfo.DelayBeforeContinuingInSeconds > 0.0f)
             {
                 if (targetDialogueInfo.DelayBeforeContinuingInSeconds > -0.1f)
                 {
