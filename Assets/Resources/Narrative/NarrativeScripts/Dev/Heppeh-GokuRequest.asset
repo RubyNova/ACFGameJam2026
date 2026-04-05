@@ -27,6 +27,7 @@ MonoBehaviour:
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
     _delayBeforeContinuingInSeconds: 2
+    _standardDelayBeforeContinuingInSeconds: 1
   - _character: {fileID: 11400000, guid: 24f242ad734f44143b732d723bb4d411, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
@@ -36,7 +37,8 @@ MonoBehaviour:
     _text: Can I haz potion pl0x?
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
+    _standardDelayBeforeContinuingInSeconds: 1
   - _character: {fileID: 11400000, guid: 24f242ad734f44143b732d723bb4d411, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
@@ -47,12 +49,13 @@ MonoBehaviour:
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
     _delayBeforeContinuingInSeconds: 2
+    _standardDelayBeforeContinuingInSeconds: 1
   _choices: []
   <SourceScript>k__BackingField: 'Heppeh: Hi there./d2
 
 
     Heppeh: Can I haz potion
-    pl0x?/d2
+    pl0x?
 
 
     Heppeh: I wan all da flavours, nom nom nom nom.../d2'

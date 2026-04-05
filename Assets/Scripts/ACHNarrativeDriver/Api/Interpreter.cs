@@ -186,7 +186,8 @@ namespace ACHNarrativeDriver.Api
                     Text = text,
                     LeftCharacterTalking = leftSpeakerTalking,
                     NarratorSpeaking = narratorSpeaking,
-                    DelayBeforeContinuingInSeconds = delayTiming
+                    DelayBeforeContinuingInSeconds = delayTiming,
+                    StandardDelayBeforeContinuingInSeconds = 10f  //------
                 };
 
                 returnList.Add(info);

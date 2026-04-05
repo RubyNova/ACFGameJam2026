@@ -23,7 +23,7 @@ public class PauseMenu : MonoBehaviour
         if(Keyboard.current.escapeKey.wasPressedThisFrame)
         {     
             // Reloading the main menu while its the current scene causes Mono singleton errors with the sound manager (creates multiple)
-            if (SceneManager.GetActiveScene().name != "LukeDevScene")             // also you cant usually pause a game on the main menu
+            //if (SceneManager.GetActiveScene().name != "LukeDevScene")             // also you cant usually pause a game on the main menu
             {
                 TogglePause();
             }

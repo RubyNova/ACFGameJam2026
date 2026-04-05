@@ -22,6 +22,8 @@ namespace ACHNarrativeDriver.ScriptableObjects
             [SerializeField] private bool _leftCharacterTalking = true;
             [SerializeField] private bool _narratorSpeaking = false;
             [SerializeField] private float _delayBeforeContinuingInSeconds = 0.0f;
+            [SerializeField] private float _standardDelayBeforeContinuingInSeconds = 10f; //-----
+            
 
             public Character Character
             {
@@ -96,6 +98,14 @@ namespace ACHNarrativeDriver.ScriptableObjects
                 }
             }
 
+            public float StandardDelayBeforeContinuingInSeconds //-----
+            {
+                get => _standardDelayBeforeContinuingInSeconds;
+                set
+                {
+                    _standardDelayBeforeContinuingInSeconds = value;
+                }
+            }
 
             public string Text
             {

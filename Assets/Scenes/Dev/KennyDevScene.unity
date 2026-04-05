@@ -1973,6 +1973,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f54f4b6c614a0c648b3f8290787f0783, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ACHNarrativeDriver.AutoNarrativeController
+  _delayBetweenDialogLines: 1.5
   _TextBox: {fileID: 1898408751}
   _TextBubblePrefab: {fileID: 1883782171}
   _buttonPrefab: {fileID: 0}
