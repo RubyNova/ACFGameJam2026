@@ -13,6 +13,8 @@ namespace ACHNarrativeDriver.Editor
         private bool _currentChoicesValue = false;
         private bool _firstRead = true;
         private PredefinedVariables _predefinedVariables;
+        private string _findString;
+        private string _replaceString;
 
         private void OnGUI()
         {
@@ -94,6 +96,21 @@ namespace ACHNarrativeDriver.Editor
                 {
                     nextNarrativeSequenceModified = true;
                 }
+            }
+
+            GUILayout.BeginHorizontal();
+            GUILayout.Label("Find:", new GUILayoutOption[] { GUILayout.ExpandWidth(false) });
+            _findString = GUILayout.TextField(_findString, new GUILayoutOption[] { GUILayout.ExpandWidth(true) });
+            GUILayout.EndHorizontal();
+            GUILayout.BeginHorizontal();
+            GUILayout.Label("Replace:", new GUILayoutOption[] { GUILayout.ExpandWidth(false) });
+            _replaceString = GUILayout.TextField(_replaceString, new GUILayoutOption[] { GUILayout.ExpandWidth(true) });
+            GUILayout.EndHorizontal();
+
+            if (GUILayout.Button("Find & Replace"))
+            {
+                _currentNarrativeSequence.SourceScript = _currentNarrativeSequence.SourceScript.Replace(_findString, _replaceString);
+                sourceScriptChanged = true;
             }
 
             bool compiledScriptChanged = false;
