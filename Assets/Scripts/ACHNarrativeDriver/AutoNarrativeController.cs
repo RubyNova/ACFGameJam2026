@@ -119,9 +119,27 @@ namespace ACHNarrativeDriver
 
             var resolvedText = _narrativeInterpreter.ResolveRuntimeVariables(targetDialogueInfo.Text, _narrativeRuntimeVariables != null ? _narrativeRuntimeVariables.ReadOnlyVariableView : null);
 
-            foreach (var character in resolvedText)
+            for (int i = 0; i < resolvedText.Length; i++)
             {
+                char character = resolvedText[i];
                 sb.Append(character);
+
+                if (character == '<' && (resolvedText.Length > i + 2 && resolvedText[i + 2] == '>') || (resolvedText.Length > i + 3 && resolvedText[i + 3] == '>'))
+                {
+                    sb.Append(resolvedText[i + 1]);
+                    sb.Append(resolvedText[i + 2]);
+
+                    if (resolvedText[i + 1] == '/')
+                    {
+                        sb.Append(resolvedText[i + 3]);
+                        i += 3;
+                    }
+                    else
+                    {
+                        i += 2;
+                    }
+                }
+                
                 if(targetDialogueInfo.NarratorSpeaking)
                 {
                     _MainCharacterText.text = sb.ToString();
