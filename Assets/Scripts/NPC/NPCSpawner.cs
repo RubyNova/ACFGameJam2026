@@ -19,6 +19,9 @@ namespace NPC
         [SerializeField]
         private AutoNarrativeController _narrativeController;
 
+        [SerializeField]
+        private GameObject _mainCraftingUI;
+
         private bool _characterSpawned = false;
 
         private int _characterSpawnIndex;
@@ -45,7 +48,7 @@ namespace NPC
                 var npc = Instantiate(_NPCPrefab, _spawnLocationObject.transform.position, Quaternion.identity, transform);
                 _currentCharacterController = npc.GetComponent<NPCController>();
                 _currentCharacterController.NarrativeController = _narrativeController;
-                _currentCharacterController.InitialiseWithNPCConfiguration(_charactersToSpawn[_characterSpawnIndex]);
+                _currentCharacterController.InitialiseWithNPCConfiguration(_charactersToSpawn[_characterSpawnIndex], _mainCraftingUI);
                 _currentCharacterController.CharacterGoneEvent.AddListener(CharacterGone);
                 
                 _characterSpawnIndex++;

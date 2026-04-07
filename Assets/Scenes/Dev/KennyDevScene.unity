@@ -3631,6 +3631,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 738546212711536671, guid: cd7cc9733cbda3448a383c515fe4d345, type: 3}
+      propertyPath: _mainCraftingUI
+      value: 
+      objectReference: {fileID: 422315722}
+    - target: {fileID: 738546212711536671, guid: cd7cc9733cbda3448a383c515fe4d345, type: 3}
       propertyPath: _narrativeController
       value: 
       objectReference: {fileID: 2671590625630770539}
