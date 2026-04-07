@@ -379,7 +379,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &324140704
 Transform:
   m_ObjectHideFlags: 0
@@ -2249,6 +2249,8 @@ MonoBehaviour:
   _delayBetweenDialogLines: 1.5
   _TextBox: {fileID: 1898408751}
   _TextBubblePrefab: {fileID: 1883782171}
+  _MainCharacterText: {fileID: 516482193}
+  _MainCharacterTextPrefab: {fileID: 324140703}
   _buttonPrefab: {fileID: 0}
   _nextButton: {fileID: 0}
   _dialoguePanel: {fileID: 1883782171}

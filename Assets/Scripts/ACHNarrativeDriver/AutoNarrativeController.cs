@@ -15,6 +15,9 @@ namespace ACHNarrativeDriver
         [SerializeField] private float _delayBetweenDialogLines;
         [SerializeField] private TMP_Text _TextBox;
         [SerializeField] private GameObject _TextBubblePrefab;
+        [SerializeField] private TMP_Text _MainCharacterText;
+        [SerializeField] private GameObject _MainCharacterTextPrefab;
+
         [SerializeField] private GameObject _buttonPrefab;
         [SerializeField] private GameObject _nextButton;
         [SerializeField] private GameObject _dialoguePanel;
@@ -86,7 +89,16 @@ namespace ACHNarrativeDriver
 
             var characterDialogueInfo = _currentNarrativeSequence.CharacterDialoguePairs[_currentDialogueIndex];
 
-            _TextBubblePrefab.SetActive(true);
+            if(characterDialogueInfo.NarratorSpeaking)
+            {
+                _MainCharacterTextPrefab.SetActive(true);
+                _TextBubblePrefab.SetActive(false);
+            }
+            else
+            {
+                _MainCharacterTextPrefab.SetActive(false);
+                _TextBubblePrefab.SetActive(true);                
+            }
              
             _rollingTextRoutine =
                 StartCoroutine(
@@ -110,7 +122,14 @@ namespace ACHNarrativeDriver
             foreach (var character in resolvedText)
             {
                 sb.Append(character);
-                _TextBox.text = sb.ToString();
+                if(targetDialogueInfo.NarratorSpeaking)
+                {
+                    _MainCharacterText.text = sb.ToString();
+                }
+                else
+                {
+                    _TextBox.text = sb.ToString();
+                }
                 yield return _rollingCharacterTime;
             }
 

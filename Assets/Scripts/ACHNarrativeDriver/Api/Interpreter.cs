@@ -145,7 +145,7 @@ namespace ACHNarrativeDriver.Api
                     var charName = splitLines[2];
                     if(!string.IsNullOrWhiteSpace(charName))
                     {
-                        if(charName == "Narrator")
+                        if(charName == "Narrator" || character.IsFirstPerson)
                         {
                             narratorSpeaking = true;
                         }
@@ -156,7 +156,7 @@ namespace ACHNarrativeDriver.Api
                     }
                 }
                 //Just the narrator
-                else if (character.Name == "Narrator")
+                else if (character.Name == "Narrator" || character.IsFirstPerson)
                 {
                     narratorSpeaking = true;
                 }
