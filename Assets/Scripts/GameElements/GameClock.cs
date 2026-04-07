@@ -44,7 +44,7 @@ public class GameClock : MonoBehaviour
     public UnityEvent TickEvent = new();
     public UnityEvent TimerFinished = new();
     public float RemainingTimeInSeconds => (_secondsElapsed >= _secondsBeforeLevelIsOver) ? 0 : _secondsBeforeLevelIsOver - _secondsElapsed;
-    public bool IsPaused => _timerStarted;
+    public bool IsPaused => !_timerStarted;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

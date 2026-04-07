@@ -27,7 +27,7 @@ namespace Player
         private CraftingPot _pot;
 
         // Start is called once before the first execution of Update after the MonoBehaviour is created
-        void Awake()
+        void Start()
         {
             ItemDatabase.Instance.ItemCraftAttempt.AddListener(IncrementItemsCrafted);
             ItemDatabase.Instance.ItemDiscovered += IncrementItemsDiscovered;
@@ -80,6 +80,8 @@ namespace Player
             {
                 _pot.FlipPause();
             }
+
+            FlipPause();
         }
 
         public void FlipPause() => _paused = !_paused;
