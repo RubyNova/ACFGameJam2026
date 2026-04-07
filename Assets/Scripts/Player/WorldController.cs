@@ -1,4 +1,6 @@
+using System;
 using GameElements;
+using GameUI;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.EnhancedTouch;
@@ -8,6 +10,9 @@ namespace Player
 {
     public class WorldController : MonoBehaviour
     {
+        [SerializeField]
+        private RecipeBookController _recipeBookController;
+
         private bool _shouldTryDrag;
         private Vector2 _mousePosition;
         private Camera _camera;
@@ -15,6 +20,10 @@ namespace Player
         private ItemInstance _lastHitObject;
 
         public bool IsPaused => _paused;
+
+        private Action _activateAction;
+
+        private Action _deactivateAction;
 
         private void Awake()
         {
@@ -28,6 +37,10 @@ namespace Player
         private void Start()
         {
             _camera = Camera.main;
+            _activateAction = () => FlipPause();
+            _deactivateAction = () => FlipPause();
+            _recipeBookController.RecipeUIActive += _activateAction;
+            _recipeBookController.RecipeUIInactive += _deactivateAction;
         }
 
         private void Update()
@@ -74,6 +87,17 @@ namespace Player
                     _lastHitObject = spawner.Spawn(mousePositionInWorld);
                 }
             }
+        }
+
+        void OnDestroy()
+        {
+            if (_recipeBookController == null)
+            {
+                return;
+            }
+
+            _recipeBookController.RecipeUIActive -= _activateAction;
+            _recipeBookController.RecipeUIInactive -= _deactivateAction;
         }
 
         private void MoveObject(Vector3 mousePositionInWorld, ItemInstance item)

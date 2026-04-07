@@ -21,6 +21,9 @@ namespace GameUI
 
         private Stack<Action> _browseHistory;
 
+        public event Action RecipeUIActive;
+        public event Action RecipeUIInactive;
+
         private void Awake()
         {
             _browseHistory = new();
@@ -34,6 +37,23 @@ namespace GameUI
             foreach (var item in ItemDatabase.Instance.DiscoveredItems)
             {
                 OnItemDiscovered(item);
+            }
+        }
+
+        private void OnEnable() => RecipeUIActive?.Invoke();
+
+        private void OnDisable() => RecipeUIInactive?.Invoke();
+
+        private void OnDestroy()
+        {
+            foreach (var actionObject in RecipeUIActive.GetInvocationList())
+            {
+                RecipeUIActive -=  (Action)actionObject;
+            }
+
+            foreach (var actionObject in RecipeUIInactive.GetInvocationList())
+            {
+                RecipeUIInactive -=  (Action)actionObject;
             }
         }
 
