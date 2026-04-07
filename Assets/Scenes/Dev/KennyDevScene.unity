@@ -134,7 +134,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &139608935
 Transform:
   m_ObjectHideFlags: 0
@@ -2487,6 +2487,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f16e0f48b67f6dd4faf2c1d9042b6d07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player.WorldController
+  _recipeBookController: {fileID: 5666245986660476473}
 --- !u!114 &1467661308
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3779,6 +3780,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54a53a84bbf8dcb4db44f1e6a36b3546, type: 3}
+--- !u!114 &5666245986660476473 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5907926630198159074, guid: 54a53a84bbf8dcb4db44f1e6a36b3546, type: 3}
+  m_PrefabInstance: {fileID: 5666245986660476472}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348653486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08f0ed1aab3f09148b2a16c25febb145, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameUI.RecipeBookController
 --- !u!1001 &5952851270939351393
 PrefabInstance:
   m_ObjectHideFlags: 0
