@@ -27,7 +27,16 @@ MonoBehaviour:
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
     _delayBeforeContinuingInSeconds: 2
-    _standardDelayBeforeContinuingInSeconds: 1
+  - _character: {fileID: 11400000, guid: 059697f2a28b6c44782e2ee1ef1c7fdf, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: Hello! How can I help you today?
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 1
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: 24f242ad734f44143b732d723bb4d411, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
@@ -38,7 +47,16 @@ MonoBehaviour:
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
     _delayBeforeContinuingInSeconds: 0
-    _standardDelayBeforeContinuingInSeconds: 1
+  - _character: {fileID: 11400000, guid: 059697f2a28b6c44782e2ee1ef1c7fdf, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: o.O....
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 1
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: 24f242ad734f44143b732d723bb4d411, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
@@ -49,13 +67,19 @@ MonoBehaviour:
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
     _delayBeforeContinuingInSeconds: 2
-    _standardDelayBeforeContinuingInSeconds: 1
   _choices: []
   <SourceScript>k__BackingField: 'Heppeh: Hi there./d2
 
 
-    Heppeh: Can I haz potion
-    pl0x?
+    MC: Hello! How can I
+    help you today?
 
 
-    Heppeh: I wan all da flavours, nom nom nom nom.../d2'
+    Heppeh: Can I haz potion pl0x?
+
+
+    MC: o.O....
+
+
+    Heppeh:
+    I wan all da flavours, nom nom nom nom.../d2'
