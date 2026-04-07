@@ -46,14 +46,20 @@ namespace GameUI
 
         private void OnDestroy()
         {
-            foreach (var actionObject in RecipeUIActive.GetInvocationList())
+            if (RecipeUIActive is not null)
             {
-                RecipeUIActive -=  (Action)actionObject;
+                foreach (var actionObject in RecipeUIActive.GetInvocationList())
+                {
+                    RecipeUIActive -= (Action)actionObject;
+                }
             }
 
-            foreach (var actionObject in RecipeUIInactive.GetInvocationList())
+            if (RecipeUIInactive is not null)
             {
-                RecipeUIInactive -=  (Action)actionObject;
+                foreach (var actionObject in RecipeUIInactive.GetInvocationList())
+                {
+                    RecipeUIInactive -= (Action)actionObject;
+                }
             }
         }
 
