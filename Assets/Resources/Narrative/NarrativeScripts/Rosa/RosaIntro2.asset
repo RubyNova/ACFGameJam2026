@@ -1,0 +1,119 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f8908c837a045e47ac98c38fa85f59d, type: 3}
+  m_Name: RosaIntro2
+  m_EditorClassIdentifier: Assembly-CSharp::ACHNarrativeDriver.ScriptableObjects.NarrativeSequence
+  _backgroundSprite: {fileID: 0}
+  _nextSequence: {fileID: 0}
+  _musicFiles: []
+  _soundEffectFiles: []
+  _characterDialoguePairs:
+  - _character: {fileID: 11400000, guid: a44fa812616be0a4e9c695826540ab0a, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: Greetings again. Rosa of Felconry, at your service.
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 2
+  - _character: {fileID: 11400000, guid: a44fa812616be0a4e9c695826540ab0a, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: "Or, rather, you would be at *my* service\u2026?"
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 2
+  - _character: {fileID: 11400000, guid: a44fa812616be0a4e9c695826540ab0a, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: I am unsure of this matter.
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 2
+  - _character: {fileID: 11400000, guid: a44fa812616be0a4e9c695826540ab0a, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: "\u2026regardless. I must admit I am. Rather tired."
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 2
+  - _character: {fileID: 11400000, guid: a44fa812616be0a4e9c695826540ab0a, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: Leading a squadron takes quite a bit out of you.
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 2
+  - _character: {fileID: 11400000, guid: a44fa812616be0a4e9c695826540ab0a, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: B-but. I know what I am doing. I *must* know what I am doing.
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 2
+  - _character: {fileID: 11400000, guid: a44fa812616be0a4e9c695826540ab0a, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: 'For the good of my comrades. '
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 2
+  - _character: {fileID: 11400000, guid: a44fa812616be0a4e9c695826540ab0a, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: I need something invigorating. Something to get your senses feeling better.
+      Posthaste!!
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 2
+  - _character: {fileID: 11400000, guid: a44fa812616be0a4e9c695826540ab0a, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: "\u2026if you, er, kindly would."
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 2
+  _choices: []
+  <SourceScript>k__BackingField: "Rosa: Greetings again. Rosa of Felconry, at your
+    service./d2\r\n\r\nRosa: Or, rather, you would be at *my* service\u2026?/d2\r\n\r\nRosa:
+    I am unsure of this matter./d2\r\n\r\nRosa: \u2026regardless. I must admit I
+    am. Rather tired./d2\r\n\r\nRosa: Leading a squadron takes quite a bit out of
+    you./d2\r\n\r\nRosa: B-but. I know what I am doing. I *must* know what I am doing./d2\r\n\r\nRosa:
+    For the good of my comrades. /d2\r\n\r\nRosa: I need something invigorating.
+    Something to get your senses feeling better. Posthaste!!/d2\r\n\r\nRosa: \u2026if
+    you, er, kindly would./d2\r\n"

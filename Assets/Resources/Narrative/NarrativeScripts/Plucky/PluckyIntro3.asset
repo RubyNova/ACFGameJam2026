@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f8908c837a045e47ac98c38fa85f59d, type: 3}
+  m_Name: PluckyIntro3
+  m_EditorClassIdentifier: Assembly-CSharp::ACHNarrativeDriver.ScriptableObjects.NarrativeSequence
+  _backgroundSprite: {fileID: 0}
+  _nextSequence: {fileID: 0}
+  _musicFiles: []
+  _soundEffectFiles: []
+  _characterDialoguePairs:
+  - _character: {fileID: 11400000, guid: 9386325197a551e4fb73753368901d97, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: "Hi\u2026 its me again. "
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 2
+  - _character: {fileID: 11400000, guid: 9386325197a551e4fb73753368901d97, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: "Sorry if I seem gloomy\u2026 I finally beat the jerk orc mage who cursed
+      me to be the wimp I am now\u2026 "
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 2
+  - _character: {fileID: 11400000, guid: 9386325197a551e4fb73753368901d97, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: "But\u2026 I\u2019m still not back to being able to cast the spells I
+      could before\u2026 "
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 2
+  - _character: {fileID: 11400000, guid: 9386325197a551e4fb73753368901d97, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: "So I think\u2026 there\u2019s nothing I can do to go back\u2026 "
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 2
+  - _character: {fileID: 11400000, guid: 9386325197a551e4fb73753368901d97, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: "So if you could just make me like\u2026 "
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 2
+  - _character: {fileID: 11400000, guid: 9386325197a551e4fb73753368901d97, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: 'Something tangy? '
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 2
+  - _character: {fileID: 11400000, guid: 9386325197a551e4fb73753368901d97, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: 'That would be greatly appreciated. '
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 2
+  _choices: []
+  <SourceScript>k__BackingField: "Plucky: Hi\u2026 its me again. Plucky. /d2\r\n\r\nPlucky:
+    Sorry if I seem gloomy\u2026 I finally beat the jerk orc mage who cursed me to
+    be the wimp I am now\u2026 /d2\r\n\r\nPlucky: But\u2026 I\u2019m still not back
+    to being able to cast the spells I could before\u2026 /d2\r\n\r\nPlucky: So I
+    think\u2026 there\u2019s nothing I can do to go back\u2026 /d2\r\n\r\nPlucky:
+    So if you could just make me like\u2026 /d2\r\n\r\nPlucky: Something tangy? /d2\r\n\r\nPlucky:
+    That would be greatly appreciated. /d2\r\n"

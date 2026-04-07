@@ -1,0 +1,98 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f8908c837a045e47ac98c38fa85f59d, type: 3}
+  m_Name: RosaIntro1
+  m_EditorClassIdentifier: Assembly-CSharp::ACHNarrativeDriver.ScriptableObjects.NarrativeSequence
+  _backgroundSprite: {fileID: 0}
+  _nextSequence: {fileID: 0}
+  _musicFiles: []
+  _soundEffectFiles: []
+  _characterDialoguePairs:
+  - _character: {fileID: 11400000, guid: a44fa812616be0a4e9c695826540ab0a, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: "Gosh, am I winded\u2026 crud\u2026 "
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 2
+  - _character: {fileID: 11400000, guid: a44fa812616be0a4e9c695826540ab0a, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: Oh, my apologies. It is not very forthcoming of me to present myself in
+      such an unkempt fashion to members of the public.
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 2
+  - _character: {fileID: 11400000, guid: a44fa812616be0a4e9c695826540ab0a, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: I am Rosa, a high ranking knight in the legion of Felconry.
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 2
+  - _character: {fileID: 11400000, guid: a44fa812616be0a4e9c695826540ab0a, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: And I am quite parched.
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 2
+  - _character: {fileID: 11400000, guid: a44fa812616be0a4e9c695826540ab0a, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: I would rather not have my squadron see me in such a sorry condition.
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 2
+  - _character: {fileID: 11400000, guid: a44fa812616be0a4e9c695826540ab0a, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: "Something nice and clear, something refreshing\u2026"
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 2
+  - _character: {fileID: 11400000, guid: a44fa812616be0a4e9c695826540ab0a, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: That would be greatly appreciated.
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 2
+  _choices: []
+  <SourceScript>k__BackingField: "Rosa: Gosh, am I winded\u2026 crud\u2026 /d2\r\n\r\nRosa:
+    Oh, my apologies. It is not very forthcoming of me to present myself in such
+    an unkempt fashion to members of the public./d2\r\n\r\nRosa: I am Rosa, a high
+    ranking knight in the legion of Felconry./d2\r\n\r\nRosa: And I am quite parched./d2\r\n\r\nRosa:
+    I would rather not have my squadron see me in such a sorry condition./d2\r\n\r\nRosa:
+    Something nice and clear, something refreshing\u2026/d2\r\n\r\nRosa: That would
+    be greatly appreciated./d2"

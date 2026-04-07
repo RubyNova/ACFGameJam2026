@@ -1,0 +1,108 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f8908c837a045e47ac98c38fa85f59d, type: 3}
+  m_Name: RosaOutro3
+  m_EditorClassIdentifier: Assembly-CSharp::ACHNarrativeDriver.ScriptableObjects.NarrativeSequence
+  _backgroundSprite: {fileID: 0}
+  _nextSequence: {fileID: 0}
+  _musicFiles: []
+  _soundEffectFiles: []
+  _characterDialoguePairs:
+  - _character: {fileID: 11400000, guid: a44fa812616be0a4e9c695826540ab0a, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: Perfect. This should do it.
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 2
+  - _character: {fileID: 11400000, guid: a44fa812616be0a4e9c695826540ab0a, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: "\u2026I appreciate you for all of your support to the both of us."
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 2
+  - _character: {fileID: 11400000, guid: a44fa812616be0a4e9c695826540ab0a, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: She appreciates what you said last time you two spoke.
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 2
+  - _character: {fileID: 11400000, guid: a44fa812616be0a4e9c695826540ab0a, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: She also told me to say that she thinks your luck is turning up. Ohoho!
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 2
+  - _character: {fileID: 11400000, guid: a44fa812616be0a4e9c695826540ab0a, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: "\u2026she told me I *had* to laugh that way."
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 2
+  - _character: {fileID: 11400000, guid: a44fa812616be0a4e9c695826540ab0a, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: 'In any case, all of us are rooting for your success. '
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 2
+  - _character: {fileID: 11400000, guid: a44fa812616be0a4e9c695826540ab0a, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: "We\u2019d also love to start meeting you more often, if possible."
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 2
+  - _character: {fileID: 11400000, guid: a44fa812616be0a4e9c695826540ab0a, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: In any case, please take care.
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 2
+  _choices: []
+  <SourceScript>k__BackingField: "Rosa: Perfect. This should do it./d2\r\n\r\nRosa:
+    \u2026I appreciate you for all of your support to the both of us./d2\r\n\r\nRosa:
+    She appreciates what you said last time you two spoke./d2\r\n\r\nRosa: She also
+    told me to say that she thinks your luck is turning up. Ohoho!/d2\r\n\r\nRosa:
+    \u2026she told me I *had* to laugh that way./d2\r\n\r\nRosa: In any case, all
+    of us are rooting for your success. /d2\r\n\r\nRosa: We\u2019d also love to start
+    meeting you more often, if possible./d2\r\n\r\nRosa: In any case, please take
+    care./d2\r\n"
