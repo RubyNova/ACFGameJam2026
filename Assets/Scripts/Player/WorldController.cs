@@ -11,6 +11,7 @@ namespace Player
         private bool _shouldTryDrag;
         private Vector2 _mousePosition;
         private Camera _camera;
+        private bool _paused = false;
 
         private ItemInstance _lastHitObject;
 
@@ -30,46 +31,48 @@ namespace Player
 
         private void Update()
         {
-            if(EnhancedTouchSupport.enabled)
+            if(!_paused)
             {
-                //Experimental touch support
-                var activeTouches = Touch.activeTouches;
-                if(activeTouches.Count > 0)
+                if(EnhancedTouchSupport.enabled)
                 {
-                    _mousePosition = activeTouches[0].finger.screenPosition;
+                    //Experimental touch support
+                    var activeTouches = Touch.activeTouches;
+                    if(activeTouches.Count > 0)
+                    {
+                        _mousePosition = activeTouches[0].finger.screenPosition;
+                    }
+                }
+
+                if (!_shouldTryDrag)
+                {
+                    _lastHitObject = null;
+                    return;
+                }
+
+                var mousePositionInWorld = _camera.ScreenToWorldPoint(_mousePosition);
+                var result = Physics2D.Raycast(mousePositionInWorld, _camera.transform.forward);
+
+                if (result.collider == null && _lastHitObject == null)
+                {
+                    return;
+                }
+
+                if (_lastHitObject != null)
+                {
+                    MoveObject(mousePositionInWorld, _lastHitObject);
+                    return;
+                }
+
+                if (result.transform.gameObject.TryGetComponent<ItemInstance>(out var item))
+                {
+                    MoveObject(mousePositionInWorld, item);
+                    _lastHitObject = item;
+                }
+                else if (result.transform.gameObject.TryGetComponent<ItemSpawner>(out var spawner))
+                {
+                    _lastHitObject = spawner.Spawn(mousePositionInWorld);
                 }
             }
-
-            if (!_shouldTryDrag)
-            {
-                _lastHitObject = null;
-                return;
-            }
-
-            var mousePositionInWorld = _camera.ScreenToWorldPoint(_mousePosition);
-            var result = Physics2D.Raycast(mousePositionInWorld, _camera.transform.forward);
-
-            if (result.collider == null && _lastHitObject == null)
-            {
-                return;
-            }
-
-            if (_lastHitObject != null)
-            {
-                MoveObject(mousePositionInWorld, _lastHitObject);
-                return;
-            }
-
-            if (result.transform.gameObject.TryGetComponent<ItemInstance>(out var item))
-            {
-                MoveObject(mousePositionInWorld, item);
-                _lastHitObject = item;
-            }
-            else if (result.transform.gameObject.TryGetComponent<ItemSpawner>(out var spawner))
-            {
-                _lastHitObject = spawner.Spawn(mousePositionInWorld);
-            }
-
         }
 
         private void MoveObject(Vector3 mousePositionInWorld, ItemInstance item)
@@ -102,5 +105,7 @@ namespace Player
         {
             EnhancedTouchSupport.Disable();
         }
+
+        public void FlipPause() => _paused = !_paused;
     }
 }

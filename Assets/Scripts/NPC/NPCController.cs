@@ -26,6 +26,7 @@ namespace NPC
         private const string _spawnOutTriggerName = "Leaving";
 
         public UnityEvent CharacterGoneEvent = new();
+        public UnityEvent ItemDeliveredEvent = new();
         public AutoNarrativeController NarrativeController;
         //TODO: refactor these bools into an enum or something l8r
         private bool _entering = false;
@@ -33,6 +34,7 @@ namespace NPC
         private bool _introduction = false;
         private bool _leaving = false;
         private bool _beingServed = false;
+        private bool _paused = false;
         private float _deltaTimeSeconds = 0.0f;
 
         public NPCCharacter NPCConfiguration { get; private set; }
@@ -46,39 +48,42 @@ namespace NPC
 
         void Update()
         {
-            //animator state
-            if(!_hasEntered)
+            if(!_paused)
             {
-                _entering = _animator.GetCurrentAnimatorStateInfo(0).IsName(NPCConfiguration.SpawnInAnimationClip.name);
-                if(!_entering)
+                //animator state
+                if(!_hasEntered)
                 {
-                    _hasEntered = true;
-                    _introduction = true;
-                }  
-            } 
+                    _entering = _animator.GetCurrentAnimatorStateInfo(0).IsName(NPCConfiguration.SpawnInAnimationClip.name);
+                    if(!_entering)
+                    {
+                        _hasEntered = true;
+                        _introduction = true;
+                    }  
+                } 
 
-            //check logic
-            if(_introduction)
-            {
-                NarrativeController?.Finished.AddListener(PrepForServing);
-                NarrativeController?.ExecuteSequence(NPCConfiguration.ArrivalSequence);
-                _introduction = false;
-            }
+                //check logic
+                if(_introduction)
+                {
+                    NarrativeController?.Finished.AddListener(PrepForServing);
+                    NarrativeController?.ExecuteSequence(NPCConfiguration.ArrivalSequence);
+                    _introduction = false;
+                }
 
-            if(_leaving && NPCConfiguration.DepartingSequence != null)
-            {
-                NarrativeController.Finished.AddListener(RunGoodbyeAnim);
-                NarrativeController?.ExecuteSequence(NPCConfiguration.DepartingSequence);
-                _leaving = false;
-            }
-            else if(_leaving)
-            {
-                _leaving = false;
-            }
+                if(_leaving && NPCConfiguration.DepartingSequence != null)
+                {
+                    NarrativeController.Finished.AddListener(RunGoodbyeAnim);
+                    NarrativeController?.ExecuteSequence(NPCConfiguration.DepartingSequence);
+                    _leaving = false;
+                }
+                else if(_leaving)
+                {
+                    _leaving = false;
+                }
 
-            if(_beingServed)
-            {
-                _deltaTimeSeconds += Time.deltaTime;
+                if(_beingServed)
+                {
+                    _deltaTimeSeconds += Time.deltaTime;
+                }
             }
         }
 
@@ -118,31 +123,36 @@ namespace NPC
 
         private void OnTriggerEnter2D(Collider2D collision)
         {
-            if(collision.gameObject.TryGetComponent<ItemInstance>(out var itemInstance))
+            if(!_paused)
             {
-                if(!NPCConfiguration.DesiredItem.ItemName.Equals(itemInstance.BackingConfig.ItemName, System.StringComparison.InvariantCultureIgnoreCase))
+                if(collision.gameObject.TryGetComponent<ItemInstance>(out var itemInstance))
                 {
-                    if(NPCConfiguration.NegativeSequenceCount > 0)
+                    ItemDeliveredEvent.Invoke();
+                    if(!NPCConfiguration.DesiredItem.ItemName.Equals(itemInstance.BackingConfig.ItemName, System.StringComparison.InvariantCultureIgnoreCase))
                     {
-                        var sequence = NPCConfiguration.NegativeSequences[Random.Range(0, NPCConfiguration.NegativeSequenceCount - 1)];
-                        
-                        if(NarrativeController.SequenceIsPlaying)
+                        if(NPCConfiguration.NegativeSequenceCount > 0)
                         {
-                            NarrativeController.EndCurrentSequence();
+                            var sequence = NPCConfiguration.NegativeSequences[Random.Range(0, NPCConfiguration.NegativeSequenceCount - 1)];
+                            
+                            if(NarrativeController.SequenceIsPlaying)
+                            {
+                                NarrativeController.EndCurrentSequence();
+                            }
+                            
+                            NarrativeController.ExecuteSequence(sequence);
                         }
-                        
-                        NarrativeController.ExecuteSequence(sequence);
+                    }
+                    else
+                    {
+                        _beingServed = false;
+                        _leaving = true;    
                     }
                 }
-                else
-                {
-                    _beingServed = false;
-                    _leaving = true;    
-                }
-            }
 
-            Destroy(collision.gameObject);
+                Destroy(collision.gameObject);
+            }
         }
 
+        public void FlipPause() => _paused = !_paused;
     }
 }
