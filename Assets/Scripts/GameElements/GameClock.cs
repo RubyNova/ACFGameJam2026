@@ -37,12 +37,14 @@ public class GameClock : MonoBehaviour
 
     private float _skyrollSpeed = 0f;
     private bool _moveSkyroll = false;
+    private bool _paused = false;
+    
     
 
     public UnityEvent TickEvent = new();
     public UnityEvent TimerFinished = new();
     public float RemainingTimeInSeconds => (_secondsElapsed >= _secondsBeforeLevelIsOver) ? 0 : _secondsBeforeLevelIsOver - _secondsElapsed;
-
+    public bool IsPaused => _timerStarted;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -63,7 +65,7 @@ public class GameClock : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(_timerStarted)
+        if(_timerStarted && !_paused)
         {
             _secondsElapsed += Time.deltaTime;
 
@@ -93,6 +95,7 @@ public class GameClock : MonoBehaviour
     public void StopTimer(bool paused = false, bool completed = false)
     {
         _timerStarted = false;
+        _paused = paused;
 
         if(completed)
         {
@@ -101,5 +104,9 @@ public class GameClock : MonoBehaviour
         }
     }
 
-    public void StartTimer() => _timerStarted = true;
+    public void StartTimer()
+    {
+        _timerStarted = true;
+        _paused = false;
+    }
 }

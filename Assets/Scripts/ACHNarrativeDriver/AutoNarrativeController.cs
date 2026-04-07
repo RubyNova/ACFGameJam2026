@@ -21,7 +21,7 @@ namespace ACHNarrativeDriver
         [SerializeField] private GameObject _buttonPrefab;
         [SerializeField] private GameObject _nextButton;
         [SerializeField] private GameObject _dialoguePanel;
-        [SerializeField] private UnityEvent _preNarrativeEvent;
+        public UnityEvent PreNarrativeEvent;
         [SerializeField] private UnityEvent _postNarrativeEvent;
         
         //private AudioController _audioController; // this is such a hack reeeeeeee
@@ -156,8 +156,8 @@ namespace ACHNarrativeDriver
                 ResetRollingTextRoutine();
             }
 
-            if(_preNarrativeEvent is not null)
-                _preNarrativeEvent.Invoke();
+            if(PreNarrativeEvent is not null)
+                PreNarrativeEvent.Invoke();
 
             _dialoguePanel.SetActive(true);
             _TextBox.text = string.Empty;

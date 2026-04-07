@@ -12,8 +12,9 @@ namespace Player
         private Vector2 _mousePosition;
         private Camera _camera;
         private bool _paused = false;
-
         private ItemInstance _lastHitObject;
+
+        public bool IsPaused => _paused;
 
         private void Awake()
         {

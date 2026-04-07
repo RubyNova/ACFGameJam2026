@@ -24,7 +24,7 @@ namespace GameElements
         private GameObject _itemToIgnore;
         private bool _paused = false;
 
-        public UnityEvent PotionCraftAttempt = new();
+        public bool IsPaused => _paused;
 
         private void Awake()
         {
@@ -48,7 +48,6 @@ namespace GameElements
                     playSound?.Invoke(_ingredientInPot);
                     Destroy(collision.gameObject);
                     var result = ItemDatabase.Instance.TryCraft(_itemsInPot);
-                    PotionCraftAttempt.Invoke();
                     
                     if (result.Success)
                     {

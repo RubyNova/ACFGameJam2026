@@ -25,8 +25,6 @@ namespace NPC
 
         private NPCController _currentCharacterController;
 
-
-
         void Start()
         {
             _characterSpawnIndex = 0;
