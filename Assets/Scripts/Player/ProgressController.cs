@@ -76,7 +76,6 @@ namespace Player
                 
                 if(!_spawner.MoreNPCsAvailable || _timeRemainingInSeconds <= 0)
                 {
-                    _timeRemainingInSeconds = 0;
                     LevelOverProcess();
                 }
             }
@@ -133,6 +132,16 @@ namespace Player
             _itemsDiscoveredText.text = $"{_itemsDiscovered}";
             
             _levelOverObject.SetActive(true);
+        }
+
+        public void ContinueToNextLevel(string sceneName)
+        {
+            var levelManagerObject = Object.FindFirstObjectByType<LevelManager>();
+            if(levelManagerObject != null)
+            {
+                var lvlmgr = levelManagerObject.GetComponent<LevelManager>();
+                StartCoroutine(lvlmgr.LoadScene(sceneName));
+            }
         }
     }
 }
