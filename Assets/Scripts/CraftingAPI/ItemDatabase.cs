@@ -29,15 +29,17 @@ namespace CraftingAPI
 
         public CraftingResult TryCraft(IReadOnlyList<ItemConfig> ingredients)
         {
-            ItemCraftAttempt?.Invoke();
             var data = _itemData.FirstOrDefault(x => x.Recipe.Count == ingredients.Count && x.Recipe.OrderBy(d => d).SequenceEqual(ingredients.OrderBy(d => d)));
-
-            if (data != null && !_discoveredItems.Contains(data))
+            
+            if (data != null)
             {
-                _discoveredItems.Add(data);
-                ItemDiscovered?.Invoke(data);
+                ItemCraftAttempt?.Invoke();
+                if (!_discoveredItems.Contains(data))
+                {
+                    _discoveredItems.Add(data);
+                    ItemDiscovered?.Invoke(data);
+                }
             }
-
             return new(data != null, data);
         }
     }
