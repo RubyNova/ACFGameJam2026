@@ -60,6 +60,7 @@ namespace NPC
                 if(!_hasEntered)
                 {
                     _entering = _animator.GetCurrentAnimatorStateInfo(0).IsName(NPCConfiguration.SpawnInAnimationClip.name);
+                    _collider.enabled = false;
                     if(!_entering)
                     {
                         _hasEntered = true;
