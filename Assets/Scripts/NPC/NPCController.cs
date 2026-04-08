@@ -23,6 +23,8 @@ namespace NPC
         [SerializeField]
         private Animator _animator;
 
+        private GameObject _mainCrafingUI;
+
         private const string _spawnOutTriggerName = "Leaving";
 
         public UnityEvent CharacterGoneEvent = new();
@@ -39,8 +41,9 @@ namespace NPC
 
         public NPCCharacter NPCConfiguration { get; private set; }
 
-        public void InitialiseWithNPCConfiguration(NPCCharacter npc)
+        public void InitialiseWithNPCConfiguration(NPCCharacter npc, GameObject mainCraftingUI)
         {
+            _mainCrafingUI = mainCraftingUI;
             NPCConfiguration = npc;
             _spriteRenderer.sprite = NPCConfiguration.IdleSprite;
             _animator.runtimeAnimatorController = NPCConfiguration.AnimController;
@@ -100,13 +103,13 @@ namespace NPC
         private IEnumerator LaunchDialogueOnDelay()
         {
             yield return new WaitForSeconds(NPCConfiguration.DelayBeforeStartingDialogue);
-
             _introduction = true;
         }
 
         private void PrepForServing()
         {
             NarrativeController.Finished.RemoveListener(PrepForServing);
+            _mainCrafingUI.SetActive(true);
             _beingServed = true;
         }
 
@@ -146,6 +149,7 @@ namespace NPC
                     {
                         _beingServed = false;
                         _leaving = true;    
+                        _mainCrafingUI.SetActive(false);
                     }
                 }
 

@@ -15,6 +15,8 @@ namespace ACHNarrativeDriver.Editor
         private PredefinedVariables _predefinedVariables;
         private string _findString;
         private string _replaceString;
+        
+        private Vector2 _scrollValue = new(0, 1);
 
         private void OnGUI()
         {
@@ -42,6 +44,8 @@ namespace ACHNarrativeDriver.Editor
             _predefinedVariables = (PredefinedVariables)EditorGUILayout.ObjectField(
                 "Predefined Variables", _predefinedVariables, typeof(PredefinedVariables),
                 false);
+            
+            _scrollValue = GUILayout.BeginScrollView(_scrollValue, GUILayout.ExpandWidth(true));
 
             GUILayout.Label("Source Script", EditorStyles.label);
             var previousSourceScript = _currentNarrativeSequence.SourceScript;
@@ -134,6 +138,7 @@ namespace ACHNarrativeDriver.Editor
             {
                 EditorUtility.SetDirty(_currentNarrativeSequence);
             }
+            GUILayout.EndScrollView();
         }
 
         [MenuItem("Window / ACH Narrative Driver / Narrative Sequence Editor")]
