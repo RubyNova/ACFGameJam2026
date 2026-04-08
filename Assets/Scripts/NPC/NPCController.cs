@@ -23,6 +23,9 @@ namespace NPC
         [SerializeField]
         private Animator _animator;
 
+        [SerializeField]
+        private Collider2D _collider;
+
         private GameObject _mainCrafingUI;
 
         private const string _spawnOutTriggerName = "Leaving";
@@ -67,6 +70,7 @@ namespace NPC
                 //check logic
                 if(_introduction)
                 {
+                    _collider.enabled = false;
                     NarrativeController?.Finished.AddListener(PrepForServing);
                     NarrativeController?.ExecuteSequence(NPCConfiguration.ArrivalSequence);
                     _introduction = false;
@@ -74,6 +78,7 @@ namespace NPC
 
                 if(_leaving && NPCConfiguration.DepartingSequence != null)
                 {
+                    _collider.enabled = false;
                     NarrativeController.Finished.AddListener(RunGoodbyeAnim);
                     NarrativeController?.ExecuteSequence(NPCConfiguration.DepartingSequence);
                     _leaving = false;
@@ -110,6 +115,7 @@ namespace NPC
         {
             NarrativeController.Finished.RemoveListener(PrepForServing);
             _mainCrafingUI.SetActive(true);
+            _collider.enabled = true;
             _beingServed = true;
         }
 
