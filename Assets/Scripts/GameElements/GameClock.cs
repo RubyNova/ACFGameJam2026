@@ -1,3 +1,4 @@
+using Player;
 using System;
 using UnityEngine;
 using UnityEngine.Events;
@@ -100,7 +101,7 @@ public class GameClock : MonoBehaviour
         if(completed)
         {
             TimerFinished.Invoke();
-            _secondsElapsed = 0f;
+            //_secondsElapsed = 0f;
         }
     }
 
