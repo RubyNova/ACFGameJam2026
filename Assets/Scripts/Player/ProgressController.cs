@@ -88,13 +88,13 @@ namespace Player
             ItemDatabase.Instance.ItemCraftAttempt.RemoveListener(IncrementItemsCrafted);
         }
 
-        private void ResumeObjects()
+        private void ResumeObjects(bool isFinished)
         {
             if(_clock.IsPaused)
             {
                 _clock.StartTimer();
             }
-            if(_playerController.IsPaused)
+            if(_playerController.IsPaused && !isFinished)
             {
                 _playerController.FlipPause();
             }

@@ -112,7 +112,7 @@ namespace NPC
             _introduction = true;
         }
 
-        private void PrepForServing()
+        private void PrepForServing(bool _)
         {
             NarrativeController.Finished.RemoveListener(PrepForServing);
             _mainCrafingUI.SetActive(true);
@@ -120,7 +120,7 @@ namespace NPC
             _beingServed = true;
         }
 
-        private void RunGoodbyeAnim()
+        private void RunGoodbyeAnim(bool _)
         {
             NarrativeController.Finished.RemoveListener(RunGoodbyeAnim);
             _animator.SetBool(_spawnOutTriggerName, true);
