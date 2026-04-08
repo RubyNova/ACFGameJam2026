@@ -16,3 +16,6 @@ TerrainData.asset filter=lfs diff=lfs merge=lfs -text
 #Auto-genned files
 Assets/Plugins/** linguist-generated
 Packages/packages-lock.json linguist-generated
+
+#Wave files
+*.[Ww][Aa][Vv] binary
