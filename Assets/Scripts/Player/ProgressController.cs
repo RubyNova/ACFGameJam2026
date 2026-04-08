@@ -2,6 +2,8 @@ using ACHNarrativeDriver;
 using CraftingAPI;
 using GameElements;
 using UnityEngine;
+using NPC;
+using TMPro;
 
 namespace Player
 {
@@ -25,6 +27,21 @@ namespace Player
 
         [SerializeField]
         private CraftingPot _pot;
+
+        [SerializeField]
+        private NPCSpawner _spawner;
+        
+        [SerializeField]
+        private GameObject _levelOverObject;
+        
+        [SerializeField]
+        private TMP_Text _timeRemainingText;
+
+        [SerializeField]
+        private TMP_Text _itemsCraftedText;
+
+        [SerializeField]
+        private TMP_Text _itemsDiscoveredText;
 
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
@@ -56,6 +73,11 @@ namespace Player
             else
             {
                 _timeRemainingInSeconds = _clock.RemainingTimeInSeconds;
+                
+                if(!_spawner.MoreNPCsAvailable || _timeRemainingInSeconds <= 0)
+                {
+                    LevelOverProcess();
+                }
             }
         }
 
@@ -66,13 +88,13 @@ namespace Player
             ItemDatabase.Instance.ItemCraftAttempt.RemoveListener(IncrementItemsCrafted);
         }
 
-        private void ResumeObjects()
+        private void ResumeObjects(bool isFinished)
         {
             if(_clock.IsPaused)
             {
                 _clock.StartTimer();
             }
-            if(_playerController.IsPaused)
+            if(_playerController.IsPaused && !isFinished)
             {
                 _playerController.FlipPause();
             }
@@ -97,5 +119,29 @@ namespace Player
         public void IncrementItemsCrafted() => _itemsCrafted++;
 
         public void SetTimeRemainingInSeconds(float timeRemaining) => _timeRemainingInSeconds = timeRemaining;
+
+        private void LevelOverProcess()
+        {
+            _clock.StopTimer(false, true);
+            _playerController.FlipPause();
+            _pot.FlipPause();
+            _paused = true;
+            
+            _timeRemainingText.text = $"{(int)_timeRemainingInSeconds}s";
+            _itemsCraftedText.text = $"{_itemsCrafted}";
+            _itemsDiscoveredText.text = $"{_itemsDiscovered}";
+            
+            _levelOverObject.SetActive(true);
+        }
+
+        public void ContinueToNextLevel(string sceneName)
+        {
+            var levelManagerObject = Object.FindFirstObjectByType<LevelManager>();
+            if(levelManagerObject != null)
+            {
+                var lvlmgr = levelManagerObject.GetComponent<LevelManager>();
+                StartCoroutine(lvlmgr.LoadScene(sceneName));
+            }
+        }
     }
 }

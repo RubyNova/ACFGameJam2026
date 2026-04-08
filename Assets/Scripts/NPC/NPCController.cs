@@ -23,6 +23,9 @@ namespace NPC
         [SerializeField]
         private Animator _animator;
 
+        [SerializeField]
+        private Collider2D _collider;
+
         private GameObject _mainCrafingUI;
 
         private const string _spawnOutTriggerName = "Leaving";
@@ -57,6 +60,7 @@ namespace NPC
                 if(!_hasEntered)
                 {
                     _entering = _animator.GetCurrentAnimatorStateInfo(0).IsName(NPCConfiguration.SpawnInAnimationClip.name);
+                    _collider.enabled = false;
                     if(!_entering)
                     {
                         _hasEntered = true;
@@ -67,6 +71,7 @@ namespace NPC
                 //check logic
                 if(_introduction)
                 {
+                    _collider.enabled = false;
                     NarrativeController?.Finished.AddListener(PrepForServing);
                     NarrativeController?.ExecuteSequence(NPCConfiguration.ArrivalSequence);
                     _introduction = false;
@@ -74,6 +79,7 @@ namespace NPC
 
                 if(_leaving && NPCConfiguration.DepartingSequence != null)
                 {
+                    _collider.enabled = false;
                     NarrativeController.Finished.AddListener(RunGoodbyeAnim);
                     NarrativeController?.ExecuteSequence(NPCConfiguration.DepartingSequence);
                     _leaving = false;
@@ -106,14 +112,15 @@ namespace NPC
             _introduction = true;
         }
 
-        private void PrepForServing()
+        private void PrepForServing(bool _)
         {
             NarrativeController.Finished.RemoveListener(PrepForServing);
             _mainCrafingUI.SetActive(true);
+            _collider.enabled = true;
             _beingServed = true;
         }
 
-        private void RunGoodbyeAnim()
+        private void RunGoodbyeAnim(bool _)
         {
             NarrativeController.Finished.RemoveListener(RunGoodbyeAnim);
             _animator.SetBool(_spawnOutTriggerName, true);

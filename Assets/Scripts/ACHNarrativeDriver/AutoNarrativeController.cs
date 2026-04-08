@@ -39,7 +39,8 @@ namespace ACHNarrativeDriver
         public NarrativeSequence LastPlayedSequence { get; private set; }
         public bool SequenceIsPlaying => _isCurrentlyExecuting;
         
-        public UnityEvent Finished;
+        public UnityEvent<bool> Finished;
+        private bool _isEndForCharacter = false;
         
         private void Awake()
         {
@@ -70,7 +71,7 @@ namespace ACHNarrativeDriver
                     _dialoguePanel.SetActive(false);
                     _isCurrentlyExecuting = false;
                     _currentNarrativeSequence = null;
-                    Finished.Invoke();
+                    Finished.Invoke(_isEndForCharacter);
                     return;
                 }
 
@@ -176,7 +177,7 @@ namespace ACHNarrativeDriver
 
             if(PreNarrativeEvent is not null)
                 PreNarrativeEvent.Invoke();
-
+            _isEndForCharacter = targetSequence.IsDepartingSequence;
             _dialoguePanel.SetActive(true);
             _TextBox.text = string.Empty;
             _currentNarrativeSequence = targetSequence;

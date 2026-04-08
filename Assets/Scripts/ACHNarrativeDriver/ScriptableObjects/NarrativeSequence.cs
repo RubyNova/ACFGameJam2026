@@ -21,7 +21,8 @@ namespace ACHNarrativeDriver.ScriptableObjects
             [SerializeField] private string _text;
             [SerializeField] private bool _leftCharacterTalking = true;
             [SerializeField] private bool _narratorSpeaking = false;
-            [SerializeField] private float _delayBeforeContinuingInSeconds = 0.0f;        
+            [SerializeField] private float _delayBeforeContinuingInSeconds = 0.0f;
+            
 
             public Character Character
             {
@@ -133,6 +134,7 @@ namespace ACHNarrativeDriver.ScriptableObjects
         [SerializeField] private List<AudioClip> _soundEffectFiles;
         [SerializeField] private List<CharacterDialogueInfo> _characterDialoguePairs;
         [SerializeField] private List<ChoiceInfo> _choices;
+        [SerializeField] private bool _isDepartingSequence = false;
 
         public List<ChoiceInfo> Choices
         {
@@ -192,5 +194,7 @@ namespace ACHNarrativeDriver.ScriptableObjects
 
         [field: SerializeField, HideInInspector]
         public string SourceScript { get; set; }
+
+        public bool IsDepartingSequence => _isDepartingSequence;
     }
 }
