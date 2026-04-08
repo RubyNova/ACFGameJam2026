@@ -23,10 +23,13 @@ namespace NPC
         private GameObject _mainCraftingUI;
 
         private bool _characterSpawned = false;
+        private bool _noMoreNpcs = false;
 
         private int _characterSpawnIndex;
 
         private NPCController _currentCharacterController;
+
+        public bool MoreNPCsAvailable => !_noMoreNpcs;
 
         void Start()
         {
@@ -42,6 +45,7 @@ namespace NPC
                 {
                     _characterSpawnIndex = 0;
                     _characterSpawned = true;
+                    _noMoreNpcs = true;
                     return;
                 }
 
