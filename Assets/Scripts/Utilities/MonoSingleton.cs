@@ -34,7 +34,13 @@ namespace Utilities
 
 			if (HasInstanceCreated)
 			{
-				throw new InvalidOperationException("Multiple instances of a singleton have been instantiated. This is not allowed.");
+				if (Instance.GetComponent<T>() != this)
+				{
+					Destroy(gameObject);
+				}
+
+				return;
+				//throw new InvalidOperationException("Multiple instances of a singleton have been instantiated. This is not allowed.");
 			}
 
 			Init();

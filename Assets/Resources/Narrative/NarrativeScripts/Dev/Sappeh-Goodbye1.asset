@@ -48,6 +48,7 @@ MonoBehaviour:
     _narratorSpeaking: 0
     _delayBeforeContinuingInSeconds: 3
   _choices: []
+  _isDepartingSequence: 1
   <SourceScript>k__BackingField: 'Sappeh: oh... thank GOODness.... /d3
 
 

@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Events;
 using Utilities;
 
 namespace CraftingAPI
@@ -12,6 +13,7 @@ namespace CraftingAPI
         private List<ItemConfig> _discoveredItems;
 
         public event Action<ItemConfig> ItemDiscovered;
+        public UnityEvent ItemCraftAttempt = new();
 
         public IReadOnlyList<ItemConfig> DiscoveredItems => _discoveredItems;
 
@@ -28,13 +30,16 @@ namespace CraftingAPI
         public CraftingResult TryCraft(IReadOnlyList<ItemConfig> ingredients)
         {
             var data = _itemData.FirstOrDefault(x => x.Recipe.Count == ingredients.Count && x.Recipe.OrderBy(d => d).SequenceEqual(ingredients.OrderBy(d => d)));
-
-            if (data != null && !_discoveredItems.Contains(data))
+            
+            if (data != null)
             {
-                _discoveredItems.Add(data);
-                ItemDiscovered?.Invoke(data);
+                ItemCraftAttempt?.Invoke();
+                if (!_discoveredItems.Contains(data))
+                {
+                    _discoveredItems.Add(data);
+                    ItemDiscovered?.Invoke(data);
+                }
             }
-
             return new(data != null, data);
         }
     }

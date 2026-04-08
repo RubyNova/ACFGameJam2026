@@ -13,6 +13,10 @@ namespace ACHNarrativeDriver.Editor
         private bool _currentChoicesValue = false;
         private bool _firstRead = true;
         private PredefinedVariables _predefinedVariables;
+        private string _findString;
+        private string _replaceString;
+        
+        private Vector2 _scrollValue = new(0, 1);
 
         private void OnGUI()
         {
@@ -40,6 +44,8 @@ namespace ACHNarrativeDriver.Editor
             _predefinedVariables = (PredefinedVariables)EditorGUILayout.ObjectField(
                 "Predefined Variables", _predefinedVariables, typeof(PredefinedVariables),
                 false);
+            
+            _scrollValue = GUILayout.BeginScrollView(_scrollValue, GUILayout.ExpandWidth(true));
 
             GUILayout.Label("Source Script", EditorStyles.label);
             var previousSourceScript = _currentNarrativeSequence.SourceScript;
@@ -96,6 +102,21 @@ namespace ACHNarrativeDriver.Editor
                 }
             }
 
+            GUILayout.BeginHorizontal();
+            GUILayout.Label("Find:", new GUILayoutOption[] { GUILayout.ExpandWidth(false) });
+            _findString = GUILayout.TextField(_findString, new GUILayoutOption[] { GUILayout.ExpandWidth(true) });
+            GUILayout.EndHorizontal();
+            GUILayout.BeginHorizontal();
+            GUILayout.Label("Replace:", new GUILayoutOption[] { GUILayout.ExpandWidth(false) });
+            _replaceString = GUILayout.TextField(_replaceString, new GUILayoutOption[] { GUILayout.ExpandWidth(true) });
+            GUILayout.EndHorizontal();
+
+            if (GUILayout.Button("Find & Replace"))
+            {
+                _currentNarrativeSequence.SourceScript = _currentNarrativeSequence.SourceScript.Replace(_findString, _replaceString);
+                sourceScriptChanged = true;
+            }
+
             bool compiledScriptChanged = false;
             if (GUILayout.Button("Save Source Script"))
             {
@@ -117,6 +138,7 @@ namespace ACHNarrativeDriver.Editor
             {
                 EditorUtility.SetDirty(_currentNarrativeSequence);
             }
+            GUILayout.EndScrollView();
         }
 
         [MenuItem("Window / ACH Narrative Driver / Narrative Sequence Editor")]

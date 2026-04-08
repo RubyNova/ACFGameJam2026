@@ -15,10 +15,13 @@ namespace ACHNarrativeDriver
         [SerializeField] private float _delayBetweenDialogLines;
         [SerializeField] private TMP_Text _TextBox;
         [SerializeField] private GameObject _TextBubblePrefab;
+        [SerializeField] private TMP_Text _MainCharacterText;
+        [SerializeField] private GameObject _MainCharacterTextPrefab;
+
         [SerializeField] private GameObject _buttonPrefab;
         [SerializeField] private GameObject _nextButton;
         [SerializeField] private GameObject _dialoguePanel;
-        [SerializeField] private UnityEvent _preNarrativeEvent;
+        public UnityEvent PreNarrativeEvent;
         [SerializeField] private UnityEvent _postNarrativeEvent;
         
         //private AudioController _audioController; // this is such a hack reeeeeeee
@@ -36,7 +39,8 @@ namespace ACHNarrativeDriver
         public NarrativeSequence LastPlayedSequence { get; private set; }
         public bool SequenceIsPlaying => _isCurrentlyExecuting;
         
-        public UnityEvent Finished;
+        public UnityEvent<bool> Finished;
+        private bool _isEndForCharacter = false;
         
         private void Awake()
         {
@@ -67,7 +71,7 @@ namespace ACHNarrativeDriver
                     _dialoguePanel.SetActive(false);
                     _isCurrentlyExecuting = false;
                     _currentNarrativeSequence = null;
-                    Finished.Invoke();
+                    Finished.Invoke(_isEndForCharacter);
                     return;
                 }
 
@@ -86,7 +90,16 @@ namespace ACHNarrativeDriver
 
             var characterDialogueInfo = _currentNarrativeSequence.CharacterDialoguePairs[_currentDialogueIndex];
 
-            _TextBubblePrefab.SetActive(true);
+            if(characterDialogueInfo.NarratorSpeaking)
+            {
+                _MainCharacterTextPrefab.SetActive(true);
+                _TextBubblePrefab.SetActive(false);
+            }
+            else
+            {
+                _MainCharacterTextPrefab.SetActive(false);
+                _TextBubblePrefab.SetActive(true);                
+            }
              
             _rollingTextRoutine =
                 StartCoroutine(
@@ -107,10 +120,35 @@ namespace ACHNarrativeDriver
 
             var resolvedText = _narrativeInterpreter.ResolveRuntimeVariables(targetDialogueInfo.Text, _narrativeRuntimeVariables != null ? _narrativeRuntimeVariables.ReadOnlyVariableView : null);
 
-            foreach (var character in resolvedText)
+            for (int i = 0; i < resolvedText.Length; i++)
             {
+                char character = resolvedText[i];
                 sb.Append(character);
-                _TextBox.text = sb.ToString();
+
+                if (character == '<' && (resolvedText.Length > i + 2 && resolvedText[i + 2] == '>') || (resolvedText.Length > i + 3 && resolvedText[i + 3] == '>'))
+                {
+                    sb.Append(resolvedText[i + 1]);
+                    sb.Append(resolvedText[i + 2]);
+
+                    if (resolvedText[i + 1] == '/')
+                    {
+                        sb.Append(resolvedText[i + 3]);
+                        i += 3;
+                    }
+                    else
+                    {
+                        i += 2;
+                    }
+                }
+                
+                if(targetDialogueInfo.NarratorSpeaking)
+                {
+                    _MainCharacterText.text = sb.ToString();
+                }
+                else
+                {
+                    _TextBox.text = sb.ToString();
+                }
                 yield return _rollingCharacterTime;
             }
 
@@ -137,9 +175,9 @@ namespace ACHNarrativeDriver
                 ResetRollingTextRoutine();
             }
 
-            if(_preNarrativeEvent is not null)
-                _preNarrativeEvent.Invoke();
-
+            if(PreNarrativeEvent is not null)
+                PreNarrativeEvent.Invoke();
+            _isEndForCharacter = targetSequence.IsDepartingSequence;
             _dialoguePanel.SetActive(true);
             _TextBox.text = string.Empty;
             _currentNarrativeSequence = targetSequence;

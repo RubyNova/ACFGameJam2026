@@ -9,9 +9,11 @@ namespace ACHNarrativeDriver.ScriptableObjects
         [SerializeField] private string _name;
         [SerializeField] private List<Sprite> _poses;
         [SerializeField] private Sprite _nameplateSprite;
+        [SerializeField] private bool _isFirstPerson;
 
         public string Name => _name;
         public IReadOnlyList<Sprite> Poses => _poses.AsReadOnly();
         public Sprite NameplateSprite => _nameplateSprite;
+        public bool IsFirstPerson => _isFirstPerson;
     }
 }

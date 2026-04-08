@@ -1,4 +1,6 @@
+using System;
 using GameElements;
+using GameUI;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.EnhancedTouch;
@@ -8,11 +10,20 @@ namespace Player
 {
     public class WorldController : MonoBehaviour
     {
+        [SerializeField]
+        private RecipeBookController _recipeBookController;
+
         private bool _shouldTryDrag;
         private Vector2 _mousePosition;
         private Camera _camera;
-
+        private bool _paused = false;
         private ItemInstance _lastHitObject;
+
+        public bool IsPaused => _paused;
+
+        private Action _activateAction;
+
+        private Action _deactivateAction;
 
         private void Awake()
         {
@@ -26,50 +37,67 @@ namespace Player
         private void Start()
         {
             _camera = Camera.main;
+            _activateAction = () => FlipPause();
+            _deactivateAction = () => FlipPause();
+            _recipeBookController.RecipeUIActive += _activateAction;
+            _recipeBookController.RecipeUIInactive += _deactivateAction;
         }
 
         private void Update()
         {
-            if(EnhancedTouchSupport.enabled)
+            if(!_paused)
             {
-                //Experimental touch support
-                var activeTouches = Touch.activeTouches;
-                if(activeTouches.Count > 0)
+                if(EnhancedTouchSupport.enabled)
                 {
-                    _mousePosition = activeTouches[0].finger.screenPosition;
+                    //Experimental touch support
+                    var activeTouches = Touch.activeTouches;
+                    if(activeTouches.Count > 0)
+                    {
+                        _mousePosition = activeTouches[0].finger.screenPosition;
+                    }
+                }
+
+                if (!_shouldTryDrag)
+                {
+                    _lastHitObject = null;
+                    return;
+                }
+
+                var mousePositionInWorld = _camera.ScreenToWorldPoint(_mousePosition);
+                var result = Physics2D.Raycast(mousePositionInWorld, _camera.transform.forward);
+
+                if (result.collider == null && _lastHitObject == null)
+                {
+                    return;
+                }
+
+                if (_lastHitObject != null)
+                {
+                    MoveObject(mousePositionInWorld, _lastHitObject);
+                    return;
+                }
+
+                if (result.transform.gameObject.TryGetComponent<ItemInstance>(out var item))
+                {
+                    MoveObject(mousePositionInWorld, item);
+                    _lastHitObject = item;
+                }
+                else if (result.transform.gameObject.TryGetComponent<ItemSpawner>(out var spawner))
+                {
+                    _lastHitObject = spawner.Spawn(mousePositionInWorld);
                 }
             }
+        }
 
-            if (!_shouldTryDrag)
-            {
-                _lastHitObject = null;
-                return;
-            }
-
-            var mousePositionInWorld = _camera.ScreenToWorldPoint(_mousePosition);
-            var result = Physics2D.Raycast(mousePositionInWorld, _camera.transform.forward);
-
-            if (result.collider == null && _lastHitObject == null)
+        void OnDestroy()
+        {
+            if (_recipeBookController == null)
             {
                 return;
             }
 
-            if (_lastHitObject != null)
-            {
-                MoveObject(mousePositionInWorld, _lastHitObject);
-                return;
-            }
-
-            if (result.transform.gameObject.TryGetComponent<ItemInstance>(out var item))
-            {
-                MoveObject(mousePositionInWorld, item);
-                _lastHitObject = item;
-            }
-            else if (result.transform.gameObject.TryGetComponent<ItemSpawner>(out var spawner))
-            {
-                _lastHitObject = spawner.Spawn(mousePositionInWorld);
-            }
-
+            _recipeBookController.RecipeUIActive -= _activateAction;
+            _recipeBookController.RecipeUIInactive -= _deactivateAction;
         }
 
         private void MoveObject(Vector3 mousePositionInWorld, ItemInstance item)
@@ -102,5 +130,7 @@ namespace Player
         {
             EnhancedTouchSupport.Disable();
         }
+
+        public void FlipPause() => _paused = !_paused;
     }
 }

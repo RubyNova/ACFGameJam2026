@@ -108,7 +108,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NPCController
   _spriteRenderer: {fileID: 3441944137117780847}
   _animator: {fileID: 938286664214723523}
+  _collider: {fileID: 3297228217523530690}
   CharacterGoneEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  ItemDeliveredEvent:
     m_PersistentCalls:
       m_Calls: []
   NarrativeController: {fileID: 0}

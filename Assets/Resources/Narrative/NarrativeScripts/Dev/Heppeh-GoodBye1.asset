@@ -48,6 +48,7 @@ MonoBehaviour:
     _narratorSpeaking: 0
     _delayBeforeContinuingInSeconds: 4
   _choices: []
+  _isDepartingSequence: 1
   <SourceScript>k__BackingField: 'Heppeh: Mmmmmmmm.... /d3
 
 
