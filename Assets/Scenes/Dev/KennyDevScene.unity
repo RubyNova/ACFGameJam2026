@@ -3666,6 +3666,22 @@ PrefabInstance:
       propertyPath: _narrativeController
       value: 
       objectReference: {fileID: 2671590625630770539}
+    - target: {fileID: 738546212711536671, guid: cd7cc9733cbda3448a383c515fe4d345, type: 3}
+      propertyPath: _numberOfRandomNpcsToSpawn
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 738546212711536671, guid: cd7cc9733cbda3448a383c515fe4d345, type: 3}
+      propertyPath: _randomNpcsToSpawn.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 738546212711536671, guid: cd7cc9733cbda3448a383c515fe4d345, type: 3}
+      propertyPath: '_randomNpcsToSpawn.Array.data[0]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 51e3f0b19a93503459d10a935b649f04, type: 2}
+    - target: {fileID: 738546212711536671, guid: cd7cc9733cbda3448a383c515fe4d345, type: 3}
+      propertyPath: '_randomNpcsToSpawn.Array.data[1]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 543bdc344f06e8344956b6c273273f28, type: 2}
     - target: {fileID: 4852821460164722926, guid: cd7cc9733cbda3448a383c515fe4d345, type: 3}
       propertyPath: m_LocalPosition.x
       value: -19.64
