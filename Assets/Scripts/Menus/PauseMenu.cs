@@ -1,3 +1,4 @@
+using GameAudio;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -16,7 +17,7 @@ public class PauseMenu : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -75,6 +76,16 @@ public class PauseMenu : MonoBehaviour
         {
             _optionsMenuUI.SetActive(false);
             _pauseMenuUI.SetActive(true);
+        }
+    }
+
+    public void ReturnToMainMenu()
+    {
+        var lvlManagerObject = Object.FindFirstObjectByType<LevelManager>();
+        if(lvlManagerObject != null)
+        {
+            var lvlManager = lvlManagerObject.GetComponent<LevelManager>();
+            lvlManager.LoadMainMenu();
         }
     }
 

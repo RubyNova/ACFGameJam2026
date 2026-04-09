@@ -33,20 +33,7 @@ namespace GameAudio
             }
         }
 
-        public void ChangeMasterVolume(float volume)
-        {
-            _config._mixer1.SetFloat("MasterVolume", volume);
-        }
-
-        public void ChangeBgmVolume(float volume)
-        {
-            _config._mixer1.SetFloat("BgmVolume", volume);
-        }
-
-        public void ChangeSfxVolume(float volume)
-        {
-            _config._mixer1.SetFloat("SfxVolume", volume);
-        }
+        
 
         protected override void OnInit()
         {

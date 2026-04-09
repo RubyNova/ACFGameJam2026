@@ -6,7 +6,8 @@ namespace GameAudio
     [CreateAssetMenu(fileName = "NewSoundManagerConfig", menuName = "GameAudio/Create New SoundManagerConfig", order = 1)]
     public class SoundManagerConfig : ScriptableObject
     {
-        [SerializeField] public AudioMixer _mixer1;
+        
+        [SerializeField] private AudioMixer _mixer1;
 
         [SerializeField]
         private float _bgmVolume = 0.5f;
@@ -17,6 +18,7 @@ namespace GameAudio
         [SerializeField]
         private AudioClip _bgm;
 
+        public AudioMixer AudioMixer => _mixer1;
         public float BgmVolume => _bgmVolume;
 
         public float SfxVolume => _sfxVolume;
