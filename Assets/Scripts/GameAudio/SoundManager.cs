@@ -9,6 +9,7 @@ namespace GameAudio
         private SoundManagerConfig _config;
 
         private AudioSource _audioSource;
+        [SerializeField] private AudioSource _audioSource2;
 
         // Update is called once per frame
         void Update()
@@ -21,7 +22,7 @@ namespace GameAudio
 
         public void PlayAudioClip(AudioClip audioClip)
         {
-            _audioSource.PlayOneShot(audioClip, _config.SfxVolume);
+            _audioSource2.PlayOneShot(audioClip, _config.SfxVolume);
         }
 
         private void PlayBGM()
@@ -30,6 +31,21 @@ namespace GameAudio
             {
                 _audioSource?.PlayOneShot(_config.Bgm, _config.BgmVolume);
             }
+        }
+
+        public void ChangeMasterVolume(float volume)
+        {
+            _config._mixer1.SetFloat("MasterVolume", volume);
+        }
+
+        public void ChangeBgmVolume(float volume)
+        {
+            _config._mixer1.SetFloat("BgmVolume", volume);
+        }
+
+        public void ChangeSfxVolume(float volume)
+        {
+            _config._mixer1.SetFloat("SfxVolume", volume);
         }
 
         protected override void OnInit()

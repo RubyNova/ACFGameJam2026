@@ -8,6 +8,8 @@ public class PauseMenu : MonoBehaviour
 
     [SerializeField]
     private GameObject _pauseMenuUI;
+    [SerializeField]
+    private GameObject _optionsMenuUI;
 
     private float _timeScale = 1f;
 
@@ -59,6 +61,20 @@ public class PauseMenu : MonoBehaviour
         else
         {
             PauseGame();
+        }
+    }
+
+    public void LeaveOptionsMenu()
+    {
+        if(SceneManager.GetActiveScene().name == "LukeDevScene")
+        {
+            _optionsMenuUI.SetActive(false);
+            _pauseMenuUI.SetActive(false);
+        }
+        else
+        {
+            _optionsMenuUI.SetActive(false);
+            _pauseMenuUI.SetActive(true);
         }
     }
 
