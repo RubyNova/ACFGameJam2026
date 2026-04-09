@@ -50,6 +50,9 @@ namespace NPC
         [SerializeField]
         private NPCAppearanceCondition _conditionForAppearing;
 
+        [SerializeField]
+        private int _negativeInteractionsBeforeLeaving = 5;
+
 
         public string Name => _name;
         public Sprite IdleSprite => _idleSprite;
@@ -62,6 +65,7 @@ namespace NPC
         public AnimationClip SpawnInAnimationClip => _spawnInAnimation;
         public ItemConfig DesiredItem => _desiredItem;
         public NPCAppearanceCondition ConditionForAppearing => _conditionForAppearing;
+        public int NegativeInteractionsBeforeLeavingUnhappy => _negativeInteractionsBeforeLeaving;
     }
 
 }

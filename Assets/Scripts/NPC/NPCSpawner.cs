@@ -1,6 +1,8 @@
+using System;
 using System.Linq;
 using ACHNarrativeDriver;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace NPC
 {
@@ -39,14 +41,20 @@ namespace NPC
         private int _numberOfRandomNpcsSpawned = 0;
         private int _numberOfDedicatedNpcsToSpawn = 0;
         private int _numberOfDedicatedNpcsSpawned = 0;
+        private int _totalExpectedNpcsToSpawn = 0;
         private float _informedItemsDiscoveredValue = 0f;
-        private float _informedItemsCraftedalue = 0f;
+        private float _informedItemsCraftedValue = 0f;
         private float _informedNpcSuccessRateValue = 0f;
         private float _skippedDedicatedNpcs = 0f;
+        private int _goodDeliveries;
+        private int _badDeliveries;
 
         private NPCController _currentCharacterController;
 
         public bool MoreNPCsAvailable => !_noMoreNpcs;
+        public float NPCSuccessRate => _informedNpcSuccessRateValue;
+        public int ItemsDeliveredSuccessfully => _goodDeliveries;
+        public int ItemsDelivered => _goodDeliveries + _badDeliveries;
 
         void Start()
         {
@@ -57,8 +65,9 @@ namespace NPC
             {
                 throw new System.Exception("Set number of NPCs to spawn does not match random NPC count for this level!");
             }
-        }
 
+            _totalExpectedNpcsToSpawn = _numberOfDedicatedNpcsToSpawn + _numberOfRandomNpcsToSpawn;
+        }
 
         void Update()
         {
@@ -77,19 +86,34 @@ namespace NPC
 
                 var character = DetermineNextNpc();
                 SpawnCharacter(character);
-                
             }
+
+            _informedNpcSuccessRateValue = _goodDeliveries / _totalExpectedNpcsToSpawn;
         }
 
-        public void CharacterGone()
+        public void CharacterGone(bool happyCustomer)
         {
             _currentCharacterController?.CharacterGoneEvent.RemoveListener(CharacterGone);
             _characterSpawned = false;
+            if(happyCustomer)
+            {
+                _goodDeliveries++;
+            }
+            else
+            {
+                _badDeliveries++;
+            }
         }
+
+        public void UpdateItemsCraftedValue(float value) => _informedItemsCraftedValue = value;
+        
+        public void UpdateItemsDeliveredValue(float value) => _informedItemsDiscoveredValue = value;
 
         private NPCCharacter DetermineNextNpc()
         {
-            if (_numberOfRandomNpcsSpawned <= 0 || _numberOfDedicatedNpcsToSpawn <= 0)
+            if (_numberOfRandomNpcsSpawned <= 0 || 
+                _numberOfDedicatedNpcsToSpawn <= 0 || 
+                _numberOfDedicatedNpcsSpawned >= _numberOfDedicatedNpcsToSpawn)
             {
                 _numberOfRandomNpcsSpawned++;
                 return _randomNpcsToSpawn[Random.Range(0, _numberOfRandomNpcsInCollection-1)];
@@ -143,7 +167,7 @@ namespace NPC
                 }
                 case NPCAppearanceConditionType.ItemsCrafted:
                 {
-                    return _informedItemsCraftedalue;
+                    return _informedItemsCraftedValue;
                 }
                 case NPCAppearanceConditionType.NPCSuccessRate:
                 {

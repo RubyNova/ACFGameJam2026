@@ -6,9 +6,9 @@ namespace NPC
     {
         override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
         {
-        var npc = animator.GetComponent<NPCController>();
-        npc?.CharacterGoneEvent.Invoke();
-        npc?.DeleteSelf();
+            var npc = animator.GetComponent<NPCController>();
+            npc?.CharacterGoneEvent.Invoke(npc.HappyCustomer);
+            npc?.DeleteSelf();
         }
     }
 }

@@ -17,6 +17,9 @@ namespace Player
         private bool _paused;
 
         [SerializeField]
+        private bool _perfMode = false;
+
+        [SerializeField]
         private GameClock _clock;
 
         [SerializeField]
@@ -42,6 +45,12 @@ namespace Player
 
         [SerializeField]
         private TMP_Text _itemsDiscoveredText;
+
+        [SerializeField]
+        private TMP_Text _customerHappinessRateText;
+        
+        [SerializeField]
+        private TMP_Text _score;
 
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
@@ -79,6 +88,9 @@ namespace Player
                     LevelOverProcess();
                 }
             }
+
+            _itemsDelivered = _spawner.ItemsDelivered;
+            _itemsDeliveredSuccessfully = _spawner.ItemsDeliveredSuccessfully;
         }
 
         void OnDestroy()
@@ -112,11 +124,11 @@ namespace Player
 
         public void IncrementItemsDiscovered(ItemConfig _) => _itemsDiscovered++;
         
-        public void IncrementItemsDelivered() => _itemsDelivered++;
-        
-        public void IncrementItemsDeliveredSuccessfully() => _itemsDeliveredSuccessfully++;
-        
-        public void IncrementItemsCrafted() => _itemsCrafted++;
+        public void IncrementItemsCrafted()
+        { 
+            _itemsCrafted++;
+            _spawner.UpdateItemsCraftedValue(_itemsCrafted);
+        }
 
         public void SetTimeRemainingInSeconds(float timeRemaining) => _timeRemainingInSeconds = timeRemaining;
 
@@ -126,10 +138,31 @@ namespace Player
             _playerController.FlipPause();
             _pot.FlipPause();
             _paused = true;
+
+            int score = 0;
+            if(_timeRemainingInSeconds > 0)
+            {
+                score += (int)(_timeRemainingInSeconds * 1000);
+            }
+
+            score += (int)(_itemsCrafted * 100);
+            score += (int)(_itemsDiscovered * 10000);
             
+            int percent = (int)((_itemsDeliveredSuccessfully / _itemsDelivered) * 100);
+            if(percent >= 50)
+            {
+                int overage = 100 - percent;
+                score += overage * 5000;
+            }
+
             _timeRemainingText.text = $"{(int)_timeRemainingInSeconds}s";
             _itemsCraftedText.text = $"{_itemsCrafted}";
             _itemsDiscoveredText.text = $"{_itemsDiscovered}";
+            if(_perfMode)
+            {
+                _customerHappinessRateText.text = $"{(int)((_itemsDeliveredSuccessfully / _itemsDelivered)*100)} %";
+                _score.text = $"{score}";
+            }
             
             _levelOverObject.SetActive(true);
         }

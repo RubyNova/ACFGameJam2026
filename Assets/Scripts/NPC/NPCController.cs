@@ -30,7 +30,7 @@ namespace NPC
 
         private const string _spawnOutTriggerName = "Leaving";
 
-        public UnityEvent CharacterGoneEvent = new();
+        public UnityEvent<bool> CharacterGoneEvent = new();
         public UnityEvent ItemDeliveredEvent = new();
         public AutoNarrativeController NarrativeController;
         //TODO: refactor these bools into an enum or something l8r
@@ -41,6 +41,8 @@ namespace NPC
         private bool _beingServed = false;
         private bool _paused = false;
         private float _deltaTimeSeconds = 0.0f;
+        private int _badDeliveries = 0;
+        public bool HappyCustomer => _badDeliveries < NPCConfiguration.NegativeInteractionsBeforeLeavingUnhappy;
 
         public NPCCharacter NPCConfiguration { get; private set; }
 
@@ -150,6 +152,18 @@ namespace NPC
                             }
                             
                             NarrativeController.ExecuteSequence(sequence);
+                            
+                            
+                            if(_badDeliveries < NPCConfiguration.NegativeInteractionsBeforeLeavingUnhappy)
+                            {
+                                _badDeliveries++;
+                            }
+                            else
+                            {
+                                _beingServed = false;
+                                _leaving = true;    
+                                _mainCrafingUI.SetActive(false);
+                            }
                         }
                     }
                     else
