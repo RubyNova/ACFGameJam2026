@@ -1350,7 +1350,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: KennyPerfScene
+          m_StringArgument: LukeDevScene
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &773683132
@@ -2235,7 +2235,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67c09a15be4e6ba4e98f235f9679efe4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player.ProgressController
-  _perfMode: 0
+  _perfMode: 1
   _challengeMode: 0
   _scoreMultiplierForItemsCrafted: 10
   _scoreMultiplierForItemsDiscovered: 250

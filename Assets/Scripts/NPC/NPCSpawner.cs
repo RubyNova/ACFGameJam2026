@@ -61,9 +61,9 @@ namespace NPC
             _characterSpawnIndex = 0;
             _numberOfRandomNpcsInCollection = _randomNpcsToSpawn.Count();
             _numberOfDedicatedNpcsToSpawn = _dedicatedNpcsToSpawn.Count();
-            if (_numberOfRandomNpcsToSpawn > _numberOfRandomNpcsInCollection)
+            if (_numberOfRandomNpcsToSpawn <= 0 || _numberOfRandomNpcsInCollection == 0)
             {
-                throw new System.Exception("Set number of NPCs to spawn does not match random NPC count for this level!");
+                throw new System.Exception("Set number of NPCs to spawn or random NPC count for this level cannot be 0!");
             }
 
             _totalExpectedNpcsToSpawn = _numberOfDedicatedNpcsToSpawn + _numberOfRandomNpcsToSpawn;

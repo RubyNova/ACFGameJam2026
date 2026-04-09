@@ -75,6 +75,8 @@ namespace Player
         [SerializeField]
         private GameObject _scoreLabel;
 
+        public string Mode => _challengeMode ? "Challenge" : _perfMode ? "Perf Tracking" : "w/o Perf Tracking";
+
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
         {
