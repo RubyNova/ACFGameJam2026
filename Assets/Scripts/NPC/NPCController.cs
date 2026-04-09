@@ -83,7 +83,16 @@ namespace NPC
                 {
                     _collider.enabled = false;
                     NarrativeController.Finished.AddListener(RunGoodbyeAnim);
-                    NarrativeController?.ExecuteSequence(NPCConfiguration.DepartingSequence);
+
+                    if (NPCConfiguration.NegativeInteractionsBeforeLeavingUnhappy <= _badDeliveries)
+                    {
+                        NarrativeController.ExecuteSequence(NPCConfiguration.NegativeSequences[Random.Range(0, NPCConfiguration.NegativeSequenceCount)]);
+                    }
+                    else
+                    {
+                        NarrativeController.ExecuteSequence(NPCConfiguration.DepartingSequence);
+                    }
+                    
                     _leaving = false;
                 }
                 else if(_leaving)
