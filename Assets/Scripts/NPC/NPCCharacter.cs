@@ -9,6 +9,14 @@ namespace NPC
     [CreateAssetMenu(fileName = "NPCCharacter", menuName = "NPCs/Create New NPC")]
     public class NPCCharacter : ScriptableObject
     {
+        public class NPCAppearanceCondition
+        {
+            public NPCAppearanceConditionType Condition = NPCAppearanceConditionType.None;
+            public NPCAppearanceComparisonType ComparisonType = NPCAppearanceComparisonType.EqualTo;
+            public float ComparisonValue = 0.0f;
+        }
+
+
         [Header("Character Configuration")]
         [SerializeField]
         private string _name;
@@ -39,6 +47,9 @@ namespace NPC
         [SerializeField]
         private AnimationClip _spawnInAnimation;
 
+        [SerializeField]
+        private NPCAppearanceCondition _conditionForAppearing;
+
 
         public string Name => _name;
         public Sprite IdleSprite => _idleSprite;
@@ -49,8 +60,8 @@ namespace NPC
         public float DelayBeforeStartingDialogue => _delayBeforeStartingDialogue;
         public RuntimeAnimatorController AnimController => _animator;
         public AnimationClip SpawnInAnimationClip => _spawnInAnimation;
-
         public ItemConfig DesiredItem => _desiredItem;
+        public NPCAppearanceCondition ConditionForAppearing => _conditionForAppearing;
     }
 
 }

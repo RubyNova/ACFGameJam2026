@@ -7,7 +7,17 @@ namespace NPC
     public class NPCSpawner : MonoBehaviour
     {
         [SerializeField]
-        private NPCCharacter[] _charactersToSpawn;
+        private NPCCharacter[] _randomNpcsToSpawn;
+
+        [SerializeField]
+        private NPCCharacter[] _dedicatedNpcsToSpawn;
+
+        [SerializeField]
+        private int _numberOfRandomNpcsToSpawn;
+
+        [SerializeField]
+        [Range(0.0f, 1.0f)]
+        private float _randomizationThreshold = 0.5f;
 
         [SerializeField]
         private GameObject _spawnLocationObject;
@@ -24,7 +34,15 @@ namespace NPC
         private bool _characterSpawned = false;
         private bool _noMoreNpcs = false;
 
+        private int _numberOfRandomNpcsInCollection;
         private int _characterSpawnIndex;
+        private int _numberOfRandomNpcsSpawned = 0;
+        private int _numberOfDedicatedNpcsToSpawn = 0;
+        private int _numberOfDedicatedNpcsSpawned = 0;
+        private float _informedItemsDiscoveredValue = 0f;
+        private float _informedItemsCraftedalue = 0f;
+        private float _informedNpcSuccessRateValue = 0f;
+        private float _skippedDedicatedNpcs = 0f;
 
         private NPCController _currentCharacterController;
 
@@ -33,6 +51,12 @@ namespace NPC
         void Start()
         {
             _characterSpawnIndex = 0;
+            _numberOfRandomNpcsInCollection = _randomNpcsToSpawn.Count();
+            _numberOfDedicatedNpcsToSpawn = _dedicatedNpcsToSpawn.Count();
+            if (_numberOfRandomNpcsToSpawn > _numberOfRandomNpcsInCollection)
+            {
+                throw new System.Exception("Set number of NPCs to spawn does not match random NPC count for this level!");
+            }
         }
 
 
@@ -40,7 +64,10 @@ namespace NPC
         {
             if(!_characterSpawned)
             {
-                if(_characterSpawnIndex + 1 > _charactersToSpawn.Count())
+                if(
+                    (_numberOfDedicatedNpcsToSpawn <= _skippedDedicatedNpcs + _numberOfDedicatedNpcsSpawned) &&
+                    (_numberOfRandomNpcsToSpawn <= _numberOfRandomNpcsSpawned)
+                )
                 {
                     _characterSpawnIndex = 0;
                     _characterSpawned = true;
@@ -48,14 +75,9 @@ namespace NPC
                     return;
                 }
 
-                var npc = Instantiate(_NPCPrefab, _spawnLocationObject.transform.position, Quaternion.identity, transform);
-                _currentCharacterController = npc.GetComponent<NPCController>();
-                _currentCharacterController.NarrativeController = _narrativeController;
-                _currentCharacterController.InitialiseWithNPCConfiguration(_charactersToSpawn[_characterSpawnIndex], _mainCraftingUI);
-                _currentCharacterController.CharacterGoneEvent.AddListener(CharacterGone);
+                var character = DetermineNextNpc();
+                SpawnCharacter(character);
                 
-                _characterSpawnIndex++;
-                _characterSpawned = true;
             }
         }
 
@@ -63,6 +85,122 @@ namespace NPC
         {
             _currentCharacterController?.CharacterGoneEvent.RemoveListener(CharacterGone);
             _characterSpawned = false;
+        }
+
+        private NPCCharacter DetermineNextNpc()
+        {
+            if (_numberOfRandomNpcsSpawned <= 0 || _numberOfDedicatedNpcsToSpawn <= 0)
+            {
+                _numberOfRandomNpcsSpawned++;
+                return _randomNpcsToSpawn[Random.Range(0, _numberOfRandomNpcsInCollection-1)];
+            }
+            else
+            {
+                if(Random.value >= _randomizationThreshold)
+                {
+                    var character = _dedicatedNpcsToSpawn[_characterSpawnIndex];
+                    
+                    switch(character.ConditionForAppearing.Condition)
+                    {
+                        case NPCAppearanceConditionType.None:
+                        {
+                            _characterSpawnIndex++;
+                            _numberOfDedicatedNpcsSpawned++;
+                            return character;
+                        }
+                        case NPCAppearanceConditionType.ItemsDiscovered:
+                        case NPCAppearanceConditionType.ItemsCrafted:
+                        case NPCAppearanceConditionType.NPCSuccessRate:
+                        {
+                            float valueToCompare = GetComparingValue(character.ConditionForAppearing.Condition);
+                            if(ValueComparision(valueToCompare, character.ConditionForAppearing.ComparisonValue, character.ConditionForAppearing.ComparisonType))
+                            {
+                                _characterSpawnIndex++;
+                                _numberOfDedicatedNpcsSpawned++;
+                                return character;
+                            }
+
+                            //if here we skip the npcs;
+                            _skippedDedicatedNpcs++;
+                            _characterSpawnIndex++;
+
+                            break;
+                        }
+                    }
+                }
+                _numberOfRandomNpcsSpawned++;
+                return _randomNpcsToSpawn[Random.Range(0, _numberOfRandomNpcsInCollection-1)];
+            }
+        }
+
+        private float GetComparingValue(NPCAppearanceConditionType valueType)
+        {
+            switch(valueType)
+            {
+                case NPCAppearanceConditionType.ItemsDiscovered:
+                {
+                    return _informedItemsDiscoveredValue;
+                }
+                case NPCAppearanceConditionType.ItemsCrafted:
+                {
+                    return _informedItemsCraftedalue;
+                }
+                case NPCAppearanceConditionType.NPCSuccessRate:
+                {
+                    return _informedNpcSuccessRateValue;
+                }
+                default:
+                {
+                    return 0f;
+                }
+            }
+        }
+        
+        private bool ValueComparision(float currentValue, float valueToCompareTo, NPCAppearanceComparisonType comparisonType)
+        {
+            switch(comparisonType)
+            {
+                case NPCAppearanceComparisonType.EqualTo:
+                {
+                    return currentValue == valueToCompareTo;
+                }
+                case NPCAppearanceComparisonType.NotEqualTo:
+                {
+                    return currentValue != valueToCompareTo;
+                }
+                case NPCAppearanceComparisonType.GreaterThanOrEqualTo:
+                {
+                    return currentValue >= valueToCompareTo;
+                }
+                case NPCAppearanceComparisonType.LessThanOrEqualTo:
+                {
+                    return currentValue <= valueToCompareTo;
+                }
+                case NPCAppearanceComparisonType.LessThan:
+                {
+                    return currentValue < valueToCompareTo;
+                }
+                case NPCAppearanceComparisonType.GreaterThan:
+                {
+                    return currentValue > valueToCompareTo;
+                }
+                default:
+                {
+                    return true;
+                }
+            }
+        }
+
+        private void SpawnCharacter(NPCCharacter character)
+        {
+                var npc = Instantiate(_NPCPrefab, _spawnLocationObject.transform.position, Quaternion.identity, transform);
+                _currentCharacterController = npc.GetComponent<NPCController>();
+                _currentCharacterController.NarrativeController = _narrativeController;
+                _currentCharacterController.InitialiseWithNPCConfiguration(character, _mainCraftingUI);
+                _currentCharacterController.CharacterGoneEvent.AddListener(CharacterGone);
+
+                _characterSpawned = true;
+            
         }
     }
 }
