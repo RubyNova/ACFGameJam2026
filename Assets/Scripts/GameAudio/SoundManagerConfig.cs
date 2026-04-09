@@ -7,7 +7,7 @@ namespace GameAudio
     public class SoundManagerConfig : ScriptableObject
     {
         
-        [SerializeField] private AudioMixer _mixer1;
+        [SerializeField] private AudioMixer _mixer;
 
         [SerializeField]
         private float _bgmVolume = 0.5f;
@@ -18,7 +18,7 @@ namespace GameAudio
         [SerializeField]
         private AudioClip _bgm;
 
-        public AudioMixer AudioMixer => _mixer1;
+        public AudioMixer AudioMixer => _mixer;
         public float BgmVolume => _bgmVolume;
 
         public float SfxVolume => _sfxVolume;

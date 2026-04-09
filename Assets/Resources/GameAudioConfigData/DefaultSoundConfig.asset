@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f75f7c752382244fa44c36e18ab290d, type: 3}
   m_Name: DefaultSoundConfig
   m_EditorClassIdentifier: Assembly-CSharp::GameAudio.SoundManagerConfig
-  _mixer1: {fileID: 24100000, guid: fc8b9f6edd272bf499844c2f4abf1318, type: 2}
+  _mixer: {fileID: 24100000, guid: fc8b9f6edd272bf499844c2f4abf1318, type: 2}
   _bgmVolume: 0.5
   _sfxVolume: 1
   _bgm: {fileID: 8300000, guid: 5878e5ce84de54644b0c98c3b0d176a7, type: 3}
