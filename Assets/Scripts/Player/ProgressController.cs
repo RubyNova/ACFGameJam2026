@@ -16,9 +16,26 @@ namespace Player
         private float _timeRemainingInSeconds;
         private bool _paused;
 
+        [Header("Progress Settings")]
         [SerializeField]
         private bool _perfMode = false;
 
+        [SerializeField]
+        private bool _challengeMode = false;
+
+        [SerializeField]
+        private int _scoreMultiplierForItemsCrafted = 10;
+        
+        [SerializeField]
+        private int _scoreMultiplierForItemsDiscovered = 250;
+        
+        [SerializeField]
+        private int _scoreMultiplierForTimeRemaining = 100;
+        
+        [SerializeField]
+        private int _scoreMultiplierForCustomerHappiness = 100;
+
+        [Header("Required Objects")]
         [SerializeField]
         private GameClock _clock;
 
@@ -48,9 +65,15 @@ namespace Player
 
         [SerializeField]
         private TMP_Text _customerHappinessRateText;
+
+        [SerializeField]
+        private GameObject _customerHappinessRateLabel;
         
         [SerializeField]
-        private TMP_Text _score;
+        private TMP_Text _scoreText;
+
+        [SerializeField]
+        private GameObject _scoreLabel;
 
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
@@ -83,7 +106,7 @@ namespace Player
             {
                 _timeRemainingInSeconds = _clock.RemainingTimeInSeconds;
                 
-                if(!_spawner.MoreNPCsAvailable || _timeRemainingInSeconds <= 0)
+                if((!_spawner.MoreNPCsAvailable && !_challengeMode) || _timeRemainingInSeconds <= 0)
                 {
                     LevelOverProcess();
                 }
@@ -132,6 +155,27 @@ namespace Player
 
         public void SetTimeRemainingInSeconds(float timeRemaining) => _timeRemainingInSeconds = timeRemaining;
 
+        private int GenerateScore()
+        {
+            int score = 0;
+            if(_timeRemainingInSeconds > 0)
+            {
+                score += (int)(_timeRemainingInSeconds * _scoreMultiplierForTimeRemaining);
+            }
+
+            score += (int)(_itemsCrafted * _scoreMultiplierForItemsCrafted);
+            score += (int)(_itemsDiscovered * _scoreMultiplierForItemsDiscovered);
+            
+            int percent = (int)(_itemsDeliveredSuccessfully / _itemsDelivered * 100);
+            if(percent >= 50)
+            {
+                int overage = 100 - percent;
+                score += overage * _scoreMultiplierForCustomerHappiness;
+            }
+
+            return score;
+        }
+
         private void LevelOverProcess()
         {
             _clock.StopTimer(false, true);
@@ -139,29 +183,29 @@ namespace Player
             _pot.FlipPause();
             _paused = true;
 
-            int score = 0;
-            if(_timeRemainingInSeconds > 0)
-            {
-                score += (int)(_timeRemainingInSeconds * 1000);
-            }
-
-            score += (int)(_itemsCrafted * 100);
-            score += (int)(_itemsDiscovered * 10000);
             
-            int percent = (int)((_itemsDeliveredSuccessfully / _itemsDelivered) * 100);
-            if(percent >= 50)
-            {
-                int overage = 100 - percent;
-                score += overage * 5000;
-            }
 
             _timeRemainingText.text = $"{(int)_timeRemainingInSeconds}s";
             _itemsCraftedText.text = $"{_itemsCrafted}";
             _itemsDiscoveredText.text = $"{_itemsDiscovered}";
             if(_perfMode)
             {
+                var score = GenerateScore();
+
+                _customerHappinessRateLabel.SetActive(true);
+                _customerHappinessRateText.gameObject.SetActive(true);
+                _scoreLabel.SetActive(true);
+                _scoreText.gameObject.SetActive(true);
+
                 _customerHappinessRateText.text = $"{(int)((_itemsDeliveredSuccessfully / _itemsDelivered)*100)} %";
-                _score.text = $"{score}";
+                _scoreText.text = $"{score}";
+            }
+            else
+            {
+                _customerHappinessRateLabel.SetActive(false);
+                _customerHappinessRateText.gameObject.SetActive(false);
+                _scoreLabel.SetActive(false);
+                _scoreText.gameObject.SetActive(false);
             }
             
             _levelOverObject.SetActive(true);
