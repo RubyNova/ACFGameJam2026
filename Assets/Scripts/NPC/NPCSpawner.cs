@@ -116,7 +116,7 @@ namespace NPC
                 _numberOfDedicatedNpcsSpawned >= _numberOfDedicatedNpcsToSpawn)
             {
                 _numberOfRandomNpcsSpawned++;
-                return _randomNpcsToSpawn[Random.Range(0, _numberOfRandomNpcsInCollection-1)];
+                return _randomNpcsToSpawn[Random.Range(0, _numberOfRandomNpcsInCollection)];
             }
             else
             {
