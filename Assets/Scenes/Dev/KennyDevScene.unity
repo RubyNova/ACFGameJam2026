@@ -4356,7 +4356,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 738546212711536671, guid: cd7cc9733cbda3448a383c515fe4d345, type: 3}
       propertyPath: _randomNpcsToSpawn.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 738546212711536671, guid: cd7cc9733cbda3448a383c515fe4d345, type: 3}
       propertyPath: '_randomNpcsToSpawn.Array.data[0]'
