@@ -175,8 +175,7 @@ namespace ACHNarrativeDriver
                 ResetRollingTextRoutine();
             }
 
-            if(PreNarrativeEvent is not null)
-                PreNarrativeEvent.Invoke();
+            PreNarrativeEvent?.Invoke();
             _isEndForCharacter = targetSequence.IsDepartingSequence;
             _dialoguePanel.SetActive(true);
             _TextBox.text = string.Empty;
@@ -184,6 +183,12 @@ namespace ACHNarrativeDriver
             _currentDialogueIndex = 0;
             _nextDialogueLineRequested = true;
             _isCurrentlyExecuting = true;
+        }
+
+        public void FakeExecuteSequence()
+        {
+            PreNarrativeEvent?.Invoke();
+            Finished.Invoke(true);
         }
 
         public void EndCurrentSequence()

@@ -56,22 +56,22 @@ namespace NPC
 
         void Update()
         {
-            if(!_paused)
+            if (!_paused)
             {
                 //animator state
-                if(!_hasEntered)
+                if (!_hasEntered)
                 {
                     _entering = _animator.GetCurrentAnimatorStateInfo(0).IsName(NPCConfiguration.SpawnInAnimationClip.name);
                     _collider.enabled = false;
-                    if(!_entering)
+                    if (!_entering)
                     {
                         _hasEntered = true;
                         _introduction = true;
-                    }  
-                } 
+                    }
+                }
 
                 //check logic
-                if(_introduction)
+                if (_introduction)
                 {
                     _collider.enabled = false;
                     NarrativeController?.Finished.AddListener(PrepForServing);
@@ -79,28 +79,36 @@ namespace NPC
                     _introduction = false;
                 }
 
-                if(_leaving && NPCConfiguration.DepartingSequence != null)
+                if (_leaving && NPCConfiguration.DepartingSequence != null)
                 {
                     _collider.enabled = false;
                     NarrativeController.Finished.AddListener(RunGoodbyeAnim);
 
                     if (NPCConfiguration.NegativeInteractionsBeforeLeavingUnhappy <= _badDeliveries)
                     {
-                        NarrativeController.ExecuteSequence(NPCConfiguration.NegativeSequences[Random.Range(0, NPCConfiguration.NegativeSequenceCount)]);
+                        // This is nested because we need to "do nothing" and then still set _leaving to false. This seemed like the most reasonable way. - Matt J.
+                        if (NPCConfiguration.NegativeSequenceCount > 0)
+                        {
+                            NarrativeController.ExecuteSequence(NPCConfiguration.NegativeSequences[Random.Range(0, NPCConfiguration.NegativeSequenceCount)]);
+                        }
+                        else
+                        {
+                            NarrativeController.FakeExecuteSequence();
+                        }
                     }
                     else
                     {
                         NarrativeController.ExecuteSequence(NPCConfiguration.DepartingSequence);
                     }
-                    
+
                     _leaving = false;
                 }
-                else if(_leaving)
+                else if (_leaving)
                 {
                     _leaving = false;
                 }
 
-                if(_beingServed)
+                if (_beingServed)
                 {
                     _deltaTimeSeconds += Time.deltaTime;
                 }
@@ -136,7 +144,7 @@ namespace NPC
             NarrativeController.Finished.RemoveListener(RunGoodbyeAnim);
             _animator.SetBool(_spawnOutTriggerName, true);
         }
-    
+
         public void DeleteSelf()
         {
             Destroy(this.gameObject);
@@ -144,41 +152,40 @@ namespace NPC
 
         private void OnTriggerEnter2D(Collider2D collision)
         {
-            if(!_paused)
+            if (!_paused)
             {
-                if(collision.gameObject.TryGetComponent<ItemInstance>(out var itemInstance))
+                if (collision.gameObject.TryGetComponent<ItemInstance>(out var itemInstance))
                 {
                     ItemDeliveredEvent.Invoke();
-                    if(!NPCConfiguration.DesiredItem.ItemName.Equals(itemInstance.BackingConfig.ItemName, System.StringComparison.InvariantCultureIgnoreCase))
+                    if (!NPCConfiguration.DesiredItem.ItemName.Equals(itemInstance.BackingConfig.ItemName, System.StringComparison.InvariantCultureIgnoreCase))
                     {
-                        if(NPCConfiguration.NegativeSequenceCount > 0)
+                        if (NPCConfiguration.NegativeSequenceCount > 0)
                         {
                             var sequence = NPCConfiguration.NegativeSequences[Random.Range(0, NPCConfiguration.NegativeSequenceCount - 1)];
-                            
-                            if(NarrativeController.SequenceIsPlaying)
+
+                            if (NarrativeController.SequenceIsPlaying)
                             {
                                 NarrativeController.EndCurrentSequence();
                             }
-                            
+
                             NarrativeController.ExecuteSequence(sequence);
-                            
-                            
-                            if(_badDeliveries < NPCConfiguration.NegativeInteractionsBeforeLeavingUnhappy)
-                            {
-                                _badDeliveries++;
-                            }
-                            else
-                            {
-                                _beingServed = false;
-                                _leaving = true;    
-                                _mainCrafingUI.SetActive(false);
-                            }
+                        }
+
+                        if (_badDeliveries < NPCConfiguration.NegativeInteractionsBeforeLeavingUnhappy)
+                        {
+                            _badDeliveries++;
+                        }
+                        else
+                        {
+                            _beingServed = false;
+                            _leaving = true;
+                            _mainCrafingUI.SetActive(false);
                         }
                     }
                     else
                     {
                         _beingServed = false;
-                        _leaving = true;    
+                        _leaving = true;
                         _mainCrafingUI.SetActive(false);
                     }
                 }
