@@ -75,6 +75,9 @@ namespace Player
         [SerializeField]
         private GameObject _scoreLabel;
 
+        [SerializeField]
+        private GameObject _recipeBookUI;
+
         public string Mode => _challengeMode ? "Challenge" : _perfMode ? "Perf Tracking" : "w/o Perf Tracking";
 
         // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -131,7 +134,7 @@ namespace Player
             {
                 _clock.StartTimer();
             }
-            if(_playerController.IsPaused && !isFinished)
+            if(_playerController.IsPaused && !isFinished && !_recipeBookUI.activeInHierarchy)
             {
                 _playerController.FlipPause();
             }
