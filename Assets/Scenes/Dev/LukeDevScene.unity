@@ -714,6 +714,66 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2484548261876581048, guid: 1be39131abfb05d40bf853fe60aee79a, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2484548261876581048, guid: 1be39131abfb05d40bf853fe60aee79a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4898570975826823810, guid: 1be39131abfb05d40bf853fe60aee79a, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4898570975826823810, guid: 1be39131abfb05d40bf853fe60aee79a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5761767024317745418, guid: 1be39131abfb05d40bf853fe60aee79a, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5761767024317745418, guid: 1be39131abfb05d40bf853fe60aee79a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5761767024317745418, guid: 1be39131abfb05d40bf853fe60aee79a, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6237085168893965272, guid: 1be39131abfb05d40bf853fe60aee79a, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6237085168893965272, guid: 1be39131abfb05d40bf853fe60aee79a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6237085168893965272, guid: 1be39131abfb05d40bf853fe60aee79a, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6625228884539705074, guid: 1be39131abfb05d40bf853fe60aee79a, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6625228884539705074, guid: 1be39131abfb05d40bf853fe60aee79a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7028590065447612791, guid: 1be39131abfb05d40bf853fe60aee79a, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7028590065447612791, guid: 1be39131abfb05d40bf853fe60aee79a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7028590065447612791, guid: 1be39131abfb05d40bf853fe60aee79a, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7463529402176068482, guid: 1be39131abfb05d40bf853fe60aee79a, type: 3}
       propertyPath: m_Name
       value: PauseCanvas
