@@ -9,10 +9,9 @@ namespace GameElements
 {
     public class CraftingPot : MonoBehaviour
     {
-        [SerializeField]
-        private AudioClip _ingredientInPot;
-        [SerializeField]
-        private AudioClip _createdPotion;
+        [SerializeField] private AudioClip _ingredientInPot;
+        [SerializeField] private AudioClip _createdPotion;
+        [SerializeField] private AudioClip _emptyPot;
 
         public event Action<AudioClip> playSound;
 
@@ -73,7 +72,11 @@ namespace GameElements
             }
         }
 
-        public void EmptyPot() => _itemsInPot.Clear();
+        public void EmptyPot()
+        {
+            playSound.Invoke(_emptyPot);
+            _itemsInPot.Clear();
+        }
         
         public void FlipPause() => _paused = !_paused;
     }

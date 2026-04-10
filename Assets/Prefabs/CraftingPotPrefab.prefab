@@ -383,8 +383,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4453b20ac32cbe240a60c1a8acefe53e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameElements.CraftingPot
-  _ingredientInPot: {fileID: 8300000, guid: c07de1284af6e49478024ceb48bce0cf, type: 3}
-  _createdPotion: {fileID: 8300000, guid: 07607d4ea482075439adb1e634cbb9d4, type: 3}
+  _ingredientInPot: {fileID: 8300000, guid: 07b2635a9bf35704884c323070a3dd3b, type: 3}
+  _createdPotion: {fileID: 8300000, guid: 8beb5d86ec85f8444928b64c3800d4b2, type: 3}
+  _emptyPot: {fileID: 8300000, guid: 0f2c16c7858ed1c4791459f5ab07158f, type: 3}
   _itemInstancePrefab: {fileID: 1736434130614050027, guid: eb86db826bd1df24c8945e3817658ff7, type: 3}
 --- !u!114 &3270739288381590992
 MonoBehaviour:
