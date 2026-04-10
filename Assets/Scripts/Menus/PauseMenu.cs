@@ -1,23 +1,26 @@
 using GameAudio;
+using Player;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
-    private bool gamePaused = false;
-
     [SerializeField]
     private GameObject _pauseMenuUI;
     [SerializeField]
     private GameObject _optionsMenuUI;
 
+    private WorldController _worldController;
+
     private float _timeScale = 1f;
+
+    private bool gamePaused = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        GetWorldController();
     }
 
     // Update is called once per frame
@@ -26,7 +29,7 @@ public class PauseMenu : MonoBehaviour
         if(Keyboard.current.escapeKey.wasPressedThisFrame)
         {     
             // Reloading the main menu while its the current scene causes Mono singleton errors with the sound manager (creates multiple)
-            //if (SceneManager.GetActiveScene().name != "LukeDevScene")             // also you cant usually pause a game on the main menu
+            if (SceneManager.GetActiveScene().name != "LukeDevScene")             // also you cant usually pause a game on the main menu
             {
                 TogglePause();
             }
@@ -35,21 +38,23 @@ public class PauseMenu : MonoBehaviour
 
     public void PauseGame()
     {
-        if(_pauseMenuUI != null)
+        if(_pauseMenuUI != null && !_optionsMenuUI.activeInHierarchy)
         {
             _pauseMenuUI.SetActive(true);
             Time.timeScale = 0f;
             gamePaused = true;
+            _worldController.FlipPause();
         }
     }
 
     public void ResumeGame()
     {
-        if(_pauseMenuUI != null)
+        if(_pauseMenuUI != null && !_optionsMenuUI.activeInHierarchy)
         {
             _pauseMenuUI.SetActive(false);
             Time.timeScale = _timeScale;
             gamePaused = false;
+            _worldController.FlipPause();
         }  
     }
 
@@ -87,6 +92,11 @@ public class PauseMenu : MonoBehaviour
             var lvlManager = lvlManagerObject.GetComponent<LevelManager>();
             lvlManager.LoadMainMenu();
         }
+    }
+
+    private void GetWorldController()
+    {
+        _worldController = Object.FindFirstObjectByType<WorldController>();
     }
 
 }
