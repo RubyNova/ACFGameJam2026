@@ -2015,6 +2015,70 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2484548261876581048, guid: 1be39131abfb05d40bf853fe60aee79a, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2484548261876581048, guid: 1be39131abfb05d40bf853fe60aee79a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4064492496353378308, guid: 1be39131abfb05d40bf853fe60aee79a, type: 3}
+      propertyPath: _recipeBookUI
+      value: 
+      objectReference: {fileID: 1348653486}
+    - target: {fileID: 4898570975826823810, guid: 1be39131abfb05d40bf853fe60aee79a, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4898570975826823810, guid: 1be39131abfb05d40bf853fe60aee79a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5761767024317745418, guid: 1be39131abfb05d40bf853fe60aee79a, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5761767024317745418, guid: 1be39131abfb05d40bf853fe60aee79a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5761767024317745418, guid: 1be39131abfb05d40bf853fe60aee79a, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6237085168893965272, guid: 1be39131abfb05d40bf853fe60aee79a, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6237085168893965272, guid: 1be39131abfb05d40bf853fe60aee79a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6237085168893965272, guid: 1be39131abfb05d40bf853fe60aee79a, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6625228884539705074, guid: 1be39131abfb05d40bf853fe60aee79a, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6625228884539705074, guid: 1be39131abfb05d40bf853fe60aee79a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7028590065447612791, guid: 1be39131abfb05d40bf853fe60aee79a, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7028590065447612791, guid: 1be39131abfb05d40bf853fe60aee79a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7028590065447612791, guid: 1be39131abfb05d40bf853fe60aee79a, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7463529402176068482, guid: 1be39131abfb05d40bf853fe60aee79a, type: 3}
       propertyPath: m_Name
       value: PauseCanvas
@@ -2226,7 +2290,7 @@ MonoBehaviour:
   m_text: Recipe Book
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e59ccd9ac1aff54d7aceeb53cd935dd7, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: -3239632273622948854, guid: e59ccd9ac1aff54d7aceeb53cd935dd7, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2292,7 +2356,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1171198830
@@ -2965,7 +3029,7 @@ MonoBehaviour:
   m_text: Clear Pot
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e59ccd9ac1aff54d7aceeb53cd935dd7, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: -3239632273622948854, guid: e59ccd9ac1aff54d7aceeb53cd935dd7, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3031,7 +3095,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1331254506

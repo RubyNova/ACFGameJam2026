@@ -11,6 +11,9 @@ public class PauseMenu : MonoBehaviour
     [SerializeField]
     private GameObject _optionsMenuUI;
 
+    [SerializeField]
+    private GameObject _recipeBookUI;
+
     private WorldController _worldController;
 
     private float _timeScale = 1f;
@@ -43,7 +46,10 @@ public class PauseMenu : MonoBehaviour
             _pauseMenuUI.SetActive(true);
             Time.timeScale = 0f;
             gamePaused = true;
-            _worldController.FlipPause();
+            if (!_worldController.IsPaused && !_recipeBookUI.activeInHierarchy)
+            {
+                _worldController.FlipPause();
+            }
         }
     }
 
@@ -54,7 +60,10 @@ public class PauseMenu : MonoBehaviour
             _pauseMenuUI.SetActive(false);
             Time.timeScale = _timeScale;
             gamePaused = false;
-            _worldController.FlipPause();
+            if(_worldController.IsPaused && !_recipeBookUI.activeInHierarchy)
+            {
+                _worldController.FlipPause();
+            }
         }  
     }
 

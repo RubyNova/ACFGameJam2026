@@ -4094,6 +4094,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4064492496353378308, guid: 1be39131abfb05d40bf853fe60aee79a, type: 3}
+      propertyPath: _recipeBookUI
+      value: 
+      objectReference: {fileID: 1348653486}
     - target: {fileID: 4898570975826823810, guid: 1be39131abfb05d40bf853fe60aee79a, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
