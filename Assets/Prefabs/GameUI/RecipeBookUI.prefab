@@ -157,7 +157,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Back
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: e59ccd9ac1aff54d7aceeb53cd935dd7, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5539d4865b01ba14c9ff9a46a1ccc5f2, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -470,7 +470,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Recipe:'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: e59ccd9ac1aff54d7aceeb53cd935dd7, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5539d4865b01ba14c9ff9a46a1ccc5f2, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -694,7 +694,7 @@ MonoBehaviour:
     Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus
     mus. Proin feugiat eleifend metus, ac efficitur lacus commodo sed.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: e59ccd9ac1aff54d7aceeb53cd935dd7, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5539d4865b01ba14c9ff9a46a1ccc5f2, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -1664,7 +1664,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Close
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: e59ccd9ac1aff54d7aceeb53cd935dd7, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5539d4865b01ba14c9ff9a46a1ccc5f2, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -1801,7 +1801,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: PLACEHOLDER ITEM NAME
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: e59ccd9ac1aff54d7aceeb53cd935dd7, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5539d4865b01ba14c9ff9a46a1ccc5f2, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -2015,7 +2015,7 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: e59ccd9ac1aff54d7aceeb53cd935dd7, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5539d4865b01ba14c9ff9a46a1ccc5f2, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}

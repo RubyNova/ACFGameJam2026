@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using Utilities;
 
@@ -22,7 +23,10 @@ namespace GameAudio
 
         public void PlayAudioClip(AudioClip audioClip)
         {
-            _audioSource2.PlayOneShot(audioClip, _config.SfxVolume);
+            if(_audioSource2 != null)
+            {
+                _audioSource2.PlayOneShot(audioClip, _config.SfxVolume);
+            }
         }
 
         private void PlayBGM()
