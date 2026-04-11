@@ -8,6 +8,11 @@ public class MainMenu : MonoBehaviour
         StartCoroutine(LevelManager.Instance.LoadScene("KennyDevScene"));
     }
 
+    public void StartEndlessGame()
+    {
+        StartCoroutine(LevelManager.Instance.LoadScene("KennyPerfScene"));
+    }
+
     public void QuitGame()
     {
         Debug.Log("QUIT");
