@@ -4074,11 +4074,11 @@ PrefabInstance:
       objectReference: {fileID: 2671590625630770539}
     - target: {fileID: 738546212711536671, guid: cd7cc9733cbda3448a383c515fe4d345, type: 3}
       propertyPath: _numberOfRandomNpcsToSpawn
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 738546212711536671, guid: cd7cc9733cbda3448a383c515fe4d345, type: 3}
       propertyPath: _randomNpcsToSpawn.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 738546212711536671, guid: cd7cc9733cbda3448a383c515fe4d345, type: 3}
       propertyPath: '_randomNpcsToSpawn.Array.data[0]'

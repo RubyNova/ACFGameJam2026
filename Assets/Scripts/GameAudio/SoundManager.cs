@@ -1,4 +1,3 @@
-using Unity.VisualScripting;
 using UnityEngine;
 using Utilities;
 
@@ -12,8 +11,7 @@ namespace GameAudio
         private AudioSource _audioSource;
         [SerializeField] private AudioSource _audioSource2;
 
-        // Update is called once per frame
-        void Update()
+        void Start()
         {
             if (_audioSource != null && _config.Bgm != null)
             {
@@ -29,16 +27,18 @@ namespace GameAudio
             }
         }
 
-        private void PlayBGM()
+        public void PlayBGM(bool endOfShift = false)
         {
-            if (!_audioSource.isPlaying.Equals(_config.Bgm))
+            if (_audioSource != null) 
             {
-                _audioSource?.PlayOneShot(_config.Bgm, _config.BgmVolume);
+                _audioSource.clip = !endOfShift ? _config.Bgm : _config.EndOfShiftBgm;
+                _audioSource.volume = _config.BgmVolume;
+                _audioSource.loop = true;   
+                _audioSource.ignoreListenerPause = true; 
+                _audioSource.Play();
             }
         }
-
-        
-
+    
         protected override void OnInit()
         {
             _audioSource = GetComponent<AudioSource>();

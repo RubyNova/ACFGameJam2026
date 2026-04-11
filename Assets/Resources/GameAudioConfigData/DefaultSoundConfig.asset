@@ -16,3 +16,4 @@ MonoBehaviour:
   _bgmVolume: 0.5
   _sfxVolume: 1
   _bgm: {fileID: 8300000, guid: 5878e5ce84de54644b0c98c3b0d176a7, type: 3}
+  _endOfShiftBgm: {fileID: 8300000, guid: 97ff915ce0f14ed4c85314cfbe6c29f8, type: 3}
