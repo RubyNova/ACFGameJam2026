@@ -1,3 +1,4 @@
+using GameAudio;
 using Player;
 using System;
 using UnityEngine;
@@ -16,9 +17,12 @@ public class GameClock : MonoBehaviour
     [SerializeField]
     private Transform _hourHandTransform;
 
-    [Header("Optional - Skyroll Settings")]
+    [Header("Optional")]
     [SerializeField]
     private float _finalXPositionForNightSky;
+
+    [SerializeField]
+    private AudioClip _timeUpSound;
 
     [SerializeField]
     private Transform _skyrollTransform;
@@ -61,6 +65,8 @@ public class GameClock : MonoBehaviour
             _moveSkyroll = true;
             _skyrollSpeed = Math.Abs(_skyrollTransform.localPosition.x - _finalXPositionForNightSky) / _secondsBeforeLevelIsOver;
         }
+
+        TimerFinished.AddListener(PlaySound);
     }
 
     // Update is called once per frame
@@ -109,5 +115,13 @@ public class GameClock : MonoBehaviour
     {
         _timerStarted = true;
         _paused = false;
+    }
+
+    private void PlaySound()
+    {
+        if(_timeUpSound != null)
+        {
+            SoundManager.Instance.PlayAudioClip(_timeUpSound);
+        }   
     }
 }

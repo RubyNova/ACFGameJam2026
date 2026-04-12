@@ -17,6 +17,12 @@ namespace GameUI
         private RectTransform _listScrollView;
 
         [SerializeField]
+        private GameObject _closeButton;
+
+        [SerializeField]
+        private GameObject _backButton;
+
+        [SerializeField]
         private ItemDetailsController _detailsController;
 
         private Stack<Action> _browseHistory;
@@ -75,6 +81,8 @@ namespace GameUI
             {
                 _listScrollView.gameObject.SetActive(true);
                 _detailsController.gameObject.SetActive(false);
+                _closeButton.gameObject.SetActive(true);
+                _backButton.gameObject.SetActive(true);
             });
 
             LeaveItemListNoBackCache(item);
@@ -83,6 +91,8 @@ namespace GameUI
         public void LeaveItemListNoBackCache(ItemConfig item)
         {
             _listScrollView.gameObject.SetActive(false);
+            _closeButton.gameObject.SetActive(false);
+            _backButton.gameObject.SetActive(false);
             _detailsController.Init(item, this);
             _detailsController.gameObject.SetActive(true);
         }
@@ -92,6 +102,8 @@ namespace GameUI
         internal void EnterItemListView()
         {
             _listScrollView.gameObject.SetActive(true);
+            _closeButton.gameObject.SetActive(true);
+            _backButton.gameObject.SetActive(true);
         }
 
         public void ProcessBackAction()

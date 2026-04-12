@@ -4,6 +4,7 @@ using GameElements;
 using UnityEngine;
 using NPC;
 using TMPro;
+using GameAudio;
 
 namespace Player
 {
@@ -183,12 +184,14 @@ namespace Player
 
         private void LevelOverProcess()
         {
+            //Stop controls
             _clock.StopTimer(false, true);
             _playerController.FlipPause();
             _pot.FlipPause();
             _paused = true;
 
-            
+            //Change Audio
+            SoundManager.Instance.PlayBGM(true);
 
             _timeRemainingText.text = $"{(int)_timeRemainingInSeconds}s";
             _itemsCraftedText.text = $"{_itemsCrafted}";

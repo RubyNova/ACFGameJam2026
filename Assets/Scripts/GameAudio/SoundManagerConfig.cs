@@ -18,12 +18,18 @@ namespace GameAudio
         [SerializeField]
         private AudioClip _bgm;
 
+        
+        [SerializeField]
+        private AudioClip _endOfShiftBgm;
+
         public AudioMixer AudioMixer => _mixer;
         public float BgmVolume => _bgmVolume;
 
         public float SfxVolume => _sfxVolume;
 
         public AudioClip Bgm => _bgm;
+
+        public AudioClip EndOfShiftBgm => _endOfShiftBgm;
 
     }
 }
