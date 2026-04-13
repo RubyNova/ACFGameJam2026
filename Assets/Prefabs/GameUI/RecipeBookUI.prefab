@@ -326,6 +326,7 @@ MonoBehaviour:
   _largeIconRenderer: {fileID: 6095839427885795989}
   _titleTextRenderer: {fileID: 6798987445954336910}
   _detailsTextRenderer: {fileID: 570288107201391383}
+  _layeredSpriteMaterial: {fileID: -876546973899608171, guid: c0226cf508a9a3948b212c45a0bd4e61, type: 3}
 --- !u!1 &2452955703780280580
 GameObject:
   m_ObjectHideFlags: 0

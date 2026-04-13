@@ -16,6 +16,8 @@ namespace GameElements
 
         public ItemConfig BackingConfig { get; private set; }
 
+        private void OnDestroy() => Destroy(_runtimeMaterial);
+
         public void InitialiseWithItemConfig(ItemConfig config)
         {
             if (!_hasFirstTimeInitialised)
