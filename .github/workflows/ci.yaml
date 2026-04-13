@@ -111,10 +111,7 @@ jobs:
       - name: Cleanup Artifact
         shell: pwsh
         run: |
-          rm -Recurse build/StandaloneWindows64/StandaloneWindows64_BackUpThisFolder_ButDontShipItWithYourGame
-        #Replace when we name the game
-        # run: |
-        #   rm -Recurse build/StandaloneWindows64/Prismyck_BurstDebugInformation_DoNotShip
+          rm -Recurse build/StandaloneWindows64/ACFGameJam2026_BurstDebugInformation_DoNotShip
         #   rm -Recurse build/StandaloneWindows64/StandaloneWindows64_BackUpThisFolder_ButDontShipItWithYourGame
 
       - name: Upload Windows Build as Artifact
