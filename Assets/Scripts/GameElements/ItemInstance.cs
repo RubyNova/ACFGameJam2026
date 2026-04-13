@@ -13,7 +13,7 @@ namespace GameElements
         public void InitialiseWithItemConfig(ItemConfig config)
         {
             BackingConfig = config;
-            _itemRenderer.sprite = BackingConfig.ItemIcon;
+            _itemRenderer.sprite = BackingConfig.ItemIconBackground;
         }
     }
 }

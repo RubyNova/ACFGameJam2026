@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace CraftingAPI
 {
@@ -15,8 +16,23 @@ namespace CraftingAPI
         [SerializeField]
         private string _shortDescription;
 
+        [SerializeField, FormerlySerializedAs("_itemIcon")]
+        private Sprite _itemIconBackground;
+        
         [SerializeField]
-        private Sprite _itemIcon;
+        private Sprite _itemIconMiddle;
+        
+        [SerializeField]
+        private Sprite _itemIconForeground;
+
+        [SerializeField]
+        private Color _backgroundColourTint;
+        
+        [SerializeField]
+        private Color _middleColourTint;
+        
+        [SerializeField]
+        private Color _foregroundColourTint;
 
         [SerializeField, TextArea]
         private string _recipeBookEntryDescription;
@@ -28,11 +44,21 @@ namespace CraftingAPI
 
         public string ShortDescription => _shortDescription;
 
-        public Sprite ItemIcon => _itemIcon;
+        public Sprite ItemIconBackground => _itemIconBackground;
+        
+        public Sprite ItemIconMiddle => _itemIconMiddle;
+        
+        public Sprite ItemIconForeground => _itemIconForeground;
 
         public string RecipeBookEntryDescription => _recipeBookEntryDescription;
 
         public IReadOnlyList<ItemConfig> Recipe => _recipe;
+
+        public Color BackgroundColourTint => _backgroundColourTint;
+        
+        public Color MiddleColourTInt => _middleColourTint;
+        
+        public Color ForegroundColourTint => _foregroundColourTint;
 
         public int CompareTo(ItemConfig other)
         {

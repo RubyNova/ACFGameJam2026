@@ -33,7 +33,7 @@ namespace GameUI
             _itemConfig = item;
             _recipeBookController = recipeBookController;
             _titleTextRenderer.text = item.ItemName;
-            _largeIconRenderer.sprite = item.ItemIcon;
+            _largeIconRenderer.sprite = item.ItemIconBackground;
             _detailsTextRenderer.text = item.RecipeBookEntryDescription;
 
             var ingredients = item.Recipe;
@@ -51,7 +51,7 @@ namespace GameUI
                 var controllerLocal = recipeBookController;  
                 var newObject = Instantiate(_ingredientButtonPrefab, _recipeItemIconContainer);
 
-                newObject.GetComponent<Image>().sprite = ingredient.ItemIcon;
+                newObject.GetComponent<Image>().sprite = ingredient.ItemIconBackground;
                 newObject.GetComponent<Button>().onClick.AddListener(() =>
                 {
                     _recipeBookController.CacheBrowseBackAction(() => Init(itemLocal, controllerLocal));

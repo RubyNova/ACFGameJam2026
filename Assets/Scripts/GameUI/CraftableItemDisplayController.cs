@@ -24,7 +24,7 @@ namespace GameUI
         {
             _item = item;
             _owningController = owningController;
-            _iconRenderer.sprite = item.ItemIcon;
+            _iconRenderer.sprite = item.ItemIconBackground;
             _titleRenderer.text = item.ItemName;
             _shortDescriptionRenderer.text = item.ShortDescription;
         }
