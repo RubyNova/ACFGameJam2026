@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bf8d2c7cf5fef54cbef8a0d00ca2471, type: 3}
+  m_Name: SuperSpeed
+  m_EditorClassIdentifier: Assembly-CSharp::CraftingAPI.ItemConfig
+  _itemName: Plupkiplup Potion
+  _shortDescription: Super speed potion
+  _itemIcon: {fileID: 0}
+  _recipeBookEntryDescription: "Makes you much faster. You\u2019ll be taking two
+    turns at once, or running so fast you\u2019ll be gone in the blink of an eye!
+    Colloquially known as the \u201CHustle Drink\u201D. Made from mixing Plushkik
+    with itself"
+  _recipe: []
