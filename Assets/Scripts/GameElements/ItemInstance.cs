@@ -12,35 +12,24 @@ namespace GameElements
 
         private Texture2D _clearTexture;
 
-        private bool _hasStarted = false;
+        private bool _hasFirstTimeInitialised = false;
 
         public ItemConfig BackingConfig { get; private set; }
 
-        private void Start()
-        {
-            if (_hasStarted)
-            {
-                return;
-            }
-
-            _hasStarted = true;
-
-            _runtimeMaterial = Instantiate(_itemRenderer.material);
-            _itemRenderer.material = _runtimeMaterial;
-
-            _clearTexture = new Texture2D(1, 1);
-            _clearTexture.SetPixel(0, 0, Color.clear);
-            _clearTexture.Apply();
-        }
-
-        private void OnDestroy()
-        {
-            Destroy(_runtimeMaterial);
-        }
-
         public void InitialiseWithItemConfig(ItemConfig config)
         {
-            Start();
+            if (!_hasFirstTimeInitialised)
+            {
+                _hasFirstTimeInitialised = true;
+
+                _runtimeMaterial = Instantiate(_itemRenderer.material);
+                _itemRenderer.material = _runtimeMaterial;
+
+                _clearTexture = new Texture2D(1, 1);
+                _clearTexture.SetPixel(0, 0, Color.clear);
+                _clearTexture.Apply();
+            }
+
             BackingConfig = config;
             _itemRenderer.sprite = BackingConfig.ItemIconBackground;
 
