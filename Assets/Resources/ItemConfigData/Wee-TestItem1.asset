@@ -14,6 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CraftingAPI.ItemConfig
   _itemName: Wee
   _shortDescription: Woo
-  _itemIcon: {fileID: 21300000, guid: e37dcce74f4c55943b3dab0c093e3e66, type: 3}
+  _itemIconBackground: {fileID: 21300000, guid: e37dcce74f4c55943b3dab0c093e3e66, type: 3}
+  _itemIconMiddle: {fileID: 0}
+  _itemIconForeground: {fileID: 0}
+  _backgroundColourTint: {r: 1, g: 1, b: 1, a: 1}
+  _middleColourTint: {r: 1, g: 1, b: 1, a: 1}
+  _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: weeeeeeeeeeeEEEEEEEEEE
   _recipe: []

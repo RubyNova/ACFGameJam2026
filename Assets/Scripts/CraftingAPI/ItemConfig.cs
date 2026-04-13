@@ -26,13 +26,13 @@ namespace CraftingAPI
         private Sprite _itemIconForeground;
 
         [SerializeField]
-        private Color _backgroundColourTint;
+        private Color _backgroundColourTint = Color.white;
         
         [SerializeField]
-        private Color _middleColourTint;
+        private Color _middleColourTint = Color.white;
         
         [SerializeField]
-        private Color _foregroundColourTint;
+        private Color _foregroundColourTint = Color.white;
 
         [SerializeField, TextArea]
         private string _recipeBookEntryDescription;
@@ -56,7 +56,7 @@ namespace CraftingAPI
 
         public Color BackgroundColourTint => _backgroundColourTint;
         
-        public Color MiddleColourTInt => _middleColourTint;
+        public Color MiddleColourTint => _middleColourTint;
         
         public Color ForegroundColourTint => _foregroundColourTint;
 
