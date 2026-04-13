@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d7299146aa8842459de718ac5553b7c, type: 3}
   m_Name: Narration
   m_EditorClassIdentifier: Assembly-CSharp::ACHNarrativeDriver.ScriptableObjects.Character
-  _name: 
+  _name: Narration
   _poses: []
   _nameplateSprite: {fileID: 0}
   _isFirstPerson: 0
