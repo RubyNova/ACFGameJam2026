@@ -5,6 +5,8 @@ using Utilities;
 
 public class LevelManager : MonoSingleton<LevelManager>
 {
+    private static WaitForSeconds _waitForSeconds = new(1);
+
     [SerializeField]
     private Animator _fade;
 
@@ -13,10 +15,10 @@ public class LevelManager : MonoSingleton<LevelManager>
         
     }
 
-    public IEnumerator LoadScene(string sceneName)
+    private IEnumerator LoadSceneInternal(string sceneName)
     {
         _fade.SetTrigger("Start");
-        yield return new WaitForSeconds(1);
+        yield return _waitForSeconds;
 
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(sceneName);
 
@@ -28,19 +30,11 @@ public class LevelManager : MonoSingleton<LevelManager>
 
     public void LoadMainMenu()
     {
-        StartCoroutine(LoadScene("LukeDevScene"));
+        StartCoroutine(LoadSceneInternal("LukeDevScene"));
     }
 
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public void LoadScene(string sceneName)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        StartCoroutine(LoadSceneInternal(sceneName));
     }
 }

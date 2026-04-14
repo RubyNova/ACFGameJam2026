@@ -5,12 +5,12 @@ public class MainMenu : MonoBehaviour
 
     public void StartGame()
     {
-        StartCoroutine(LevelManager.Instance.LoadScene("KennyDevScene"));
+        LevelManager.Instance.LoadScene("KennyDevScene");
     }
 
     public void StartEndlessGame()
     {
-        StartCoroutine(LevelManager.Instance.LoadScene("KennyPerfScene"));
+        LevelManager.Instance.LoadScene("KennyPerfScene");
     }
 
     public void QuitGame()
@@ -19,15 +19,4 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
     }
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

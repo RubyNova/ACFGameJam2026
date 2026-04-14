@@ -225,7 +225,7 @@ namespace Player
             if(levelManagerObject != null)
             {
                 var lvlmgr = levelManagerObject.GetComponent<LevelManager>();
-                StartCoroutine(lvlmgr.LoadScene(sceneName));
+                lvlmgr.LoadScene(sceneName);
             }
         }
     }
