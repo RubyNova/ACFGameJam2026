@@ -1,4 +1,5 @@
 using System;
+using GameAudio;
 using GameElements;
 using GameUI;
 using UnityEngine;
@@ -12,6 +13,9 @@ namespace Player
     {
         [SerializeField]
         private RecipeBookController _recipeBookController;
+
+        [SerializeField]
+        private AudioClip _pickUpPotionAudio;
 
         private bool _shouldTryDrag;
         private Vector2 _mousePosition;
@@ -79,11 +83,13 @@ namespace Player
 
                 if (result.transform.gameObject.TryGetComponent<ItemInstance>(out var item))
                 {
+                    SoundManager.Instance.PlayAudioClip(_pickUpPotionAudio);
                     MoveObject(mousePositionInWorld, item);
                     _lastHitObject = item;
                 }
                 else if (result.transform.gameObject.TryGetComponent<ItemSpawner>(out var spawner))
                 {
+                    SoundManager.Instance.PlayAudioClip(_pickUpPotionAudio);
                     _lastHitObject = spawner.Spawn(mousePositionInWorld);
                 }
             }

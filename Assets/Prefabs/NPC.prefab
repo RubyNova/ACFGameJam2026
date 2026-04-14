@@ -111,6 +111,7 @@ MonoBehaviour:
   _collider: {fileID: 3297228217523530690}
   _correctOrder: {fileID: 8300000, guid: a5d130a2a134efb459faa80109608f33, type: 3}
   _incorrectOrder: {fileID: 8300000, guid: 85c5a455ec7f9364ea92ef16a542c68c, type: 3}
+  _footsteps: {fileID: 8300000, guid: 8ce43ae25f72f5f4392af225b8d58947, type: 3}
   CharacterGoneEvent:
     m_PersistentCalls:
       m_Calls: []

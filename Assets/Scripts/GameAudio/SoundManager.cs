@@ -9,7 +9,8 @@ namespace GameAudio
         private SoundManagerConfig _config;
 
         private AudioSource _audioSource;
-        [SerializeField] private AudioSource _audioSource2;
+        [SerializeField]
+        private AudioSource _audioSource2;
 
         void Start()
         {

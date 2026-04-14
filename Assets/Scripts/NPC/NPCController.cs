@@ -29,6 +29,7 @@ namespace NPC
 
         [SerializeField]
         private AudioClip _correctOrder;
+
         [SerializeField]
         private AudioClip _incorrectOrder;
 
@@ -69,6 +70,7 @@ namespace NPC
                 {
                     _entering = _animator.GetCurrentAnimatorStateInfo(0).IsName(NPCConfiguration.SpawnInAnimationClip.name);
                     _collider.enabled = false;
+
                     if (!_entering)
                     {
                         _hasEntered = true;
