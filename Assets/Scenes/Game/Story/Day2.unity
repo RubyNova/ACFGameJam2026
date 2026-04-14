@@ -1253,13 +1253,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1641290413463912053, guid: 3d7097b1edec21948b7762f6ab681ebe, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 1177305247999763781, guid: 3d7097b1edec21948b7762f6ab681ebe, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d7097b1edec21948b7762f6ab681ebe, type: 3}
 --- !u!1001 &3685033498967144024
 PrefabInstance:
@@ -1430,6 +1424,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1172435611}
+    - target: {fileID: 4366244341164122732, guid: e9908ccea2bbccedf92f5ed3ff4fec43, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Day3
+      objectReference: {fileID: 0}
     - target: {fileID: 6513552433603473194, guid: e9908ccea2bbccedf92f5ed3ff4fec43, type: 3}
       propertyPath: m_Name
       value: LevelOverMenu
