@@ -1,3 +1,4 @@
+using GameAudio;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -10,9 +11,11 @@ public class LevelManager : MonoSingleton<LevelManager>
     [SerializeField]
     private Animator _fade;
 
+    private bool _changeBgm;
+
     protected override void OnInit()
     {
-        
+
     }
 
     private IEnumerator LoadSceneInternal(string sceneName)
@@ -22,9 +25,23 @@ public class LevelManager : MonoSingleton<LevelManager>
 
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(sceneName);
 
-        while(!asyncLoad.isDone)
+        if (SceneManager.GetActiveScene().name != "MainMenuDevScene")
+        {
+            _changeBgm = true;
+        }
+        else
+        {
+            _changeBgm = false;
+        }
+
+        while (!asyncLoad.isDone)
         {
             yield return null;
+        }
+
+        if (_changeBgm)
+        {
+            SoundManager.Instance.PlayBGM(false);
         }
     }
 
