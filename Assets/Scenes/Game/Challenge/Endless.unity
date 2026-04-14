@@ -1253,13 +1253,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1641290413463912053, guid: 3d7097b1edec21948b7762f6ab681ebe, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 1177305247999763781, guid: 3d7097b1edec21948b7762f6ab681ebe, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d7097b1edec21948b7762f6ab681ebe, type: 3}
 --- !u!1001 &3685033498967144024
 PrefabInstance:
@@ -1282,6 +1276,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1075217310}
     - target: {fileID: 4308305790724328942, guid: a1bbcf412d644f0c4b95caf699f0cfd9, type: 3}
+      propertyPath: _perfMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4308305790724328942, guid: a1bbcf412d644f0c4b95caf699f0cfd9, type: 3}
       propertyPath: _narrative
       value: 
       objectReference: {fileID: 2671590625630770539}
@@ -1297,6 +1295,10 @@ PrefabInstance:
       propertyPath: _recipeBookUI
       value: 
       objectReference: {fileID: 1348653486}
+    - target: {fileID: 4308305790724328942, guid: a1bbcf412d644f0c4b95caf699f0cfd9, type: 3}
+      propertyPath: _challengeMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4308305790724328942, guid: a1bbcf412d644f0c4b95caf699f0cfd9, type: 3}
       propertyPath: _levelOverObject
       value: 

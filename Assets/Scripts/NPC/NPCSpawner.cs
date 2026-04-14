@@ -61,12 +61,13 @@ namespace NPC
             _characterSpawnIndex = 0;
             _numberOfRandomNpcsInCollection = _randomNpcsToSpawn.Count();
             _numberOfDedicatedNpcsToSpawn = _dedicatedNpcsToSpawn.Count();
-            if (_numberOfRandomNpcsToSpawn <= 0 || _numberOfRandomNpcsInCollection == 0)
-            {
-                throw new System.Exception("Set number of NPCs to spawn or random NPC count for this level cannot be 0!");
-            }
-
+        
             _totalExpectedNpcsToSpawn = _numberOfDedicatedNpcsToSpawn + _numberOfRandomNpcsToSpawn;
+
+            if (_totalExpectedNpcsToSpawn < 0)
+            {
+                throw new System.Exception("Total NPC count for this level cannot be 0!");
+            }
         }
 
         void Update()
@@ -111,7 +112,14 @@ namespace NPC
 
         private NPCCharacter DetermineNextNpc()
         {
-            if (_numberOfRandomNpcsSpawned <= 0 || 
+            if (_numberOfRandomNpcsToSpawn == 0 && _numberOfDedicatedNpcsToSpawn == 1)
+            {
+                var character = _dedicatedNpcsToSpawn[_characterSpawnIndex];
+                _characterSpawnIndex++;
+                _numberOfDedicatedNpcsSpawned++;
+                return character;
+            }
+            else if (_numberOfRandomNpcsSpawned <= 0 || 
                 _numberOfDedicatedNpcsToSpawn <= 0 || 
                 _numberOfDedicatedNpcsSpawned >= _numberOfDedicatedNpcsToSpawn)
             {
