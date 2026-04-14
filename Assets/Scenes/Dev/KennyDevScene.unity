@@ -1728,11 +1728,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2484548261876581048, guid: 1be39131abfb05d40bf853fe60aee79a, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2484548261876581048, guid: 1be39131abfb05d40bf853fe60aee79a, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4064492496353378308, guid: 1be39131abfb05d40bf853fe60aee79a, type: 3}
       propertyPath: _recipeBookUI
@@ -1740,55 +1740,55 @@ PrefabInstance:
       objectReference: {fileID: 1348653486}
     - target: {fileID: 4898570975826823810, guid: 1be39131abfb05d40bf853fe60aee79a, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4898570975826823810, guid: 1be39131abfb05d40bf853fe60aee79a, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5761767024317745418, guid: 1be39131abfb05d40bf853fe60aee79a, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5761767024317745418, guid: 1be39131abfb05d40bf853fe60aee79a, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5761767024317745418, guid: 1be39131abfb05d40bf853fe60aee79a, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6237085168893965272, guid: 1be39131abfb05d40bf853fe60aee79a, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6237085168893965272, guid: 1be39131abfb05d40bf853fe60aee79a, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6237085168893965272, guid: 1be39131abfb05d40bf853fe60aee79a, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6625228884539705074, guid: 1be39131abfb05d40bf853fe60aee79a, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6625228884539705074, guid: 1be39131abfb05d40bf853fe60aee79a, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7028590065447612791, guid: 1be39131abfb05d40bf853fe60aee79a, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7028590065447612791, guid: 1be39131abfb05d40bf853fe60aee79a, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7028590065447612791, guid: 1be39131abfb05d40bf853fe60aee79a, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7463529402176068482, guid: 1be39131abfb05d40bf853fe60aee79a, type: 3}
       propertyPath: m_Name
@@ -1796,7 +1796,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7463529402176068482, guid: 1be39131abfb05d40bf853fe60aee79a, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4011,6 +4011,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 806982119597625126, guid: 3d7097b1edec21948b7762f6ab681ebe, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5005041319333480045, guid: 3d7097b1edec21948b7762f6ab681ebe, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.55
@@ -4051,6 +4055,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8966419706735281969, guid: 3d7097b1edec21948b7762f6ab681ebe, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9138138900583872434, guid: 3d7097b1edec21948b7762f6ab681ebe, type: 3}
       propertyPath: m_Name
       value: SpeechBubble
@@ -4058,7 +4066,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1641290413463912053, guid: 3d7097b1edec21948b7762f6ab681ebe, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 1177305247999763781, guid: 3d7097b1edec21948b7762f6ab681ebe, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 3d7097b1edec21948b7762f6ab681ebe, type: 3}
 --- !u!1001 &5095067502441571592
 PrefabInstance:
