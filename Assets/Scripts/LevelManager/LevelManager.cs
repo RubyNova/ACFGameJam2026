@@ -30,7 +30,7 @@ public class LevelManager : MonoSingleton<LevelManager>
 
     public void LoadMainMenu()
     {
-        StartCoroutine(LoadSceneInternal("LukeDevScene"));
+        StartCoroutine(LoadSceneInternal("MainMenuDevScene"));
     }
 
     public void LoadScene(string sceneName)

@@ -29,10 +29,10 @@ public class PauseMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Keyboard.current.escapeKey.wasPressedThisFrame)
+        if(Keyboard.current.pKey.wasPressedThisFrame)
         {     
             // Reloading the main menu while its the current scene causes Mono singleton errors with the sound manager (creates multiple)
-            if (SceneManager.GetActiveScene().name != "LukeDevScene")             // also you cant usually pause a game on the main menu
+            if (SceneManager.GetActiveScene().name != "MainMenuDevScene")             // also you cant usually pause a game on the main menu
             {
                 TogglePause();
             }
@@ -81,7 +81,7 @@ public class PauseMenu : MonoBehaviour
 
     public void LeaveOptionsMenu()
     {
-        if(SceneManager.GetActiveScene().name == "LukeDevScene")
+        if(SceneManager.GetActiveScene().name == "MainMenuDevScene")
         {
             _optionsMenuUI.SetActive(false);
             _pauseMenuUI.SetActive(false);

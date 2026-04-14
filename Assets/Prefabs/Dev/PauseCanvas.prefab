@@ -2716,7 +2716,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PauseMenu
   _pauseMenuUI: {fileID: 3515141790252963288}
   _optionsMenuUI: {fileID: 842301028606169622}
-  _recipeBookUI: {fileID: 0}
+  _recipeBookUI: {fileID: 6155097581166574419, guid: 54a53a84bbf8dcb4db44f1e6a36b3546, type: 3}
 --- !u!1 &7517731358366990991
 GameObject:
   m_ObjectHideFlags: 0
