@@ -326,7 +326,7 @@ MonoBehaviour:
   _largeIconRenderer: {fileID: 6095839427885795989}
   _titleTextRenderer: {fileID: 6798987445954336910}
   _detailsTextRenderer: {fileID: 570288107201391383}
-  _layeredSpriteMaterial: {fileID: -876546973899608171, guid: c0226cf508a9a3948b212c45a0bd4e61, type: 3}
+  _layeredSpriteMaterial: {fileID: -876546973899608171, guid: dd96189209f413b64916b345199f9a80, type: 3}
 --- !u!1 &2452955703780280580
 GameObject:
   m_ObjectHideFlags: 0
@@ -1025,7 +1025,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
-  m_Material: {fileID: 0}
+  m_Material: {fileID: -876546973899608171, guid: dd96189209f413b64916b345199f9a80, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0.3254902}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}

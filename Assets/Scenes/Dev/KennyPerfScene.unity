@@ -3236,6 +3236,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player.WorldController
   _recipeBookController: {fileID: 5666245986660476473}
+  _pickUpPotionAudio: {fileID: 0}
 --- !u!114 &1467661308
 MonoBehaviour:
   m_ObjectHideFlags: 0

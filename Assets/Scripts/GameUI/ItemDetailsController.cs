@@ -33,6 +33,8 @@ namespace GameUI
 
         private bool _hasFirstTimeInitialised = false;
 
+        private Material _runtimeBGMaterial;
+
         private Texture2D _clearTexture;
 
         private void OnDestroy() => DestroyManagedChildrenData();
@@ -56,11 +58,17 @@ namespace GameUI
                 _clearTexture = new Texture2D(1, 1);
                 _clearTexture.SetPixel(0, 0, Color.clear);
                 _clearTexture.Apply();
+
+                _runtimeBGMaterial = Instantiate(_largeIconRenderer.material);
+                _largeIconRenderer.material = _runtimeBGMaterial;
             }
 
             _itemConfig = item;
             _recipeBookController = recipeBookController;
             _titleTextRenderer.text = item.ItemName;
+
+            UpdateImageRenderer(item, _largeIconRenderer);
+
             _largeIconRenderer.sprite = item.ItemIconBackground;
             _detailsTextRenderer.text = item.RecipeBookEntryDescription;
 
@@ -79,27 +87,7 @@ namespace GameUI
                 imageInstance.material = Instantiate(_layeredSpriteMaterial);
                 imageInstance.sprite = ingredient.ItemIconBackground;
 
-                if (ingredient.ItemIconMiddle != null)
-                {
-                    imageInstance.material.SetTexture("_ItemIconMiddle", ingredient.ItemIconMiddle.texture);
-                }
-                else
-                {
-                    imageInstance.material.SetTexture("_ItemIconMiddle", _clearTexture);
-                }
-
-                if (ingredient.ItemIconForeground != null)
-                {
-                    imageInstance.material.SetTexture("_ItemIconForeground", ingredient.ItemIconForeground.texture);
-                }
-                else
-                {
-                    imageInstance.material.SetTexture("_ItemIconForeground", _clearTexture);
-                }
-
-                imageInstance.material.SetColor("_BaseMapColour", ingredient.BackgroundColourTint);
-                imageInstance.material.SetColor("_ItemIconMiddleColourTint", ingredient.MiddleColourTint);
-                imageInstance.material.SetColor("_ItemIconForegroundColourTint", ingredient.ForegroundColourTint);
+                UpdateImageRenderer(ingredient, imageInstance);
 
                 newObject.GetComponent<Button>().onClick.AddListener(() =>
                 {
@@ -107,6 +95,31 @@ namespace GameUI
                     Init(ingredient, _recipeBookController);
                 });
             }
+        }
+
+        private void UpdateImageRenderer(ItemConfig ingredient, Image imageInstance)
+        {
+            if (ingredient.ItemIconMiddle != null)
+            {
+                imageInstance.material.SetTexture("_ItemIconMiddle", ingredient.ItemIconMiddle.texture);
+            }
+            else
+            {
+                imageInstance.material.SetTexture("_ItemIconMiddle", _clearTexture);
+            }
+
+            if (ingredient.ItemIconForeground != null)
+            {
+                imageInstance.material.SetTexture("_ItemIconForeground", ingredient.ItemIconForeground.texture);
+            }
+            else
+            {
+                imageInstance.material.SetTexture("_ItemIconForeground", _clearTexture);
+            }
+
+            imageInstance.material.SetColor("_BaseMapColour", ingredient.BackgroundColourTint);
+            imageInstance.material.SetColor("_ItemIconMiddleColourTint", ingredient.MiddleColourTint);
+            imageInstance.material.SetColor("_ItemIconForegroundColourTint", ingredient.ForegroundColourTint);
         }
 
         public void ReturnToItemList()
