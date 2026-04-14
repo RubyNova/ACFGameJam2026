@@ -1443,6 +1443,8 @@ MonoBehaviour:
   _closeButton: {fileID: 6991630552743075321}
   _backButton: {fileID: 5166248677543842815}
   _detailsController: {fileID: 1405087781650643162}
+  _openRecipeBook: {fileID: 8300000, guid: 812251739ffb7914ebaf75e080f2e7f6, type: 3}
+  _closeRecipeBook: {fileID: 8300000, guid: fe4a023b92f02084293119dcd685c721, type: 3}
 --- !u!1 &6991630552743075321
 GameObject:
   m_ObjectHideFlags: 0

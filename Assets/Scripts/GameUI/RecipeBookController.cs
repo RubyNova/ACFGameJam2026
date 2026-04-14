@@ -2,6 +2,7 @@ using UnityEngine;
 using CraftingAPI;
 using System;
 using System.Collections.Generic;
+using GameAudio;
 
 namespace GameUI
 {
@@ -25,6 +26,12 @@ namespace GameUI
         [SerializeField]
         private ItemDetailsController _detailsController;
 
+        [SerializeField]
+        private AudioClip _openRecipeBook;
+
+        [SerializeField]
+        private AudioClip _closeRecipeBook;
+
         private Stack<Action> _browseHistory;
 
         public event Action RecipeUIActive;
@@ -46,9 +53,17 @@ namespace GameUI
             }
         }
 
-        private void OnEnable() => RecipeUIActive?.Invoke();
+        private void OnEnable()
+        {
+            SoundManager.Instance.PlayAudioClip(_openRecipeBook);
+            RecipeUIActive?.Invoke();
+        }
 
-        private void OnDisable() => RecipeUIInactive?.Invoke();
+        private void OnDisable()
+        {
+            SoundManager.Instance.PlayAudioClip(_closeRecipeBook);
+            RecipeUIInactive?.Invoke();
+        }
 
         private void OnDestroy()
         {

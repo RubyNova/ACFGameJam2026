@@ -1,6 +1,7 @@
 using System.Collections;
 using ACHNarrativeDriver;
 using ACHNarrativeDriver.ScriptableObjects;
+using GameAudio;
 using GameElements;
 using UnityEngine;
 using UnityEngine.Events;
@@ -25,6 +26,11 @@ namespace NPC
 
         [SerializeField]
         private Collider2D _collider;
+
+        [SerializeField]
+        private AudioClip _correctOrder;
+        [SerializeField]
+        private AudioClip _incorrectOrder;
 
         private GameObject _mainCrafingUI;
 
@@ -181,12 +187,14 @@ namespace NPC
                             _leaving = true;
                             _mainCrafingUI.SetActive(false);
                         }
+                        SoundManager.Instance.PlayAudioClip(_incorrectOrder);
                     }
                     else
                     {
                         _beingServed = false;
                         _leaving = true;
                         _mainCrafingUI.SetActive(false);
+                        SoundManager.Instance.PlayAudioClip(_correctOrder);
                     }
                 }
 
