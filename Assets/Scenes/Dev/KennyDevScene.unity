@@ -1253,13 +1253,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1641290413463912053, guid: 3d7097b1edec21948b7762f6ab681ebe, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 1177305247999763781, guid: 3d7097b1edec21948b7762f6ab681ebe, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d7097b1edec21948b7762f6ab681ebe, type: 3}
 --- !u!1001 &3685033498967144024
 PrefabInstance:
@@ -1822,6 +1816,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: RecipeBookCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 8895553399694959794, guid: 4de49d0ece76c0362ac80bb965789ddc, type: 3}
+      propertyPath: _openRecipeBook
+      value: 
+      objectReference: {fileID: 8300000, guid: 812251739ffb7914ebaf75e080f2e7f6, type: 3}
+    - target: {fileID: 8895553399694959794, guid: 4de49d0ece76c0362ac80bb965789ddc, type: 3}
+      propertyPath: _closeRecipeBook
+      value: 
+      objectReference: {fileID: 8300000, guid: fe4a023b92f02084293119dcd685c721, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
