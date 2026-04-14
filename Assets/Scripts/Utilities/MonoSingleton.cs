@@ -46,6 +46,15 @@ namespace Utilities
 			Init();
         }
 
+		private void OnDestroy()
+		{
+			if (HasInstanceCreated && Instance == this)
+			{
+				Destroy(gameObject);
+				_instance = null;
+			}
+		}
+
         public void Init()
         {
 			DontDestroyOnLoad(gameObject);
