@@ -23,4 +23,6 @@ MonoBehaviour:
   _recipeBookEntryDescription: "This potion makes you spiritually and physically
     stronger. You will be your god/goddess/divine being\u2019s stronger solider with
     this one. Made from mixing Hexbegun and Cespian."
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: 06797bbf4f469ce48949499a435df513, type: 2}
+  - {fileID: 11400000, guid: 5a533b5e4e17df540ae9eabb05dc5d85, type: 2}

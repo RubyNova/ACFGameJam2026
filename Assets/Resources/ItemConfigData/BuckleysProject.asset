@@ -23,4 +23,6 @@ MonoBehaviour:
   _recipeBookEntryDescription: "This potion allows you to project your voice across
     entire sound stages. If the person who uses this gets noise complaints then you
     weren\u2019t there. Made from mixing Cespi and Buckem."
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: 751f467c022f2dc4baee998d01eaf248, type: 2}
+  - {fileID: 11400000, guid: 2797aff07aa025d428a3e9907e50d6a0, type: 2}

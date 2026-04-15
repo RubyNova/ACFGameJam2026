@@ -23,4 +23,6 @@ MonoBehaviour:
   _recipeBookEntryDescription: "This potion will make your voice absolutely magical!
     You\u2019ll be able to speak your words into spells like the witches of old using
     wands to cast spells. Made by mixing Laliluleilou and Buckem."
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: 7f2ba145cc235a54faa3ced84fc6da1a, type: 2}
+  - {fileID: 11400000, guid: 2797aff07aa025d428a3e9907e50d6a0, type: 2}

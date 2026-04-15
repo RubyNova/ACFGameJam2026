@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: ButterDestress
   m_EditorClassIdentifier: Assembly-CSharp::CraftingAPI.ItemConfig
   _itemName: Sliszlo Potion
-  _shortDescription: Destress ointment
+  _shortDescription: destress ointment
   _itemIconBackground: {fileID: 21300000, guid: 869ece28b62cdfa4eb666814adb8a815, type: 3}
   _itemIconMiddle: {fileID: 21300000, guid: 04109e65e6f42ab4eb868c9aef32a101, type: 3}
   _itemIconForeground: {fileID: 21300000, guid: cea4c953245cc6d40a26aa3339a9d808, type: 3}
@@ -22,5 +22,7 @@ MonoBehaviour:
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: "This potion is used in order to lessen the tension
     in someone\u2019s body by rubbing it on specific areas. Can help with those who
-    are consistently stressed."
-  _recipe: []
+    are consistently stressed. Made from mixing Rouz and Slisimle."
+  _recipe:
+  - {fileID: 11400000, guid: 8988c71254de98f4ea3a1c8d07d5869d, type: 2}
+  - {fileID: 11400000, guid: a6d86d55612570f4b93067768bef7bd5, type: 2}

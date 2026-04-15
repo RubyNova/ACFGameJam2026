@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: MaxHealth
   m_EditorClassIdentifier: Assembly-CSharp::CraftingAPI.ItemConfig
   _itemName: Heelilalee Potion
-  _shortDescription: Max health increase potion
+  _shortDescription: max health increase
   _itemIconBackground: {fileID: 21300000, guid: dc9e0037bca9fa94a87a58bf3f323532, type: 3}
   _itemIconMiddle: {fileID: 21300000, guid: ec97229b72e557c428f083e4db20edd6, type: 3}
   _itemIconForeground: {fileID: 21300000, guid: 64d11b80839d03a4b956b1a91cee1012, type: 3}
@@ -23,4 +23,6 @@ MonoBehaviour:
   _recipeBookEntryDescription: This potion increases your max health! Though, no
     one knows what the upper limit is. Some rich folks try to guzzle this stuff down
     like syrup. Gross. Made from Heel'm and Laliluleilou.
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: 08917d11410a9644cbc2e7badc151115, type: 2}
+  - {fileID: 11400000, guid: 7f2ba145cc235a54faa3ced84fc6da1a, type: 2}

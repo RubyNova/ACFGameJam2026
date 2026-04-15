@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bf8d2c7cf5fef54cbef8a0d00ca2471, type: 3}
   m_Name: ApplesWhyNot
   m_EditorClassIdentifier: Assembly-CSharp::CraftingAPI.ItemConfig
-  _itemName: A Flubuien Potion
+  _itemName: Flubuien Potion
   _shortDescription: gain a headache mood
   _itemIconBackground: {fileID: 21300000, guid: 1cd2c8975e0459d4383b4f8ad2a091cd, type: 3}
   _itemIconMiddle: {fileID: 21300000, guid: 7d43b65852c37d044b905fcd2d0f3358, type: 3}
@@ -23,4 +23,6 @@ MonoBehaviour:
   _recipeBookEntryDescription: "This potion makes you have the temperament of having
     a headache. Which is like, kinda ticked off but not really mad. Why would you
     want this\u2026? Made from Probufien and Influenz."
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: f13b696be4d1cb2479152b0b658cc368, type: 2}
+  - {fileID: 11400000, guid: 37e4baca959ef1141812513fc0454360, type: 2}

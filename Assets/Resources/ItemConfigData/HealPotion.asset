@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: HealPotion
   m_EditorClassIdentifier: Assembly-CSharp::CraftingAPI.ItemConfig
   _itemName: Heel'm Potion
-  _shortDescription: Recovers some health
+  _shortDescription: recovers some health
   _itemIconBackground: {fileID: 21300000, guid: 28fd65207cf99204abd43ce37bf9afba, type: 3}
   _itemIconMiddle: {fileID: 0}
   _itemIconForeground: {fileID: 0}

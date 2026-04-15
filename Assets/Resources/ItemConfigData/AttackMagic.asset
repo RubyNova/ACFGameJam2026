@@ -21,5 +21,6 @@ MonoBehaviour:
   _middleColourTint: {r: 0.04905355, g: 0.22999108, b: 0.32826024, a: 1}
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: "Fills you with immense magical power. Powers up all
-    magical attacks. Can be extremely helpful\u2026 or extremely deadly."
+    magical attacks. Can be extremely helpful\u2026 or extremely deadly. Made from
+    mixing Laeli and Cespian."
   _recipe: []

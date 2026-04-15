@@ -23,5 +23,7 @@ MonoBehaviour:
   _recipeBookEntryDescription: "This potion allows you to see and detect magical
     curses. Quite popular since you won\u2019t need to pick a specific branch of
     the Hexbegun potion line if you dodge curses in the first place. Made from mixing
-    Hexbegun and Powder."
-  _recipe: []
+    Hexbegun and Laeli."
+  _recipe:
+  - {fileID: 11400000, guid: dc209f38b56491045a54d4c52815bdce, type: 2}
+  - {fileID: 11400000, guid: 06797bbf4f469ce48949499a435df513, type: 2}

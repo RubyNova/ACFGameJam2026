@@ -21,5 +21,7 @@ MonoBehaviour:
   _middleColourTint: {r: 0.22227943, g: 0.6850307, b: 0.061981678, a: 1}
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: This creates a nice healthy aura in the room. Like
-    an airborne antivirus! Made from mixing Relaxalax and Slime.
-  _recipe: []
+    an airborne antivirus! Made from mixing Relaxalax and Limesli.
+  _recipe:
+  - {fileID: 11400000, guid: d07c0945d692eb94e8877ead4441f17a, type: 2}
+  - {fileID: 11400000, guid: e4bd1f38257ab9d4b93ea17750bde1b5, type: 2}

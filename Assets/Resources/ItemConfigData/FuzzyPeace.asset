@@ -22,5 +22,8 @@ MonoBehaviour:
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: 'This potion will give you this nice, warm feeling
     of peacefulness while you get the reset that you need. Its a good feeling potion
-    that can be recommended to anyone at the end of a long day. '
-  _recipe: []
+    that can be recommended to anyone at the end of a long day. Made from mixing
+    Suplush and Zouzor. '
+  _recipe:
+  - {fileID: 11400000, guid: d1f01a817c78b2c449d9382c0d8434d0, type: 2}
+  - {fileID: 11400000, guid: c557b6f4d416ac94ebfc300058005f56, type: 2}

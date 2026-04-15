@@ -23,4 +23,6 @@ MonoBehaviour:
   _recipeBookEntryDescription: This potion makes you feel powerful. While it does
     somewhat increase power, it mostly helps people find the confidence to do powerful
     things they could already do. Made from mixing Influenz and a Vial.
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: 751f467c022f2dc4baee998d01eaf248, type: 2}
+  - {fileID: 11400000, guid: 37e4baca959ef1141812513fc0454360, type: 2}

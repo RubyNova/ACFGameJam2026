@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: HaveworkGoo
   m_EditorClassIdentifier: Assembly-CSharp::CraftingAPI.ItemConfig
   _itemName: Sligunx Potion
-  _shortDescription: Remove slime curses
+  _shortDescription: remove slime curses
   _itemIconBackground: {fileID: 21300000, guid: 1cd2c8975e0459d4383b4f8ad2a091cd, type: 3}
   _itemIconMiddle: {fileID: 21300000, guid: 7d43b65852c37d044b905fcd2d0f3358, type: 3}
   _itemIconForeground: {fileID: 21300000, guid: 4188ca1e95363ad4f98f6f636dc2f963, type: 3}
@@ -22,5 +22,7 @@ MonoBehaviour:
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: "This potion stops any slime related curses, or anything
     related to slime-like substances. There\u2019s more of those then you would think.
-    Made from mixing Hexbegun and Slime."
-  _recipe: []
+    Made from mixing Hexbegun and Limesli."
+  _recipe:
+  - {fileID: 11400000, guid: 06797bbf4f469ce48949499a435df513, type: 2}
+  - {fileID: 11400000, guid: e4bd1f38257ab9d4b93ea17750bde1b5, type: 2}

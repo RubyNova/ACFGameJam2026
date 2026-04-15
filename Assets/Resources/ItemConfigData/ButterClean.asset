@@ -23,4 +23,6 @@ MonoBehaviour:
   _recipeBookEntryDescription: This potion, when rubbed on a surface, can be used
     as an all-purpose cleaning tool, especially useful on otherwise harmful surfaces
     like mold or dangerous liquids to wipe them up. Made from Limesli and Slisimle.
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: e4bd1f38257ab9d4b93ea17750bde1b5, type: 2}
+  - {fileID: 11400000, guid: a6d86d55612570f4b93067768bef7bd5, type: 2}

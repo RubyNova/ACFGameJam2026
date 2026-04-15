@@ -24,4 +24,6 @@ MonoBehaviour:
     mind and your throat. Your throat will start having thoughts. Your mind will
     start singing. Goes against nature, but is cool anyways! Made by mixing Probufen
     and Buckem.
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: f13b696be4d1cb2479152b0b658cc368, type: 2}
+  - {fileID: 11400000, guid: 2797aff07aa025d428a3e9907e50d6a0, type: 2}

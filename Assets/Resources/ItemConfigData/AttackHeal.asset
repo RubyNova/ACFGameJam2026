@@ -23,5 +23,7 @@ MonoBehaviour:
   _recipeBookEntryDescription: This potion does power you up, but this will physically
     heal anyone you physically attack. The healing is stronger the stronger your
     hits are. Situationally helpful if you wanna be a brawler and a healer. Made
-    by mixing Cespian and Plushroom
-  _recipe: []
+    by mixing Cespian and Plushroom.
+  _recipe:
+  - {fileID: 11400000, guid: 5a533b5e4e17df540ae9eabb05dc5d85, type: 2}
+  - {fileID: 11400000, guid: 159ab75429d32e942a405250fdb2b4cf, type: 2}

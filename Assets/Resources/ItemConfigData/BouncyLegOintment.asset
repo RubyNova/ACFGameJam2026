@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BouncyLegOintment
   m_EditorClassIdentifier: Assembly-CSharp::CraftingAPI.ItemConfig
   _itemName: Slimplush Potion
-  _shortDescription: Bouncy leg ointment-esque potion
+  _shortDescription: bouncy leg ointment
   _itemIconBackground: {fileID: 21300000, guid: 869ece28b62cdfa4eb666814adb8a815, type: 3}
   _itemIconMiddle: {fileID: 21300000, guid: 04109e65e6f42ab4eb868c9aef32a101, type: 3}
   _itemIconForeground: {fileID: 21300000, guid: 2b615c7663cc16745a0d63b0abe7a7c5, type: 3}
@@ -23,4 +23,6 @@ MonoBehaviour:
   _recipeBookEntryDescription: " Rubbing this as ointment will make whatever part
     of your body bounce like a hyperactive leg when you\u2019re sitting down. Could
     be good for a lazy workout\u2026? Made by mixing Plushkik and Sisimle."
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: a6d86d55612570f4b93067768bef7bd5, type: 2}
+  - {fileID: 11400000, guid: 9d4de58eadec3574384a86d33e20aca8, type: 2}

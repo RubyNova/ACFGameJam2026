@@ -23,4 +23,6 @@ MonoBehaviour:
   _recipeBookEntryDescription: This potion is not only used as an attack-increaser,
     but also as a hot sauce. Mix with to increase attack and spiciness. Made from
     mixing Cespi.
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: 751f467c022f2dc4baee998d01eaf248, type: 2}
+  - {fileID: 11400000, guid: 751f467c022f2dc4baee998d01eaf248, type: 2}

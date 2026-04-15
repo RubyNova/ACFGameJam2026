@@ -23,5 +23,7 @@ MonoBehaviour:
   _recipeBookEntryDescription: This potion stops any fruit related curses. Of which
     there are many for each fruit that has ever existed. Or if you turn into a fruit.
     This can also stop mood related curses, which is less important. Made from mixing
-    Hexbegun and a Berry.
-  _recipe: []
+    Hexbegun and Rouz.
+  _recipe:
+  - {fileID: 11400000, guid: 06797bbf4f469ce48949499a435df513, type: 2}
+  - {fileID: 11400000, guid: 8988c71254de98f4ea3a1c8d07d5869d, type: 2}

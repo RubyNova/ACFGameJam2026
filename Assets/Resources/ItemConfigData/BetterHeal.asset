@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BetterHeal
   m_EditorClassIdentifier: Assembly-CSharp::CraftingAPI.ItemConfig
   _itemName: Heeleehee
-  _shortDescription: Stronger healing potion
+  _shortDescription: stronger healing potion
   _itemIconBackground: {fileID: 21300000, guid: ea14edabe08c6eb43bf58110bd97db44, type: 3}
   _itemIconMiddle: {fileID: 21300000, guid: ae46d027c9b726b46beb0421ad800b15, type: 3}
   _itemIconForeground: {fileID: 21300000, guid: 6e2158b7896ab2248a755a52b0a7941e, type: 3}
@@ -23,4 +23,6 @@ MonoBehaviour:
   _recipeBookEntryDescription: "A strong health potion cures more than your standard
     Heel\u2019m potion. This also tends to be used in many sandwiches. Made from
     mixing a Heel'm Potion and a Plushroom."
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: 159ab75429d32e942a405250fdb2b4cf, type: 2}
+  - {fileID: 11400000, guid: 08917d11410a9644cbc2e7badc151115, type: 2}

@@ -23,4 +23,6 @@ MonoBehaviour:
   _recipeBookEntryDescription: This potion allows you to medically heal someone physically
     by just touching them, as if your body was coursing with medicinal power. An
     interesting mixture to be sure. Made by mixing Limesli and Cespian.
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: e4bd1f38257ab9d4b93ea17750bde1b5, type: 2}
+  - {fileID: 11400000, guid: 5a533b5e4e17df540ae9eabb05dc5d85, type: 2}
