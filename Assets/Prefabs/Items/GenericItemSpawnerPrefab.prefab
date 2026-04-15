@@ -108,6 +108,8 @@ MonoBehaviour:
   _itemToSpawn: {fileID: 0}
   _itemInstancePrefab: {fileID: 1736434130614050027, guid: eb86db826bd1df24c8945e3817658ff7, type: 3}
   _zPosition: 0
+  _itemRenderer: {fileID: 3192482333918119129}
+  _material: {fileID: 0}
 --- !u!61 &3006024051306036500
 BoxCollider2D:
   m_ObjectHideFlags: 0
