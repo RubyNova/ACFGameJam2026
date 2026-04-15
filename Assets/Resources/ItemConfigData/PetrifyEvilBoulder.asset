@@ -23,4 +23,6 @@ MonoBehaviour:
   _recipeBookEntryDescription: 'Gives you the emotions of the type of person who
     would petrify someone. So it makes you kinda scary. Made from mixing Shroomsli
     and Zouzor. '
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: c557b6f4d416ac94ebfc300058005f56, type: 2}
+  - {fileID: 11400000, guid: 77eb8a62ffde5714aa8b2ae8501b0572, type: 2}

@@ -24,4 +24,6 @@ MonoBehaviour:
     is a great smell if you like having a clean room but you want to make your room
     smell unclean so you can make it seem like you don\u2019t care that much about
     having a clean room. Made from mixing Vivinex and Regeneric."
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: 83478f75550d12842a28dd657ca0ebef, type: 2}
+  - {fileID: 11400000, guid: b68cb190151fc0841822f08e22aa4c69, type: 2}

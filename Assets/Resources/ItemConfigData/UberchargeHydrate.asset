@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: UberchargeHydrate
   m_EditorClassIdentifier: Assembly-CSharp::CraftingAPI.ItemConfig
   _itemName: Misgeric Potion
-  _shortDescription: Drink water NOW
+  _shortDescription: drink water NOW
   _itemIconBackground: {fileID: 21300000, guid: dc9e0037bca9fa94a87a58bf3f323532, type: 3}
   _itemIconMiddle: {fileID: 21300000, guid: ec97229b72e557c428f083e4db20edd6, type: 3}
   _itemIconForeground: {fileID: 21300000, guid: a33786e13d2c29b4a8409f770295b5b7, type: 3}
@@ -23,4 +23,6 @@ MonoBehaviour:
   _recipeBookEntryDescription: Have you ever wanted to focus on drinking water? Well
     this is a potion for you. This potion will remind you to drink water, as well
     as this description. Made from mixing Regeneric and Mismatchm.
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: f893c66c6c538f341b7d5e6f5e0ce42f, type: 2}
+  - {fileID: 11400000, guid: b68cb190151fc0841822f08e22aa4c69, type: 2}

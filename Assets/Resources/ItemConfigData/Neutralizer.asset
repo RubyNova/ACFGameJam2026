@@ -24,4 +24,6 @@ MonoBehaviour:
     with strong emotions calm down. Often helpful for meltdowns or those dealing
     with tricky emotional situations. Mix with to add neutral attributes to other
     potions. Made from mixing Rouz berries.
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: 8988c71254de98f4ea3a1c8d07d5869d, type: 2}
+  - {fileID: 11400000, guid: 8988c71254de98f4ea3a1c8d07d5869d, type: 2}

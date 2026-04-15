@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: SuperSpeed
   m_EditorClassIdentifier: Assembly-CSharp::CraftingAPI.ItemConfig
   _itemName: Plupkiplup Potion
-  _shortDescription: Super speed potion
+  _shortDescription: super speed potion
   _itemIconBackground: {fileID: 21300000, guid: 869ece28b62cdfa4eb666814adb8a815, type: 3}
   _itemIconMiddle: {fileID: 21300000, guid: 04109e65e6f42ab4eb868c9aef32a101, type: 3}
   _itemIconForeground: {fileID: 21300000, guid: cea4c953245cc6d40a26aa3339a9d808, type: 3}
@@ -23,5 +23,7 @@ MonoBehaviour:
   _recipeBookEntryDescription: "Makes you much faster. You\u2019ll be taking two
     turns at once, or running so fast you\u2019ll be gone in the blink of an eye!
     Colloquially known as the \u201CHustle Drink\u201D. Made from mixing Plushkik
-    with itself"
-  _recipe: []
+    with itself."
+  _recipe:
+  - {fileID: 11400000, guid: 9d4de58eadec3574384a86d33e20aca8, type: 2}
+  - {fileID: 11400000, guid: 9d4de58eadec3574384a86d33e20aca8, type: 2}

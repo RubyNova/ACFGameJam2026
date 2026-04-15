@@ -22,5 +22,7 @@ MonoBehaviour:
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: "This potion allows you to open your third eye\u2026
     somewhat. You can use your mind to sense magic for a while if you drink this.
-    Made from mixing Probufien and Powder. "
-  _recipe: []
+    Made from mixing Probufien and Laeli. "
+  _recipe:
+  - {fileID: 11400000, guid: dc209f38b56491045a54d4c52815bdce, type: 2}
+  - {fileID: 11400000, guid: f13b696be4d1cb2479152b0b658cc368, type: 2}

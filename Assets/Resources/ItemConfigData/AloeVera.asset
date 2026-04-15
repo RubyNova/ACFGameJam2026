@@ -23,4 +23,6 @@ MonoBehaviour:
   _recipeBookEntryDescription: 'This potion is made to be rubbable on skin and not
     to be ingested. This cures sunburns and rashes on its own, but mixing it makes
     other potions ointment-esque. Made from mixing Limesli. '
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: e4bd1f38257ab9d4b93ea17750bde1b5, type: 2}
+  - {fileID: 11400000, guid: e4bd1f38257ab9d4b93ea17750bde1b5, type: 2}

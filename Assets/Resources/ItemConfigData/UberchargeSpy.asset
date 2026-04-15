@@ -24,4 +24,6 @@ MonoBehaviour:
     who focuses without actually having you focus. Great if you wanna lie about the
     kind of person you are or you\u2019re ashamed of not focusing but not ashamed
     enough to actually focus. Made from mixing Regeneric and Influenz."
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: 37e4baca959ef1141812513fc0454360, type: 2}
+  - {fileID: 11400000, guid: b68cb190151fc0841822f08e22aa4c69, type: 2}

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: MoodPotion
   m_EditorClassIdentifier: Assembly-CSharp::CraftingAPI.ItemConfig
   _itemName: Influenz Potion
-  _shortDescription: Affects mood
+  _shortDescription: affects mood
   _itemIconBackground: {fileID: 21300000, guid: dc9e0037bca9fa94a87a58bf3f323532, type: 3}
   _itemIconMiddle: {fileID: 21300000, guid: ec97229b72e557c428f083e4db20edd6, type: 3}
   _itemIconForeground: {fileID: 21300000, guid: afde9845b6bf7a444b09b3934c7e899d, type: 3}
@@ -24,4 +24,6 @@ MonoBehaviour:
     it will not change your mood instantly, but rather make you susceptible to the
     moods around you. The empath\u2019s potion. Mix with to impact emotional states.
     Made from Rouz and Laeli."
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: 8988c71254de98f4ea3a1c8d07d5869d, type: 2}
+  - {fileID: 11400000, guid: 751f467c022f2dc4baee998d01eaf248, type: 2}

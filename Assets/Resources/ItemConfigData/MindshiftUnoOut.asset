@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: MindshiftUnoOut
   m_EditorClassIdentifier: Assembly-CSharp::CraftingAPI.ItemConfig
   _itemName: Reregenax Potion
-  _shortDescription: time to lock in
+  _shortDescription: lock in aura
   _itemIconBackground: {fileID: 21300000, guid: 869ece28b62cdfa4eb666814adb8a815, type: 3}
   _itemIconMiddle: {fileID: 21300000, guid: 04109e65e6f42ab4eb868c9aef32a101, type: 3}
   _itemIconForeground: {fileID: 21300000, guid: bb715bd143336c4418118161c7eded62, type: 3}
@@ -23,4 +23,6 @@ MonoBehaviour:
   _recipeBookEntryDescription: This potion makes an entire room suddenly focus and
     lock in. Bosses and professors love this potion. Made from mixing Relaxalax and
     Regeneric.
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: b68cb190151fc0841822f08e22aa4c69, type: 2}
+  - {fileID: 11400000, guid: d07c0945d692eb94e8877ead4441f17a, type: 2}

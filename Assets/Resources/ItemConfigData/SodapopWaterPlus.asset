@@ -23,4 +23,6 @@ MonoBehaviour:
   _recipeBookEntryDescription: This potion is like water if there was more of it
     and it was denser. True water-esque potion fans only. Made from mixing Mismatchm
     with itself.
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: f893c66c6c538f341b7d5e6f5e0ce42f, type: 2}
+  - {fileID: 11400000, guid: f893c66c6c538f341b7d5e6f5e0ce42f, type: 2}

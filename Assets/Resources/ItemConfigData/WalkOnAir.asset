@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: WalkOnAir
   m_EditorClassIdentifier: Assembly-CSharp::CraftingAPI.ItemConfig
   _itemName: Laekik Potion
-  _shortDescription: Walk on air potion
+  _shortDescription: walk on air potion
   _itemIconBackground: {fileID: 21300000, guid: 1d38234f96ddc384b9cf16bc8ec09bd4, type: 3}
   _itemIconMiddle: {fileID: 21300000, guid: 7322569f557b2a34ea52471b7387695e, type: 3}
   _itemIconForeground: {fileID: 21300000, guid: d761c89706e25a5468109289def45d70, type: 3}
@@ -23,4 +23,6 @@ MonoBehaviour:
   _recipeBookEntryDescription: This potion will make you walk on air! Literally!
     Great for imitating famous cartoons of the past. Made from mixing Plushkik and
     Laeli.
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: dc209f38b56491045a54d4c52815bdce, type: 2}
+  - {fileID: 11400000, guid: 9d4de58eadec3574384a86d33e20aca8, type: 2}

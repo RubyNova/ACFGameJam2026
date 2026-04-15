@@ -23,4 +23,6 @@ MonoBehaviour:
   _recipeBookEntryDescription: Incredibly strong tasting water. Its somewhat like
     vodka or another type of shot, but for those who prefer potions to alcohol. Made
     from mixing Mismatchm and Cespian.
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: 5a533b5e4e17df540ae9eabb05dc5d85, type: 2}
+  - {fileID: 11400000, guid: 5a533b5e4e17df540ae9eabb05dc5d85, type: 2}

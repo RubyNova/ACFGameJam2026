@@ -23,4 +23,6 @@ MonoBehaviour:
   _recipeBookEntryDescription: This potion will make you emotionally like a body
     of water, fluid and wavey, calm even during the roughest of times. Quite a humbling
     potion, but a necessary one for many. Made from mixing Mismatchm and Influenz.
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: f893c66c6c538f341b7d5e6f5e0ce42f, type: 2}
+  - {fileID: 11400000, guid: 37e4baca959ef1141812513fc0454360, type: 2}

@@ -22,5 +22,7 @@ MonoBehaviour:
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: This potion allows you to cast magic spells to neutralize
     the emotions of others. This can be effective against spellcasters that use their
-    emotions as their power source.
-  _recipe: []
+    emotions as their power source. Made from mixing Laliluleilou and Zouzor.
+  _recipe:
+  - {fileID: 11400000, guid: c557b6f4d416ac94ebfc300058005f56, type: 2}
+  - {fileID: 11400000, guid: 7f2ba145cc235a54faa3ced84fc6da1a, type: 2}

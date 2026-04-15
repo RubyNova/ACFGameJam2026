@@ -24,4 +24,6 @@ MonoBehaviour:
     a pleasant feeling as if woken from a dream. Because this game isn\u2019t voice
     acted, no one knows if the end is pronounced \u201Ca live\u201D or \u201Calive\u201D.
     Made from mixing Heel'm with itself."
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: 08917d11410a9644cbc2e7badc151115, type: 2}
+  - {fileID: 11400000, guid: 08917d11410a9644cbc2e7badc151115, type: 2}

@@ -23,4 +23,6 @@ MonoBehaviour:
   _recipeBookEntryDescription: Prevents you from getting headaches for a long while.
     Great for those who forget to drink water. This is your reminder to hydrate yourself,
     by the way. Made from mixing Probufien and Hexbegun.
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: 06797bbf4f469ce48949499a435df513, type: 2}
+  - {fileID: 11400000, guid: f13b696be4d1cb2479152b0b658cc368, type: 2}

@@ -21,5 +21,7 @@ MonoBehaviour:
   _middleColourTint: {r: 0.9766073, g: 0.66150224, b: 0.98787737, a: 1}
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: Your focus will be held. It will be incredibly strong.
-    Unbreakable. Iron clad. Made from mixing Regeneric and a Vial.
-  _recipe: []
+    Unbreakable. Iron clad. Made from mixing Regeneric and Cespi.
+  _recipe:
+  - {fileID: 11400000, guid: 751f467c022f2dc4baee998d01eaf248, type: 2}
+  - {fileID: 11400000, guid: b68cb190151fc0841822f08e22aa4c69, type: 2}

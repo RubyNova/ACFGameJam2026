@@ -23,4 +23,6 @@ MonoBehaviour:
   _recipeBookEntryDescription: This potion tastes virtually indistinguishable from
     water. Mix with this to create... flavoured waters pretty much. Cespi and Laeli
     don't mix well.
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: 751f467c022f2dc4baee998d01eaf248, type: 2}
+  - {fileID: 11400000, guid: dc209f38b56491045a54d4c52815bdce, type: 2}

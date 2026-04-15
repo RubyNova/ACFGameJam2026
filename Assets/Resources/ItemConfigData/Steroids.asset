@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Steroids
   m_EditorClassIdentifier: Assembly-CSharp::CraftingAPI.ItemConfig
   _itemName: Pluncespi Potion
-  _shortDescription: Workout aid potion
+  _shortDescription: workout aid
   _itemIconBackground: {fileID: 21300000, guid: 1cd2c8975e0459d4383b4f8ad2a091cd, type: 3}
   _itemIconMiddle: {fileID: 21300000, guid: 7d43b65852c37d044b905fcd2d0f3358, type: 3}
   _itemIconForeground: {fileID: 21300000, guid: e158621a2a9d4374eac6f5a04afb9933, type: 3}
@@ -23,4 +23,6 @@ MonoBehaviour:
   _recipeBookEntryDescription: "Increases the gains you\u2019ll get by working out.
     Works wonders in moderation, but people who take too much just look like a muscled
     mess. Made from mixing Plushkik and Cespi."
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: 9d4de58eadec3574384a86d33e20aca8, type: 2}
+  - {fileID: 11400000, guid: 751f467c022f2dc4baee998d01eaf248, type: 2}

@@ -21,5 +21,7 @@ MonoBehaviour:
   _middleColourTint: {r: 0.98405516, g: 0.69885695, b: 0.7160976, a: 1}
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: This potion is often used by doctors to help recover
-    skull fractures. Good for daredevil types. made by mixing Probufien and Slime.
-  _recipe: []
+    skull fractures. Good for daredevil types. made by mixing Probufien and Limesli.
+  _recipe:
+  - {fileID: 11400000, guid: f13b696be4d1cb2479152b0b658cc368, type: 2}
+  - {fileID: 11400000, guid: e4bd1f38257ab9d4b93ea17750bde1b5, type: 2}

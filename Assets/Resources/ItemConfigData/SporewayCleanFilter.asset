@@ -23,4 +23,6 @@ MonoBehaviour:
   _recipeBookEntryDescription: This potion has quite the neutralizing, purifying
     smell. Great for places in your home that have aggressive smells. Made from mixing
     Vivinex and Zouzor.
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: 83478f75550d12842a28dd657ca0ebef, type: 2}
+  - {fileID: 11400000, guid: c557b6f4d416ac94ebfc300058005f56, type: 2}

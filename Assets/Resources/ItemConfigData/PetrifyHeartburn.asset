@@ -22,5 +22,7 @@ MonoBehaviour:
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: "Makes it hotter inside when you\u2019re petrified.
     Does not turn your body of stone hotter, unfortunately. This potion sucks bad.
-    Made from mixing Shroomsli and a Vial."
-  _recipe: []
+    Made from mixing Shroomsli and Cespi."
+  _recipe:
+  - {fileID: 11400000, guid: 751f467c022f2dc4baee998d01eaf248, type: 2}
+  - {fileID: 11400000, guid: 77eb8a62ffde5714aa8b2ae8501b0572, type: 2}

@@ -21,5 +21,7 @@ MonoBehaviour:
   _middleColourTint: {r: 0.8784921, g: 0.21498096, b: 0.111889005, a: 1}
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: Does not cure you of petrification but lets you move
-    as a statue, which is pretty cool! Made from mixing Shroomsli and Powder.
-  _recipe: []
+    as a statue, which is pretty cool! Made from mixing Shroomsli and Laeli.
+  _recipe:
+  - {fileID: 11400000, guid: 77eb8a62ffde5714aa8b2ae8501b0572, type: 2}
+  - {fileID: 11400000, guid: dc209f38b56491045a54d4c52815bdce, type: 2}

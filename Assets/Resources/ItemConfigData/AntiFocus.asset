@@ -24,4 +24,6 @@ MonoBehaviour:
     your focus way worse. Ideal for exactly the one situation where you have so many
     things to work on but you don\u2019t want to commit to any one thing. Which isn\u2019t
     a good situation in the first place. Mix Regeneric and Plushkik to make this."
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: b68cb190151fc0841822f08e22aa4c69, type: 2}
+  - {fileID: 11400000, guid: 9d4de58eadec3574384a86d33e20aca8, type: 2}

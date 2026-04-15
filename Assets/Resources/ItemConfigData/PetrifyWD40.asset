@@ -21,5 +21,7 @@ MonoBehaviour:
   _middleColourTint: {r: 0.39706427, g: 0.6503674, b: 0.625597, a: 1}
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: 'Helps relieve stiffness after petrification. Good
-    for those with stiff bodies in general. Made from mixing Shroomsli amd Probuifen. '
-  _recipe: []
+    for those with stiff bodies in general. Made from mixing Shroomsli and Probuifen. '
+  _recipe:
+  - {fileID: 11400000, guid: 77eb8a62ffde5714aa8b2ae8501b0572, type: 2}
+  - {fileID: 11400000, guid: f13b696be4d1cb2479152b0b658cc368, type: 2}

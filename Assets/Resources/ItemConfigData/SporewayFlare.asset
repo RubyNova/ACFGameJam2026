@@ -22,5 +22,7 @@ MonoBehaviour:
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: This potion makes your nostrils flare up a bit when
     you smell it. Its not altogether pleasant but some do enjoy it. Made from mixing
-    Vivinex and a Vial.
-  _recipe: []
+    Vivinex and Cespi.
+  _recipe:
+  - {fileID: 11400000, guid: 83478f75550d12842a28dd657ca0ebef, type: 2}
+  - {fileID: 11400000, guid: 751f467c022f2dc4baee998d01eaf248, type: 2}

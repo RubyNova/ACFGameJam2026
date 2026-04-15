@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: RunPotion
   m_EditorClassIdentifier: Assembly-CSharp::CraftingAPI.ItemConfig
   _itemName: Kikipushi Potion
-  _shortDescription: Sprinting potion
+  _shortDescription: sprinting potion
   _itemIconBackground: {fileID: 21300000, guid: 6a7f6c84073171d488673edf9b668f58, type: 3}
   _itemIconMiddle: {fileID: 21300000, guid: c5a8c337457015e469e438335e1934b6, type: 3}
   _itemIconForeground: {fileID: 21300000, guid: 701239c9e4a139643a224d90e524790d, type: 3}
@@ -22,4 +22,6 @@ MonoBehaviour:
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: 'No matter how fast you run, your feet will never
     get tired! Great for those long marathons. Made from mixing Plushkik and Plushroom. '
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: 159ab75429d32e942a405250fdb2b4cf, type: 2}
+  - {fileID: 11400000, guid: 9d4de58eadec3574384a86d33e20aca8, type: 2}

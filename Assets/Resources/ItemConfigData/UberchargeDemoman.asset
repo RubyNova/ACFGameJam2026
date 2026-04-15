@@ -22,5 +22,7 @@ MonoBehaviour:
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: "This potion helps you do better on eye exams and
     medical exams\u2026 somehow. Probably not a good test to lie on. Made from mixing
-    Regeneric and Slime."
-  _recipe: []
+    Regeneric and Limesli."
+  _recipe:
+  - {fileID: 11400000, guid: e4bd1f38257ab9d4b93ea17750bde1b5, type: 2}
+  - {fileID: 11400000, guid: b68cb190151fc0841822f08e22aa4c69, type: 2}

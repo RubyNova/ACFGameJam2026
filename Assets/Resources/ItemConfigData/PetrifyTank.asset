@@ -23,4 +23,6 @@ MonoBehaviour:
   _recipeBookEntryDescription: "Increases the attack power of someone who is petrified.
     Situationally useful if you\u2019re using someone who\u2019s petrified as a weapon.
     Made from mixing Shroomsli and Cespian. "
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: 5a533b5e4e17df540ae9eabb05dc5d85, type: 2}
+  - {fileID: 11400000, guid: 77eb8a62ffde5714aa8b2ae8501b0572, type: 2}

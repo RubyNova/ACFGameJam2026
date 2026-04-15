@@ -23,4 +23,6 @@ MonoBehaviour:
   _recipeBookEntryDescription: A potion that calms the mind and makes people happy.
     Not suitable to give to developing young minds. Mix with this to change its aura's
     effects. Made by mixing a Rouz berry and a Plushroom.
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: 159ab75429d32e942a405250fdb2b4cf, type: 2}
+  - {fileID: 11400000, guid: 8988c71254de98f4ea3a1c8d07d5869d, type: 2}

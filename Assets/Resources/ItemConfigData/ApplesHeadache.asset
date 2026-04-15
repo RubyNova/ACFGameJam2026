@@ -22,5 +22,7 @@ MonoBehaviour:
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: "A Bufpufpro Potion. This potion relieves headaches
     and can also provide healing to parts of the brain if they\u2019re ever damaged.
-    Made from mixing Probufien and a Mushroom. "
-  _recipe: []
+    Made from mixing Probufien and a Plushroom. "
+  _recipe:
+  - {fileID: 11400000, guid: f13b696be4d1cb2479152b0b658cc368, type: 2}
+  - {fileID: 11400000, guid: 159ab75429d32e942a405250fdb2b4cf, type: 2}
