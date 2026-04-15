@@ -21,5 +21,7 @@ MonoBehaviour:
   _middleColourTint: {r: 0.24641824, g: 0.7439927, b: 0.83361423, a: 1}
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: This potion makes you think some very fruity thoughts.
-    No further comments or elaboration needed. Made from mixing Probufien and a Berry.
-  _recipe: []
+    No further comments or elaboration needed. Made from mixing Probufien and Rouz.
+  _recipe:
+  - {fileID: 11400000, guid: f13b696be4d1cb2479152b0b658cc368, type: 2}
+  - {fileID: 11400000, guid: 8988c71254de98f4ea3a1c8d07d5869d, type: 2}

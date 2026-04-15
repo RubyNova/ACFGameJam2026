@@ -23,4 +23,5 @@ MonoBehaviour:
   _recipeBookEntryDescription: "Cures petrification\u2026 but makes your body as
     limp as a cooked spaghetti noodle. Good for slipping into tight spaces at least!
     Made from mixing Shroomsli with itself."
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: 77eb8a62ffde5714aa8b2ae8501b0572, type: 2}

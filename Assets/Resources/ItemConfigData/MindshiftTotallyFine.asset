@@ -21,5 +21,7 @@ MonoBehaviour:
   _middleColourTint: {r: 0.34043366, g: 0.9256153, b: 0.20385563, a: 1}
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: 'Makes a calming hallucinatory aura in the room. None
-    of them are real. Promise. Made from mixing Relaxalax and a Mushroom. '
-  _recipe: []
+    of them are real. Promise. Made from mixing Relaxalax and a Plushroom. '
+  _recipe:
+  - {fileID: 11400000, guid: d07c0945d692eb94e8877ead4441f17a, type: 2}
+  - {fileID: 11400000, guid: 159ab75429d32e942a405250fdb2b4cf, type: 2}

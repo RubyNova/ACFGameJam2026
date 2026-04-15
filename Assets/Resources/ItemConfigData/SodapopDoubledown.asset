@@ -22,5 +22,7 @@ MonoBehaviour:
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: This water-esque potion will help boost your magic
     abilities when it comes to drinking water. A highly specific potion made from
-    mixing Mismatchm with Powder.
-  _recipe: []
+    mixing Mismatchm with Laeli.
+  _recipe:
+  - {fileID: 11400000, guid: dc209f38b56491045a54d4c52815bdce, type: 2}
+  - {fileID: 11400000, guid: f893c66c6c538f341b7d5e6f5e0ce42f, type: 2}

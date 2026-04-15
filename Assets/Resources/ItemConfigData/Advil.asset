@@ -23,4 +23,6 @@ MonoBehaviour:
   _recipeBookEntryDescription: 'A temporary pain relieving potion. Commonly used
     for headaches, as well as chronic pain. Mixing this will cause some effects to
     the mind. Made from mixing Limesli and Cespi. '
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: 751f467c022f2dc4baee998d01eaf248, type: 2}
+  - {fileID: 11400000, guid: e4bd1f38257ab9d4b93ea17750bde1b5, type: 2}

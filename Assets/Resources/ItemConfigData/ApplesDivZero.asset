@@ -23,4 +23,5 @@ MonoBehaviour:
   _recipeBookEntryDescription: This causes an integer overflow with headaches. Go
     from having a headache to a lovely massage feeling in your head in a few sips!
     Made from mixing Probufien with itself.
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: f13b696be4d1cb2479152b0b658cc368, type: 2}

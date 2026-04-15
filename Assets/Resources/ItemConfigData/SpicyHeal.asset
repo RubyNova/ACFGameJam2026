@@ -22,4 +22,6 @@ MonoBehaviour:
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: "For those who want their classic healing potion to
     have a bit more kick to it\u2019s flavour. Made from mixing Heel'm and Cespi."
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: 751f467c022f2dc4baee998d01eaf248, type: 2}
+  - {fileID: 11400000, guid: 08917d11410a9644cbc2e7badc151115, type: 2}

@@ -21,5 +21,7 @@ MonoBehaviour:
   _middleColourTint: {r: 0.009006262, g: 0.00733459, b: 0.94284725, a: 1}
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: "When you\u2019re petrified, you will be healed of
-    nearly all physical ailments. Made from mixing Shroomsli and Slime."
-  _recipe: []
+    nearly all physical ailments. Made from mixing Shroomsli and Limesli."
+  _recipe:
+  - {fileID: 11400000, guid: e4bd1f38257ab9d4b93ea17750bde1b5, type: 2}
+  - {fileID: 11400000, guid: 77eb8a62ffde5714aa8b2ae8501b0572, type: 2}

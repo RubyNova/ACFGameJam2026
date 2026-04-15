@@ -24,4 +24,6 @@ MonoBehaviour:
     people with low motivation and energy to help focus intently. Popular among high
     school and university students. Mix with to impact focus. Made from Cespi and
     Rouz berry."
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: 751f467c022f2dc4baee998d01eaf248, type: 2}
+  - {fileID: 11400000, guid: 8988c71254de98f4ea3a1c8d07d5869d, type: 2}

@@ -21,5 +21,7 @@ MonoBehaviour:
   _middleColourTint: {r: 0.5457962, g: 0.14861846, b: 0.62308437, a: 1}
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: Makes a room smell like fragrant cooked mushrooms.
-    Made from mixing Vivinex and a Mushroom.
-  _recipe: []
+    Made from mixing Vivinex and a Plushroom.
+  _recipe:
+  - {fileID: 11400000, guid: 159ab75429d32e942a405250fdb2b4cf, type: 2}
+  - {fileID: 11400000, guid: 83478f75550d12842a28dd657ca0ebef, type: 2}

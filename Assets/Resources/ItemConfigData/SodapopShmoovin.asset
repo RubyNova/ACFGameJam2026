@@ -21,5 +21,7 @@ MonoBehaviour:
   _middleColourTint: {r: 0.07528293, g: 0.43378252, b: 0.75235677, a: 1}
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: A nice shroomy soft water-esque mix. A pleasant flavour
-    if nothing else. Made from mixing Mismatchm and a Mushroom.
-  _recipe: []
+    if nothing else. Made from mixing Mismatchm and a Plushroom.
+  _recipe:
+  - {fileID: 11400000, guid: 159ab75429d32e942a405250fdb2b4cf, type: 2}
+  - {fileID: 11400000, guid: f893c66c6c538f341b7d5e6f5e0ce42f, type: 2}

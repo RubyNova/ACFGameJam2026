@@ -23,4 +23,6 @@ MonoBehaviour:
   _recipeBookEntryDescription: "Makes the whole building hazy with a relaxing fog.
     Just try to not pass out\u2026 this stuff can be potent. Made from mixing Relaxalax
     with itself."
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: d07c0945d692eb94e8877ead4441f17a, type: 2}
+  - {fileID: 11400000, guid: d07c0945d692eb94e8877ead4441f17a, type: 2}

@@ -22,5 +22,7 @@ MonoBehaviour:
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: Allows you to focus on the beautiful, calming, nice
     things in life. Really allows you to take a step back from the things stressing
-    you out. Made from mixing Regenric and Suplush,
-  _recipe: []
+    you out. Made from mixing Regenric and Suplush.
+  _recipe:
+  - {fileID: 11400000, guid: b68cb190151fc0841822f08e22aa4c69, type: 2}
+  - {fileID: 11400000, guid: d1f01a817c78b2c449d9382c0d8434d0, type: 2}

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: WarmThoughts
   m_EditorClassIdentifier: Assembly-CSharp::CraftingAPI.ItemConfig
   _itemName: Flueem Potion
-  _shortDescription: Distant healing haze potion
+  _shortDescription: distant healing haze potion
   _itemIconBackground: {fileID: 21300000, guid: 4697b46a9f9cca44b9ed1c2d45c0372e, type: 3}
   _itemIconMiddle: {fileID: 21300000, guid: ff44f9f151bc9ff49acda8b0ff5f22a7, type: 3}
   _itemIconForeground: {fileID: 21300000, guid: f13a72d7e34e90d488bacfb8b58a22d1, type: 3}
@@ -23,4 +23,6 @@ MonoBehaviour:
   _recipeBookEntryDescription: Puts someone in a distant haze, thinking nice warm
     happy healing thoughts. Its hard to snap someone out of though, so be careful.
     Made from mixing Heel'm and Influenz.
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: 37e4baca959ef1141812513fc0454360, type: 2}
+  - {fileID: 11400000, guid: 08917d11410a9644cbc2e7badc151115, type: 2}

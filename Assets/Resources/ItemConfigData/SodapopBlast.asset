@@ -22,5 +22,7 @@ MonoBehaviour:
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: This potion tastes a bit like fruit flavoured water.
     Its hard to nail down which fruit specifically. But its a good taste! Made from
-    mixing Mismatchm and a Berry.
-  _recipe: []
+    mixing Mismatchm and Rouz.
+  _recipe:
+  - {fileID: 11400000, guid: f893c66c6c538f341b7d5e6f5e0ce42f, type: 2}
+  - {fileID: 11400000, guid: 8988c71254de98f4ea3a1c8d07d5869d, type: 2}

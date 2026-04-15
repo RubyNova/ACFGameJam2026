@@ -22,5 +22,7 @@ MonoBehaviour:
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: "While you\u2019re cracking out of your petrification
     potion, you\u2019ll be healing in there like a cucoon! Made from mixing Shroomsli
-    and a Mushroom."
-  _recipe: []
+    and a Plushroom."
+  _recipe:
+  - {fileID: 11400000, guid: 159ab75429d32e942a405250fdb2b4cf, type: 2}
+  - {fileID: 11400000, guid: 77eb8a62ffde5714aa8b2ae8501b0572, type: 2}

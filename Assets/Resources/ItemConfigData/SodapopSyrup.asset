@@ -22,5 +22,7 @@ MonoBehaviour:
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: "This potion tastes like a very viscous cough syrup.
     It tastes\u2026 fine. Its effects are fine\u2026 this is maybe the most fine
-    potion there is. Not good or bad. Just fine. Made from mixing Mismatchm and Slime."
-  _recipe: []
+    potion there is. Not good or bad. Just fine. Made from mixing Mismatchm and Limesli."
+  _recipe:
+  - {fileID: 11400000, guid: f893c66c6c538f341b7d5e6f5e0ce42f, type: 2}
+  - {fileID: 11400000, guid: e4bd1f38257ab9d4b93ea17750bde1b5, type: 2}

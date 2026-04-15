@@ -23,4 +23,6 @@ MonoBehaviour:
   _recipeBookEntryDescription: This potion smells like STRENGTH!! Even just smelling
     this thing makes you feel STRONG!! A strong scent for people who like strong
     scents. Made from mixing Vivinex and Cespian.
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: 83478f75550d12842a28dd657ca0ebef, type: 2}
+  - {fileID: 11400000, guid: 5a533b5e4e17df540ae9eabb05dc5d85, type: 2}

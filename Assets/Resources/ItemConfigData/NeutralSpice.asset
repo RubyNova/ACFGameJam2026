@@ -22,5 +22,7 @@ MonoBehaviour:
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: "This potion is a good introductory spice/power potion
     introduction to those who haven\u2019t had them before. The base \u201CLevel
-    1\u201D spice level on the spice scale. Made from mixing Cespi and Zouzor"
-  _recipe: []
+    1\u201D spice level on the spice scale. Made from mixing Cespi and Zouzor."
+  _recipe:
+  - {fileID: 11400000, guid: c557b6f4d416ac94ebfc300058005f56, type: 2}
+  - {fileID: 11400000, guid: 751f467c022f2dc4baee998d01eaf248, type: 2}

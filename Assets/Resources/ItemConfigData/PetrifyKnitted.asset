@@ -22,4 +22,6 @@ MonoBehaviour:
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: "Makes you feel softer while you\u2019re a statue.
     Which is good, I guess. Made from mixing Shroomsli and Suplush."
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: d1f01a817c78b2c449d9382c0d8434d0, type: 2}
+  - {fileID: 11400000, guid: 77eb8a62ffde5714aa8b2ae8501b0572, type: 2}

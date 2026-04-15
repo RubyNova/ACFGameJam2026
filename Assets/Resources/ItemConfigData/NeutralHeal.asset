@@ -21,5 +21,8 @@ MonoBehaviour:
   _middleColourTint: {r: 0.8623383, g: 0.9970907, b: 0.43952674, a: 1}
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: "Gives you a healing feeling, but it is an empty hollow
-    one. It is the best option for those who don\u2019t like hugs."
-  _recipe: []
+    one. It is the best option for those who don\u2019t like hugs. Made from mixing
+    Plushroom and Zouzor."
+  _recipe:
+  - {fileID: 11400000, guid: 159ab75429d32e942a405250fdb2b4cf, type: 2}
+  - {fileID: 11400000, guid: c557b6f4d416ac94ebfc300058005f56, type: 2}

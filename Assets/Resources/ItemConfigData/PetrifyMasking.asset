@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: PetrifyMasking
   m_EditorClassIdentifier: Assembly-CSharp::CraftingAPI.ItemConfig
   _itemName: Infsli Potion
-  _shortDescription: Cold and closed emotions
+  _shortDescription: cold and closed emotions
   _itemIconBackground: {fileID: 21300000, guid: 4697b46a9f9cca44b9ed1c2d45c0372e, type: 3}
   _itemIconMiddle: {fileID: 21300000, guid: ff44f9f151bc9ff49acda8b0ff5f22a7, type: 3}
   _itemIconForeground: {fileID: 21300000, guid: c37f7e6e932bfef499cf800a9c4f6cb9, type: 3}
@@ -23,4 +23,6 @@ MonoBehaviour:
   _recipeBookEntryDescription: 'This potion makes you cold and closed off, much like
     a stone statue. Can help you be more detached. Made from mixing Shroomsli and
     Influenz. '
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: 37e4baca959ef1141812513fc0454360, type: 2}
+  - {fileID: 11400000, guid: 77eb8a62ffde5714aa8b2ae8501b0572, type: 2}

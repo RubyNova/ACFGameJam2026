@@ -21,5 +21,7 @@ MonoBehaviour:
   _middleColourTint: {r: 0.831458, g: 0.769855, b: 0.8316686, a: 1}
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: Makes a room smell like green slime. It has a somewhat
-    lime-y flavour. Made from mixing Vivinex and Slime.
-  _recipe: []
+    lime-y flavour. Made from mixing Vivinex and Limesli.
+  _recipe:
+  - {fileID: 11400000, guid: e4bd1f38257ab9d4b93ea17750bde1b5, type: 2}
+  - {fileID: 11400000, guid: 83478f75550d12842a28dd657ca0ebef, type: 2}

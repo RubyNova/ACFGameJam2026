@@ -22,5 +22,7 @@ MonoBehaviour:
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: "A potion that somehow makes you start healing from
     bad memories you\u2019re fixated on. Incredibly popular with those with low self
-    doubt. Made from mixing Regeneric and a Mushroom."
-  _recipe: []
+    doubt. Made from mixing Regeneric and Plushroom."
+  _recipe:
+  - {fileID: 11400000, guid: b68cb190151fc0841822f08e22aa4c69, type: 2}
+  - {fileID: 11400000, guid: 159ab75429d32e942a405250fdb2b4cf, type: 2}

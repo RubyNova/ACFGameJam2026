@@ -23,4 +23,6 @@ MonoBehaviour:
   _recipeBookEntryDescription: This potion is often used as an energy booster and
     makes you move quicker. Mixing this will increase physical attributes. Made from
     mixing Cespi and a Plushroom
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: 751f467c022f2dc4baee998d01eaf248, type: 2}
+  - {fileID: 11400000, guid: 159ab75429d32e942a405250fdb2b4cf, type: 2}

@@ -23,4 +23,6 @@ MonoBehaviour:
   _recipeBookEntryDescription: "This potion rids your head of aches AND makes your
     head stronger! You can hit stuff hard with your head if you wanna! Plus it won\u2019t
     hurt. Made from mixing Probufien and Cespian."
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: f13b696be4d1cb2479152b0b658cc368, type: 2}
+  - {fileID: 11400000, guid: 5a533b5e4e17df540ae9eabb05dc5d85, type: 2}

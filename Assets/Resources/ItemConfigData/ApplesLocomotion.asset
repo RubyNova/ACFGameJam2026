@@ -21,5 +21,7 @@ MonoBehaviour:
   _middleColourTint: {r: 0.343926, g: 0.12602341, b: 0.5959669, a: 1}
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: This potion makes your train of thought strong! And
-    powerful! Whatever that means! Made from mixing Probufien and a Vial.
-  _recipe: []
+    powerful! Whatever that means! Made from mixing Probufien and Cespi.
+  _recipe:
+  - {fileID: 11400000, guid: 751f467c022f2dc4baee998d01eaf248, type: 2}
+  - {fileID: 11400000, guid: f13b696be4d1cb2479152b0b658cc368, type: 2}

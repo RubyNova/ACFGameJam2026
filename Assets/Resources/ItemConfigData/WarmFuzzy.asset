@@ -24,4 +24,6 @@ MonoBehaviour:
     A favourite in the food of many grandmothers. Mixing this will transfer this
     feeling to other types of potions and has effects with physical affection like
     hugs. Made from mixing Plushrooms. '
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: 159ab75429d32e942a405250fdb2b4cf, type: 2}
+  - {fileID: 11400000, guid: 159ab75429d32e942a405250fdb2b4cf, type: 2}

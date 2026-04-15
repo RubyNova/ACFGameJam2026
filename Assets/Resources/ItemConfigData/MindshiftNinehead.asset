@@ -23,4 +23,6 @@ MonoBehaviour:
   _recipeBookEntryDescription: "Makes you feel like you\u2019re on Cloud Nine all
     day. Both in the mood sense and the feeling like you\u2019re kinda lightheaded.
     Made from mixing Relaxalax and Influenz. "
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: d07c0945d692eb94e8877ead4441f17a, type: 2}
+  - {fileID: 11400000, guid: 37e4baca959ef1141812513fc0454360, type: 2}

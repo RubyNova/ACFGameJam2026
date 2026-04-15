@@ -23,5 +23,7 @@ MonoBehaviour:
   _recipeBookEntryDescription: This potion is used as a neutralizing medical force
     to cancel out other potion effects. This is useful for neutralizing any other
     types of potions that you make. Please have a few of these on hand whenever testing
-    new potions.  Made from Zouzor and Limesli
-  _recipe: []
+    new potions.  Made from Zouzor and Limesli.
+  _recipe:
+  - {fileID: 11400000, guid: e4bd1f38257ab9d4b93ea17750bde1b5, type: 2}
+  - {fileID: 11400000, guid: c557b6f4d416ac94ebfc300058005f56, type: 2}

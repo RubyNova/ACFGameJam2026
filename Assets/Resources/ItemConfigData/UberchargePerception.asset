@@ -23,4 +23,6 @@ MonoBehaviour:
   _recipeBookEntryDescription: "This potion helps you lock into what other people\u2019s
     emotions might be. Excellent for people who have a hard time gauging the emotions
     of other people. Which is a lot of people. Made from mixing Regeneric and Zouzor."
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: b68cb190151fc0841822f08e22aa4c69, type: 2}
+  - {fileID: 11400000, guid: c557b6f4d416ac94ebfc300058005f56, type: 2}

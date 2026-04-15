@@ -21,6 +21,8 @@ MonoBehaviour:
   _middleColourTint: {r: 0.79191124, g: 0.12536168, b: 0.06879389, a: 1}
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: This potion kinda makes you in the mood to be like
-    someone who would buy a lot of candles. I.e. a lot of moms. Made from mixing
+    someone who would buy a lot of candles. i.e. a lot of moms. Made from mixing
     Vivinex and Influnz.
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: 83478f75550d12842a28dd657ca0ebef, type: 2}
+  - {fileID: 11400000, guid: 37e4baca959ef1141812513fc0454360, type: 2}

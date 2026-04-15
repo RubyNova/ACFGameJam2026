@@ -23,4 +23,6 @@ MonoBehaviour:
   _recipeBookEntryDescription: Gives off the scent of the inside of a castle, like
     a nice warm fireplace with calm rain outside. Made from mixing Shroomsli and
     Vivinex.
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: 83478f75550d12842a28dd657ca0ebef, type: 2}
+  - {fileID: 11400000, guid: 77eb8a62ffde5714aa8b2ae8501b0572, type: 2}

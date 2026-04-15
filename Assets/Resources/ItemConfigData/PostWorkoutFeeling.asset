@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: PostWorkoutFeeling
   m_EditorClassIdentifier: Assembly-CSharp::CraftingAPI.ItemConfig
   _itemName: Suplushkik Potion
-  _shortDescription: Post workout feeling potion
+  _shortDescription: post workout feeling potion
   _itemIconBackground: {fileID: 21300000, guid: 8df7db3d92662da49a6997c6c79c0b9c, type: 3}
   _itemIconMiddle: {fileID: 21300000, guid: 210dae9cb8d55f74192ad64fa4887e31, type: 3}
   _itemIconForeground: {fileID: 21300000, guid: 40530c0b71d2ccb44a54612d07a5f9c5, type: 3}
@@ -23,4 +23,6 @@ MonoBehaviour:
   _recipeBookEntryDescription: 'After drinking this, your body will constantly have
     the feeling of a post workout, which is maybe one of the best feelings in the
     world. Made by mixing Plushkik and Suplush. '
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: 9d4de58eadec3574384a86d33e20aca8, type: 2}
+  - {fileID: 11400000, guid: d1f01a817c78b2c449d9382c0d8434d0, type: 2}

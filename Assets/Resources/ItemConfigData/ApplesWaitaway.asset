@@ -22,4 +22,6 @@ MonoBehaviour:
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: 'This potion makes it smell like the inside of a pharmacy,
     which is usually a pretty pleasant smell? Made from mixing Probufien and Vivinex. '
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: f13b696be4d1cb2479152b0b658cc368, type: 2}
+  - {fileID: 11400000, guid: 83478f75550d12842a28dd657ca0ebef, type: 2}

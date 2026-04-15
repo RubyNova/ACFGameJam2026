@@ -22,5 +22,7 @@ MonoBehaviour:
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: "This creates a fiery aura within a room, which is
     great for competitions or pretending your room is a volcano without the hard
-    \u201Cgetting lava in a room\u201D part. Made from mixing Relaxalax and a Vial."
-  _recipe: []
+    \u201Cgetting lava in a room\u201D part. Made from mixing Relaxalax and Cespi."
+  _recipe:
+  - {fileID: 11400000, guid: 751f467c022f2dc4baee998d01eaf248, type: 2}
+  - {fileID: 11400000, guid: d07c0945d692eb94e8877ead4441f17a, type: 2}
