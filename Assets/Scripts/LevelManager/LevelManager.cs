@@ -1,4 +1,5 @@
 using GameAudio;
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -20,10 +21,18 @@ public class LevelManager : MonoSingleton<LevelManager>
 
     private IEnumerator LoadSceneInternal(string sceneName)
     {
-        _fade.SetTrigger("Start");
-        yield return _waitForSeconds;
+        if (_fade != null)
+        {
+            _fade.SetTrigger("Start");
+            yield return _waitForSeconds;
+        }
 
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(sceneName);
+
+        if (asyncLoad is null)
+        {
+            throw new InvalidOperationException($"The scene name {sceneName} is not configured to be part of the game build. Please check the game's build settings, and try again.");
+        }
 
         if (SceneManager.GetActiveScene().name != "MainMenuDevScene")
         {

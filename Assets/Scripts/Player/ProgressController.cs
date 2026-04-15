@@ -221,12 +221,7 @@ namespace Player
 
         public void ContinueToNextLevel(string sceneName)
         {
-            var levelManagerObject = Object.FindFirstObjectByType<LevelManager>();
-            if(levelManagerObject != null)
-            {
-                var lvlmgr = levelManagerObject.GetComponent<LevelManager>();
-                lvlmgr.LoadScene(sceneName);
-            }
+            LevelManager.Instance.LoadScene(sceneName);
         }
     }
 }
