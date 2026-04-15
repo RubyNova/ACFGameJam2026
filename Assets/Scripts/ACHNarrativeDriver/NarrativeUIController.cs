@@ -1,4 +1,6 @@
+using System;
 using System.Collections;
+using System.Linq;
 using System.Text;
 using ACHNarrativeDriver.Api;
 using ACHNarrativeDriver.ScriptableObjects;
@@ -27,6 +29,7 @@ namespace ACHNarrativeDriver
         [SerializeField] private GameObject _dialoguePanel;
         [SerializeField] private UnityEvent _preNarrativeEvent;
         [SerializeField] private UnityEvent _postNarrativeEvent;
+        [SerializeField] private UnityEvent _postLineWriteEvent;
         
         //private AudioController _audioController; // this is such a hack reeeeeeee
         public UnityEvent listNextEvent;
@@ -55,7 +58,9 @@ namespace ACHNarrativeDriver
             _uiInputActionMap = InputSystem.actions.FindActionMap("UI");
             if(_uiInputActionMap is not null)
             {
-                var interact = _uiInputActionMap["Interact"];
+                //hacky hack to stop ui from breaking when this doesn't exist.
+                //should make this configurable next time.
+                var interact =_uiInputActionMap.actions.FirstOrDefault(action => action.name.Equals("Interact", StringComparison.InvariantCultureIgnoreCase));
                 if(interact is not null)
                 {
                     interact.performed += (context) => ExecuteNextDialogueLine();
@@ -155,28 +160,28 @@ namespace ACHNarrativeDriver
                     _characterTwoRenderer.enabled = true;
                 }
             }
-            else if(characterDialogueInfo.CharacterTwo is null)
+            else if(characterDialogueInfo.CharacterTwo is null && _characterTwoRenderer != null)
             {
                 _characterTwoRenderer.enabled = false;
             }
 
             if(characterDialogueInfo.NarratorSpeaking)
             {
-                _narratorTextBubblePrefab.SetActive(true);
-                _leftTextBubblePrefab.SetActive(false);
-                _rightTextBubblePrefab.SetActive(false);
+                _narratorTextBubblePrefab?.SetActive(true);
+                _leftTextBubblePrefab?.SetActive(false);
+                _rightTextBubblePrefab?.SetActive(false);
             }
             else if(characterDialogueInfo.LeftCharacterTalking)
             {
-                _narratorTextBubblePrefab.SetActive(false);
-                _leftTextBubblePrefab.SetActive(true);
-                _rightTextBubblePrefab.SetActive(false);
+                _narratorTextBubblePrefab?.SetActive(false);
+                _leftTextBubblePrefab?.SetActive(true);
+                _rightTextBubblePrefab?.SetActive(false);
             }
             else
             {
-                _narratorTextBubblePrefab.SetActive(false);
-                _leftTextBubblePrefab.SetActive(false);
-                _rightTextBubblePrefab.SetActive(true);
+                _narratorTextBubblePrefab?.SetActive(false);
+                _leftTextBubblePrefab?.SetActive(false);
+                _rightTextBubblePrefab?.SetActive(true);
             }
             
             _rollingTextRoutine =
@@ -200,6 +205,7 @@ namespace ACHNarrativeDriver
         {
             StopCoroutine(_rollingTextRoutine);
             _rollingTextRoutine = null;
+            _postLineWriteEvent.Invoke();
         }
 
         private IEnumerator PerformRollingText(NarrativeSequence.CharacterDialogueInfo targetDialogueInfo)
