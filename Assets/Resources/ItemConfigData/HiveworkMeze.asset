@@ -22,5 +22,7 @@ MonoBehaviour:
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: This potion removes all mushroom related curses from
     the body, including being turned into one, or having one sprout on your head.
-    Made from mixing Hexbegun and a Mushroom.
-  _recipe: []
+    Made from mixing Hexbegun and a Plushroom.
+  _recipe:
+  - {fileID: 11400000, guid: 159ab75429d32e942a405250fdb2b4cf, type: 2}
+  - {fileID: 11400000, guid: 06797bbf4f469ce48949499a435df513, type: 2}

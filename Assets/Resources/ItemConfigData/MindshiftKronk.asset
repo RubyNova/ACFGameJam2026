@@ -23,4 +23,6 @@ MonoBehaviour:
   _recipeBookEntryDescription: 'Makes you a strong, yet relaxed person. This is basically
     the potion that makes you a brainless-hunk type. Made from mixing Relaxalax and
     Cespian. '
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: 5a533b5e4e17df540ae9eabb05dc5d85, type: 2}
+  - {fileID: 11400000, guid: d07c0945d692eb94e8877ead4441f17a, type: 2}

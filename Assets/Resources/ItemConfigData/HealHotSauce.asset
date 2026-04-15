@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: HealHotSauce
   m_EditorClassIdentifier: Assembly-CSharp::CraftingAPI.ItemConfig
   _itemName: "Cespeel\u2019m Potion"
-  _shortDescription: Healing hot sauce
+  _shortDescription: healing hot sauce
   _itemIconBackground: {fileID: 21300000, guid: ea14edabe08c6eb43bf58110bd97db44, type: 3}
   _itemIconMiddle: {fileID: 21300000, guid: ae46d027c9b726b46beb0421ad800b15, type: 3}
   _itemIconForeground: {fileID: 21300000, guid: 1a78aa72c4eaa6647bd0326797afd79d, type: 3}
@@ -22,5 +22,7 @@ MonoBehaviour:
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: "A hot sauce that you will never burn your mouth with,
     since it also heals you! A hit among those who just can\u2019t get enough of
-    that hot flavour. Made from mixing Heel'm and Cespian"
-  _recipe: []
+    that hot flavour. Made from mixing Heel'm and Cespian."
+  _recipe:
+  - {fileID: 11400000, guid: 5a533b5e4e17df540ae9eabb05dc5d85, type: 2}
+  - {fileID: 11400000, guid: 08917d11410a9644cbc2e7badc151115, type: 2}

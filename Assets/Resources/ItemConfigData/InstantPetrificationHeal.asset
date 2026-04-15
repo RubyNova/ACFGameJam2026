@@ -22,5 +22,7 @@ MonoBehaviour:
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: For those who want to skip the part of post-petrification
     where you still feel like stone and get those muscles moving instantly! Made
-    from mixing Plushkik and Shroomsli
-  _recipe: []
+    from mixing Plushkik and Shroomsli.
+  _recipe:
+  - {fileID: 11400000, guid: 9d4de58eadec3574384a86d33e20aca8, type: 2}
+  - {fileID: 11400000, guid: 77eb8a62ffde5714aa8b2ae8501b0572, type: 2}

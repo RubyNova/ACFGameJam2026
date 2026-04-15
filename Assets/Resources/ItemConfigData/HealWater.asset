@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: HealWater
   m_EditorClassIdentifier: Assembly-CSharp::CraftingAPI.ItemConfig
   _itemName: Heelmatc'm Potion
-  _shortDescription: Healing spring water-esque potion
+  _shortDescription: healing spring water-esque potion
   _itemIconBackground: {fileID: 21300000, guid: dc9e0037bca9fa94a87a58bf3f323532, type: 3}
   _itemIconMiddle: {fileID: 21300000, guid: ec97229b72e557c428f083e4db20edd6, type: 3}
   _itemIconForeground: {fileID: 21300000, guid: 64d11b80839d03a4b956b1a91cee1012, type: 3}
@@ -22,4 +22,6 @@ MonoBehaviour:
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: Tastes like water from a nice forest spring, an incredibly
     healing taste to be sure! Made from mixing Heel'm and Mismatchm.
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: f893c66c6c538f341b7d5e6f5e0ce42f, type: 2}
+  - {fileID: 11400000, guid: 08917d11410a9644cbc2e7badc151115, type: 2}

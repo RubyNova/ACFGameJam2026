@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: FruitSpeed
   m_EditorClassIdentifier: Assembly-CSharp::CraftingAPI.ItemConfig
   _itemName: Kikizou Potion
-  _shortDescription: Body image potion
+  _shortDescription: body image potion
   _itemIconBackground: {fileID: 21300000, guid: 869ece28b62cdfa4eb666814adb8a815, type: 3}
   _itemIconMiddle: {fileID: 21300000, guid: 04109e65e6f42ab4eb868c9aef32a101, type: 3}
   _itemIconForeground: {fileID: 21300000, guid: 8335d556e96ad4045a4694190319ca03, type: 3}
@@ -22,5 +22,7 @@ MonoBehaviour:
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: Gives a fruity taste to that speed enhancing potion
     you know and love! Helps improve confidence with regard to your body image as
-    well. Made from mixing Plushkik and Rouz
-  _recipe: []
+    well. Made from mixing Plushkik and Rouz.
+  _recipe:
+  - {fileID: 11400000, guid: 8988c71254de98f4ea3a1c8d07d5869d, type: 2}
+  - {fileID: 11400000, guid: 9d4de58eadec3574384a86d33e20aca8, type: 2}

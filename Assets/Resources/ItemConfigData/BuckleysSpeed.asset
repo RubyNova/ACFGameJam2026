@@ -22,5 +22,7 @@ MonoBehaviour:
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: "This potion lets you speak quick and fastly, which
     might be good if you want to get out of situations you don\u2019t want to be
-    in quickly. Made from mixing Plushkik or Buckem."
-  _recipe: []
+    in quickly. Made from mixing Plushkik and Buckem."
+  _recipe:
+  - {fileID: 11400000, guid: 2797aff07aa025d428a3e9907e50d6a0, type: 2}
+  - {fileID: 11400000, guid: 9d4de58eadec3574384a86d33e20aca8, type: 2}

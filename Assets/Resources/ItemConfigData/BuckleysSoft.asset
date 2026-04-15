@@ -23,4 +23,6 @@ MonoBehaviour:
   _recipeBookEntryDescription: "A Blushlem Potion. This potion makes your voice more
     soft and gentle, which is good for those who can\u2019t help the way they say
     certain things. Made from mixing Plushroom and Buckem."
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: 159ab75429d32e942a405250fdb2b4cf, type: 2}
+  - {fileID: 11400000, guid: 2797aff07aa025d428a3e9907e50d6a0, type: 2}

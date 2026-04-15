@@ -22,5 +22,7 @@ MonoBehaviour:
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: This potion enhances the magical properties to whatever
     or whoever you rub this on. However, this also does not allow for anything that
-    does not already possess magic to have it. Made from mixing Laeli and Slisimle
-  _recipe: []
+    does not already possess magic to have it. Made from mixing Laeli and Slisimle.
+  _recipe:
+  - {fileID: 11400000, guid: a6d86d55612570f4b93067768bef7bd5, type: 2}
+  - {fileID: 11400000, guid: dc209f38b56491045a54d4c52815bdce, type: 2}

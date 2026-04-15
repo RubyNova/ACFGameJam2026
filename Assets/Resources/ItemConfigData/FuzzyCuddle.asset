@@ -21,5 +21,7 @@ MonoBehaviour:
   _middleColourTint: {r: 0.6833781, g: 0.45415002, b: 0.6948588, a: 1}
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: Increases your cuddling strength by a few points.
-    This is an extremely important potion. Made from mixing Cespi and a Suplush
-  _recipe: []
+    This is an extremely important potion. Made from mixing Cespi and a Suplush.
+  _recipe:
+  - {fileID: 11400000, guid: 751f467c022f2dc4baee998d01eaf248, type: 2}
+  - {fileID: 11400000, guid: d1f01a817c78b2c449d9382c0d8434d0, type: 2}

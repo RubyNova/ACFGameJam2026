@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bf8d2c7cf5fef54cbef8a0d00ca2471, type: 3}
   m_Name: FuzzyHugTransfer
   m_EditorClassIdentifier: Assembly-CSharp::CraftingAPI.ItemConfig
-  _itemName: Zoulush Potion
+  _itemName: Roulush Potion
   _shortDescription: hug emotion transfer
   _itemIconBackground: {fileID: 21300000, guid: 4697b46a9f9cca44b9ed1c2d45c0372e, type: 3}
   _itemIconMiddle: {fileID: 21300000, guid: ff44f9f151bc9ff49acda8b0ff5f22a7, type: 3}
@@ -22,5 +22,7 @@ MonoBehaviour:
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: This potion lets you spill our your emotions while
     hugging someone or something. This allows for a good physical release of pent
-    up.
-  _recipe: []
+    up. Made from Suplush and Rouz.
+  _recipe:
+  - {fileID: 11400000, guid: 8988c71254de98f4ea3a1c8d07d5869d, type: 2}
+  - {fileID: 11400000, guid: d1f01a817c78b2c449d9382c0d8434d0, type: 2}

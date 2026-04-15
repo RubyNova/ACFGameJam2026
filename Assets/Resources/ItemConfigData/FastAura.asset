@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: FastAura
   m_EditorClassIdentifier: Assembly-CSharp::CraftingAPI.ItemConfig
   _itemName: Hexikik Potion
-  _shortDescription: Speedy aura
+  _shortDescription: speedy aura
   _itemIconBackground: {fileID: 21300000, guid: 4697b46a9f9cca44b9ed1c2d45c0372e, type: 3}
   _itemIconMiddle: {fileID: 21300000, guid: ff44f9f151bc9ff49acda8b0ff5f22a7, type: 3}
   _itemIconForeground: {fileID: 21300000, guid: c37f7e6e932bfef499cf800a9c4f6cb9, type: 3}
@@ -23,4 +23,6 @@ MonoBehaviour:
   _recipeBookEntryDescription: "Ever wanted to  have everyone in a room be super
     fast? Here\u2019s the potion for you! Can lead to unfortunate situations if you\u2019re
     fast when you don\u2019t want to be. Made by mixing Plushkik and Hexbegun."
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: 06797bbf4f469ce48949499a435df513, type: 2}
+  - {fileID: 11400000, guid: 9d4de58eadec3574384a86d33e20aca8, type: 2}

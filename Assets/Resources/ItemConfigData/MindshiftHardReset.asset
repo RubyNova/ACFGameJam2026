@@ -22,5 +22,7 @@ MonoBehaviour:
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: 'This potion relaxes you and resets your emotions,
     and leaves you with a feeling of a new start. A popular item after periods of
-    losing something or someone. Made from mixing Relaxalax and Zouzour '
-  _recipe: []
+    losing something or someone. Made from mixing Relaxalax and Zouzour. '
+  _recipe:
+  - {fileID: 11400000, guid: c557b6f4d416ac94ebfc300058005f56, type: 2}
+  - {fileID: 11400000, guid: d07c0945d692eb94e8877ead4441f17a, type: 2}

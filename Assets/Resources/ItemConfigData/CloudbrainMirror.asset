@@ -23,4 +23,6 @@ MonoBehaviour:
   _recipeBookEntryDescription: This potion makes you extremely confident in your
     own emotions. This can help those having a difficult time feeling sure in themselves
     have a lot of love for this potion. Made from mixing Influenz with itself.
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: 37e4baca959ef1141812513fc0454360, type: 2}
+  - {fileID: 11400000, guid: 37e4baca959ef1141812513fc0454360, type: 2}

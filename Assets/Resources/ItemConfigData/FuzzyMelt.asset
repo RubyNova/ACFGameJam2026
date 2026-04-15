@@ -24,4 +24,6 @@ MonoBehaviour:
     become too comfortable with your existence that you will not be able to move
     for many hours. Good for people who need to relax but can be hard to manage if
     you change your mind after drinking the potion.
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: d1f01a817c78b2c449d9382c0d8434d0, type: 2}
+  - {fileID: 11400000, guid: d1f01a817c78b2c449d9382c0d8434d0, type: 2}

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: HiveworkPandora
   m_EditorClassIdentifier: Assembly-CSharp::CraftingAPI.ItemConfig
   _itemName: Laxlixlexlun Potion
-  _shortDescription: curse feild creatoin
+  _shortDescription: curse field creatoin
   _itemIconBackground: {fileID: 21300000, guid: 4697b46a9f9cca44b9ed1c2d45c0372e, type: 3}
   _itemIconMiddle: {fileID: 21300000, guid: ff44f9f151bc9ff49acda8b0ff5f22a7, type: 3}
   _itemIconForeground: {fileID: 21300000, guid: a20311c22405d18449fe0b9af757b460, type: 3}
@@ -24,4 +24,6 @@ MonoBehaviour:
     Because you can\u2019t mix more than two things together, you unfortunately can\u2019t
     make any cool curses with potions though. This is a good thing. Made from mixing
     Hexbegun and Laliluleilou."
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: 7f2ba145cc235a54faa3ced84fc6da1a, type: 2}
+  - {fileID: 11400000, guid: 06797bbf4f469ce48949499a435df513, type: 2}

@@ -17,17 +17,17 @@ MonoBehaviour:
   _musicFiles: []
   _soundEffectFiles: []
   _characterDialoguePairs:
-  - _character: {fileID: 11400000, guid: 9386325197a551e4fb73753368901d97, type: 2}
+  - _character: {fileID: 11400000, guid: 65e2c6f3ee2b1f84c8b572ecdeddace1, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
     _hasSecondCharacterPoseIndex: 0
     _poseIndex: 0
     _poseIndexTwo: 0
-    _text: "Hi\u2026 its me again. "
+    _text: "Hi\u2026 its me again. Plucky. "
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
     _delayBeforeContinuingInSeconds: 2
-  - _character: {fileID: 11400000, guid: 9386325197a551e4fb73753368901d97, type: 2}
+  - _character: {fileID: 11400000, guid: 65e2c6f3ee2b1f84c8b572ecdeddace1, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
     _hasSecondCharacterPoseIndex: 0
@@ -38,7 +38,7 @@ MonoBehaviour:
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
     _delayBeforeContinuingInSeconds: 2
-  - _character: {fileID: 11400000, guid: 9386325197a551e4fb73753368901d97, type: 2}
+  - _character: {fileID: 11400000, guid: 65e2c6f3ee2b1f84c8b572ecdeddace1, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
     _hasSecondCharacterPoseIndex: 0
@@ -49,7 +49,7 @@ MonoBehaviour:
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
     _delayBeforeContinuingInSeconds: 2
-  - _character: {fileID: 11400000, guid: 9386325197a551e4fb73753368901d97, type: 2}
+  - _character: {fileID: 11400000, guid: 65e2c6f3ee2b1f84c8b572ecdeddace1, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
     _hasSecondCharacterPoseIndex: 0
@@ -59,7 +59,7 @@ MonoBehaviour:
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
     _delayBeforeContinuingInSeconds: 2
-  - _character: {fileID: 11400000, guid: 9386325197a551e4fb73753368901d97, type: 2}
+  - _character: {fileID: 11400000, guid: 65e2c6f3ee2b1f84c8b572ecdeddace1, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
     _hasSecondCharacterPoseIndex: 0
@@ -69,7 +69,7 @@ MonoBehaviour:
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
     _delayBeforeContinuingInSeconds: 2
-  - _character: {fileID: 11400000, guid: 9386325197a551e4fb73753368901d97, type: 2}
+  - _character: {fileID: 11400000, guid: 65e2c6f3ee2b1f84c8b572ecdeddace1, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
     _hasSecondCharacterPoseIndex: 0
@@ -79,7 +79,7 @@ MonoBehaviour:
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
     _delayBeforeContinuingInSeconds: 2
-  - _character: {fileID: 11400000, guid: 9386325197a551e4fb73753368901d97, type: 2}
+  - _character: {fileID: 11400000, guid: 65e2c6f3ee2b1f84c8b572ecdeddace1, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
     _hasSecondCharacterPoseIndex: 0
@@ -90,6 +90,7 @@ MonoBehaviour:
     _narratorSpeaking: 0
     _delayBeforeContinuingInSeconds: 2
   _choices: []
+  _isDepartingSequence: 0
   <SourceScript>k__BackingField: "Plucky: Hi\u2026 its me again. Plucky. /d2\r\n\r\nPlucky:
     Sorry if I seem gloomy\u2026 I finally beat the jerk orc mage who cursed me to
     be the wimp I am now\u2026 /d2\r\n\r\nPlucky: But\u2026 I\u2019m still not back

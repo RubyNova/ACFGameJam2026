@@ -23,5 +23,7 @@ MonoBehaviour:
   _recipeBookEntryDescription: "If you use this potion you will create an aura where
     you'll go between the most mellow mood and super stressed with manic energy.
     Not recommend for consumption. Or recommended in general. Don\u2019t give this
-    to anyone. Made from Relaxalax and Plushkik"
-  _recipe: []
+    to anyone. Made from Relaxalax and Plushkik."
+  _recipe:
+  - {fileID: 11400000, guid: d07c0945d692eb94e8877ead4441f17a, type: 2}
+  - {fileID: 11400000, guid: 9d4de58eadec3574384a86d33e20aca8, type: 2}

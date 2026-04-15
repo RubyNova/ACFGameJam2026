@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Candle
   m_EditorClassIdentifier: Assembly-CSharp::CraftingAPI.ItemConfig
   _itemName: Vivinex Potion
-  _shortDescription: Scented potion
+  _shortDescription: scented potion
   _itemIconBackground: {fileID: 21300000, guid: 869ece28b62cdfa4eb666814adb8a815, type: 3}
   _itemIconMiddle: {fileID: 21300000, guid: 04109e65e6f42ab4eb868c9aef32a101, type: 3}
   _itemIconForeground: {fileID: 21300000, guid: 8335d556e96ad4045a4694190319ca03, type: 3}
@@ -22,5 +22,7 @@ MonoBehaviour:
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: A pleasant aromatic smelling potion that helps with
     decongestion. Used as a candle substitute. Mixing with this will change its scent.
-    Made from Limesli and Rouz berry
-  _recipe: []
+    Made from Limesli and Rouz.
+  _recipe:
+  - {fileID: 11400000}
+  - {fileID: 11400000, guid: 8988c71254de98f4ea3a1c8d07d5869d, type: 2}

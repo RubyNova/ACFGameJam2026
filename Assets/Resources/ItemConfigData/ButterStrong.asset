@@ -23,4 +23,6 @@ MonoBehaviour:
   _recipeBookEntryDescription: This potion can be rubbed on something to make it
     stronger, even on certain construction equipment to make it more hardy. A lot
     of architects love this potion type. Made from Cespi and Slisimle.
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: 751f467c022f2dc4baee998d01eaf248, type: 2}
+  - {fileID: 11400000, guid: a6d86d55612570f4b93067768bef7bd5, type: 2}

@@ -23,4 +23,6 @@ MonoBehaviour:
   _recipeBookEntryDescription: "This potion allows you to activate certain mystical
     magical objects. Sometimes referred to as the \u201CMystic Melody\u201D potion.
     Made from mixing Laeli and Buckem. "
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: dc209f38b56491045a54d4c52815bdce, type: 2}
+  - {fileID: 11400000, guid: 2797aff07aa025d428a3e9907e50d6a0, type: 2}

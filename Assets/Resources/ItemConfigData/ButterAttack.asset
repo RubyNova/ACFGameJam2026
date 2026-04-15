@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: ButterAttack
   m_EditorClassIdentifier: Assembly-CSharp::CraftingAPI.ItemConfig
   _itemName: Ceslimle Potion
-  _shortDescription: Strength increasing ointment
+  _shortDescription: strength increasing ointment
   _itemIconBackground: {fileID: 21300000, guid: 45f7b2300518f6b4f8c6f739f68302e8, type: 3}
   _itemIconMiddle: {fileID: 21300000, guid: 76330d35ba49ecf40ab39a01a5479cd1, type: 3}
   _itemIconForeground: {fileID: 21300000, guid: 8cd34b1e1db216c47a60ef0075797e29, type: 3}
@@ -23,5 +23,7 @@ MonoBehaviour:
   _recipeBookEntryDescription: A Ceslimle Potion. Rub this on something to increase
     its attack power. Used to increase the strength of specific limbs, or even certain
     types of weapons. Popular among physical attackers who wield swords, hammers,
-    or axes.
-  _recipe: []
+    or axes. Made from mixing Cespian and Limesli.
+  _recipe:
+  - {fileID: 11400000, guid: a6d86d55612570f4b93067768bef7bd5, type: 2}
+  - {fileID: 11400000, guid: 5a533b5e4e17df540ae9eabb05dc5d85, type: 2}

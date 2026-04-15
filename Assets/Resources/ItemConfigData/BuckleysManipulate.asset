@@ -23,4 +23,6 @@ MonoBehaviour:
   _recipeBookEntryDescription: This potion allows your voice to affect the emotions
     of other people, and almost hypnotize them like that stupid guy with the flute
     who got rid of all the cool rats that I hate. Made from mixing Rouz and Buckem.
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: 2797aff07aa025d428a3e9907e50d6a0, type: 2}
+  - {fileID: 11400000, guid: 8988c71254de98f4ea3a1c8d07d5869d, type: 2}

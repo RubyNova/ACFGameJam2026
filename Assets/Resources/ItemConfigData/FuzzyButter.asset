@@ -23,4 +23,6 @@ MonoBehaviour:
   _recipeBookEntryDescription: This potion can be rubbed on anything and it will
     begun radiating comforting warmth. Good to be used on plushies, blankets, or
     other soft fuzzy objects.
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: a6d86d55612570f4b93067768bef7bd5, type: 2}
+  - {fileID: 11400000, guid: d1f01a817c78b2c449d9382c0d8434d0, type: 2}

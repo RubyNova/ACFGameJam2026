@@ -23,4 +23,6 @@ MonoBehaviour:
   _recipeBookEntryDescription: If you rub this on something or someone, you can be
     in tune with its emotions, inanimate or alive. Important if you want to see how
     the objects in your home feel about you. Made from mixing Influenz and Slisimle.
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: 37e4baca959ef1141812513fc0454360, type: 2}
+  - {fileID: 11400000, guid: a6d86d55612570f4b93067768bef7bd5, type: 2}

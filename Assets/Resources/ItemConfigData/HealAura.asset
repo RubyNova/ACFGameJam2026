@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: HealAura
   m_EditorClassIdentifier: Assembly-CSharp::CraftingAPI.ItemConfig
   _itemName: Heeliehex Potion
-  _shortDescription: Healing aura potion
+  _shortDescription: healing aura potion
   _itemIconBackground: {fileID: 21300000, guid: dc9e0037bca9fa94a87a58bf3f323532, type: 3}
   _itemIconMiddle: {fileID: 21300000, guid: ec97229b72e557c428f083e4db20edd6, type: 3}
   _itemIconForeground: {fileID: 21300000, guid: afde9845b6bf7a444b09b3934c7e899d, type: 3}
@@ -23,4 +23,6 @@ MonoBehaviour:
   _recipeBookEntryDescription: "Creates an area of effect healing aura. Great for
     when you don\u2019t want your low level or low defence party members to constantly
     need potions or healing effects. Made from mixing Heel'm and Hexbegun."
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: 08917d11410a9644cbc2e7badc151115, type: 2}
+  - {fileID: 11400000, guid: 06797bbf4f469ce48949499a435df513, type: 2}

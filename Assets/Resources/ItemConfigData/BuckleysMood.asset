@@ -23,4 +23,6 @@ MonoBehaviour:
   _recipeBookEntryDescription: This potion makes you have the mood of a pop star.
     Makes you become completely self observed with yourself. How much your friends
     like you when you're like this may vary. Made from Influenz and Buckem.
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: 37e4baca959ef1141812513fc0454360, type: 2}
+  - {fileID: 11400000, guid: 2797aff07aa025d428a3e9907e50d6a0, type: 2}

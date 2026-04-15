@@ -20,7 +20,9 @@ MonoBehaviour:
   _backgroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _middleColourTint: {r: 0.8676368, g: 0.7338706, b: 0.21370637, a: 1}
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
-  _recipeBookEntryDescription: ' This potion can increase your power but reduces
-    your anger. This is helpful for barbarians who do not want to give into their
-    hatred and rage. Made from mixing Cespian and Zouzor.'
-  _recipe: []
+  _recipeBookEntryDescription: This potion can increase your power but reduces your
+    anger. This is helpful for barbarians who do not want to give into their hatred
+    and rage. Made from mixing Cespian and Zouzor.
+  _recipe:
+  - {fileID: 11400000, guid: c557b6f4d416ac94ebfc300058005f56, type: 2}
+  - {fileID: 11400000, guid: 5a533b5e4e17df540ae9eabb05dc5d85, type: 2}

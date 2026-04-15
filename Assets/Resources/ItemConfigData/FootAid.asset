@@ -23,4 +23,6 @@ MonoBehaviour:
   _recipeBookEntryDescription: 'Heals foot fungus and leg stiffness in a jiffy. 9
     out of 10 people who focus exclusively on the lower third of their body recommend
     this! Made from mixing Plushkik and Limesli. '
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: e4bd1f38257ab9d4b93ea17750bde1b5, type: 2}
+  - {fileID: 11400000, guid: 9d4de58eadec3574384a86d33e20aca8, type: 2}

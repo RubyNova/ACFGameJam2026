@@ -22,5 +22,7 @@ MonoBehaviour:
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: "This potion makes you physically stronger and tastes
     even spicier. On the spice scale, this would be a solid \u201CLevel 4\u201D.
-    Made by mixing Cespian and Cespi"
-  _recipe: []
+    Made by mixing Cespian and Cespi."
+  _recipe:
+  - {fileID: 11400000, guid: 5a533b5e4e17df540ae9eabb05dc5d85, type: 2}
+  - {fileID: 11400000, guid: 751f467c022f2dc4baee998d01eaf248, type: 2}

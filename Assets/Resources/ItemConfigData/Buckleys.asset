@@ -23,4 +23,6 @@ MonoBehaviour:
   _recipeBookEntryDescription: Used to recover from sore throats. Singers will often
     stockpile cupboards of these. Mix with to have effects on the voice or throat.
     Made from combining Limesli and Cespi.
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: e4bd1f38257ab9d4b93ea17750bde1b5, type: 2}
+  - {fileID: 11400000, guid: 751f467c022f2dc4baee998d01eaf248, type: 2}

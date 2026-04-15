@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BodyWarmHealPotion
   m_EditorClassIdentifier: Assembly-CSharp::CraftingAPI.ItemConfig
   _itemName: "Heeslup\u2019m Potion"
-  _shortDescription: Warm body heal potion
+  _shortDescription: warm body heal potion
   _itemIconBackground: {fileID: 21300000, guid: dc9e0037bca9fa94a87a58bf3f323532, type: 3}
   _itemIconMiddle: {fileID: 21300000, guid: ec97229b72e557c428f083e4db20edd6, type: 3}
   _itemIconForeground: {fileID: 21300000, guid: 64d11b80839d03a4b956b1a91cee1012, type: 3}
@@ -23,4 +23,6 @@ MonoBehaviour:
   _recipeBookEntryDescription: Makes your body feel nice and warm inside, and provides
     that nice healing boost! Grandmas love this one even more! A great soup broth
     too. Made from mixing Heel'm and Suplush.
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: d1f01a817c78b2c449d9382c0d8434d0, type: 2}
+  - {fileID: 11400000, guid: 08917d11410a9644cbc2e7badc151115, type: 2}

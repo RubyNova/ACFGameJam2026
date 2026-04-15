@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: HealPowder
   m_EditorClassIdentifier: Assembly-CSharp::CraftingAPI.ItemConfig
   _itemName: Helilal'm Potion
-  _shortDescription: Healing powder
+  _shortDescription: healing powder
   _itemIconBackground: {fileID: 21300000, guid: 6a7f6c84073171d488673edf9b668f58, type: 3}
   _itemIconMiddle: {fileID: 21300000, guid: c5a8c337457015e469e438335e1934b6, type: 3}
   _itemIconForeground: {fileID: 21300000, guid: 701239c9e4a139643a224d90e524790d, type: 3}
@@ -22,4 +22,6 @@ MonoBehaviour:
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: This potion makes a healing powder you can spread
     on the wind to spread the healing good vibes. Made from mixing Heel'm and Laeli.
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: 08917d11410a9644cbc2e7badc151115, type: 2}
+  - {fileID: 11400000, guid: dc209f38b56491045a54d4c52815bdce, type: 2}

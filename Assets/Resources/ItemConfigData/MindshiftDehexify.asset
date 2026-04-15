@@ -22,4 +22,6 @@ MonoBehaviour:
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: 'This protects you from any harmful, cursing auras.
     Helpful when exploring tombs and catacombs. Made from mixing Relaxalax and Hexbegun. '
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: d07c0945d692eb94e8877ead4441f17a, type: 2}
+  - {fileID: 11400000, guid: 06797bbf4f469ce48949499a435df513, type: 2}
