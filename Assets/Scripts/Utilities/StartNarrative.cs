@@ -19,4 +19,10 @@ public class StartNarrative : MonoBehaviour
     {
         _controller.ExecuteSequence(_sequenceToStart);
     }
+
+    public void ContinueToNextLevel(string sceneName)
+    {
+        LevelManager.Instance.LoadScene(sceneName);
+    }
 }
+

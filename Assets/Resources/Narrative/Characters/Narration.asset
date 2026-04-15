@@ -15,4 +15,4 @@ MonoBehaviour:
   _name: Narration
   _poses: []
   _nameplateSprite: {fileID: 0}
-  _isFirstPerson: 0
+  _isFirstPerson: 1

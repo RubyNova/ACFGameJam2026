@@ -167,21 +167,21 @@ namespace ACHNarrativeDriver
 
             if(characterDialogueInfo.NarratorSpeaking)
             {
-                _narratorTextBubblePrefab?.SetActive(true);
-                _leftTextBubblePrefab?.SetActive(false);
-                _rightTextBubblePrefab?.SetActive(false);
+                if (_narratorTextBubblePrefab != null) _narratorTextBubblePrefab?.SetActive(true);
+                if (_leftTextBubblePrefab != null) _leftTextBubblePrefab?.SetActive(false);
+                if (_rightTextBubblePrefab != null) _rightTextBubblePrefab?.SetActive(false);
             }
             else if(characterDialogueInfo.LeftCharacterTalking)
             {
-                _narratorTextBubblePrefab?.SetActive(false);
-                _leftTextBubblePrefab?.SetActive(true);
-                _rightTextBubblePrefab?.SetActive(false);
+                if (_narratorTextBubblePrefab != null) _narratorTextBubblePrefab?.SetActive(false);
+                if (_leftTextBubblePrefab != null) _leftTextBubblePrefab?.SetActive(true);
+                if (_rightTextBubblePrefab != null) _rightTextBubblePrefab?.SetActive(false);
             }
             else
             {
-                _narratorTextBubblePrefab?.SetActive(false);
-                _leftTextBubblePrefab?.SetActive(false);
-                _rightTextBubblePrefab?.SetActive(true);
+                if (_narratorTextBubblePrefab != null) _narratorTextBubblePrefab?.SetActive(false);
+                if (_leftTextBubblePrefab != null) _leftTextBubblePrefab?.SetActive(false);
+                if (_rightTextBubblePrefab != null) _rightTextBubblePrefab?.SetActive(true);
             }
             
             _rollingTextRoutine =
@@ -205,7 +205,6 @@ namespace ACHNarrativeDriver
         {
             StopCoroutine(_rollingTextRoutine);
             _rollingTextRoutine = null;
-            _postLineWriteEvent.Invoke();
         }
 
         private IEnumerator PerformRollingText(NarrativeSequence.CharacterDialogueInfo targetDialogueInfo)
@@ -225,6 +224,7 @@ namespace ACHNarrativeDriver
             }
 
             _rollingTextRoutine = null;
+            _postLineWriteEvent.Invoke();
         }
 
         public void ExecuteSequence(NarrativeSequence targetSequence)

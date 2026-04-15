@@ -25,7 +25,7 @@ MonoBehaviour:
     _poseIndexTwo: 0
     _text: "Well\u2026 that\u2019s day one over with. "
     _leftCharacterTalking: 1
-    _narratorSpeaking: 0
+    _narratorSpeaking: 1
     _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: bb973c0748022e4479b0b0bdec1dd006, type: 2}
     _characterTwo: {fileID: 0}
@@ -35,7 +35,7 @@ MonoBehaviour:
     _poseIndexTwo: 0
     _text: "That wasn\u2019t so bad."
     _leftCharacterTalking: 1
-    _narratorSpeaking: 0
+    _narratorSpeaking: 1
     _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: bb973c0748022e4479b0b0bdec1dd006, type: 2}
     _characterTwo: {fileID: 0}
@@ -45,7 +45,7 @@ MonoBehaviour:
     _poseIndexTwo: 0
     _text: Typically you tend to prefer to do your brewery alone at home.
     _leftCharacterTalking: 1
-    _narratorSpeaking: 0
+    _narratorSpeaking: 1
     _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: bb973c0748022e4479b0b0bdec1dd006, type: 2}
     _characterTwo: {fileID: 0}
@@ -56,7 +56,7 @@ MonoBehaviour:
     _text: "You don\u2019t like the idea of people seeing the process of you making
       potions."
     _leftCharacterTalking: 1
-    _narratorSpeaking: 0
+    _narratorSpeaking: 1
     _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: bb973c0748022e4479b0b0bdec1dd006, type: 2}
     _characterTwo: {fileID: 0}
@@ -66,7 +66,7 @@ MonoBehaviour:
     _poseIndexTwo: 0
     _text: The pressure gets to you, if only a bit.
     _leftCharacterTalking: 1
-    _narratorSpeaking: 0
+    _narratorSpeaking: 1
     _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: bb973c0748022e4479b0b0bdec1dd006, type: 2}
     _characterTwo: {fileID: 0}
@@ -76,7 +76,7 @@ MonoBehaviour:
     _poseIndexTwo: 0
     _text: "At least you don\u2019t have to deal with it again until tomorrow."
     _leftCharacterTalking: 1
-    _narratorSpeaking: 0
+    _narratorSpeaking: 1
     _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: bb973c0748022e4479b0b0bdec1dd006, type: 2}
     _characterTwo: {fileID: 0}
@@ -87,7 +87,7 @@ MonoBehaviour:
     _text: "But\u2026 people seemed friendly and nice at least. That\u2019s a plus.
       You were tipped pretty well."
     _leftCharacterTalking: 1
-    _narratorSpeaking: 0
+    _narratorSpeaking: 1
     _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: bb973c0748022e4479b0b0bdec1dd006, type: 2}
     _characterTwo: {fileID: 0}
@@ -97,7 +97,7 @@ MonoBehaviour:
     _poseIndexTwo: 0
     _text: "Hopefully this doesn\u2019t change as the days go on."
     _leftCharacterTalking: 1
-    _narratorSpeaking: 0
+    _narratorSpeaking: 1
     _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: bb973c0748022e4479b0b0bdec1dd006, type: 2}
     _characterTwo: {fileID: 0}
@@ -107,7 +107,7 @@ MonoBehaviour:
     _poseIndexTwo: 0
     _text: Time to sleep...
     _leftCharacterTalking: 1
-    _narratorSpeaking: 0
+    _narratorSpeaking: 1
     _delayBeforeContinuingInSeconds: 0
   _choices: []
   _isDepartingSequence: 0

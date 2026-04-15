@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Game/Story/Day1.unity
     guid: c1ed6b39475d2644b8af36f2952cf031
   - enabled: 1
+    path: Assets/Scenes/Game/Story/BetweenDays/BetweenDay1.unity
+    guid: 439f1a81c479a99f5a254c2b25c343fd
+  - enabled: 1
     path: Assets/Scenes/Game/Story/Day2.unity
     guid: cb85a858afd6405a88eb77e85ae90720
   - enabled: 1
