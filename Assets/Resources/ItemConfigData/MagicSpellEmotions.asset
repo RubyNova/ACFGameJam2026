@@ -12,13 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bf8d2c7cf5fef54cbef8a0d00ca2471, type: 3}
   m_Name: MagicSpellEmotions
   m_EditorClassIdentifier: Assembly-CSharp::CraftingAPI.ItemConfig
-  _itemName: 
-  _shortDescription: 
+  _itemName: Zoleilou Potion
+  _shortDescription: emotion magic aid
   _itemIconBackground: {fileID: 0}
   _itemIconMiddle: {fileID: 0}
   _itemIconForeground: {fileID: 0}
   _backgroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _middleColourTint: {r: 1, g: 1, b: 1, a: 1}
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
-  _recipeBookEntryDescription: 
+  _recipeBookEntryDescription: This potion allows you to cast emotional spells temporarily,
+    and get more in tune with your emotions when trying to cast spells that rely
+    on emotions. Good as training wheels for those types of spells. Made from mixing
+    Rouz and Laliluleilou.
   _recipe: []

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: PetrifyMasking
   m_EditorClassIdentifier: Assembly-CSharp::CraftingAPI.ItemConfig
   _itemName: Infsli Potion
-  _shortDescription: cold and closed emotions
+  _shortDescription: Cold and closed emotions
   _itemIconBackground: {fileID: 0}
   _itemIconMiddle: {fileID: 0}
   _itemIconForeground: {fileID: 0}

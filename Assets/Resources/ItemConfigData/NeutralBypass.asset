@@ -12,13 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bf8d2c7cf5fef54cbef8a0d00ca2471, type: 3}
   m_Name: NeutralBypass
   m_EditorClassIdentifier: Assembly-CSharp::CraftingAPI.ItemConfig
-  _itemName: 
-  _shortDescription: 
+  _itemName: Zolilr Potion
+  _shortDescription: emotion-magic bypasser
   _itemIconBackground: {fileID: 0}
   _itemIconMiddle: {fileID: 0}
   _itemIconForeground: {fileID: 0}
   _backgroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _middleColourTint: {r: 1, g: 1, b: 1, a: 1}
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
-  _recipeBookEntryDescription: 
+  _recipeBookEntryDescription: This potion lets you bypass any emotions that are
+    required for casting spells. Emotions are often important in spellcasting so
+    some emotional mages bypass them with these potions.
   _recipe: []

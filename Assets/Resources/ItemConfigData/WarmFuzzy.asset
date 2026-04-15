@@ -13,9 +13,15 @@ MonoBehaviour:
   m_Name: WarmFuzzy
   m_EditorClassIdentifier: Assembly-CSharp::CraftingAPI.ItemConfig
   _itemName: Suplush Potion
-  _shortDescription: Warm and fuzzy feeling potion
-  _itemIcon: {fileID: 0}
+  _shortDescription: 'warm feeling hugs '
+  _itemIconBackground: {fileID: 0}
+  _itemIconMiddle: {fileID: 0}
+  _itemIconForeground: {fileID: 0}
+  _backgroundColourTint: {r: 1, g: 1, b: 1, a: 1}
+  _middleColourTint: {r: 1, g: 1, b: 1, a: 1}
+  _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: 'This potion just makes you feel warm and comfortable.
     A favourite in the food of many grandmothers. Mixing this will transfer this
-    feeling to other types of potions. Made from mixing Plushrooms. '
+    feeling to other types of potions and has effects with physical affection like
+    hugs. Made from mixing Plushrooms. '
   _recipe: []

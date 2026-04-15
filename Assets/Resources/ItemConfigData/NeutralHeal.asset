@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bf8d2c7cf5fef54cbef8a0d00ca2471, type: 3}
   m_Name: NeutralHeal
   m_EditorClassIdentifier: Assembly-CSharp::CraftingAPI.ItemConfig
-  _itemName: 
+  _itemName: Plushour Potion
   _shortDescription: neutral heal
   _itemIconBackground: {fileID: 0}
   _itemIconMiddle: {fileID: 0}

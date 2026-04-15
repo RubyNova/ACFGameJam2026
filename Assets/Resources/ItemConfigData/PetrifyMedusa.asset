@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: PetrifyMedusa
   m_EditorClassIdentifier: Assembly-CSharp::CraftingAPI.ItemConfig
   _itemName: Lashli Potion
-  _shortDescription: lets you be evil medusa
+  _shortDescription: Lets you cast aura spells
   _itemIconBackground: {fileID: 0}
   _itemIconMiddle: {fileID: 0}
   _itemIconForeground: {fileID: 0}

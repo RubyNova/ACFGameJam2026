@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: MindshiftFairymust
   m_EditorClassIdentifier: Assembly-CSharp::CraftingAPI.ItemConfig
   _itemName: Relilax Potion
-  _shortDescription: stinky fae smell
+  _shortDescription: Stinky fae smell potion
   _itemIconBackground: {fileID: 0}
   _itemIconMiddle: {fileID: 0}
   _itemIconForeground: {fileID: 0}

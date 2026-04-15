@@ -12,13 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bf8d2c7cf5fef54cbef8a0d00ca2471, type: 3}
   m_Name: FuzzyRadiance
   m_EditorClassIdentifier: Assembly-CSharp::CraftingAPI.ItemConfig
-  _itemName: 
-  _shortDescription: 
+  _itemName: Splushush Potion
+  _shortDescription: Fuzzy warmth radiator potion
   _itemIconBackground: {fileID: 0}
   _itemIconMiddle: {fileID: 0}
   _itemIconForeground: {fileID: 0}
   _backgroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _middleColourTint: {r: 1, g: 1, b: 1, a: 1}
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
-  _recipeBookEntryDescription: 
+  _recipeBookEntryDescription: "A warm fuzzy feeling amplified with absolute warmth.
+    You\u2019ll be radiating comfortable warmth with this. Made from mixing a Suplush
+    Potion and a Plushroom"
   _recipe: []

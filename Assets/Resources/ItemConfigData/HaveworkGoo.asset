@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: HaveworkGoo
   m_EditorClassIdentifier: Assembly-CSharp::CraftingAPI.ItemConfig
   _itemName: Sligunx Potion
-  _shortDescription: remove slime curses
+  _shortDescription: Remove slime curses
   _itemIconBackground: {fileID: 0}
   _itemIconMiddle: {fileID: 0}
   _itemIconForeground: {fileID: 0}
