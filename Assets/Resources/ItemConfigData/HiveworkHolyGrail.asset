@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CraftingAPI.ItemConfig
   _itemName: Mixmatchun Potion
   _shortDescription: holy water
-  _itemIconBackground: {fileID: 0}
-  _itemIconMiddle: {fileID: 0}
-  _itemIconForeground: {fileID: 0}
+  _itemIconBackground: {fileID: 21300000, guid: 45f7b2300518f6b4f8c6f739f68302e8, type: 3}
+  _itemIconMiddle: {fileID: 21300000, guid: 76330d35ba49ecf40ab39a01a5479cd1, type: 3}
+  _itemIconForeground: {fileID: 21300000, guid: d98beb6ef1c7d41428c95d3562638266, type: 3}
   _backgroundColourTint: {r: 1, g: 1, b: 1, a: 1}
-  _middleColourTint: {r: 1, g: 1, b: 1, a: 1}
+  _middleColourTint: {r: 0.25342876, g: 0.69695854, b: 0.15226531, a: 1}
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: This potion acts like holy water, and is great against
     ghosts, ghouls and other lost souls found on cold grounds. Made from mixing Hexbegun

@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CraftingAPI.ItemConfig
   _itemName: Ceskiksh Potion
   _shortDescription: Speedy attack potion
-  _itemIconBackground: {fileID: 0}
-  _itemIconMiddle: {fileID: 0}
-  _itemIconForeground: {fileID: 0}
+  _itemIconBackground: {fileID: 21300000, guid: 4697b46a9f9cca44b9ed1c2d45c0372e, type: 3}
+  _itemIconMiddle: {fileID: 21300000, guid: ff44f9f151bc9ff49acda8b0ff5f22a7, type: 3}
+  _itemIconForeground: {fileID: 21300000, guid: f13a72d7e34e90d488bacfb8b58a22d1, type: 3}
   _backgroundColourTint: {r: 1, g: 1, b: 1, a: 1}
-  _middleColourTint: {r: 1, g: 1, b: 1, a: 1}
+  _middleColourTint: {r: 0.26671833, g: 0.31954974, b: 0.12197471, a: 1}
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: Makes your attacks come out harder and quicker. Any
     direct physical attacks will deal a frankly absurd amount of damage if you drink

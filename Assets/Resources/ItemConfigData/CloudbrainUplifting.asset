@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CraftingAPI.ItemConfig
   _itemName: Spiflu Potion
   _shortDescription: confidence booster
-  _itemIconBackground: {fileID: 0}
-  _itemIconMiddle: {fileID: 0}
-  _itemIconForeground: {fileID: 0}
+  _itemIconBackground: {fileID: 21300000, guid: 6a7f6c84073171d488673edf9b668f58, type: 3}
+  _itemIconMiddle: {fileID: 21300000, guid: c5a8c337457015e469e438335e1934b6, type: 3}
+  _itemIconForeground: {fileID: 21300000, guid: 701239c9e4a139643a224d90e524790d, type: 3}
   _backgroundColourTint: {r: 1, g: 1, b: 1, a: 1}
-  _middleColourTint: {r: 1, g: 1, b: 1, a: 1}
+  _middleColourTint: {r: 0.019615173, g: 0.5616053, b: 0.2701686, a: 1}
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: This potion makes you feel powerful. While it does
     somewhat increase power, it mostly helps people find the confidence to do powerful

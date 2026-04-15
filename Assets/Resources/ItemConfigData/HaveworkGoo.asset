@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CraftingAPI.ItemConfig
   _itemName: Sligunx Potion
   _shortDescription: Remove slime curses
-  _itemIconBackground: {fileID: 0}
-  _itemIconMiddle: {fileID: 0}
-  _itemIconForeground: {fileID: 0}
+  _itemIconBackground: {fileID: 21300000, guid: 1cd2c8975e0459d4383b4f8ad2a091cd, type: 3}
+  _itemIconMiddle: {fileID: 21300000, guid: 7d43b65852c37d044b905fcd2d0f3358, type: 3}
+  _itemIconForeground: {fileID: 21300000, guid: 4188ca1e95363ad4f98f6f636dc2f963, type: 3}
   _backgroundColourTint: {r: 1, g: 1, b: 1, a: 1}
-  _middleColourTint: {r: 1, g: 1, b: 1, a: 1}
+  _middleColourTint: {r: 0.60782415, g: 0.07363379, b: 0.5192146, a: 1}
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: "This potion stops any slime related curses, or anything
     related to slime-like substances. There\u2019s more of those then you would think.

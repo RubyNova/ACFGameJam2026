@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CraftingAPI.ItemConfig
   _itemName: Genersli Potion
   _shortDescription: still as a statue
-  _itemIconBackground: {fileID: 0}
-  _itemIconMiddle: {fileID: 0}
-  _itemIconForeground: {fileID: 0}
+  _itemIconBackground: {fileID: 21300000, guid: 8df7db3d92662da49a6997c6c79c0b9c, type: 3}
+  _itemIconMiddle: {fileID: 21300000, guid: 210dae9cb8d55f74192ad64fa4887e31, type: 3}
+  _itemIconForeground: {fileID: 21300000, guid: 1274822393a62ce4ead11bbd38e9576a, type: 3}
   _backgroundColourTint: {r: 1, g: 1, b: 1, a: 1}
-  _middleColourTint: {r: 1, g: 1, b: 1, a: 1}
+  _middleColourTint: {r: 0.8873625, g: 0.10017216, b: 0.9513788, a: 1}
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: "Helps you focus by making you as still as a statue
     physically. Means that you can\u2019t get up and move though. Made from mixing

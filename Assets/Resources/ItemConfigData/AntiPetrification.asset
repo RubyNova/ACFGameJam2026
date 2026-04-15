@@ -14,7 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CraftingAPI.ItemConfig
   _itemName: Shroomsli
   _shortDescription: Relieves petrification
-  _itemIcon: {fileID: 0}
+  _itemIconBackground: {fileID: 21300000, guid: 45f7b2300518f6b4f8c6f739f68302e8, type: 3}
+  _itemIconMiddle: {fileID: 21300000, guid: 76330d35ba49ecf40ab39a01a5479cd1, type: 3}
+  _itemIconForeground: {fileID: 21300000, guid: d98beb6ef1c7d41428c95d3562638266, type: 3}
+  _backgroundColourTint: {r: 1, g: 1, b: 1, a: 1}
+  _middleColourTint: {r: 0.047516465, g: 0.3596025, b: 0.7609626, a: 1}
+  _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: Petrification is a fairly common status effect. This
     potion will simply remove its effects. Mixing it will alter how it affects petrification.
     Made from mixing Laeli Essence and a Plushroom

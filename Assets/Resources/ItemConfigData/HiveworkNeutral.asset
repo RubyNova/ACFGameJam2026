@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CraftingAPI.ItemConfig
   _itemName: Zoxzun Potion
   _shortDescription: neutral curse prevention
-  _itemIconBackground: {fileID: 0}
-  _itemIconMiddle: {fileID: 0}
-  _itemIconForeground: {fileID: 0}
+  _itemIconBackground: {fileID: 21300000, guid: 1cd2c8975e0459d4383b4f8ad2a091cd, type: 3}
+  _itemIconMiddle: {fileID: 21300000, guid: 7d43b65852c37d044b905fcd2d0f3358, type: 3}
+  _itemIconForeground: {fileID: 21300000, guid: 4b952d84ac23c3d44b0f36ceb48f001c, type: 3}
   _backgroundColourTint: {r: 1, g: 1, b: 1, a: 1}
-  _middleColourTint: {r: 1, g: 1, b: 1, a: 1}
+  _middleColourTint: {r: 0.9384854, g: 0.72500503, b: 0.6925608, a: 1}
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: This potion will prevent neutral curses. Not curses
     that are particularly good or bad, but just neutral curses. They are the most

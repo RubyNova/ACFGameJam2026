@@ -14,7 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CraftingAPI.ItemConfig
   _itemName: Kikax Potion
   _shortDescription: Mixed emotion aura potion
-  _itemIcon: {fileID: 0}
+  _itemIconBackground: {fileID: 21300000, guid: 45f7b2300518f6b4f8c6f739f68302e8, type: 3}
+  _itemIconMiddle: {fileID: 21300000, guid: 76330d35ba49ecf40ab39a01a5479cd1, type: 3}
+  _itemIconForeground: {fileID: 21300000, guid: 3e83fcdf199dfac40968d7fcfeddf2e0, type: 3}
+  _backgroundColourTint: {r: 1, g: 1, b: 1, a: 1}
+  _middleColourTint: {r: 0.7835175, g: 0.69903755, b: 0.7551298, a: 1}
+  _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: "If you use this potion you will create an aura where
     you'll go between the most mellow mood and super stressed with manic energy.
     Not recommend for consumption. Or recommended in general. Don\u2019t give this

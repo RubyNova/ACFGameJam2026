@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CraftingAPI.ItemConfig
   _itemName: Reregenax Potion
   _shortDescription: time to lock in
-  _itemIconBackground: {fileID: 0}
-  _itemIconMiddle: {fileID: 0}
-  _itemIconForeground: {fileID: 0}
+  _itemIconBackground: {fileID: 21300000, guid: 869ece28b62cdfa4eb666814adb8a815, type: 3}
+  _itemIconMiddle: {fileID: 21300000, guid: 04109e65e6f42ab4eb868c9aef32a101, type: 3}
+  _itemIconForeground: {fileID: 21300000, guid: bb715bd143336c4418118161c7eded62, type: 3}
   _backgroundColourTint: {r: 1, g: 1, b: 1, a: 1}
-  _middleColourTint: {r: 1, g: 1, b: 1, a: 1}
+  _middleColourTint: {r: 0.16242504, g: 0.257639, b: 0.8892362, a: 1}
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: This potion makes an entire room suddenly focus and
     lock in. Bosses and professors love this potion. Made from mixing Relaxalax and

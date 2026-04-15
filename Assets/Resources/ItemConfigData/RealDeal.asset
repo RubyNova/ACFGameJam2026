@@ -14,7 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CraftingAPI.ItemConfig
   _itemName: Sleelm Potion
   _shortDescription: Internal wound healing
-  _itemIcon: {fileID: 0}
+  _itemIconBackground: {fileID: 21300000, guid: 1cd2c8975e0459d4383b4f8ad2a091cd, type: 3}
+  _itemIconMiddle: {fileID: 21300000, guid: 7d43b65852c37d044b905fcd2d0f3358, type: 3}
+  _itemIconForeground: {fileID: 21300000, guid: 1d9377dfe79888b47aa87a1f3fbd7556, type: 3}
+  _backgroundColourTint: {r: 1, g: 1, b: 1, a: 1}
+  _middleColourTint: {r: 0.11898613, g: 0.6164674, b: 0.83447874, a: 1}
+  _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: 'Cures any internal wounds, and is often used in many
     medical facilities as a go-to. Made from mixing Heel''m and Limesli. '
   _recipe: []

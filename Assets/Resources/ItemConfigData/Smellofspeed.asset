@@ -14,7 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CraftingAPI.ItemConfig
   _itemName: Vivkiksh Potion
   _shortDescription: Speed smell potion
-  _itemIcon: {fileID: 0}
+  _itemIconBackground: {fileID: 21300000, guid: 869ece28b62cdfa4eb666814adb8a815, type: 3}
+  _itemIconMiddle: {fileID: 21300000, guid: 04109e65e6f42ab4eb868c9aef32a101, type: 3}
+  _itemIconForeground: {fileID: 21300000, guid: 8335d556e96ad4045a4694190319ca03, type: 3}
+  _backgroundColourTint: {r: 1, g: 1, b: 1, a: 1}
+  _middleColourTint: {r: 0.5690904, g: 0.5514756, b: 0.32737547, a: 1}
+  _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: Gives off the smell of speed. Which is a sentence
     that makes no sense. Made from mixing Plushkik and Vivinex.
   _recipe: []

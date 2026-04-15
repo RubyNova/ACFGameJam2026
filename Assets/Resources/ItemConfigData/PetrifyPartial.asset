@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CraftingAPI.ItemConfig
   _itemName: Slisloom Potion
   _shortDescription: partial de-petrification
-  _itemIconBackground: {fileID: 0}
-  _itemIconMiddle: {fileID: 0}
-  _itemIconForeground: {fileID: 0}
+  _itemIconBackground: {fileID: 21300000, guid: 1cd2c8975e0459d4383b4f8ad2a091cd, type: 3}
+  _itemIconMiddle: {fileID: 21300000, guid: 7d43b65852c37d044b905fcd2d0f3358, type: 3}
+  _itemIconForeground: {fileID: 21300000, guid: e158621a2a9d4374eac6f5a04afb9933, type: 3}
   _backgroundColourTint: {r: 1, g: 1, b: 1, a: 1}
-  _middleColourTint: {r: 1, g: 1, b: 1, a: 1}
+  _middleColourTint: {r: 0.10353482, g: 0.8132839, b: 0.94558895, a: 1}
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: Apply this to petrified body parts to make them not
     statue-y anymore! Great for partial petrification. Made from mixing Shroomsli

@@ -64,5 +64,14 @@ namespace CraftingAPI
         {
             return other.TransientId.CompareTo(this.TransientId);
         }
+
+        public void ForceUpdateSpriteAssets(Sprite background, Sprite middle, Sprite foreground)
+        {
+            _itemIconBackground = background;
+            _itemIconMiddle = middle;
+            _itemIconForeground = foreground;
+        }
+
+        public void ForceUpdatePotionContentsTint(Color unityColour) => _middleColourTint = unityColour;
     }
 }

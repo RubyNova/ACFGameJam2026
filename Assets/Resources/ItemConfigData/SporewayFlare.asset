@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CraftingAPI.ItemConfig
   _itemName: Cesnex Potion
   _shortDescription: flared up smell
-  _itemIconBackground: {fileID: 0}
-  _itemIconMiddle: {fileID: 0}
-  _itemIconForeground: {fileID: 0}
+  _itemIconBackground: {fileID: 21300000, guid: ea14edabe08c6eb43bf58110bd97db44, type: 3}
+  _itemIconMiddle: {fileID: 21300000, guid: ae46d027c9b726b46beb0421ad800b15, type: 3}
+  _itemIconForeground: {fileID: 21300000, guid: ae46d027c9b726b46beb0421ad800b15, type: 3}
   _backgroundColourTint: {r: 1, g: 1, b: 1, a: 1}
-  _middleColourTint: {r: 1, g: 1, b: 1, a: 1}
+  _middleColourTint: {r: 0.12129307, g: 0.9489205, b: 0.9135076, a: 1}
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: This potion makes your nostrils flare up a bit when
     you smell it. Its not altogether pleasant but some do enjoy it. Made from mixing

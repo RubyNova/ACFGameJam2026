@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CraftingAPI.ItemConfig
   _itemName: Infespen Potion
   _shortDescription: blank and balanced
-  _itemIconBackground: {fileID: 0}
-  _itemIconMiddle: {fileID: 0}
-  _itemIconForeground: {fileID: 0}
+  _itemIconBackground: {fileID: 21300000, guid: 8df7db3d92662da49a6997c6c79c0b9c, type: 3}
+  _itemIconMiddle: {fileID: 21300000, guid: 210dae9cb8d55f74192ad64fa4887e31, type: 3}
+  _itemIconForeground: {fileID: 21300000, guid: a26994ccaf799c94aa0e93653f3a9f39, type: 3}
   _backgroundColourTint: {r: 1, g: 1, b: 1, a: 1}
-  _middleColourTint: {r: 1, g: 1, b: 1, a: 1}
+  _middleColourTint: {r: 0.94601226, g: 0.470874, b: 0.6388359, a: 1}
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: This potion makes you feel both everything and nothing.
     Limitless emotional energy and none at all. A duality. Made from mixing Influenz

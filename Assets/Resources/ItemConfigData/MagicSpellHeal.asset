@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CraftingAPI.ItemConfig
   _itemName: Plushloula Potion
   _shortDescription: magic spell healing
-  _itemIconBackground: {fileID: 0}
-  _itemIconMiddle: {fileID: 0}
-  _itemIconForeground: {fileID: 0}
+  _itemIconBackground: {fileID: 21300000, guid: 45f7b2300518f6b4f8c6f739f68302e8, type: 3}
+  _itemIconMiddle: {fileID: 21300000, guid: 76330d35ba49ecf40ab39a01a5479cd1, type: 3}
+  _itemIconForeground: {fileID: 21300000, guid: 27ae23ee6bcfba04c9c0c94b0336a0da, type: 3}
   _backgroundColourTint: {r: 1, g: 1, b: 1, a: 1}
-  _middleColourTint: {r: 1, g: 1, b: 1, a: 1}
+  _middleColourTint: {r: 0.5158407, g: 0.020367026, b: 0.5217747, a: 1}
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: This potion allows you to cast healing spells temporarily.
     Useful for those training for multiclassing as a healer. Made from mixing Laliluleilou

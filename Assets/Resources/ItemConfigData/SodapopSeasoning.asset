@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CraftingAPI.ItemConfig
   _itemName: Spiced Water
   _shortDescription: 'Spiced Water. '
-  _itemIconBackground: {fileID: 0}
-  _itemIconMiddle: {fileID: 0}
-  _itemIconForeground: {fileID: 0}
+  _itemIconBackground: {fileID: 21300000, guid: 8df7db3d92662da49a6997c6c79c0b9c, type: 3}
+  _itemIconMiddle: {fileID: 21300000, guid: 210dae9cb8d55f74192ad64fa4887e31, type: 3}
+  _itemIconForeground: {fileID: 21300000, guid: 3a373672ec46b184f9db935fd78753c8, type: 3}
   _backgroundColourTint: {r: 1, g: 1, b: 1, a: 1}
-  _middleColourTint: {r: 1, g: 1, b: 1, a: 1}
+  _middleColourTint: {r: 0.5719755, g: 0.7444626, b: 0.7638848, a: 1}
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: Yep, that sure is spiced water. Made from mixing Mismatcm
     and a Vial.

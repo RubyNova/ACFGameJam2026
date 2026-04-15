@@ -14,7 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CraftingAPI.ItemConfig
   _itemName: Heezou Potion
   _shortDescription: Neutral nostalgic potion
-  _itemIcon: {fileID: 0}
+  _itemIconBackground: {fileID: 21300000, guid: ea14edabe08c6eb43bf58110bd97db44, type: 3}
+  _itemIconMiddle: {fileID: 21300000, guid: ae46d027c9b726b46beb0421ad800b15, type: 3}
+  _itemIconForeground: {fileID: 21300000, guid: fdd07d47dd3c58f4bbd1770327c97d20, type: 3}
+  _backgroundColourTint: {r: 1, g: 1, b: 1, a: 1}
+  _middleColourTint: {r: 0.098911166, g: 0.03315425, b: 0.36762816, a: 1}
+  _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: "A potion that invokes a neutralizing, nostalgic feeling
     within someone\u2019s heart, and reminds them of home. Made from mixing Heel'm
     and Zouzor"
