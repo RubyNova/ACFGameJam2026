@@ -54,8 +54,8 @@ namespace GameElements
             }
 
             _runtimeMaterial.SetColor("_BaseMapColour", BackingConfig.BackgroundColourTint);
-            _runtimeMaterial.SetColor("_ItemIconMiddleColourTint", BackingConfig.MiddleColourTint);
-            _runtimeMaterial.SetColor("_ItemIconForegroundColourTint", BackingConfig.ForegroundColourTint);
+            _runtimeMaterial.SetColor("_ItemIconMiddleColour", BackingConfig.MiddleColourTint);
+            _runtimeMaterial.SetColor("_ItemIconForegroundColour", BackingConfig.ForegroundColourTint);
         }
     }
 }
