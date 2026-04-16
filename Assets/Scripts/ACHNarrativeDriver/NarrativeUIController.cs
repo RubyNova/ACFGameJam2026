@@ -117,6 +117,7 @@ namespace ACHNarrativeDriver
                     _isCurrentlyExecuting = false;
                     _currentNarrativeSequence = null;
                     //ApplyBackground();
+                    _postNarrativeEvent.Invoke();
                     return;
                 }
 
