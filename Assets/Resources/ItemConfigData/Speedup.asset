@@ -18,7 +18,7 @@ MonoBehaviour:
   _itemIconMiddle: {fileID: 21300000, guid: ec97229b72e557c428f083e4db20edd6, type: 3}
   _itemIconForeground: {fileID: 21300000, guid: 64d11b80839d03a4b956b1a91cee1012, type: 3}
   _backgroundColourTint: {r: 1, g: 1, b: 1, a: 1}
-  _middleColourTint: {r: 0.4144464, g: 0.85633993, b: 0.5979802, a: 1}
+  _middleColourTint: {r: 0.23495908, g: 0.9056604, b: 0.86547434, a: 1}
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: This potion is often used as an energy booster and
     makes you move quicker. Mixing this will increase physical attributes. Made from

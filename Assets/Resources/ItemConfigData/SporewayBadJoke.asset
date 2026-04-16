@@ -18,7 +18,7 @@ MonoBehaviour:
   _itemIconMiddle: {fileID: 21300000, guid: ae46d027c9b726b46beb0421ad800b15, type: 3}
   _itemIconForeground: {fileID: 21300000, guid: 1a78aa72c4eaa6647bd0326797afd79d, type: 3}
   _backgroundColourTint: {r: 1, g: 1, b: 1, a: 1}
-  _middleColourTint: {r: 0.10840392, g: 0.25215858, b: 0.7898358, a: 1}
+  _middleColourTint: {r: 0.6038751, g: 0.745283, b: 0.24959952, a: 1}
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: You mixed something candle-like with something water-like.
     You now have a wet candle potion. Are you happy with this? Made from mixing Vivinex

@@ -18,7 +18,7 @@ MonoBehaviour:
   _itemIconMiddle: {fileID: 21300000, guid: c5a8c337457015e469e438335e1934b6, type: 3}
   _itemIconForeground: {fileID: 21300000, guid: 701239c9e4a139643a224d90e524790d, type: 3}
   _backgroundColourTint: {r: 1, g: 1, b: 1, a: 1}
-  _middleColourTint: {r: 0.7560835, g: 0.7027265, b: 0.2910456, a: 1}
+  _middleColourTint: {r: 0.3862727, g: 0.13616946, b: 0.6415094, a: 1}
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: This potion smells spiritually powerful and makes
     you think about the great beyond. Often used at funerals and religious gatherings.

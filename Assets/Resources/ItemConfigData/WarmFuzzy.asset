@@ -18,7 +18,7 @@ MonoBehaviour:
   _itemIconMiddle: {fileID: 21300000, guid: ae46d027c9b726b46beb0421ad800b15, type: 3}
   _itemIconForeground: {fileID: 21300000, guid: fdd07d47dd3c58f4bbd1770327c97d20, type: 3}
   _backgroundColourTint: {r: 1, g: 1, b: 1, a: 1}
-  _middleColourTint: {r: 0.65413916, g: 0.4759429, b: 0.76950693, a: 1}
+  _middleColourTint: {r: 1, g: 0.7399338, b: 0.5235849, a: 1}
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: 'This potion just makes you feel warm and comfortable.
     A favourite in the food of many grandmothers. Mixing this will transfer this

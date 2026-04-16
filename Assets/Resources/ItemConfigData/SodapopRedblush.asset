@@ -18,7 +18,7 @@ MonoBehaviour:
   _itemIconMiddle: {fileID: 21300000, guid: 7322569f557b2a34ea52471b7387695e, type: 3}
   _itemIconForeground: {fileID: 21300000, guid: 53d68de319df52643af5f5707d3ff411, type: 3}
   _backgroundColourTint: {r: 1, g: 1, b: 1, a: 1}
-  _middleColourTint: {r: 0.0032396317, g: 0.6648271, b: 0.76330507, a: 1}
+  _middleColourTint: {r: 0.7228996, g: 0.8738905, b: 0.8962264, a: 1}
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: Incredibly strong tasting water. Its somewhat like
     vodka or another type of shot, but for those who prefer potions to alcohol. Made

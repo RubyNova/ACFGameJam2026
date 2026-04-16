@@ -18,7 +18,7 @@ MonoBehaviour:
   _itemIconMiddle: {fileID: 0}
   _itemIconForeground: {fileID: 0}
   _backgroundColourTint: {r: 1, g: 1, b: 1, a: 1}
-  _middleColourTint: {r: 1, g: 1, b: 1, a: 1}
+  _middleColourTint: {r: 1, g: 0.1745283, b: 0.2261439, a: 1}
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: 'Widely used to recover from external wounds like
     scratches and bruises. Also regularly used as a jam substitute. Mixing this will

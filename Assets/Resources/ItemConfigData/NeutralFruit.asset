@@ -18,7 +18,7 @@ MonoBehaviour:
   _itemIconMiddle: {fileID: 21300000, guid: ae46d027c9b726b46beb0421ad800b15, type: 3}
   _itemIconForeground: {fileID: 21300000, guid: fdd07d47dd3c58f4bbd1770327c97d20, type: 3}
   _backgroundColourTint: {r: 1, g: 1, b: 1, a: 1}
-  _middleColourTint: {r: 0.47621208, g: 0.89239836, b: 0.20420933, a: 1}
+  _middleColourTint: {r: 0.71087253, g: 0.9056604, b: 0.58526164, a: 1}
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: This potion is both an emotional neutralizer and a
     fruity taste! Eliminates everything but the fruitiness. Made from mixing Rouz

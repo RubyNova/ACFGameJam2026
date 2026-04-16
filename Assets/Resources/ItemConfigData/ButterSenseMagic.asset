@@ -18,7 +18,7 @@ MonoBehaviour:
   _itemIconMiddle: {fileID: 21300000, guid: 210dae9cb8d55f74192ad64fa4887e31, type: 3}
   _itemIconForeground: {fileID: 21300000, guid: a26994ccaf799c94aa0e93653f3a9f39, type: 3}
   _backgroundColourTint: {r: 1, g: 1, b: 1, a: 1}
-  _middleColourTint: {r: 0.90735626, g: 0.8520286, b: 0.89435685, a: 1}
+  _middleColourTint: {r: 0.46897694, g: 0.990566, b: 0.2943663, a: 1}
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: This potion enhances the magical properties to whatever
     or whoever you rub this on. However, this also does not allow for anything that

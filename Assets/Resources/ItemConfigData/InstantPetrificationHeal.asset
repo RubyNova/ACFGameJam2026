@@ -18,7 +18,7 @@ MonoBehaviour:
   _itemIconMiddle: {fileID: 21300000, guid: 210dae9cb8d55f74192ad64fa4887e31, type: 3}
   _itemIconForeground: {fileID: 21300000, guid: a26994ccaf799c94aa0e93653f3a9f39, type: 3}
   _backgroundColourTint: {r: 1, g: 1, b: 1, a: 1}
-  _middleColourTint: {r: 0.16583633, g: 0.645779, b: 0.53199834, a: 1}
+  _middleColourTint: {r: 0.67105734, g: 0.9811321, b: 0.908025, a: 1}
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: For those who want to skip the part of post-petrification
     where you still feel like stone and get those muscles moving instantly! Made

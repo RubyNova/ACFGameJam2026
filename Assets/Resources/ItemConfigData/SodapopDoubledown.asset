@@ -18,7 +18,7 @@ MonoBehaviour:
   _itemIconMiddle: {fileID: 21300000, guid: 7322569f557b2a34ea52471b7387695e, type: 3}
   _itemIconForeground: {fileID: 21300000, guid: 2f445e712fdf46a41ad4e80219f82531, type: 3}
   _backgroundColourTint: {r: 1, g: 1, b: 1, a: 1}
-  _middleColourTint: {r: 0.47642094, g: 0.6751565, b: 0.90315163, a: 1}
+  _middleColourTint: {r: 0.09064613, g: 0.7456245, b: 0.9150943, a: 1}
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: This water-esque potion will help boost your magic
     abilities when it comes to drinking water. A highly specific potion made from

@@ -18,7 +18,7 @@ MonoBehaviour:
   _itemIconMiddle: {fileID: 21300000, guid: ec97229b72e557c428f083e4db20edd6, type: 3}
   _itemIconForeground: {fileID: 21300000, guid: e7bdcb670701956449f5a4e18a544fa0, type: 3}
   _backgroundColourTint: {r: 1, g: 1, b: 1, a: 1}
-  _middleColourTint: {r: 0.22953475, g: 0.28033584, b: 0.36219865, a: 1}
+  _middleColourTint: {r: 0.7146226, g: 0.8012436, b: 0.9528302, a: 1}
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: This potion has quite the neutralizing, purifying
     smell. Great for places in your home that have aggressive smells. Made from mixing

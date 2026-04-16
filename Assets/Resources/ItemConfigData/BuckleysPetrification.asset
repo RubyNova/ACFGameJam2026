@@ -18,7 +18,7 @@ MonoBehaviour:
   _itemIconMiddle: {fileID: 21300000, guid: ae46d027c9b726b46beb0421ad800b15, type: 3}
   _itemIconForeground: {fileID: 21300000, guid: 6e2158b7896ab2248a755a52b0a7941e, type: 3}
   _backgroundColourTint: {r: 1, g: 1, b: 1, a: 1}
-  _middleColourTint: {r: 0.28933388, g: 0.28027838, b: 0.62805486, a: 1}
+  _middleColourTint: {r: 0.44762734, g: 0.43329477, b: 0.8584906, a: 1}
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: This potion makes your singing amazing as a statue.
     Unfortunately, you cannot move your throat muscles as a statue. Not every potion

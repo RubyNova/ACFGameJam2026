@@ -20,7 +20,7 @@ MonoBehaviour:
   _backgroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _middleColourTint: {r: 0.12058115, g: 0.6694653, b: 0.13663852, a: 1}
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
-  _recipeBookEntryDescription: "A nice, fragranter candle. Has a very strong\u2026
+  _recipeBookEntryDescription: "A nice, fragranter perfume. Has a very strong\u2026
     neutral smell. Not exactly popular. Made from mixing Vivinex with itself."
   _recipe:
   - {fileID: 11400000, guid: 83478f75550d12842a28dd657ca0ebef, type: 2}

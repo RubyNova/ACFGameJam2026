@@ -18,7 +18,7 @@ MonoBehaviour:
   _itemIconMiddle: {fileID: 21300000, guid: 04109e65e6f42ab4eb868c9aef32a101, type: 3}
   _itemIconForeground: {fileID: 21300000, guid: bb715bd143336c4418118161c7eded62, type: 3}
   _backgroundColourTint: {r: 1, g: 1, b: 1, a: 1}
-  _middleColourTint: {r: 0.75081134, g: 0.6962857, b: 0.8879272, a: 1}
+  _middleColourTint: {r: 0.7264151, g: 0.17475079, b: 0.32135922, a: 1}
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: Not only relieves chronic body pain, but powers up
     your muscles! Quite the handy tool for those who often get stuck feeling tired

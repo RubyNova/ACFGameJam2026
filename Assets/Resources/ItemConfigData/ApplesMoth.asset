@@ -18,7 +18,7 @@ MonoBehaviour:
   _itemIconMiddle: {fileID: 21300000, guid: 7d43b65852c37d044b905fcd2d0f3358, type: 3}
   _itemIconForeground: {fileID: 21300000, guid: 4188ca1e95363ad4f98f6f636dc2f963, type: 3}
   _backgroundColourTint: {r: 1, g: 1, b: 1, a: 1}
-  _middleColourTint: {r: 0.6879926, g: 0.80781174, b: 0.7270652, a: 1}
+  _middleColourTint: {r: 0.8301887, g: 0.7249185, b: 0.40334642, a: 1}
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: 'This potion will allow concentration and prevent
     headaches. Great for those who stare at bright things a lot as they work. Made

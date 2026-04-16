@@ -18,7 +18,7 @@ MonoBehaviour:
   _itemIconMiddle: {fileID: 21300000, guid: 210dae9cb8d55f74192ad64fa4887e31, type: 3}
   _itemIconForeground: {fileID: 21300000, guid: a26994ccaf799c94aa0e93653f3a9f39, type: 3}
   _backgroundColourTint: {r: 1, g: 1, b: 1, a: 1}
-  _middleColourTint: {r: 0.7637528, g: 0.03317976, b: 0.6341162, a: 1}
+  _middleColourTint: {r: 0.4462442, g: 0.8679245, b: 0.73524207, a: 1}
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: This is a wet, slick potion. It can heal certain exposed
     wounds better than some other types of healing potions can. It is situational
