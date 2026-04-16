@@ -39,11 +39,26 @@ namespace GameAudio
                 _audioSource.Play();
             }
         }
-    
+
+        private void LoadVolumeData()
+        {
+            float tempHolder = 0;
+
+            tempHolder = PlayerPrefs.GetFloat("MasterSavedVolume", 1f);
+            _config.AudioMixer.SetFloat("MasterVolume", Mathf.Log10(tempHolder) * 20);
+
+            tempHolder = PlayerPrefs.GetFloat("BgmSavedVolume", 1f);
+            _config.AudioMixer.SetFloat("BgmVolume", Mathf.Log10(tempHolder) * 20);
+
+            tempHolder = PlayerPrefs.GetFloat("SfxSavedVolume", 1f);
+            _config.AudioMixer.SetFloat("SfxVolume", Mathf.Log10(tempHolder) * 20);
+        }
+
         protected override void OnInit()
         {
             _audioSource = GetComponent<AudioSource>();
             _config = Resources.Load<SoundManagerConfig>("GameAudioConfigData/DefaultSoundConfig");
+            LoadVolumeData();
         }
 
     }

@@ -15,8 +15,8 @@ public class OptionsMenu : MonoBehaviour
     void Start()
     {
         _config = Resources.Load<SoundManagerConfig>("GameAudioConfigData/DefaultSoundConfig");
-        LoadVolumeData();
-        _optionsUI.SetActive(false);  //  PlayerPrefs not loading in if the options menu was disabled on game start
+        LoadSliderData();
+        //_optionsUI.SetActive(false);  //  PlayerPrefs not loading in if the options menu was disabled on game start
     }
 
     public void ChangeMasterVolume(float volume)
@@ -37,15 +37,15 @@ public class OptionsMenu : MonoBehaviour
         PlayerPrefs.SetFloat("SfxSavedVolume", volume);
     }
 
-    private void LoadVolumeData()
+    private void LoadSliderData()
     {
-        ChangeMasterVolume(PlayerPrefs.GetFloat("MasterSavedVolume", 1f));
+        //ChangeMasterVolume(PlayerPrefs.GetFloat("MasterSavedVolume", 1f));
         _masterVolumeSlider.value = PlayerPrefs.GetFloat("MasterSavedVolume");
 
-        ChangeBgmVolume(PlayerPrefs.GetFloat("BgmSavedVolume", 1f));
+        //ChangeBgmVolume(PlayerPrefs.GetFloat("BgmSavedVolume", 1f));
         _bgmVolumeSlider.value = PlayerPrefs.GetFloat("BgmSavedVolume");
 
-        ChangeSfxVolume(PlayerPrefs.GetFloat("SfxSavedVolume", 1f));
+        //ChangeSfxVolume(PlayerPrefs.GetFloat("SfxSavedVolume", 1f));
         _sfxVolumeSlider.value = PlayerPrefs.GetFloat("SfxSavedVolume");
     }
 
