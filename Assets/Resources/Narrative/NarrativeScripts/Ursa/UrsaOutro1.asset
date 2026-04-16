@@ -26,7 +26,7 @@ MonoBehaviour:
     _text: Mmmm, thank you!
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: 018b214c291fad44b8f16c214f264d0c, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
@@ -36,7 +36,7 @@ MonoBehaviour:
     _text: "I\u2019m so glad my predictions were correct\u2026"
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: 018b214c291fad44b8f16c214f264d0c, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
@@ -46,7 +46,7 @@ MonoBehaviour:
     _text: Thank you greatly, dear.
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: 018b214c291fad44b8f16c214f264d0c, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
@@ -57,7 +57,7 @@ MonoBehaviour:
       need to read the stars for."
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: 018b214c291fad44b8f16c214f264d0c, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
@@ -67,9 +67,10 @@ MonoBehaviour:
     _text: Take care!
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   _choices: []
-  <SourceScript>k__BackingField: "Ursa: Mmmm, thank you!/d2\r\n\r\nUrsa: I\u2019m
-    so glad my predictions were correct\u2026/d2\r\n\r\nUrsa: Thank you greatly,
-    dear./d2\r\n\r\nUrsa: We shall see each other again soon. That\u2019s something
-    I don\u2019t need to read the stars for./d2\r\n\r\nUrsa: Take care!/d2\r\n"
+  _isDepartingSequence: 0
+  <SourceScript>k__BackingField: "Ursa: Mmmm, thank you!\r\n\r\nUrsa: I\u2019m so
+    glad my predictions were correct\u2026\r\n\r\nUrsa: Thank you greatly, dear.\r\n\r\nUrsa:
+    We shall see each other again soon. That\u2019s something I don\u2019t need to
+    read the stars for.\r\n\r\nUrsa: Take care!\r\n"

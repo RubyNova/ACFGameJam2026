@@ -26,7 +26,7 @@ MonoBehaviour:
     _text: "\u2026"
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: a44fa812616be0a4e9c695826540ab0a, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
@@ -36,7 +36,7 @@ MonoBehaviour:
     _text: Greetings.
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: a44fa812616be0a4e9c695826540ab0a, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
@@ -46,7 +46,7 @@ MonoBehaviour:
     _text: "\u2026sigh."
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: a44fa812616be0a4e9c695826540ab0a, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
@@ -56,7 +56,7 @@ MonoBehaviour:
     _text: You must think so lowly of me.
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: a44fa812616be0a4e9c695826540ab0a, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
@@ -66,7 +66,7 @@ MonoBehaviour:
     _text: "\u2026Ursa. "
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: a44fa812616be0a4e9c695826540ab0a, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
@@ -76,7 +76,7 @@ MonoBehaviour:
     _text: Her kindness is so radiant and positive.
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: a44fa812616be0a4e9c695826540ab0a, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
@@ -86,7 +86,7 @@ MonoBehaviour:
     _text: Always looking to help others in their time of need.
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: a44fa812616be0a4e9c695826540ab0a, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
@@ -96,7 +96,7 @@ MonoBehaviour:
     _text: "\u2026she is a much better leader than I could ever be."
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: a44fa812616be0a4e9c695826540ab0a, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
@@ -116,7 +116,7 @@ MonoBehaviour:
     _text: I wish I could be all-powerful and help everyone but.
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: a44fa812616be0a4e9c695826540ab0a, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
@@ -126,7 +126,7 @@ MonoBehaviour:
     _text: I suppose that is not the reality we live in, hm.
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: 7279c6ca5ad205d419789771dbd57d5c, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
@@ -136,7 +136,7 @@ MonoBehaviour:
     _text: I think you just need to take a rest.
     _leftCharacterTalking: 1
     _narratorSpeaking: 1
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: 7279c6ca5ad205d419789771dbd57d5c, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
@@ -146,7 +146,7 @@ MonoBehaviour:
     _text: "It sounds like you\u2019re doing so much already."
     _leftCharacterTalking: 1
     _narratorSpeaking: 1
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: 7279c6ca5ad205d419789771dbd57d5c, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
@@ -156,7 +156,7 @@ MonoBehaviour:
     _text: "I\u2019m sure people admire you for what you do as is."
     _leftCharacterTalking: 1
     _narratorSpeaking: 1
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: 7279c6ca5ad205d419789771dbd57d5c, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
@@ -166,7 +166,7 @@ MonoBehaviour:
     _text: "All you can do\u2026 is what you can do."
     _leftCharacterTalking: 1
     _narratorSpeaking: 1
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: a44fa812616be0a4e9c695826540ab0a, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
@@ -176,7 +176,7 @@ MonoBehaviour:
     _text: "\u2026"
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: a44fa812616be0a4e9c695826540ab0a, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
@@ -186,7 +186,7 @@ MonoBehaviour:
     _text: There is a melancholic truth to those words I hear in your voice.
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: a44fa812616be0a4e9c695826540ab0a, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
@@ -196,17 +196,27 @@ MonoBehaviour:
     _text: "\u2026fine then."
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: a44fa812616be0a4e9c695826540ab0a, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
     _hasSecondCharacterPoseIndex: 0
     _poseIndex: 0
     _poseIndexTwo: 0
-    _text: "Do you remember what Ursa\u2019s favourite drink would be?"
+    _text: "Do you remember what Ursa\u2019s favourite potion would be?"
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: a44fa812616be0a4e9c695826540ab0a, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: Was it something... fruity? Or smelly? I don't remember.
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: a44fa812616be0a4e9c695826540ab0a, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
@@ -216,19 +226,32 @@ MonoBehaviour:
     _text: Perhaps I could give that to her as a token of my appreciation.
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: a44fa812616be0a4e9c695826540ab0a, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: Could you make her favourite maybe fruity maybe smelly potion for me?
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 0
   _choices: []
-  <SourceScript>k__BackingField: "Rosa: \u2026/d2\r\n\r\nRosa: Greetings./d2\r\n\r\nRosa:
-    \u2026sigh./d2\r\n\r\nRosa: You must think so lowly of me./d2\r\n\r\nRosa: \u2026Ursa.
-    /d2\r\n\r\nRosa: Her kindness is so radiant and positive./d2\r\n\r\nRosa: Always
-    looking to help others in their time of need./d2\r\n\r\nRosa: \u2026she is a
-    much better leader than I could ever be./d2\r\n\r\nRosa: \u2026this stupid body
-    of mine just. Does not want to work.\r\n\r\nRosa: I wish I could be all-powerful
-    and help everyone but./d2\r\n\r\nRosa: I suppose that is not the reality we live
-    in, hm./d2\r\n\r\nNarrator: I think you just need to take a rest./d2\r\n\r\nNarrator:
-    It sounds like you\u2019re doing so much already./d2\r\n\r\nNarrator: I\u2019m
-    sure people admire you for what you do as is./d2\r\n\r\nNarrator: All you can
-    do\u2026 is what you can do./d2\r\n\r\nRosa: \u2026/d2\r\n\r\nRosa: There is
-    a melancholic truth to those words I hear in your voice./d2\r\n\r\nRosa: \u2026fine
-    then./d2\r\n\r\nRosa: Do you remember what Ursa\u2019s favourite drink would
-    be?/d2\r\n\r\nRosa: Perhaps I could give that to her as a token of my appreciation./d2\r\n"
+  _isDepartingSequence: 0
+  <SourceScript>k__BackingField: "Rosa: \u2026\r\n\r\nRosa: Greetings.\r\n\r\nRosa:
+    \u2026sigh.\r\n\r\nRosa: You must think so lowly of me.\r\n\r\nRosa: \u2026Ursa.
+    \r\n\r\nRosa: Her kindness is so radiant and positive.\r\n\r\nRosa: Always looking
+    to help others in their time of need.\r\n\r\nRosa: \u2026she is a much better
+    leader than I could ever be.\r\n\r\nRosa: \u2026this stupid body of mine just.
+    Does not want to work.\r\n\r\nRosa: I wish I could be all-powerful and help everyone
+    but.\r\n\r\nRosa: I suppose that is not the reality we live in, hm.\r\n\r\nNarrator:
+    I think you just need to take a rest.\r\n\r\nNarrator: It sounds like you\u2019re
+    doing so much already.\r\n\r\nNarrator: I\u2019m sure people admire you for what
+    you do as is.\r\n\r\nNarrator: All you can do\u2026 is what you can do.\r\n\r\nRosa:
+    \u2026\r\n\r\nRosa: There is a melancholic truth to those words I hear in your
+    voice.\r\n\r\nRosa: \u2026fine then.\r\n\r\nRosa: Do you remember what Ursa\u2019s
+    favourite potion would be?\n\nRosa: Was it something... fruity? Or smelly? I
+    don't remember.\r\n\r\nRosa: Perhaps I could give that to her as a token of my
+    appreciation.\n\nRosa: Could you make her favourite maybe fruity maybe smelly
+    potion for me?\r\n"

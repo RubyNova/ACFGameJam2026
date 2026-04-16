@@ -60,8 +60,9 @@ MonoBehaviour:
     _narratorSpeaking: 0
     _delayBeforeContinuingInSeconds: 2
   _choices: []
-  <SourceScript>k__BackingField: "Rosa: My, my, what a pleasantly aromatic smell./d2\r\n\r\nRosa:
+  _isDepartingSequence: 0
+  <SourceScript>k__BackingField: "Rosa: My, my, what a pleasantly aromatic smell.\r\n\r\nRosa:
     It seems almost as if you expunged the very essence of the tropics into this
-    bottle\u2026/d2\r\n\r\nRosa: \u2026apologies. Alchemy is not my strong suit\u2026
-    neither is prose if I\u2019m being honest./d2\r\n\r\nRosa: In any case, may the
-    winds of fate treat you kindly./d2"
+    bottle\u2026\r\n\r\nRosa: \u2026apologies. Alchemy is not my strong suit\u2026
+    neither is prose if I\u2019m being honest.\r\n\r\nRosa: In any case, may the
+    winds of fate treat you kindly."

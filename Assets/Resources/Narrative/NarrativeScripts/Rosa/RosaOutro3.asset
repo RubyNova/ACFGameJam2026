@@ -26,7 +26,7 @@ MonoBehaviour:
     _text: Perfect. This should do it.
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: a44fa812616be0a4e9c695826540ab0a, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
@@ -36,7 +36,7 @@ MonoBehaviour:
     _text: "\u2026I appreciate you for all of your support to the both of us."
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: a44fa812616be0a4e9c695826540ab0a, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
@@ -46,7 +46,7 @@ MonoBehaviour:
     _text: She appreciates what you said last time you two spoke.
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: a44fa812616be0a4e9c695826540ab0a, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
@@ -56,7 +56,7 @@ MonoBehaviour:
     _text: She also told me to say that she thinks your luck is turning up. Ohoho!
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: a44fa812616be0a4e9c695826540ab0a, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
@@ -66,7 +66,7 @@ MonoBehaviour:
     _text: "\u2026she told me I *had* to laugh that way."
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: a44fa812616be0a4e9c695826540ab0a, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
@@ -76,7 +76,7 @@ MonoBehaviour:
     _text: 'In any case, all of us are rooting for your success. '
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: a44fa812616be0a4e9c695826540ab0a, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
@@ -86,7 +86,7 @@ MonoBehaviour:
     _text: "We\u2019d also love to start meeting you more often, if possible."
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: a44fa812616be0a4e9c695826540ab0a, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
@@ -96,13 +96,13 @@ MonoBehaviour:
     _text: In any case, please take care.
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   _choices: []
-  <SourceScript>k__BackingField: "Rosa: Perfect. This should do it./d2\r\n\r\nRosa:
-    \u2026I appreciate you for all of your support to the both of us./d2\r\n\r\nRosa:
-    She appreciates what you said last time you two spoke./d2\r\n\r\nRosa: She also
-    told me to say that she thinks your luck is turning up. Ohoho!/d2\r\n\r\nRosa:
-    \u2026she told me I *had* to laugh that way./d2\r\n\r\nRosa: In any case, all
-    of us are rooting for your success. /d2\r\n\r\nRosa: We\u2019d also love to start
-    meeting you more often, if possible./d2\r\n\r\nRosa: In any case, please take
-    care./d2\r\n"
+  _isDepartingSequence: 0
+  <SourceScript>k__BackingField: "Rosa: Perfect. This should do it.\r\n\r\nRosa:
+    \u2026I appreciate you for all of your support to the both of us.\r\n\r\nRosa:
+    She appreciates what you said last time you two spoke.\r\n\r\nRosa: She also
+    told me to say that she thinks your luck is turning up. Ohoho!\r\n\r\nRosa: \u2026she
+    told me I *had* to laugh that way.\r\n\r\nRosa: In any case, all of us are rooting
+    for your success. \r\n\r\nRosa: We\u2019d also love to start meeting you more
+    often, if possible.\r\n\r\nRosa: In any case, please take care.\r\n"

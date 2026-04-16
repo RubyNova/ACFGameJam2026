@@ -26,7 +26,7 @@ MonoBehaviour:
     _text: Good afternoon. I sensed that a good potion maker was nearby.
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: 018b214c291fad44b8f16c214f264d0c, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
@@ -37,7 +37,7 @@ MonoBehaviour:
       bodies.
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: 018b214c291fad44b8f16c214f264d0c, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
@@ -47,34 +47,45 @@ MonoBehaviour:
     _text: Though, today I am intensively studying your menu, ohoho!
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: 018b214c291fad44b8f16c214f264d0c, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
     _hasSecondCharacterPoseIndex: 0
     _poseIndex: 0
     _poseIndexTwo: 0
-    _text: I would love something nice and sour with a good kick!
+    _text: I would love a good scent potion... something nice and fruity!
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: 018b214c291fad44b8f16c214f264d0c, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: I love good fruity smells a lot, ohoho~
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 0
   _choices: []
+  _isDepartingSequence: 0
   <SourceScript>k__BackingField: 'Ursa: Good afternoon. I sensed that a good potion
-    maker was nearby./d2
+    maker was nearby.
 
-    
 
-    Ursa: I am Ursa, foreseer of future events
-    through intensive study of celestial bodies./d2
+    Ursa: I am Ursa, foreseer of future events through intensive
+    study of celestial bodies.
 
-    
 
-    Ursa: Though, today
-    I am intensively studying your menu, ohoho!/d2
+    Ursa: Though, today I am intensively studying
+    your menu, ohoho!
 
-    
 
-    Ursa: I would love
-    something nice and sour with a good kick!/d2
+    Ursa: I would love a good scent potion... something nice
+    and fruity!
+
+
+    Ursa: I love good fruity smells a lot, ohoho~
 
 '

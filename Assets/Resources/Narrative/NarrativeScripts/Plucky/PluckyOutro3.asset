@@ -17,17 +17,47 @@ MonoBehaviour:
   _musicFiles: []
   _soundEffectFiles: []
   _characterDialoguePairs:
-  - _character: {fileID: 11400000, guid: 9386325197a551e4fb73753368901d97, type: 2}
+  - _character: {fileID: 11400000, guid: 65e2c6f3ee2b1f84c8b572ecdeddace1, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
     _hasSecondCharacterPoseIndex: 0
     _poseIndex: 0
     _poseIndexTwo: 0
-    _text: 'Thanks. This tastes pretty dang good. '
+    _text: ...woah...
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
-  - _character: {fileID: 11400000, guid: 9386325197a551e4fb73753368901d97, type: 2}
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: 65e2c6f3ee2b1f84c8b572ecdeddace1, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: Drinking that felt like....
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: 65e2c6f3ee2b1f84c8b572ecdeddace1, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: ...coming back home after a long rainy day....
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: 65e2c6f3ee2b1f84c8b572ecdeddace1, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: ...thank you.
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: 65e2c6f3ee2b1f84c8b572ecdeddace1, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
     _hasSecondCharacterPoseIndex: 0
@@ -36,8 +66,8 @@ MonoBehaviour:
     _text: "\u2026I\u2019m sorry to drop all of this on you all of a sudden."
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
-  - _character: {fileID: 11400000, guid: 9386325197a551e4fb73753368901d97, type: 2}
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: 65e2c6f3ee2b1f84c8b572ecdeddace1, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
     _hasSecondCharacterPoseIndex: 0
@@ -47,8 +77,8 @@ MonoBehaviour:
       haha\u2026"
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
-  - _character: {fileID: 11400000, guid: 9386325197a551e4fb73753368901d97, type: 2}
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: 65e2c6f3ee2b1f84c8b572ecdeddace1, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
     _hasSecondCharacterPoseIndex: 0
@@ -57,7 +87,7 @@ MonoBehaviour:
     _text: Last thing you need is someone like me making your day worse.
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: 7279c6ca5ad205d419789771dbd57d5c, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
@@ -67,7 +97,7 @@ MonoBehaviour:
     _text: "No\u2026 don\u2019t worry."
     _leftCharacterTalking: 1
     _narratorSpeaking: 1
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: 7279c6ca5ad205d419789771dbd57d5c, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
@@ -77,7 +107,7 @@ MonoBehaviour:
     _text: "You haven\u2019t done anything wrong. I get it."
     _leftCharacterTalking: 1
     _narratorSpeaking: 1
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: 7279c6ca5ad205d419789771dbd57d5c, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
@@ -88,7 +118,7 @@ MonoBehaviour:
       give my name back."
     _leftCharacterTalking: 1
     _narratorSpeaking: 1
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: 7279c6ca5ad205d419789771dbd57d5c, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
@@ -99,7 +129,7 @@ MonoBehaviour:
       anything\u2026"
     _leftCharacterTalking: 1
     _narratorSpeaking: 1
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: 7279c6ca5ad205d419789771dbd57d5c, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
@@ -109,7 +139,7 @@ MonoBehaviour:
     _text: Feels rough.
     _leftCharacterTalking: 1
     _narratorSpeaking: 1
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: 7279c6ca5ad205d419789771dbd57d5c, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
@@ -119,8 +149,8 @@ MonoBehaviour:
     _text: But hey. I just hope my potions can offer a bit of comfort.
     _leftCharacterTalking: 1
     _narratorSpeaking: 1
-    _delayBeforeContinuingInSeconds: 2
-  - _character: {fileID: 11400000, guid: 9386325197a551e4fb73753368901d97, type: 2}
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: 65e2c6f3ee2b1f84c8b572ecdeddace1, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
     _hasSecondCharacterPoseIndex: 0
@@ -129,8 +159,8 @@ MonoBehaviour:
     _text: "Oh\u2026 um\u2026 thank you."
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
-  - _character: {fileID: 11400000, guid: 9386325197a551e4fb73753368901d97, type: 2}
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: 65e2c6f3ee2b1f84c8b572ecdeddace1, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
     _hasSecondCharacterPoseIndex: 0
@@ -139,8 +169,8 @@ MonoBehaviour:
     _text: "Genuinely. Sorry, I don\u2019t want to come off as awkward."
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
-  - _character: {fileID: 11400000, guid: 9386325197a551e4fb73753368901d97, type: 2}
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: 65e2c6f3ee2b1f84c8b572ecdeddace1, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
     _hasSecondCharacterPoseIndex: 0
@@ -149,8 +179,8 @@ MonoBehaviour:
     _text: I just. Really appreciate hearing that.
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
-  - _character: {fileID: 11400000, guid: 9386325197a551e4fb73753368901d97, type: 2}
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: 65e2c6f3ee2b1f84c8b572ecdeddace1, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
     _hasSecondCharacterPoseIndex: 0
@@ -160,8 +190,8 @@ MonoBehaviour:
       potion shop?
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
-  - _character: {fileID: 11400000, guid: 9386325197a551e4fb73753368901d97, type: 2}
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: 65e2c6f3ee2b1f84c8b572ecdeddace1, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
     _hasSecondCharacterPoseIndex: 0
@@ -170,8 +200,8 @@ MonoBehaviour:
     _text: So something good came out of it, at least?
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
-  - _character: {fileID: 11400000, guid: 9386325197a551e4fb73753368901d97, type: 2}
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: 65e2c6f3ee2b1f84c8b572ecdeddace1, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
     _hasSecondCharacterPoseIndex: 0
@@ -180,8 +210,8 @@ MonoBehaviour:
     _text: But yeah. Definitely expect me to keep being a regular.
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
-  - _character: {fileID: 11400000, guid: 9386325197a551e4fb73753368901d97, type: 2}
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: 65e2c6f3ee2b1f84c8b572ecdeddace1, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
     _hasSecondCharacterPoseIndex: 0
@@ -190,8 +220,8 @@ MonoBehaviour:
     _text: 'Thank you. So so much. '
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
-  - _character: {fileID: 11400000, guid: 9386325197a551e4fb73753368901d97, type: 2}
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: 65e2c6f3ee2b1f84c8b572ecdeddace1, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
     _hasSecondCharacterPoseIndex: 0
@@ -200,21 +230,23 @@ MonoBehaviour:
     _text: See you around.
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   _choices: []
-  <SourceScript>k__BackingField: "Plucky: Thanks. This tastes pretty dang good. /d2\r\n\r\nPlucky:
-    \u2026I\u2019m sorry to drop all of this on you all of a sudden./d2\r\n\r\nPlucky:
-    I\u2019m sure you already have to deal with a lot of crappy customers, haha\u2026/d2\r\n\r\nPlucky:
-    Last thing you need is someone like me making your day worse./d2\r\n\r\nNarrator:
-    No\u2026 don\u2019t worry./d2\r\n\r\nNarrator: You haven\u2019t done anything
-    wrong. I get it./d2\r\n\r\nNarrator: I\u2019m\u2026. also worried that the fae
-    just. Aren\u2019t going to give my name back./d2\r\n\r\nNarrator: And losing
-    something like your adventuring experience or your name or anything\u2026/d2\r\n\r\nNarrator:
-    Feels rough./d2\r\n\r\nNarrator: But hey. I just hope my potions can offer a
-    bit of comfort./d2\r\n\r\nPlucky: Oh\u2026 um\u2026 thank you./d2\r\n\r\nPlucky:
-    Genuinely. Sorry, I don\u2019t want to come off as awkward./d2\r\n\nPlucky: I
-    just. Really appreciate hearing that./d2\r\n\r\nPlucky: I mean. At least this
-    bad experience got me to meet you and find your potion shop?/d2\r\n\r\nPlucky:
-    So something good came out of it, at least?/d2\r\n\r\nPlucky: But yeah. Definitely
-    expect me to keep being a regular./d2\r\n\r\nPlucky: Thank you. So so much. /d2\r\n\r\nPlucky:
-    See you around./d2\r\n"
+  _isDepartingSequence: 0
+  <SourceScript>k__BackingField: "Plucky: ...woah...\n\nPlucky: Drinking that felt
+    like....\n\nPlucky: ...coming back home after a long rainy day....\n\nPlucky:
+    ...thank you.\r\n\r\nPlucky: \u2026I\u2019m sorry to drop all of this on you
+    all of a sudden.\r\n\r\nPlucky: I\u2019m sure you already have to deal with a
+    lot of crappy customers, haha\u2026\r\n\r\nPlucky: Last thing you need is someone
+    like me making your day worse.\r\n\r\nNarrator: No\u2026 don\u2019t worry.\r\n\r\nNarrator:
+    You haven\u2019t done anything wrong. I get it.\r\n\r\nNarrator: I\u2019m\u2026.
+    also worried that the fae just. Aren\u2019t going to give my name back.\r\n\r\nNarrator:
+    And losing something like your adventuring experience or your name or anything\u2026\r\n\r\nNarrator:
+    Feels rough.\r\n\r\nNarrator: But hey. I just hope my potions can offer a bit
+    of comfort.\r\n\r\nPlucky: Oh\u2026 um\u2026 thank you.\r\n\r\nPlucky: Genuinely.
+    Sorry, I don\u2019t want to come off as awkward.\r\n\nPlucky: I just. Really
+    appreciate hearing that.\r\n\r\nPlucky: I mean. At least this bad experience
+    got me to meet you and find your potion shop?\r\n\r\nPlucky: So something good
+    came out of it, at least?\r\n\r\nPlucky: But yeah. Definitely expect me to keep
+    being a regular.\r\n\r\nPlucky: Thank you. So so much. \r\n\r\nPlucky: See you
+    around.\r\n"

@@ -17,17 +17,17 @@ MonoBehaviour:
   _musicFiles: []
   _soundEffectFiles: []
   _characterDialoguePairs:
-  - _character: {fileID: 11400000, guid: 9386325197a551e4fb73753368901d97, type: 2}
+  - _character: {fileID: 11400000, guid: 65e2c6f3ee2b1f84c8b572ecdeddace1, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
     _hasSecondCharacterPoseIndex: 0
     _poseIndex: 0
     _poseIndexTwo: 0
-    _text: "H-hi! It\u2019s me again! "
+    _text: "H-hi! It\u2019s me again! Plucky! "
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
-  - _character: {fileID: 11400000, guid: 9386325197a551e4fb73753368901d97, type: 2}
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: 65e2c6f3ee2b1f84c8b572ecdeddace1, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
     _hasSecondCharacterPoseIndex: 0
@@ -36,8 +36,8 @@ MonoBehaviour:
     _text: 'Um, the first quest went well! Thanks to you! '
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
-  - _character: {fileID: 11400000, guid: 9386325197a551e4fb73753368901d97, type: 2}
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: 65e2c6f3ee2b1f84c8b572ecdeddace1, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
     _hasSecondCharacterPoseIndex: 0
@@ -46,8 +46,8 @@ MonoBehaviour:
     _text: "The second one, um. That one didn\u2019t go as well. "
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
-  - _character: {fileID: 11400000, guid: 9386325197a551e4fb73753368901d97, type: 2}
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: 65e2c6f3ee2b1f84c8b572ecdeddace1, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
     _hasSecondCharacterPoseIndex: 0
@@ -56,8 +56,8 @@ MonoBehaviour:
     _text: 'Turns out those level recommendations they post? '
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
-  - _character: {fileID: 11400000, guid: 9386325197a551e4fb73753368901d97, type: 2}
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: 65e2c6f3ee2b1f84c8b572ecdeddace1, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
     _hasSecondCharacterPoseIndex: 0
@@ -66,8 +66,8 @@ MonoBehaviour:
     _text: "They\u2019re there for a reason. "
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
-  - _character: {fileID: 11400000, guid: 9386325197a551e4fb73753368901d97, type: 2}
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: 65e2c6f3ee2b1f84c8b572ecdeddace1, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
     _hasSecondCharacterPoseIndex: 0
@@ -76,8 +76,8 @@ MonoBehaviour:
     _text: "So\u2026 d-don\u2019t take a Lv. 14 quest at Lv. 3. "
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
-  - _character: {fileID: 11400000, guid: 9386325197a551e4fb73753368901d97, type: 2}
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: 65e2c6f3ee2b1f84c8b572ecdeddace1, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
     _hasSecondCharacterPoseIndex: 0
@@ -87,8 +87,8 @@ MonoBehaviour:
       cursed you. '
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
-  - _character: {fileID: 11400000, guid: 9386325197a551e4fb73753368901d97, type: 2}
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: 65e2c6f3ee2b1f84c8b572ecdeddace1, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
     _hasSecondCharacterPoseIndex: 0
@@ -97,8 +97,8 @@ MonoBehaviour:
     _text: 'Just some advice. That I could have used. '
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
-  - _character: {fileID: 11400000, guid: 9386325197a551e4fb73753368901d97, type: 2}
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: 65e2c6f3ee2b1f84c8b572ecdeddace1, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
     _hasSecondCharacterPoseIndex: 0
@@ -107,8 +107,8 @@ MonoBehaviour:
     _text: "Maybe I didn\u2019t even need it if I wasn\u2019t stupid. "
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
-  - _character: {fileID: 11400000, guid: 9386325197a551e4fb73753368901d97, type: 2}
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: 65e2c6f3ee2b1f84c8b572ecdeddace1, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
     _hasSecondCharacterPoseIndex: 0
@@ -117,8 +117,8 @@ MonoBehaviour:
     _text: "\u2026s-sorry, I don\u2019t mean to ramble. "
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
-  - _character: {fileID: 11400000, guid: 9386325197a551e4fb73753368901d97, type: 2}
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: 65e2c6f3ee2b1f84c8b572ecdeddace1, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
     _hasSecondCharacterPoseIndex: 0
@@ -127,8 +127,8 @@ MonoBehaviour:
     _text: 'I just really, um. Appreciate the potion. '
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
-  - _character: {fileID: 11400000, guid: 9386325197a551e4fb73753368901d97, type: 2}
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: 65e2c6f3ee2b1f84c8b572ecdeddace1, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
     _hasSecondCharacterPoseIndex: 0
@@ -137,8 +137,8 @@ MonoBehaviour:
     _text: "Probably wouldn\u2019t be here without it actually. "
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
-  - _character: {fileID: 11400000, guid: 9386325197a551e4fb73753368901d97, type: 2}
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: 65e2c6f3ee2b1f84c8b572ecdeddace1, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
     _hasSecondCharacterPoseIndex: 0
@@ -147,19 +147,28 @@ MonoBehaviour:
     _text: 'So thank you. '
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
-  - _character: {fileID: 11400000, guid: 9386325197a551e4fb73753368901d97, type: 2}
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: 65e2c6f3ee2b1f84c8b572ecdeddace1, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
     _hasSecondCharacterPoseIndex: 0
     _poseIndex: 0
     _poseIndexTwo: 0
-    _text: "A-and I\u2019m back for another. M-maybe a stronger version of the one
-      you gave me? "
+    _text: "A-and I\u2019m back for another. "
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
-  - _character: {fileID: 11400000, guid: 9386325197a551e4fb73753368901d97, type: 2}
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: 65e2c6f3ee2b1f84c8b572ecdeddace1, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: 'M-maybe a stronger version of the one you gave me? '
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: 65e2c6f3ee2b1f84c8b572ecdeddace1, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
     _hasSecondCharacterPoseIndex: 0
@@ -169,8 +178,8 @@ MonoBehaviour:
       those together maybe? "
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
-  - _character: {fileID: 11400000, guid: 9386325197a551e4fb73753368901d97, type: 2}
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: 65e2c6f3ee2b1f84c8b572ecdeddace1, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
     _hasSecondCharacterPoseIndex: 0
@@ -179,20 +188,20 @@ MonoBehaviour:
     _text: 'Would that work, or am I crazy....? '
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   _choices: []
-  <SourceScript>k__BackingField: "Plucky: H-hi! It\u2019s me again! Plucky! /d2\r\n\r\nPlucky:
-    Um, the first quest went well! Thanks to you! /d2\r\n\r\nPlucky: The second one,
-    um. That one didn\u2019t go as well. /d2\r\n\r\nPlucky: Turns out those level
-    recommendations they post? /d2\r\n\r\nPlucky: They\u2019re there for a reason.
-    /d2\r\n\r\nPlucky: So\u2026 d-don\u2019t take a Lv. 14 quest at Lv. 3. /d2\r\n\r\nPlucky:
-    Even if you really wanna go out for revenge on the stupid orc mage who cursed
-    you. /d2\r\n\r\nPlucky: Just some advice. That I could have used. /d2\r\n\r\nPlucky:
-    Maybe I didn\u2019t even need it if I wasn\u2019t stupid. /d2\r\n\r\nPlucky:
-    \u2026s-sorry, I don\u2019t mean to ramble. /d2\r\n\r\nPlucky: I just really,
-    um. Appreciate the potion. /d2\r\n\r\nPlucky: Probably wouldn\u2019t be here
-    without it actually. /d2\r\n\r\nPlucky: So thank you. /d2\r\n\r\nPlucky: A-and
-    I\u2019m back for another. M-maybe a stronger version of the one you gave me?
-    /d2\r\n\r\nPlucky: C-could you maybe make\u2026 like two good health potions
-    and combine those together maybe? /d2\r\n\r\nPlucky: Would that work, or am I
-    crazy....? /d2\r\n"
+  _isDepartingSequence: 0
+  <SourceScript>k__BackingField: "Plucky: H-hi! It\u2019s me again! Plucky! \r\n\r\nPlucky:
+    Um, the first quest went well! Thanks to you! \r\n\r\nPlucky: The second one,
+    um. That one didn\u2019t go as well. \r\n\r\nPlucky: Turns out those level recommendations
+    they post? \r\n\r\nPlucky: They\u2019re there for a reason. \r\n\r\nPlucky: So\u2026
+    d-don\u2019t take a Lv. 14 quest at Lv. 3. \r\n\r\nPlucky: Even if you really
+    wanna go out for revenge on the stupid orc mage who cursed you. \r\n\r\nPlucky:
+    Just some advice. That I could have used. \r\n\r\nPlucky: Maybe I didn\u2019t
+    even need it if I wasn\u2019t stupid. \r\n\r\nPlucky: \u2026s-sorry, I don\u2019t
+    mean to ramble. \r\n\r\nPlucky: I just really, um. Appreciate the potion. \r\n\r\nPlucky:
+    Probably wouldn\u2019t be here without it actually. \r\n\r\nPlucky: So thank
+    you. \r\n\r\nPlucky: A-and I\u2019m back for another. \n\nPlucky: M-maybe a stronger
+    version of the one you gave me? \r\n\r\nPlucky: C-could you maybe make\u2026
+    like two good health potions and combine those together maybe? \r\n\r\nPlucky:
+    Would that work, or am I crazy....? \r\n"

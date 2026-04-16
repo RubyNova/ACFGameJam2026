@@ -18,4 +18,19 @@ MonoBehaviour:
   _soundEffectFiles: []
   _characterDialoguePairs: []
   _choices: []
-  <SourceScript>k__BackingField: 
+  _isDepartingSequence: 0
+  <SourceScript>k__BackingField: "Cystalpher: (Wow\u2026 This might be the highest
+    quality elixir I have ever seen.)\r\n\r\nCystalpher: (Many thanks for your assistance.)\r\n\r\nCystalpher:
+    (Many are not as kind to me as you are.)\r\n\r\nCystalpher: (I thank you again
+    for your patience in dealing with me.)\r\n\r\nNarrator: Hey\u2026 its all good.
+    \r\n\r\nNarrator: With what it seems you\u2019ve gone through, you should have
+    more patience for others.\r\n\r\nCystalpher: (\u2026a naive perspective.)\r\n\r\nCystalpher:
+    (I used to not have a lot of patience.) \r\n\r\nCystalpher: (That is why I ended
+    up this way.\r\n\r\nCystalpher: (I find it is easier to lead life with a heart
+    tempered with understanding and kindness\u2026)\r\n\r\nCystalpher: (\u2026rather
+    than carelessness and indifference.)\r\n\r\nCystalpher: (But\u2026 I appreciate
+    your sentiment nonetheless.)\r\n\r\nCystalpher: (I hope you will let this old
+    soul return every once in a while for his needs.)\r\n\r\nNarrator: Of course.\r\n\r\nNarrator:
+    Thank you for shopping here at all.\r\n\r\nNarrator: It helps me out a lot too.\r\n\r\nCystalpher:
+    (If I can help anyone, then that means the world to me.)\r\n\r\nCystalpher: (Take
+    care. We shall meet again.)\r\n"

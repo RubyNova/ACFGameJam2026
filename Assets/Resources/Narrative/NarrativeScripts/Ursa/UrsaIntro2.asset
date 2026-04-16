@@ -26,7 +26,7 @@ MonoBehaviour:
     _text: Good day. It is me once more.
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: 018b214c291fad44b8f16c214f264d0c, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
@@ -37,7 +37,7 @@ MonoBehaviour:
       well? And enjoyed your potions?
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: 018b214c291fad44b8f16c214f264d0c, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
@@ -47,7 +47,7 @@ MonoBehaviour:
     _text: "Hehehe\u2026 I would have asked her myself if she liked them but\u2026"
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: 018b214c291fad44b8f16c214f264d0c, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
@@ -57,7 +57,7 @@ MonoBehaviour:
     _text: "I can be a\u2026 bit shy when it comes to being with her."
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: 018b214c291fad44b8f16c214f264d0c, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
@@ -67,7 +67,7 @@ MonoBehaviour:
     _text: "I unfortunately cannot gleam her emotions from the stars\u2026"
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: 018b214c291fad44b8f16c214f264d0c, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
@@ -77,35 +77,35 @@ MonoBehaviour:
     _text: "Sometimes when I try to look into the future its cloudier than I like\u2026"
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: 018b214c291fad44b8f16c214f264d0c, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
     _hasSecondCharacterPoseIndex: 0
     _poseIndex: 0
     _poseIndexTwo: 0
-    _text: "So that\u2019s why I\u2019d like a nice bright potion so I can part the
-      clouds, if you could!"
+    _text: So that's why I need a potion that lets me focus on magical things!
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: 018b214c291fad44b8f16c214f264d0c, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
     _hasSecondCharacterPoseIndex: 0
     _poseIndex: 0
     _poseIndexTwo: 0
-    _text: It would be greatly appreciated.
+    _text: Please make something mixing both magic and focus if possible!
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   _choices: []
-  <SourceScript>k__BackingField: "Ursa: Good day. It is me once more./d2\r\n\r\nUrsa:
+  _isDepartingSequence: 0
+  <SourceScript>k__BackingField: "Ursa: Good day. It is me once more.\r\n\r\nUrsa:
     Through divine readings of the stars, I take it my friend Rosa met you well?
-    And enjoyed your potions?/d2\r\n\r\nUrsa: Hehehe\u2026 I would have asked her
-    myself if she liked them but\u2026/d2\r\n\r\nUrsa: I can be a\u2026 bit shy when
-    it comes to being with her./d2\r\n\r\nUrsa: I unfortunately cannot gleam her
-    emotions from the stars\u2026/d2\r\n\r\nUrsa: Sometimes when I try to look into
-    the future its cloudier than I like\u2026/d2\r\n\r\nUrsa: So that\u2019s why
-    I\u2019d like a nice bright potion so I can part the clouds, if you could!/d2\r\n\r\nUrsa:
-    It would be greatly appreciated./d2\r\n"
+    And enjoyed your potions?\r\n\r\nUrsa: Hehehe\u2026 I would have asked her myself
+    if she liked them but\u2026\r\n\r\nUrsa: I can be a\u2026 bit shy when it comes
+    to being with her.\r\n\r\nUrsa: I unfortunately cannot gleam her emotions from
+    the stars\u2026\r\n\r\nUrsa: Sometimes when I try to look into the future its
+    cloudier than I like\u2026\r\n\r\nUrsa: So that's why I need a potion that lets
+    me focus on magical things!\n\nUrsa: Please make something mixing both magic
+    and focus if possible!\r\n"

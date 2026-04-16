@@ -26,7 +26,7 @@ MonoBehaviour:
     _text: "Gosh, am I winded\u2026 crud\u2026 "
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: a44fa812616be0a4e9c695826540ab0a, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
@@ -37,7 +37,7 @@ MonoBehaviour:
       such an unkempt fashion to members of the public.
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: a44fa812616be0a4e9c695826540ab0a, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
@@ -47,7 +47,7 @@ MonoBehaviour:
     _text: I am Rosa, a high ranking knight in the legion of Felconry.
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: a44fa812616be0a4e9c695826540ab0a, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
@@ -57,7 +57,7 @@ MonoBehaviour:
     _text: And I am quite parched.
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: a44fa812616be0a4e9c695826540ab0a, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
@@ -67,7 +67,7 @@ MonoBehaviour:
     _text: I would rather not have my squadron see me in such a sorry condition.
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: a44fa812616be0a4e9c695826540ab0a, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
@@ -77,7 +77,17 @@ MonoBehaviour:
     _text: "Something nice and clear, something refreshing\u2026"
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: a44fa812616be0a4e9c695826540ab0a, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: Perhaps something... like water?
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: a44fa812616be0a4e9c695826540ab0a, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
@@ -87,12 +97,13 @@ MonoBehaviour:
     _text: That would be greatly appreciated.
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   _choices: []
-  <SourceScript>k__BackingField: "Rosa: Gosh, am I winded\u2026 crud\u2026 /d2\r\n\r\nRosa:
+  _isDepartingSequence: 0
+  <SourceScript>k__BackingField: "Rosa: Gosh, am I winded\u2026 crud\u2026 \r\n\r\nRosa:
     Oh, my apologies. It is not very forthcoming of me to present myself in such
-    an unkempt fashion to members of the public./d2\r\n\r\nRosa: I am Rosa, a high
-    ranking knight in the legion of Felconry./d2\r\n\r\nRosa: And I am quite parched./d2\r\n\r\nRosa:
-    I would rather not have my squadron see me in such a sorry condition./d2\r\n\r\nRosa:
-    Something nice and clear, something refreshing\u2026/d2\r\n\r\nRosa: That would
-    be greatly appreciated./d2"
+    an unkempt fashion to members of the public.\r\n\r\nRosa: I am Rosa, a high ranking
+    knight in the legion of Felconry.\r\n\r\nRosa: And I am quite parched.\r\n\r\nRosa:
+    I would rather not have my squadron see me in such a sorry condition.\r\n\r\nRosa:
+    Something nice and clear, something refreshing\u2026\n\nRosa: Perhaps something...
+    like water?\r\n\r\nRosa: That would be greatly appreciated."

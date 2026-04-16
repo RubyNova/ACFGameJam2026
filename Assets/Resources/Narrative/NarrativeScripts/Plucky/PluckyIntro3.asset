@@ -26,18 +26,27 @@ MonoBehaviour:
     _text: "Hi\u2026 its me again. Plucky. "
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: 65e2c6f3ee2b1f84c8b572ecdeddace1, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
     _hasSecondCharacterPoseIndex: 0
     _poseIndex: 0
     _poseIndexTwo: 0
-    _text: "Sorry if I seem gloomy\u2026 I finally beat the jerk orc mage who cursed
-      me to be the wimp I am now\u2026 "
+    _text: "Sorry if I seem gloomy\u2026 "
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: 65e2c6f3ee2b1f84c8b572ecdeddace1, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: "I finally beat the jerk orc mage who cursed me to be the wimp I am now\u2026 "
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: 65e2c6f3ee2b1f84c8b572ecdeddace1, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
@@ -48,7 +57,7 @@ MonoBehaviour:
       could before\u2026 "
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: 65e2c6f3ee2b1f84c8b572ecdeddace1, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
@@ -58,7 +67,7 @@ MonoBehaviour:
     _text: "So I think\u2026 there\u2019s nothing I can do to go back\u2026 "
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: 65e2c6f3ee2b1f84c8b572ecdeddace1, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
@@ -68,33 +77,55 @@ MonoBehaviour:
     _text: "So if you could just make me like\u2026 "
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: 65e2c6f3ee2b1f84c8b572ecdeddace1, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
     _hasSecondCharacterPoseIndex: 0
     _poseIndex: 0
     _poseIndexTwo: 0
-    _text: 'Something tangy? '
+    _text: 'Something... neutralizing. '
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: 65e2c6f3ee2b1f84c8b572ecdeddace1, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
     _hasSecondCharacterPoseIndex: 0
     _poseIndex: 0
     _poseIndexTwo: 0
-    _text: 'That would be greatly appreciated. '
+    _text: But something that makes you feel warm inside.
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: 65e2c6f3ee2b1f84c8b572ecdeddace1, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: I don't know if a potion like that exists...
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: 65e2c6f3ee2b1f84c8b572ecdeddace1, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: But if you could make it... I'd really appreciate it.
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 0
   _choices: []
   _isDepartingSequence: 0
-  <SourceScript>k__BackingField: "Plucky: Hi\u2026 its me again. Plucky. /d2\r\n\r\nPlucky:
-    Sorry if I seem gloomy\u2026 I finally beat the jerk orc mage who cursed me to
-    be the wimp I am now\u2026 /d2\r\n\r\nPlucky: But\u2026 I\u2019m still not back
-    to being able to cast the spells I could before\u2026 /d2\r\n\r\nPlucky: So I
-    think\u2026 there\u2019s nothing I can do to go back\u2026 /d2\r\n\r\nPlucky:
-    So if you could just make me like\u2026 /d2\r\n\r\nPlucky: Something tangy? /d2\r\n\r\nPlucky:
-    That would be greatly appreciated. /d2\r\n"
+  <SourceScript>k__BackingField: "Plucky: Hi\u2026 its me again. Plucky. \r\n\r\nPlucky:
+    Sorry if I seem gloomy\u2026 \n\nPlucky: I finally beat the jerk orc mage who
+    cursed me to be the wimp I am now\u2026 \r\n\r\nPlucky: But\u2026 I\u2019m still
+    not back to being able to cast the spells I could before\u2026 \r\n\r\nPlucky:
+    So I think\u2026 there\u2019s nothing I can do to go back\u2026 \r\n\r\nPlucky:
+    So if you could just make me like\u2026 \r\n\r\nPlucky: Something... neutralizing.
+    \n\nPlucky: But something that makes you feel warm inside.\n\nPlucky: I don't
+    know if a potion like that exists...\n\nPlucky: But if you could make it... I'd
+    really appreciate it.\r\n"

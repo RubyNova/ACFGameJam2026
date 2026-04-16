@@ -16,6 +16,103 @@ MonoBehaviour:
   _nextSequence: {fileID: 0}
   _musicFiles: []
   _soundEffectFiles: []
-  _characterDialoguePairs: []
+  _characterDialoguePairs:
+  - _character: {fileID: 11400000, guid: 7279c6ca5ad205d419789771dbd57d5c, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: ...
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 1
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: 7279c6ca5ad205d419789771dbd57d5c, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: "Um\u2026 hello?"
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 1
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: 7279c6ca5ad205d419789771dbd57d5c, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: "This is my apothecary\u2026 is there anything I can get for you\u2026?"
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 1
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: 7279c6ca5ad205d419789771dbd57d5c, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: ...
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 1
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: 7279c6ca5ad205d419789771dbd57d5c, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: "Wait hang on\u2026 I think he\u2019s doing sign language under the table.."
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 1
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: 3d59eca314e37e34186872fca332f088, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: "(Can\u2019t speak. I lost my ability to speak.)"
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: 3d59eca314e37e34186872fca332f088, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: (And even if I could I do not have the anatomy to speak.)
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: 3d59eca314e37e34186872fca332f088, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: (I would like to have something simple that could speed me up.)
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: 3d59eca314e37e34186872fca332f088, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: (This old soul has a hard time moving around quickly...)
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 0
   _choices: []
-  <SourceScript>k__BackingField: 
+  _isDepartingSequence: 0
+  <SourceScript>k__BackingField: "Narrator: ...\n\nNarrator: Um\u2026 hello?\r\n\r\nNarrator:
+    This is my apothecary\u2026 is there anything I can get for you\u2026?\r\n\r\nNarrator:
+    ...\r\n\r\nNarrator: Wait hang on\u2026 I think he\u2019s doing sign language
+    under the table..\r\n\r\nCrystalpher: (Can\u2019t speak. I lost my ability to
+    speak.)\r\n\r\nCrystalpher: (And even if I could I do not have the anatomy to
+    speak.)\r\n\r\nCrystalpher: (I would like to have something simple that could
+    speed me up.)\n\nCrystalpher: (This old soul has a hard time moving around quickly...)\r\n"

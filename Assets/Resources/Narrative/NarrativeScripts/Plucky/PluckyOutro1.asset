@@ -59,8 +59,9 @@ MonoBehaviour:
     _narratorSpeaking: 0
     _delayBeforeContinuingInSeconds: 2
   _choices: []
+  _isDepartingSequence: 0
   <SourceScript>k__BackingField: "Plucky: Wow!! This looks great!! Thank you so so
-    much!! /d2\r\n\r\nPlucky: Um\u2026 do these taste good? Or is this like a cough
-    potion taste\u2026 /d2\r\n\r\nPlucky: Well! Um! Hopefully I don\u2019t have to
-    find out! But I\u2019m glad I came to you anyway! /d2\r\n\r\nPlucky: Have a good
-    day! /d2\r\n"
+    much!! \r\n\r\nPlucky: Um\u2026 do these taste good? Or is this like a cough
+    potion taste\u2026 \r\n\r\nPlucky: Well! Um! Hopefully I don\u2019t have to find
+    out! \n\nPlucky: But I\u2019m glad I came to you anyway! \r\n\r\nPlucky: Have
+    a good day! \r\n"

@@ -26,7 +26,7 @@ MonoBehaviour:
     _text: Ah! This is wonderful! Thank you!
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: 018b214c291fad44b8f16c214f264d0c, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
@@ -36,7 +36,7 @@ MonoBehaviour:
     _text: Many thanks for helping me with this matter.
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: 018b214c291fad44b8f16c214f264d0c, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
@@ -46,7 +46,7 @@ MonoBehaviour:
     _text: "Hm, as a token of appreciation\u2026"
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: 018b214c291fad44b8f16c214f264d0c, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
@@ -57,17 +57,28 @@ MonoBehaviour:
       like to know?
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: 7279c6ca5ad205d419789771dbd57d5c, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
     _hasSecondCharacterPoseIndex: 0
     _poseIndex: 0
     _poseIndexTwo: 0
-    _text: "I\u2026 would like to know if I\u2019m able to get my name back."
+    _text: "I\u2026 would like to know if I\u2019m able to get my name back from
+      the fae."
     _leftCharacterTalking: 1
     _narratorSpeaking: 1
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: 7279c6ca5ad205d419789771dbd57d5c, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: If my future says anything about that I mean.
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 1
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: 018b214c291fad44b8f16c214f264d0c, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
@@ -77,7 +88,7 @@ MonoBehaviour:
     _text: "Oh my\u2026 your name was stolen? I\u2019m terribly sorry to hear that."
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: 018b214c291fad44b8f16c214f264d0c, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
@@ -88,7 +99,7 @@ MonoBehaviour:
       you getting your name back.
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: 018b214c291fad44b8f16c214f264d0c, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
@@ -98,14 +109,15 @@ MonoBehaviour:
     _text: I wish you luck in your business, friend. Take care.
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   _choices: []
-  <SourceScript>k__BackingField: "Ursa: Ah! This is wonderful! Thank you!/d2\r\n\r\nUrsa:
-    Many thanks for helping me with this matter./d2\r\n\r\nUrsa: Hm, as a token of
-    appreciation\u2026/d2\r\n\r\nUrsa: Is there anything that I could see regarding
-    your own future you would like to know?/d2\r\n\r\nNarrator: I\u2026 would like
-    to know if I\u2019m able to get my name back./d2\r\n\r\nUrsa: Oh my\u2026 your
-    name was stolen? I\u2019m terribly sorry to hear that./d2\r\n\r\nUrsa: Well,
-    I will keep a keen eye for any signs in the cosmos for news regarding you getting
-    your name back./d2\r\n\r\nUrsa: I wish you luck in your business, friend. Take
-    care./d2\r\n"
+  _isDepartingSequence: 0
+  <SourceScript>k__BackingField: "Ursa: Ah! This is wonderful! Thank you!\r\n\r\nUrsa:
+    Many thanks for helping me with this matter.\r\n\r\nUrsa: Hm, as a token of appreciation\u2026\r\n\r\nUrsa:
+    Is there anything that I could see regarding your own future you would like to
+    know?\r\n\r\nNarrator: I\u2026 would like to know if I\u2019m able to get my
+    name back from the fae.\n\nNarrator: If my future says anything about that I
+    mean.\r\n\r\nUrsa: Oh my\u2026 your name was stolen? I\u2019m terribly sorry
+    to hear that.\r\n\r\nUrsa: Well, I will keep a keen eye for any signs in the
+    cosmos for news regarding you getting your name back.\r\n\r\nUrsa: I wish you
+    luck in your business, friend. Take care.\r\n"

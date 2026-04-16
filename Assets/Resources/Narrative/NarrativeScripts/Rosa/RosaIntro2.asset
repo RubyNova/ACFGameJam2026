@@ -26,7 +26,7 @@ MonoBehaviour:
     _text: Greetings again. Rosa of Felconry, at your service.
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: a44fa812616be0a4e9c695826540ab0a, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
@@ -36,7 +36,7 @@ MonoBehaviour:
     _text: "Or, rather, you would be at *my* service\u2026?"
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: a44fa812616be0a4e9c695826540ab0a, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
@@ -46,7 +46,7 @@ MonoBehaviour:
     _text: I am unsure of this matter.
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: a44fa812616be0a4e9c695826540ab0a, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
@@ -56,7 +56,7 @@ MonoBehaviour:
     _text: "\u2026regardless. I must admit I am. Rather tired."
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: a44fa812616be0a4e9c695826540ab0a, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
@@ -66,7 +66,7 @@ MonoBehaviour:
     _text: Leading a squadron takes quite a bit out of you.
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: a44fa812616be0a4e9c695826540ab0a, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
@@ -76,7 +76,7 @@ MonoBehaviour:
     _text: B-but. I know what I am doing. I *must* know what I am doing.
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: a44fa812616be0a4e9c695826540ab0a, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
@@ -86,18 +86,18 @@ MonoBehaviour:
     _text: 'For the good of my comrades. '
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: a44fa812616be0a4e9c695826540ab0a, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
     _hasSecondCharacterPoseIndex: 0
     _poseIndex: 0
     _poseIndexTwo: 0
-    _text: I need something invigorating. Something to get your senses feeling better.
+    _text: I need something invigorating. Something simple to increase my speed!!
       Posthaste!!
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: a44fa812616be0a4e9c695826540ab0a, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
@@ -107,13 +107,14 @@ MonoBehaviour:
     _text: "\u2026if you, er, kindly would."
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   _choices: []
+  _isDepartingSequence: 0
   <SourceScript>k__BackingField: "Rosa: Greetings again. Rosa of Felconry, at your
-    service./d2\r\n\r\nRosa: Or, rather, you would be at *my* service\u2026?/d2\r\n\r\nRosa:
-    I am unsure of this matter./d2\r\n\r\nRosa: \u2026regardless. I must admit I
-    am. Rather tired./d2\r\n\r\nRosa: Leading a squadron takes quite a bit out of
-    you./d2\r\n\r\nRosa: B-but. I know what I am doing. I *must* know what I am doing./d2\r\n\r\nRosa:
-    For the good of my comrades. /d2\r\n\r\nRosa: I need something invigorating.
-    Something to get your senses feeling better. Posthaste!!/d2\r\n\r\nRosa: \u2026if
-    you, er, kindly would./d2\r\n"
+    service.\r\n\r\nRosa: Or, rather, you would be at *my* service\u2026?\r\n\r\nRosa:
+    I am unsure of this matter.\r\n\r\nRosa: \u2026regardless. I must admit I am.
+    Rather tired.\r\n\r\nRosa: Leading a squadron takes quite a bit out of you.\r\n\r\nRosa:
+    B-but. I know what I am doing. I *must* know what I am doing.\r\n\r\nRosa: For
+    the good of my comrades. \r\n\r\nRosa: I need something invigorating. Something
+    simple to increase my speed!! Posthaste!!\r\n\r\nRosa: \u2026if you, er, kindly
+    would.\r\n"
