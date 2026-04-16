@@ -47,11 +47,6 @@ public class LevelManager : MonoSingleton<LevelManager>
         {
             yield return null;
         }
-
-        if (_changeBgm)
-        {
-            SoundManager.Instance.PlayBGM(false);
-        }
     }
 
     public void LoadMainMenu()
@@ -61,6 +56,13 @@ public class LevelManager : MonoSingleton<LevelManager>
 
     public void LoadScene(string sceneName)
     {
+        if(!sceneName.Contains("Between"))
+        {
+            if (_changeBgm)
+            {
+                SoundManager.Instance.PlayBGM(false);
+            }
+        }
         StartCoroutine(LoadSceneInternal(sceneName));
     }
 }
