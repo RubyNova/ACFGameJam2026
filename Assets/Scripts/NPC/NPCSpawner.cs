@@ -18,10 +18,6 @@ namespace NPC
         private int _numberOfRandomNpcsToSpawn;
 
         [SerializeField]
-        [Range(0.0f, 1.0f)]
-        private float _randomizationThreshold = 0.5f;
-
-        [SerializeField]
         private GameObject _spawnLocationObject;
 
         [SerializeField]
@@ -112,7 +108,9 @@ namespace NPC
 
         private NPCCharacter DetermineNextNpc()
         {
-            if (_numberOfRandomNpcsToSpawn == 0 && _numberOfDedicatedNpcsToSpawn == 1)
+            if (
+                (_numberOfDedicatedNpcsToSpawn > 0 && _dedicatedNpcsToSpawn[0].NumberOfRandomNpcAppearancesBeforeAllowedToShow == 0) ||
+                (_numberOfRandomNpcsToSpawn == 0 && _numberOfDedicatedNpcsToSpawn == 1))
             {
                 var character = _dedicatedNpcsToSpawn[_characterSpawnIndex];
                 _characterSpawnIndex++;
@@ -128,10 +126,9 @@ namespace NPC
             }
             else
             {
-                if(Random.value >= _randomizationThreshold)
+                var character = _dedicatedNpcsToSpawn[_characterSpawnIndex];
+                if(_numberOfRandomNpcsSpawned >= character.NumberOfRandomNpcAppearancesBeforeAllowedToShow)
                 {
-                    var character = _dedicatedNpcsToSpawn[_characterSpawnIndex];
-                    
                     switch(character.ConditionForAppearing.Condition)
                     {
                         case NPCAppearanceConditionType.None:
