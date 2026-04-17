@@ -1,4 +1,5 @@
 using GameAudio;
+using NPC;
 using Player;
 using System;
 using UnityEngine;
@@ -25,6 +26,9 @@ public class GameClock : MonoBehaviour
     private AudioClip _timeUpSound;
 
     [SerializeField]
+    private AudioClip _startClockSound;
+
+    [SerializeField]
     private Transform _skyrollTransform;
 
     [Header("Reference Only - do not preset!")]
@@ -43,8 +47,8 @@ public class GameClock : MonoBehaviour
     private float _skyrollSpeed = 0f;
     private bool _moveSkyroll = false;
     private bool _paused = false;
-    
-    
+
+    private NPCController _npcController;
 
     public UnityEvent TickEvent = new();
     public UnityEvent TimerFinished = new();
@@ -113,6 +117,7 @@ public class GameClock : MonoBehaviour
 
     public void StartTimer()
     {
+        PlayStartClockSound();
         _timerStarted = true;
         _paused = false;
     }
@@ -123,5 +128,15 @@ public class GameClock : MonoBehaviour
         {
             SoundManager.Instance.PlayAudioClip(_timeUpSound);
         }   
+    }
+
+    private void PlayStartClockSound()
+    {
+        _npcController = UnityEngine.Object.FindFirstObjectByType<NPCController>();
+
+        if(_startClockSound != null && !_npcController.DontPlayStartClockAudio)
+        {
+            SoundManager.Instance.PlayAudioClip(_startClockSound);
+        }
     }
 }

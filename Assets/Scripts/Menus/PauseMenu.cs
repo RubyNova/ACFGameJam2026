@@ -64,6 +64,7 @@ public class PauseMenu : MonoBehaviour
             {
                 _worldController.FlipPause();
             }
+            SoundManager.Instance.PlayStartAudio();
         }  
     }
 

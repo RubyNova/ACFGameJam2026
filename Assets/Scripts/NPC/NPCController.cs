@@ -33,6 +33,9 @@ namespace NPC
         [SerializeField]
         private AudioClip _incorrectOrder;
 
+        [SerializeField]
+        private AudioClip _footsteps;
+
         private GameObject _mainCrafingUI;
 
         private const string _spawnOutTriggerName = "Leaving";
@@ -51,6 +54,8 @@ namespace NPC
         private int _badDeliveries = 0;
         public bool HappyCustomer => _badDeliveries < NPCConfiguration.NegativeInteractionsBeforeLeavingUnhappy;
 
+        public bool DontPlayStartClockAudio = false;
+
         public NPCCharacter NPCConfiguration { get; private set; }
 
         public void InitialiseWithNPCConfiguration(NPCCharacter npc, GameObject mainCraftingUI)
@@ -68,6 +73,12 @@ namespace NPC
                 //animator state
                 if (!_hasEntered)
                 {
+                    DontPlayStartClockAudio = false;
+                    if (!SoundManager.Instance.SfxAudioSource.isPlaying)  //  will play multiple times without, causing horrible overlapping
+                    {
+                        PlayFootsteps();
+                    }
+
                     _entering = _animator.GetCurrentAnimatorStateInfo(0).IsName(NPCConfiguration.SpawnInAnimationClip.name);
                     _collider.enabled = false;
 
@@ -89,6 +100,7 @@ namespace NPC
 
                 if (_leaving && NPCConfiguration.DepartingSequence != null)
                 {
+                    DontPlayStartClockAudio = true;
                     _collider.enabled = false;
                     NarrativeController.Finished.AddListener(RunGoodbyeAnim);
 
@@ -108,7 +120,7 @@ namespace NPC
                     {
                         NarrativeController.ExecuteSequence(NPCConfiguration.DepartingSequence);
                     }
-
+                    
                     _leaving = false;
                 }
                 else if (_leaving)
@@ -149,6 +161,7 @@ namespace NPC
 
         private void RunGoodbyeAnim(bool _)
         {
+            PlayFootsteps();
             NarrativeController.Finished.RemoveListener(RunGoodbyeAnim);
             _animator.SetBool(_spawnOutTriggerName, true);
         }
@@ -205,5 +218,13 @@ namespace NPC
         }
 
         public void FlipPause() => _paused = !_paused;
+
+        private void PlayFootsteps()
+        {
+            if(_footsteps != null)
+            {
+                SoundManager.Instance.PlayAudioClip(_footsteps);
+            }
+        }
     }
 }
