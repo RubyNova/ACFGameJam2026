@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Ursa3
   m_EditorClassIdentifier: Assembly-CSharp::NPC.NPCCharacter
   _name: Ursa
-  _idleSprite: {fileID: 4486930094371141866, guid: ec32c3a14819e6e4899c70d60461b9b5, type: 3}
+  _idleSprite: {fileID: 2586632406200613912, guid: b3491260c72808743b378e8c76ac37aa, type: 3}
   _desiredItem: {fileID: 11400000, guid: 08917d11410a9644cbc2e7badc151115, type: 2}
+  _useExpandedSprite: 0
   _delayBeforeStartingDialogue: 0
   _numberOfRandomNpcAppearancesBeforeAllowedToShow: 4
   _arrivalSequence: {fileID: 11400000, guid: 03f81e2f303f96f4c931c3cba35c3bf2, type: 2}
@@ -22,4 +23,4 @@ MonoBehaviour:
   _negativeSequences: []
   _animator: {fileID: 9100000, guid: d8034e8aaba9ea345928fbab2399e781, type: 2}
   _spawnInAnimation: {fileID: 7400000, guid: dd19788569db4db41a8fac48544b7b97, type: 2}
-  _negativeInteractionsBeforeLeaving: 9999
+  _negativeInteractionsBeforeLeaving: 6

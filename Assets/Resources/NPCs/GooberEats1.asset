@@ -15,6 +15,7 @@ MonoBehaviour:
   _name: Goober
   _idleSprite: {fileID: -3539811419900543807, guid: 727d56f0c8bd8ef4c96aabf53e2a1067, type: 3}
   _desiredItem: {fileID: 11400000, guid: d4dd810574e0f2c4cb0e8a6cacf9e113, type: 2}
+  _useExpandedSprite: 1
   _delayBeforeStartingDialogue: 0
   _numberOfRandomNpcAppearancesBeforeAllowedToShow: 3
   _arrivalSequence: {fileID: 11400000, guid: 77ced5c10d8150540a9c0a4416a74547, type: 2}

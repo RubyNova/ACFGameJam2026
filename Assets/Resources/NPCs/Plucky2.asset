@@ -15,6 +15,7 @@ MonoBehaviour:
   _name: Plucky
   _idleSprite: {fileID: 4486930094371141866, guid: ec32c3a14819e6e4899c70d60461b9b5, type: 3}
   _desiredItem: {fileID: 11400000, guid: c8a5d442eee8d0046856d37428151b9f, type: 2}
+  _useExpandedSprite: 0
   _delayBeforeStartingDialogue: 0
   _numberOfRandomNpcAppearancesBeforeAllowedToShow: 0
   _arrivalSequence: {fileID: 11400000, guid: f24105dffe79fd04397aaffc498709f5, type: 2}
@@ -23,4 +24,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: df779e2bc519858489928749bcef9b6e, type: 2}
   _animator: {fileID: 9100000, guid: d8034e8aaba9ea345928fbab2399e781, type: 2}
   _spawnInAnimation: {fileID: 7400000, guid: dd19788569db4db41a8fac48544b7b97, type: 2}
-  _negativeInteractionsBeforeLeaving: 3
+  _negativeInteractionsBeforeLeaving: 10

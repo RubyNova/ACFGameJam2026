@@ -27,6 +27,9 @@ namespace NPC
         [SerializeField]
         private ItemConfig _desiredItem;
 
+        [SerializeField]
+        private bool _useExpandedSprite;
+
         [Header("Narrative Configuration")]
         [SerializeField]
         private float _delayBeforeStartingDialogue;
@@ -70,6 +73,8 @@ namespace NPC
         public NPCAppearanceCondition ConditionForAppearing => _conditionForAppearing;
         public int NegativeInteractionsBeforeLeavingUnhappy => _negativeInteractionsBeforeLeaving;
         public int NumberOfRandomNpcAppearancesBeforeAllowedToShow => _numberOfRandomNpcAppearancesBeforeAllowedToShow;
+        public bool UseExpandedSprite => _useExpandedSprite;
+
     }
 
 }

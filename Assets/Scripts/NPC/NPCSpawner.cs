@@ -1,4 +1,3 @@
-using System;
 using System.Linq;
 using ACHNarrativeDriver;
 using UnityEngine;
@@ -8,6 +7,10 @@ namespace NPC
 {
     public class NPCSpawner : MonoBehaviour
     {
+        [SerializeField]
+        private bool _challengeMode;
+
+
         [SerializeField]
         private NPCCharacter[] _randomNpcsToSpawn;
 
@@ -22,6 +25,9 @@ namespace NPC
 
         [SerializeField]
         private GameObject _NPCPrefab;
+
+        [SerializeField]
+        private GameObject _expandedNPCPrefab;
 
         [SerializeField]
         private AutoNarrativeController _narrativeController;
@@ -70,22 +76,36 @@ namespace NPC
         {
             if(!_characterSpawned)
             {
-                if(
-                    (_numberOfDedicatedNpcsToSpawn <= _skippedDedicatedNpcs + _numberOfDedicatedNpcsSpawned) &&
-                    (_numberOfRandomNpcsToSpawn <= _numberOfRandomNpcsSpawned)
-                )
+                if(!_challengeMode)
                 {
-                    _characterSpawnIndex = 0;
-                    _characterSpawned = true;
-                    _noMoreNpcs = true;
-                    return;
+                    if(
+                        (_numberOfDedicatedNpcsToSpawn <= _skippedDedicatedNpcs + _numberOfDedicatedNpcsSpawned) &&
+                        (_numberOfRandomNpcsToSpawn <= _numberOfRandomNpcsSpawned)
+                    )
+                    {
+                        _characterSpawnIndex = 0;
+                        _characterSpawned = true;
+                        _noMoreNpcs = true;
+                        return;
+                    }
                 }
-
                 var character = DetermineNextNpc();
                 SpawnCharacter(character);
             }
 
-            _informedNpcSuccessRateValue = _goodDeliveries / _totalExpectedNpcsToSpawn;
+            if(!_challengeMode)
+            {
+                _informedNpcSuccessRateValue = _goodDeliveries / _totalExpectedNpcsToSpawn;
+            }
+            else if (ItemsDelivered > 0)
+            {
+                _informedNpcSuccessRateValue = _goodDeliveries / ItemsDelivered;
+            }
+            else
+            {
+                _informedNpcSuccessRateValue = 0;
+            }
+            
         }
 
         public void CharacterGone(bool happyCustomer)
@@ -108,57 +128,65 @@ namespace NPC
 
         private NPCCharacter DetermineNextNpc()
         {
-            if (
-                (_numberOfDedicatedNpcsToSpawn > 0  && _characterSpawnIndex < _numberOfDedicatedNpcsToSpawn && _dedicatedNpcsToSpawn[_characterSpawnIndex].NumberOfRandomNpcAppearancesBeforeAllowedToShow == 0) ||
-                (_numberOfRandomNpcsToSpawn == 0 && _numberOfDedicatedNpcsToSpawn == 1))
+            if(!_challengeMode)
             {
-                var character = _dedicatedNpcsToSpawn[_characterSpawnIndex];
-                _characterSpawnIndex++;
-                _numberOfDedicatedNpcsSpawned++;
-                return character;
-            }
-            else if (_numberOfRandomNpcsSpawned <= 0 || 
-                _numberOfDedicatedNpcsToSpawn <= 0 || 
-                _numberOfDedicatedNpcsSpawned >= _numberOfDedicatedNpcsToSpawn)
-            {
-                _numberOfRandomNpcsSpawned++;
-                return _randomNpcsToSpawn[Random.Range(0, _numberOfRandomNpcsInCollection)];
-            }
-            else
-            {
-                var character = _dedicatedNpcsToSpawn[_characterSpawnIndex];
-                if(_numberOfRandomNpcsSpawned >= character.NumberOfRandomNpcAppearancesBeforeAllowedToShow)
+                if (
+                    (_numberOfDedicatedNpcsToSpawn > 0  && _characterSpawnIndex < _numberOfDedicatedNpcsToSpawn && _dedicatedNpcsToSpawn[_characterSpawnIndex].NumberOfRandomNpcAppearancesBeforeAllowedToShow == 0) ||
+                    (_numberOfRandomNpcsToSpawn == 0 && _numberOfDedicatedNpcsToSpawn == 1))
                 {
-                    switch(character.ConditionForAppearing.Condition)
+                    var character = _dedicatedNpcsToSpawn[_characterSpawnIndex];
+                    _characterSpawnIndex++;
+                    _numberOfDedicatedNpcsSpawned++;
+                    return character;
+                }
+                else if (_numberOfRandomNpcsSpawned <= 0 || 
+                    _numberOfDedicatedNpcsToSpawn <= 0 || 
+                    _numberOfDedicatedNpcsSpawned >= _numberOfDedicatedNpcsToSpawn)
+                {
+                    _numberOfRandomNpcsSpawned++;
+                    return _randomNpcsToSpawn[Random.Range(0, _numberOfRandomNpcsInCollection)];
+                }
+                else
+                {
+                    var character = _dedicatedNpcsToSpawn[_characterSpawnIndex];
+                    if(_numberOfRandomNpcsSpawned >= character.NumberOfRandomNpcAppearancesBeforeAllowedToShow)
                     {
-                        case NPCAppearanceConditionType.None:
+                        switch(character.ConditionForAppearing.Condition)
                         {
-                            _characterSpawnIndex++;
-                            _numberOfDedicatedNpcsSpawned++;
-                            return character;
-                        }
-                        case NPCAppearanceConditionType.ItemsDiscovered:
-                        case NPCAppearanceConditionType.ItemsCrafted:
-                        case NPCAppearanceConditionType.NPCSuccessRate:
-                        {
-                            float valueToCompare = GetComparingValue(character.ConditionForAppearing.Condition);
-                            if(ValueComparision(valueToCompare, character.ConditionForAppearing.ComparisonValue, character.ConditionForAppearing.ComparisonType))
+                            case NPCAppearanceConditionType.None:
                             {
                                 _characterSpawnIndex++;
                                 _numberOfDedicatedNpcsSpawned++;
                                 return character;
                             }
+                            case NPCAppearanceConditionType.ItemsDiscovered:
+                            case NPCAppearanceConditionType.ItemsCrafted:
+                            case NPCAppearanceConditionType.NPCSuccessRate:
+                            {
+                                float valueToCompare = GetComparingValue(character.ConditionForAppearing.Condition);
+                                if(ValueComparision(valueToCompare, character.ConditionForAppearing.ComparisonValue, character.ConditionForAppearing.ComparisonType))
+                                {
+                                    _characterSpawnIndex++;
+                                    _numberOfDedicatedNpcsSpawned++;
+                                    return character;
+                                }
 
-                            //if here we skip the npcs;
-                            _skippedDedicatedNpcs++;
-                            _characterSpawnIndex++;
+                                //if here we skip the npcs;
+                                _skippedDedicatedNpcs++;
+                                _characterSpawnIndex++;
 
-                            break;
+                                break;
+                            }
                         }
                     }
+                    _numberOfRandomNpcsSpawned++;
+                    return _randomNpcsToSpawn[Random.Range(0, _numberOfRandomNpcsInCollection-1)];
                 }
+            }
+            else
+            {
                 _numberOfRandomNpcsSpawned++;
-                return _randomNpcsToSpawn[Random.Range(0, _numberOfRandomNpcsInCollection-1)];
+                return _randomNpcsToSpawn[Random.Range(0, _numberOfRandomNpcsInCollection)];
             }
         }
 
@@ -222,7 +250,8 @@ namespace NPC
 
         private void SpawnCharacter(NPCCharacter character)
         {
-                var npc = Instantiate(_NPCPrefab, _spawnLocationObject.transform.position, Quaternion.identity, transform);
+                var prefab = character.UseExpandedSprite ? _expandedNPCPrefab : _NPCPrefab;
+                var npc = Instantiate(prefab, _spawnLocationObject.transform.position, Quaternion.identity, transform);
                 _currentCharacterController = npc.GetComponent<NPCController>();
                 _currentCharacterController.NarrativeController = _narrativeController;
                 _currentCharacterController.InitialiseWithNPCConfiguration(character, _mainCraftingUI);

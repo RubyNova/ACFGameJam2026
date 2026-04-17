@@ -76,9 +76,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d316586d2ba4a14f989dc27db44db5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPC.NPCSpawner
-  _charactersToSpawn:
-  - {fileID: 11400000, guid: 51e3f0b19a93503459d10a935b649f04, type: 2}
-  - {fileID: 11400000, guid: 543bdc344f06e8344956b6c273273f28, type: 2}
+  _challengeMode: 0
+  _randomNpcsToSpawn: []
+  _dedicatedNpcsToSpawn: []
+  _numberOfRandomNpcsToSpawn: 0
   _spawnLocationObject: {fileID: 5362512788650915854}
   _NPCPrefab: {fileID: 2568928323792695554, guid: 2da2a16e0e339d041bf14f78e006e58d, type: 3}
+  _expandedNPCPrefab: {fileID: 2568928323792695554, guid: 85247a6662fe6264489424c3789475fe, type: 3}
   _narrativeController: {fileID: 0}
+  _mainCraftingUI: {fileID: 0}
