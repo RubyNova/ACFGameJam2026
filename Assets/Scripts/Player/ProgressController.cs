@@ -7,6 +7,7 @@ using TMPro;
 using GameAudio;
 using Utilities;
 using Saveables;
+using System.Linq;
 
 namespace Player
 {
@@ -39,6 +40,17 @@ namespace Player
         private int _scoreMultiplierForCustomerHappiness = 100;
 
         [Header("Required Objects")]
+
+        [SerializeField]
+        private string _bestEndingSceneName;
+
+        [SerializeField]
+        private string _okayEndingSceneName;
+
+        [SerializeField]
+        [Range(0, 100)]
+        private int _customerHappinessPercentageForBestEnding;
+
         [SerializeField]
         private int _levelNumber;
 
@@ -236,6 +248,22 @@ namespace Player
         {
             LevelManager.Instance.LoadScene(sceneName);
         }
+
+        public void ContinueToEndScene()
+        {
+            var run = PreferencesManager.Instance.GetLatestRun();
+            var overallHappiness = run.levelScores.Average(level => level.CustomerHappinessPercentage);
+
+            if(overallHappiness >= _customerHappinessPercentageForBestEnding)
+            {
+                ContinueToNextLevel(_bestEndingSceneName);
+            }
+            else
+            {
+                ContinueToNextLevel(_okayEndingSceneName);
+            }
+        }
+
 
         private void SaveStoryScores(int level, int timeRemaining, int crafted, int discovered, int customerHappinessAmt, float score)
         {

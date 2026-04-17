@@ -996,6 +996,10 @@ PrefabInstance:
       propertyPath: _customerHappinessRateLabel
       value: 
       objectReference: {fileID: 876003883}
+    - target: {fileID: 4308305790724328942, guid: a1bbcf412d644f0c4b95caf699f0cfd9, type: 3}
+      propertyPath: _customerHappinessPercentageForBestEnding
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 4404806690868219539, guid: a1bbcf412d644f0c4b95caf699f0cfd9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.62838
@@ -1098,9 +1102,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1562268719}
     - target: {fileID: 4366244341164122732, guid: e9908ccea2bbccedf92f5ed3ff4fec43, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4366244341164122732, guid: e9908ccea2bbccedf92f5ed3ff4fec43, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1172435611}
+    - target: {fileID: 4366244341164122732, guid: e9908ccea2bbccedf92f5ed3ff4fec43, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ContinueToEndScene
+      objectReference: {fileID: 0}
     - target: {fileID: 4366244341164122732, guid: e9908ccea2bbccedf92f5ed3ff4fec43, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: Day2
