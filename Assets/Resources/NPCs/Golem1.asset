@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Golem1
   m_EditorClassIdentifier: Assembly-CSharp::NPC.NPCCharacter
   _name: Golem
-  _idleSprite: {fileID: 4486930094371141866, guid: ec32c3a14819e6e4899c70d60461b9b5, type: 3}
+  _idleSprite: {fileID: 21300000, guid: eab749ba60d3b1d4b8cd1a190d6bb680, type: 3}
   _desiredItem: {fileID: 11400000, guid: 08917d11410a9644cbc2e7badc151115, type: 2}
   _delayBeforeStartingDialogue: 0
   _numberOfRandomNpcAppearancesBeforeAllowedToShow: 4

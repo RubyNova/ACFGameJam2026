@@ -13,13 +13,15 @@ MonoBehaviour:
   m_Name: GooberEats2
   m_EditorClassIdentifier: Assembly-CSharp::NPC.NPCCharacter
   _name: Goober
-  _idleSprite: {fileID: 4486930094371141866, guid: ec32c3a14819e6e4899c70d60461b9b5, type: 3}
-  _desiredItem: {fileID: 11400000, guid: 08917d11410a9644cbc2e7badc151115, type: 2}
+  _idleSprite: {fileID: -3539811419900543807, guid: 727d56f0c8bd8ef4c96aabf53e2a1067, type: 3}
+  _desiredItem: {fileID: 11400000, guid: 453a2a9892488bb408ffd1101367343b, type: 2}
   _delayBeforeStartingDialogue: 0
   _numberOfRandomNpcAppearancesBeforeAllowedToShow: 3
-  _arrivalSequence: {fileID: 11400000, guid: 93068ddc55d9bd040b1d25080b7a04be, type: 2}
-  _departingSequence: {fileID: 11400000, guid: e1e5a2dc1c8c97a4fa7e980bdfe985f8, type: 2}
-  _negativeSequences: []
+  _arrivalSequence: {fileID: 11400000, guid: ec42981c17d1e6a4fbec327a9826fb7b, type: 2}
+  _departingSequence: {fileID: 11400000, guid: 89344920c005d6e4b97aa111c83122f9, type: 2}
+  _negativeSequences:
+  - {fileID: 11400000, guid: 031971211afc17b4088d51301ba175ec, type: 2}
+  - {fileID: 11400000, guid: 6795e4b89867fec40b48922a2aa10290, type: 2}
   _animator: {fileID: 9100000, guid: d8034e8aaba9ea345928fbab2399e781, type: 2}
   _spawnInAnimation: {fileID: 7400000, guid: dd19788569db4db41a8fac48544b7b97, type: 2}
-  _negativeInteractionsBeforeLeaving: 9999
+  _negativeInteractionsBeforeLeaving: 2
