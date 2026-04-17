@@ -15,6 +15,7 @@ namespace ACHNarrativeDriver
     public class NarrativeUIController : MonoBehaviour
     {
         [SerializeField] private TMP_Text _narrativeTextBox;
+        [SerializeField] private TMP_Text _leftCharacterTextBox;
         [SerializeField] private TMP_Text _characterNameTextBox;
         [SerializeField] private Image _characterRenderer;
         [SerializeField] private Image _characterTwoRenderer;
@@ -220,7 +221,16 @@ namespace ACHNarrativeDriver
             foreach (var character in resolvedText)
             {
                 sb.Append(character);
-                _narrativeTextBox.text = sb.ToString();
+
+                if(targetDialogueInfo.NarratorSpeaking)
+                {
+                    _narrativeTextBox.text = sb.ToString();
+                }
+                else
+                {
+                    if(_leftCharacterTextBox != null)
+                        _leftCharacterTextBox.text = sb.ToString();
+                }
                 yield return _rollingCharacterTime;
             }
 
@@ -240,6 +250,8 @@ namespace ACHNarrativeDriver
 
             _dialoguePanel.SetActive(true);
             _narrativeTextBox.text = string.Empty;
+            if(_leftCharacterTextBox != null)
+                _leftCharacterTextBox.text = string.Empty;
             if(_characterNameTextBox != null)
                 _characterNameTextBox.text = string.Empty;
             _currentNarrativeSequence = targetSequence;

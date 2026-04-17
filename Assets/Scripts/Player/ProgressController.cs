@@ -264,7 +264,6 @@ namespace Player
             }
         }
 
-
         private void SaveStoryScores(int level, int timeRemaining, int crafted, int discovered, int customerHappinessAmt, float score)
         {
             LevelScore levelData = new()
