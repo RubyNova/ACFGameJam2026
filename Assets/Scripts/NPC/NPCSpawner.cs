@@ -109,7 +109,7 @@ namespace NPC
         private NPCCharacter DetermineNextNpc()
         {
             if (
-                (_numberOfDedicatedNpcsToSpawn > 0 && _dedicatedNpcsToSpawn[0].NumberOfRandomNpcAppearancesBeforeAllowedToShow == 0) ||
+                (_numberOfDedicatedNpcsToSpawn > 0  && _characterSpawnIndex < _numberOfDedicatedNpcsToSpawn && _dedicatedNpcsToSpawn[_characterSpawnIndex].NumberOfRandomNpcAppearancesBeforeAllowedToShow == 0) ||
                 (_numberOfRandomNpcsToSpawn == 0 && _numberOfDedicatedNpcsToSpawn == 1))
             {
                 var character = _dedicatedNpcsToSpawn[_characterSpawnIndex];

@@ -110,6 +110,8 @@ namespace Player
         // Update is called once per frame
         void Update()
         {
+            _itemsDelivered = _spawner.ItemsDelivered;
+            _itemsDeliveredSuccessfully = _spawner.ItemsDeliveredSuccessfully;
             if(_paused)
             {
                 if(!_clock.IsPaused)
@@ -135,8 +137,6 @@ namespace Player
                 }
             }
 
-            _itemsDelivered = _spawner.ItemsDelivered;
-            _itemsDeliveredSuccessfully = _spawner.ItemsDeliveredSuccessfully;
         }
 
         void OnDestroy()
