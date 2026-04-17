@@ -16,7 +16,92 @@ MonoBehaviour:
   _nextSequence: {fileID: 0}
   _musicFiles: []
   _soundEffectFiles: []
-  _characterDialoguePairs: []
+  _characterDialoguePairs:
+  - _character: {fileID: 11400000, guid: bb973c0748022e4479b0b0bdec1dd006, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: So, the end is in sight.
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 1
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: bb973c0748022e4479b0b0bdec1dd006, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: "Make a few more potions and you\u2019ll have your name back."
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 1
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: bb973c0748022e4479b0b0bdec1dd006, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: Seems simple enough.
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 1
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: bb973c0748022e4479b0b0bdec1dd006, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: "Though\u2026 you are going to miss this."
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 1
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: bb973c0748022e4479b0b0bdec1dd006, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: "And you\u2019ve met some pretty cool people."
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 1
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: bb973c0748022e4479b0b0bdec1dd006, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: "\u2026maybe you can keep this going."
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 1
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: bb973c0748022e4479b0b0bdec1dd006, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: "\u2026maybe."
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 1
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: bb973c0748022e4479b0b0bdec1dd006, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: "For now though\u2026 you need sleep."
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 1
+    _delayBeforeContinuingInSeconds: 0
   _choices: []
   _isDepartingSequence: 0
-  <SourceScript>k__BackingField: 
+  <SourceScript>k__BackingField: "Narration: So, the end is in sight.\r\n\r\nNarration:
+    Make a few more potions and you\u2019ll have your name back.\r\n\r\nNarration:
+    Seems simple enough.\r\n\r\nNarration: Though\u2026 you are going to miss this.\r\n\r\nNarration:
+    And you\u2019ve met some pretty cool people.\r\n\r\nNarration: \u2026maybe you
+    can keep this going.\r\n\r\nNarration: \u2026maybe.\r\n\r\nNarration: For now
+    though\u2026 you need sleep.\r\n"

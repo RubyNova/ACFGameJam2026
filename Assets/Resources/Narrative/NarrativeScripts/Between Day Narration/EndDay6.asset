@@ -16,7 +16,80 @@ MonoBehaviour:
   _nextSequence: {fileID: 0}
   _musicFiles: []
   _soundEffectFiles: []
-  _characterDialoguePairs: []
+  _characterDialoguePairs:
+  - _character: {fileID: 11400000, guid: bb973c0748022e4479b0b0bdec1dd006, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: Wow.
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 1
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: bb973c0748022e4479b0b0bdec1dd006, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: "You\u2019re almost there."
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 1
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: bb973c0748022e4479b0b0bdec1dd006, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: Just one more day.
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 1
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: bb973c0748022e4479b0b0bdec1dd006, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: "You\u2019ll get your name back."
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 1
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: bb973c0748022e4479b0b0bdec1dd006, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: "And then\u2026"
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 1
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: bb973c0748022e4479b0b0bdec1dd006, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: "Who knows what will happen\u2026"
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 1
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: bb973c0748022e4479b0b0bdec1dd006, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: "Just one more sleep away\u2026"
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 1
+    _delayBeforeContinuingInSeconds: 0
   _choices: []
   _isDepartingSequence: 0
-  <SourceScript>k__BackingField: 
+  <SourceScript>k__BackingField: "Narration: Wow.\r\n\r\nNarration: You\u2019re almost
+    there.\r\n\r\nNarration: Just one more day.\r\n\r\nNarration: You\u2019ll get
+    your name back.\r\n\r\nNarration: And then\u2026\r\n\r\nNarration: Who knows
+    what will happen\u2026\r\n\r\nNarration: Just one more sleep away\u2026\r\n"
