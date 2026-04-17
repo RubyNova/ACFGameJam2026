@@ -5,6 +5,8 @@ using UnityEngine;
 using NPC;
 using TMPro;
 using GameAudio;
+using Utilities;
+using Saveables;
 
 namespace Player
 {
@@ -37,6 +39,9 @@ namespace Player
         private int _scoreMultiplierForCustomerHappiness = 100;
 
         [Header("Required Objects")]
+        [SerializeField]
+        private int _levelNumber;
+
         [SerializeField]
         private GameClock _clock;
 
@@ -193,19 +198,25 @@ namespace Player
             //Change Audio
             SoundManager.Instance.PlayBGM(true);
 
-            _timeRemainingText.text = $"{(int)_timeRemainingInSeconds}s";
+            if(!_challengeMode)
+            {
+                _timeRemainingText.text = $"{(int)_timeRemainingInSeconds}s";
+            }
+
             _itemsCraftedText.text = $"{_itemsCrafted}";
             _itemsDiscoveredText.text = $"{_itemsDiscovered}";
+
+            int customerHappinessAmt = (int)((_itemsDeliveredSuccessfully / _itemsDelivered)*100);
+
+            var score = GenerateScore();
             if(_perfMode)
             {
-                var score = GenerateScore();
-
                 _customerHappinessRateLabel.SetActive(true);
                 _customerHappinessRateText.gameObject.SetActive(true);
                 _scoreLabel.SetActive(true);
                 _scoreText.gameObject.SetActive(true);
 
-                _customerHappinessRateText.text = $"{(int)((_itemsDeliveredSuccessfully / _itemsDelivered)*100)} %";
+                _customerHappinessRateText.text = $"{customerHappinessAmt} %";
                 _scoreText.text = $"{score}";
             }
             else
@@ -216,12 +227,32 @@ namespace Player
                 _scoreText.gameObject.SetActive(false);
             }
             
+            SaveStoryScores(_levelNumber, (int)_timeRemainingInSeconds, _itemsCrafted, _itemsDiscovered, customerHappinessAmt, score);
+
             _levelOverObject.SetActive(true);
         }
 
         public void ContinueToNextLevel(string sceneName)
         {
             LevelManager.Instance.LoadScene(sceneName);
+        }
+
+        private void SaveStoryScores(int level, int timeRemaining, int crafted, int discovered, int customerHappinessAmt, float score)
+        {
+            LevelScore levelData = new()
+            {
+              Level = level,
+              TimeRemaining = timeRemaining,
+              ItemsCrafted = _itemsCrafted,
+              ItemsDiscovered = _itemsDiscovered,
+              CustomerHappinessPercentage = customerHappinessAmt,
+              TotalScore = score  
+            };
+
+            var run = PreferencesManager.Instance.GetLatestRun();
+            run.levelScores.Add(levelData);
+
+            PreferencesManager.Instance.SaveScores(run);
         }
     }
 }

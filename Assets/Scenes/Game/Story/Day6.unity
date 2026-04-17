@@ -961,6 +961,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 321988955}
     - target: {fileID: 4308305790724328942, guid: a1bbcf412d644f0c4b95caf699f0cfd9, type: 3}
+      propertyPath: _levelNumber
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4308305790724328942, guid: a1bbcf412d644f0c4b95caf699f0cfd9, type: 3}
       propertyPath: _recipeBookUI
       value: 
       objectReference: {fileID: 1348653486}
