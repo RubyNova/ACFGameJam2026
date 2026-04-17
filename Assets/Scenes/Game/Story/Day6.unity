@@ -1526,6 +1526,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 221377666136222237, guid: 54459ebf815f59179b908ae1d468ab67, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 666178742159678723, guid: 54459ebf815f59179b908ae1d468ab67, type: 3}
       propertyPath: m_Name
       value: ItemCabinet
@@ -1536,7 +1540,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1771752921452161759, guid: 54459ebf815f59179b908ae1d468ab67, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5820911823858527078, guid: 54459ebf815f59179b908ae1d468ab67, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6898193428707174304, guid: 54459ebf815f59179b908ae1d468ab67, type: 3}
       propertyPath: m_LocalPosition.x
