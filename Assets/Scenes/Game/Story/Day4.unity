@@ -726,6 +726,10 @@ PrefabInstance:
       propertyPath: _skyrollTransform
       value: 
       objectReference: {fileID: 1160050735}
+    - target: {fileID: 5977274093058590392, guid: 3fbc80cf39ce6434b8d04671d925c9d3, type: 3}
+      propertyPath: _secondsBeforeLevelIsOver
+      value: 180
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1136,7 +1140,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 738546212711536671, guid: cd7cc9733cbda3448a383c515fe4d345, type: 3}
       propertyPath: _randomNpcsToSpawn.Array.size
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 738546212711536671, guid: cd7cc9733cbda3448a383c515fe4d345, type: 3}
       propertyPath: _dedicatedNpcsToSpawn.Array.size
@@ -1145,11 +1149,11 @@ PrefabInstance:
     - target: {fileID: 738546212711536671, guid: cd7cc9733cbda3448a383c515fe4d345, type: 3}
       propertyPath: '_randomNpcsToSpawn.Array.data[0]'
       value: 
-      objectReference: {fileID: 11400000, guid: 51e3f0b19a93503459d10a935b649f04, type: 2}
+      objectReference: {fileID: 11400000, guid: a9b32636c2f0b1f4caa536e6cdac0ea5, type: 2}
     - target: {fileID: 738546212711536671, guid: cd7cc9733cbda3448a383c515fe4d345, type: 3}
       propertyPath: '_randomNpcsToSpawn.Array.data[1]'
       value: 
-      objectReference: {fileID: 11400000, guid: 543bdc344f06e8344956b6c273273f28, type: 2}
+      objectReference: {fileID: 11400000, guid: 4c8412dfabc28fc44a9df480ea840a31, type: 2}
     - target: {fileID: 738546212711536671, guid: cd7cc9733cbda3448a383c515fe4d345, type: 3}
       propertyPath: '_dedicatedNpcsToSpawn.Array.data[0]'
       value: 
@@ -1522,6 +1526,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 221377666136222237, guid: 54459ebf815f59179b908ae1d468ab67, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 666178742159678723, guid: 54459ebf815f59179b908ae1d468ab67, type: 3}
       propertyPath: m_Name
       value: ItemCabinet
@@ -1532,7 +1540,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1771752921452161759, guid: 54459ebf815f59179b908ae1d468ab67, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5820911823858527078, guid: 54459ebf815f59179b908ae1d468ab67, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6898193428707174304, guid: 54459ebf815f59179b908ae1d468ab67, type: 3}
       propertyPath: m_LocalPosition.x

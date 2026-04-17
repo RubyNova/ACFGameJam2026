@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f8908c837a045e47ac98c38fa85f59d, type: 3}
+  m_Name: Sappeh-AttackHotishSauce
+  m_EditorClassIdentifier: Assembly-CSharp::ACHNarrativeDriver.ScriptableObjects.NarrativeSequence
+  _backgroundSprite: {fileID: 0}
+  _nextSequence: {fileID: 0}
+  _musicFiles: []
+  _soundEffectFiles: []
+  _characterDialoguePairs:
+  - _character: {fileID: 11400000, guid: 962a28b77181db848aa23b24e94162d3, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: 'Hey... '
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 4
+  - _character: {fileID: 11400000, guid: 962a28b77181db848aa23b24e94162d3, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: 'I need to feel my insides burn... '
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 4
+  - _character: {fileID: 11400000, guid: 962a28b77181db848aa23b24e94162d3, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: '...please.... '
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 3
+  - _character: {fileID: 11400000, guid: 962a28b77181db848aa23b24e94162d3, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: '...it will make me stronger.... '
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 3
+  _choices: []
+  _isDepartingSequence: 0
+  <SourceScript>k__BackingField: 'Sappeh: Hey... /d4
+
+
+    Sappeh: I need to touch
+    some sand... /d4
+
+
+    Sappeh: ...please.... /d3'
