@@ -85,3 +85,4 @@ MonoBehaviour:
   _expandedNPCPrefab: {fileID: 2568928323792695554, guid: 85247a6662fe6264489424c3789475fe, type: 3}
   _narrativeController: {fileID: 0}
   _mainCraftingUI: {fileID: 0}
+  _customerWalkingAudio: {fileID: 8300000, guid: 8ce43ae25f72f5f4392af225b8d58947, type: 3}

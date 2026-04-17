@@ -1,5 +1,6 @@
 using System.Linq;
 using ACHNarrativeDriver;
+using GameAudio;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -34,6 +35,9 @@ namespace NPC
 
         [SerializeField]
         private GameObject _mainCraftingUI;
+
+        [SerializeField]
+        private AudioClip _customerWalkingAudio;
 
         private bool _characterSpawned = false;
         private bool _noMoreNpcs = false;
@@ -258,6 +262,7 @@ namespace NPC
                 _currentCharacterController.CharacterGoneEvent.AddListener(CharacterGone);
 
                 _characterSpawned = true;
+                SoundManager.Instance.PlayAudioClip(_customerWalkingAudio);
             
         }
     }
