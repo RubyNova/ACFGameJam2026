@@ -142,6 +142,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f860a14e578434447bfd7efe7d06c345, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SoundManager
-  _bgmVolume: 0.5
-  _sfxVolume: 1
-  _bgm: {fileID: 8300000, guid: 5878e5ce84de54644b0c98c3b0d176a7, type: 3}
+  _audioSource2: {fileID: 0}
+  _startButtonAudio: {fileID: 8300000, guid: 2e3d5c4764460974893ec16e92bbe630, type: 3}

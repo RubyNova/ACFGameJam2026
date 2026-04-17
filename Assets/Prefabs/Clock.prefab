@@ -51,6 +51,8 @@ MonoBehaviour:
   _minuteHandTransform: {fileID: 3556565565104976207}
   _hourHandTransform: {fileID: 2443650263365147537}
   _finalXPositionForNightSky: -30.9
+  _timeUpSound: {fileID: 8300000, guid: 28622cd167eff364d985791bb6424fa3, type: 3}
+  _startClockSound: {fileID: 8300000, guid: 38a05bf9e2acc434781fcaa51b05c854, type: 3}
   _skyrollTransform: {fileID: 0}
   _timerStarted: 0
   TickEvent:

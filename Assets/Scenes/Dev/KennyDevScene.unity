@@ -1038,6 +1038,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5977274093058590392, guid: 3fbc80cf39ce6434b8d04671d925c9d3, type: 3}
+      propertyPath: _resetClock
+      value: 
+      objectReference: {fileID: 8300000, guid: 38a05bf9e2acc434781fcaa51b05c854, type: 3}
+    - target: {fileID: 5977274093058590392, guid: 3fbc80cf39ce6434b8d04671d925c9d3, type: 3}
       propertyPath: _timeUpSound
       value: 
       objectReference: {fileID: 8300000, guid: 28622cd167eff364d985791bb6424fa3, type: 3}

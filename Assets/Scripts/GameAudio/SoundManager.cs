@@ -9,11 +9,18 @@ namespace GameAudio
         private SoundManagerConfig _config;
 
         private AudioSource _audioSource;
+
         [SerializeField]
         private AudioSource _audioSource2;
 
+        [SerializeField]
+        private AudioClip _startButtonAudio;  //  Didnt want to have to put this in two places (main menu and pause menu)
+
+        public AudioSource SfxAudioSource => _audioSource2;
+
         void Start()
         {
+            LoadVolumeData();
             if (_audioSource != null && _config.Bgm != null)
             {
                 PlayBGM();
@@ -54,11 +61,15 @@ namespace GameAudio
             _config.AudioMixer.SetFloat("SfxVolume", Mathf.Log10(tempHolder) * 20);
         }
 
+        public void PlayStartAudio()
+        {
+            PlayAudioClip(_startButtonAudio);
+        }
+
         protected override void OnInit()
         {
             _audioSource = GetComponent<AudioSource>();
             _config = Resources.Load<SoundManagerConfig>("GameAudioConfigData/DefaultSoundConfig");
-            LoadVolumeData();
         }
 
     }
