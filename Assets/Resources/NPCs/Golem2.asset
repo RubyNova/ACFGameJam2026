@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c5a9b9afdf8e59b4082e0231e993318a, type: 3}
-  m_Name: Plucky1
+  m_Name: Golem2
   m_EditorClassIdentifier: Assembly-CSharp::NPC.NPCCharacter
-  _name: Plucky
+  _name: Golem
   _idleSprite: {fileID: 4486930094371141866, guid: ec32c3a14819e6e4899c70d60461b9b5, type: 3}
   _desiredItem: {fileID: 11400000, guid: 08917d11410a9644cbc2e7badc151115, type: 2}
   _delayBeforeStartingDialogue: 0
-  _numberOfRandomNpcAppearancesBeforeAllowedToShow: 0
-  _arrivalSequence: {fileID: 11400000, guid: 93068ddc55d9bd040b1d25080b7a04be, type: 2}
-  _departingSequence: {fileID: 11400000, guid: e1e5a2dc1c8c97a4fa7e980bdfe985f8, type: 2}
+  _numberOfRandomNpcAppearancesBeforeAllowedToShow: 4
+  _arrivalSequence: {fileID: 11400000, guid: 3352f85e098de53419169badf28e49ed, type: 2}
+  _departingSequence: {fileID: 11400000, guid: 510cb55d6bdc7df46bbab7683bb38d2f, type: 2}
   _negativeSequences: []
   _animator: {fileID: 9100000, guid: d8034e8aaba9ea345928fbab2399e781, type: 2}
   _spawnInAnimation: {fileID: 7400000, guid: dd19788569db4db41a8fac48544b7b97, type: 2}

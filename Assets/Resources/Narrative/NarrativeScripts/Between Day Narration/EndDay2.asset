@@ -25,7 +25,7 @@ MonoBehaviour:
     _poseIndexTwo: 0
     _text: "\u2026that\u2019s the day."
     _leftCharacterTalking: 1
-    _narratorSpeaking: 0
+    _narratorSpeaking: 1
     _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: bb973c0748022e4479b0b0bdec1dd006, type: 2}
     _characterTwo: {fileID: 0}
@@ -35,7 +35,7 @@ MonoBehaviour:
     _poseIndexTwo: 0
     _text: "\u2026it was nice seeing Plucky again."
     _leftCharacterTalking: 1
-    _narratorSpeaking: 0
+    _narratorSpeaking: 1
     _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: bb973c0748022e4479b0b0bdec1dd006, type: 2}
     _characterTwo: {fileID: 0}
@@ -45,7 +45,7 @@ MonoBehaviour:
     _poseIndexTwo: 0
     _text: People are coming here more and more.
     _leftCharacterTalking: 1
-    _narratorSpeaking: 0
+    _narratorSpeaking: 1
     _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: bb973c0748022e4479b0b0bdec1dd006, type: 2}
     _characterTwo: {fileID: 0}
@@ -55,7 +55,7 @@ MonoBehaviour:
     _poseIndexTwo: 0
     _text: Word is spreading about how good this place is.
     _leftCharacterTalking: 1
-    _narratorSpeaking: 0
+    _narratorSpeaking: 1
     _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: bb973c0748022e4479b0b0bdec1dd006, type: 2}
     _characterTwo: {fileID: 0}
@@ -65,7 +65,7 @@ MonoBehaviour:
     _poseIndexTwo: 0
     _text: That might mean that seeing thoughtful customers like him might be harder.
     _leftCharacterTalking: 1
-    _narratorSpeaking: 0
+    _narratorSpeaking: 1
     _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: bb973c0748022e4479b0b0bdec1dd006, type: 2}
     _characterTwo: {fileID: 0}
@@ -76,7 +76,7 @@ MonoBehaviour:
     _text: You might have to actually try to work through the queue to see some friendlier
       faces.
     _leftCharacterTalking: 1
-    _narratorSpeaking: 0
+    _narratorSpeaking: 1
     _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: bb973c0748022e4479b0b0bdec1dd006, type: 2}
     _characterTwo: {fileID: 0}
@@ -86,7 +86,7 @@ MonoBehaviour:
     _poseIndexTwo: 0
     _text: Not to say faces have been UNFRIENDLY. Mostly.
     _leftCharacterTalking: 1
-    _narratorSpeaking: 0
+    _narratorSpeaking: 1
     _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: bb973c0748022e4479b0b0bdec1dd006, type: 2}
     _characterTwo: {fileID: 0}
@@ -96,7 +96,7 @@ MonoBehaviour:
     _poseIndexTwo: 0
     _text: At least making things for everyone has been somewhat calming.
     _leftCharacterTalking: 1
-    _narratorSpeaking: 0
+    _narratorSpeaking: 1
     _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: bb973c0748022e4479b0b0bdec1dd006, type: 2}
     _characterTwo: {fileID: 0}
@@ -106,7 +106,7 @@ MonoBehaviour:
     _poseIndexTwo: 0
     _text: "Time to rest up\u2026"
     _leftCharacterTalking: 1
-    _narratorSpeaking: 0
+    _narratorSpeaking: 1
     _delayBeforeContinuingInSeconds: 0
   _choices: []
   _isDepartingSequence: 0

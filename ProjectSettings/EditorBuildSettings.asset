@@ -18,11 +18,20 @@ EditorBuildSettings:
     path: Assets/Scenes/Game/Story/Day2.unity
     guid: cb85a858afd6405a88eb77e85ae90720
   - enabled: 1
+    path: Assets/Scenes/Game/Story/BetweenDays/BetweenDay2.unity
+    guid: d850d782e0b04b447ac261b59a0a6711
+  - enabled: 1
     path: Assets/Scenes/Game/Story/Day3.unity
     guid: 167198485f1cbe47e9b8c604b99def55
   - enabled: 1
+    path: Assets/Scenes/Game/Story/BetweenDays/BetweenDay3.unity
+    guid: a42294a2ae29a2f4e9b40cd06790a7ba
+  - enabled: 1
     path: Assets/Scenes/Game/Story/Day4.unity
     guid: f04985fbd75a387b3b9754f434f7c0b0
+  - enabled: 1
+    path: Assets/Scenes/Game/Story/BetweenDays/BetweenDay4.unity
+    guid: 9d84a49480ab53e4095e7bc9d1791478
   - enabled: 1
     path: Assets/Scenes/Game/Story/Day5.unity
     guid: a6740d1cc2dd3f37b9a568e548ca44de

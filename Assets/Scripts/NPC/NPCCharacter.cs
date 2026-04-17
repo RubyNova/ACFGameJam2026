@@ -32,6 +32,9 @@ namespace NPC
         private float _delayBeforeStartingDialogue;
 
         [SerializeField]
+        private int _numberOfRandomNpcAppearancesBeforeAllowedToShow = 4;
+
+        [SerializeField]
         private NarrativeSequence _arrivalSequence;
 
         [SerializeField]
@@ -66,6 +69,7 @@ namespace NPC
         public ItemConfig DesiredItem => _desiredItem;
         public NPCAppearanceCondition ConditionForAppearing => _conditionForAppearing;
         public int NegativeInteractionsBeforeLeavingUnhappy => _negativeInteractionsBeforeLeaving;
+        public int NumberOfRandomNpcAppearancesBeforeAllowedToShow => _numberOfRandomNpcAppearancesBeforeAllowedToShow;
     }
 
 }

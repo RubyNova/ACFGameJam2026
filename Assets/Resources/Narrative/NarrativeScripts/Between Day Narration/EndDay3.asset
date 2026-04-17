@@ -25,7 +25,7 @@ MonoBehaviour:
     _poseIndexTwo: 0
     _text: Welp. Another day another dollar.
     _leftCharacterTalking: 1
-    _narratorSpeaking: 0
+    _narratorSpeaking: 1
     _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: bb973c0748022e4479b0b0bdec1dd006, type: 2}
     _characterTwo: {fileID: 0}
@@ -35,7 +35,7 @@ MonoBehaviour:
     _poseIndexTwo: 0
     _text: "Maybe you\u2019re actually cut out for this."
     _leftCharacterTalking: 1
-    _narratorSpeaking: 0
+    _narratorSpeaking: 1
     _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: bb973c0748022e4479b0b0bdec1dd006, type: 2}
     _characterTwo: {fileID: 0}
@@ -45,7 +45,7 @@ MonoBehaviour:
     _poseIndexTwo: 0
     _text: "You didn\u2019t really like socializing before."
     _leftCharacterTalking: 1
-    _narratorSpeaking: 0
+    _narratorSpeaking: 1
     _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: bb973c0748022e4479b0b0bdec1dd006, type: 2}
     _characterTwo: {fileID: 0}
@@ -55,7 +55,7 @@ MonoBehaviour:
     _poseIndexTwo: 0
     _text: "But honestly\u2026 this isn\u2019t too bad."
     _leftCharacterTalking: 1
-    _narratorSpeaking: 0
+    _narratorSpeaking: 1
     _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: bb973c0748022e4479b0b0bdec1dd006, type: 2}
     _characterTwo: {fileID: 0}
@@ -66,7 +66,7 @@ MonoBehaviour:
     _text: "Its a shame that once you have your name back you\u2019re not really
       going to have enough money\u2026 or drive\u2026 to keep this going."
     _leftCharacterTalking: 1
-    _narratorSpeaking: 0
+    _narratorSpeaking: 1
     _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: bb973c0748022e4479b0b0bdec1dd006, type: 2}
     _characterTwo: {fileID: 0}
@@ -77,7 +77,7 @@ MonoBehaviour:
     _text: "After all\u2026 this kinda job seems like it would burn you out\u2026
       right?"
     _leftCharacterTalking: 1
-    _narratorSpeaking: 0
+    _narratorSpeaking: 1
     _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: bb973c0748022e4479b0b0bdec1dd006, type: 2}
     _characterTwo: {fileID: 0}
@@ -87,7 +87,7 @@ MonoBehaviour:
     _poseIndexTwo: 0
     _text: "You don\u2019t really know."
     _leftCharacterTalking: 1
-    _narratorSpeaking: 0
+    _narratorSpeaking: 1
     _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: bb973c0748022e4479b0b0bdec1dd006, type: 2}
     _characterTwo: {fileID: 0}
@@ -97,7 +97,7 @@ MonoBehaviour:
     _poseIndexTwo: 0
     _text: "Maybe sleeping on it will help\u2026"
     _leftCharacterTalking: 1
-    _narratorSpeaking: 0
+    _narratorSpeaking: 1
     _delayBeforeContinuingInSeconds: 0
   _choices: []
   _isDepartingSequence: 0
