@@ -28,7 +28,18 @@ MonoBehaviour:
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
     _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: b10337f2996f8504d927d329f0cc571b, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: I know you can make that by mixing Limesli with a vial of Cespi!
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 0
   _choices: []
   _isDepartingSequence: 0
   <SourceScript>k__BackingField: "IGM: Hello! I\u2019m looking for something that
-    can put a pep in my step and speed me up real simple!"
+    can put a pep in my step and speed me up real simple!\n\nIGM: I know you can
+    make that by mixing Limesli with a vial of Cespi!"

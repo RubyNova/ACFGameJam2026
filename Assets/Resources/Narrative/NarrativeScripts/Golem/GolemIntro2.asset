@@ -103,7 +103,7 @@ MonoBehaviour:
     _hasSecondCharacterPoseIndex: 0
     _poseIndex: 0
     _poseIndexTwo: 0
-    _text: (The ointment relieves chronic pain.)
+    _text: (The ointment strengthens whatever is rubbed on it.)
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
     _delayBeforeContinuingInSeconds: 0
@@ -125,5 +125,6 @@ MonoBehaviour:
     (Unfortunately, it is quite expensive in most places.)\r\n\r\nCrystalpher: (And
     its hard to find work when you can\u2019t speak.)\r\n\r\nCrystalpher: (Or you\u2019re
     made of crystals.)\r\n\r\nCrystalpher: (In any case. The elixer is much like
-    an ointment.)\n\nCrystalpher: (The ointment relieves chronic pain.)\r\n\r\nCrystalpher:
-    (I would greatly appreciate if you could make this for me.)\r\n"
+    an ointment.)\n\nCrystalpher: (The ointment strengthens whatever is rubbed on
+    it.)\r\n\r\nCrystalpher: (I would greatly appreciate if you could make this for
+    me.)\r\n"

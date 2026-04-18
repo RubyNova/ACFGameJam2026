@@ -19,4 +19,9 @@ MonoBehaviour:
   _characterDialoguePairs: []
   _choices: []
   _isDepartingSequence: 0
-  <SourceScript>k__BackingField: 
+  <SourceScript>k__BackingField: 'IGM: Hey so, someone in my village got hurt pretty
+    badly. We cast a petrify spell on them to stop them from bleeding.
+
+
+    IGM:
+    We need something can heal him and also unpetrify him. Can you help us?'

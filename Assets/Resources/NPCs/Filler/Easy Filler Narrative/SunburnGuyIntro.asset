@@ -28,7 +28,18 @@ MonoBehaviour:
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
     _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: b10337f2996f8504d927d329f0cc571b, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: I HEAR LIMESLI SLIME CAN BE GOOD FOR IT BUT I NEED A POTION PLEASE.
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 0
   _choices: []
   _isDepartingSequence: 0
   <SourceScript>k__BackingField: "IGM: I\u2019VE GOT SUNBURNS ALL OVER ME I NEED
-    SOMETHING THAT HEALS SUNBURNS PLEASE."
+    SOMETHING THAT HEALS SUNBURNS PLEASE.\n\nIGM: I HEAR LIMESLI SLIME CAN BE GOOD
+    FOR IT BUT I NEED A POTION PLEASE."

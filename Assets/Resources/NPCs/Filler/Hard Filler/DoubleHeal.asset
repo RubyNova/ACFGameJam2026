@@ -12,15 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5a9b9afdf8e59b4082e0231e993318a, type: 3}
   m_Name: DoubleHeal
   m_EditorClassIdentifier: Assembly-CSharp::NPC.NPCCharacter
-  _name: 
+  _name: Jerimiah
   _idleSprite: {fileID: 0}
-  _desiredItem: {fileID: 0}
+  _desiredItem: {fileID: 11400000, guid: 7cdece7354ac33b44b9d11c7d31306ff, type: 2}
   _useExpandedSprite: 0
   _delayBeforeStartingDialogue: 0
   _numberOfRandomNpcAppearancesBeforeAllowedToShow: 4
-  _arrivalSequence: {fileID: 0}
-  _departingSequence: {fileID: 0}
+  _arrivalSequence: {fileID: 11400000, guid: 79269ae90739fc9468173c07ac257627, type: 2}
+  _departingSequence: {fileID: 11400000, guid: 9a5585dcec10c264e97d377c19f04de0, type: 2}
   _negativeSequences: []
-  _animator: {fileID: 0}
-  _spawnInAnimation: {fileID: 0}
+  _animator: {fileID: 9100000, guid: d8034e8aaba9ea345928fbab2399e781, type: 2}
+  _spawnInAnimation: {fileID: 7400000, guid: dd19788569db4db41a8fac48544b7b97, type: 2}
   _negativeInteractionsBeforeLeaving: 5

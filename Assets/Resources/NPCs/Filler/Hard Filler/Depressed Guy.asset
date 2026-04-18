@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NPC.NPCCharacter
   _name: 
   _idleSprite: {fileID: 0}
-  _desiredItem: {fileID: 0}
+  _desiredItem: {fileID: 11400000, guid: 4366449575cd9df44954be6590229ebe, type: 2}
   _useExpandedSprite: 0
   _delayBeforeStartingDialogue: 0
   _numberOfRandomNpcAppearancesBeforeAllowedToShow: 4
-  _arrivalSequence: {fileID: 0}
-  _departingSequence: {fileID: 0}
+  _arrivalSequence: {fileID: 11400000, guid: 40536f7e901aaa04697b478f61e44234, type: 2}
+  _departingSequence: {fileID: 11400000, guid: 35f1f8c1b4965a84ba09cafe7ada485f, type: 2}
   _negativeSequences: []
-  _animator: {fileID: 0}
+  _animator: {fileID: 9100000, guid: d8034e8aaba9ea345928fbab2399e781, type: 2}
   _spawnInAnimation: {fileID: 0}
   _negativeInteractionsBeforeLeaving: 5

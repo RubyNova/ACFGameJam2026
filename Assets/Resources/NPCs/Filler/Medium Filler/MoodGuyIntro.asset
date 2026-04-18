@@ -39,8 +39,20 @@ MonoBehaviour:
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
     _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: b10337f2996f8504d927d329f0cc571b, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: I thinkkkkkkkkk mixing a magic thing with a mood thing makes something
+      like that.......
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 0
   _choices: []
   _isDepartingSequence: 0
   <SourceScript>k__BackingField: "IGM: Heyyyyy guyyyy. Looking for something to really
     get me feeling the vibes of the people around me.\n\r\nIGM: You getting what
-    I\u2019m laying down? Cuz I wanna feel what other people are laying down.\r\n"
+    I\u2019m laying down? Cuz I wanna feel what other people are laying down.\n\nIGM:
+    I thinkkkkkkkkk mixing a magic thing with a mood thing makes something like that.......\r\n"

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bf8d2c7cf5fef54cbef8a0d00ca2471, type: 3}
   m_Name: Revive
   m_EditorClassIdentifier: Assembly-CSharp::CraftingAPI.ItemConfig
-  _itemName: Heel'm'leeh Potion
+  _itemName: Heelaili Potion
   _shortDescription: Revive potion
   _itemIconBackground: {fileID: 21300000, guid: ea14edabe08c6eb43bf58110bd97db44, type: 3}
   _itemIconMiddle: {fileID: 21300000, guid: ae46d027c9b726b46beb0421ad800b15, type: 3}
@@ -23,7 +23,7 @@ MonoBehaviour:
   _recipeBookEntryDescription: "Can revive downed party members and leaves them with
     a pleasant feeling as if woken from a dream. Because this game isn\u2019t voice
     acted, no one knows if the end is pronounced \u201Ca live\u201D or \u201Calive\u201D.
-    Made from mixing Heel'm with itself."
+    Made from mixing Heel'm and Laeli."
   _recipe:
   - {fileID: 11400000, guid: 08917d11410a9644cbc2e7badc151115, type: 2}
   - {fileID: 11400000, guid: 08917d11410a9644cbc2e7badc151115, type: 2}

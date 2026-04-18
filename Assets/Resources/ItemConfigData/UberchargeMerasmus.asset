@@ -22,7 +22,7 @@ MonoBehaviour:
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: 'Allows for keen magical focus, allowing you to zero
     in on magical sources and letting you seek them out. Good for those looking to
-    find new sources of power. Made from mixing Regeneric and Laliluleilou. '
+    find new sources of power. Made from mixing Regenric and Laeli. '
   _recipe:
   - {fileID: 11400000, guid: b68cb190151fc0841822f08e22aa4c69, type: 2}
-  - {fileID: 11400000, guid: 7f2ba145cc235a54faa3ced84fc6da1a, type: 2}
+  - {fileID: 11400000, guid: dc209f38b56491045a54d4c52815bdce, type: 2}

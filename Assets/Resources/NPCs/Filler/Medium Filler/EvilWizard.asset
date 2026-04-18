@@ -18,8 +18,8 @@ MonoBehaviour:
   _useExpandedSprite: 0
   _delayBeforeStartingDialogue: 0
   _numberOfRandomNpcAppearancesBeforeAllowedToShow: 4
-  _arrivalSequence: {fileID: 0}
-  _departingSequence: {fileID: 0}
+  _arrivalSequence: {fileID: 11400000, guid: 1af1033f18a2cb5449803b357b286e1d, type: 2}
+  _departingSequence: {fileID: 11400000, guid: 0b6d01d7c78463641b7486d98972c32e, type: 2}
   _negativeSequences: []
   _animator: {fileID: 9100000, guid: d8034e8aaba9ea345928fbab2399e781, type: 2}
   _spawnInAnimation: {fileID: 7400000, guid: dd19788569db4db41a8fac48544b7b97, type: 2}

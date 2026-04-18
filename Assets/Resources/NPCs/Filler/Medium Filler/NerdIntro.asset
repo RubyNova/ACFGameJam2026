@@ -47,9 +47,20 @@ MonoBehaviour:
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
     _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: b10337f2996f8504d927d329f0cc571b, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: Should be something to strengthen a mood... to focus... I think...
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 0
   _choices: []
   _isDepartingSequence: 0
   <SourceScript>k__BackingField: "IGM: Hey so I accidentally didn\u2019t work on
     a project until the last minute?\n\r\nIGM: Now I need to write like, close to
     250 paragraphs in one night.\n\r\nIGM: I need something to help me focus. Nothing
-    else. Just simply focusing.\r\n"
+    else. Just simply focusing.\n\nIGM: Should be something to strengthen a mood...
+    to focus... I think...\r\n"

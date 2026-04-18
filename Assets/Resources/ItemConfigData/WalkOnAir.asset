@@ -21,8 +21,8 @@ MonoBehaviour:
   _middleColourTint: {r: 0.6650944, g: 0.89575785, b: 1, a: 1}
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: This potion will make you walk on air! Literally!
-    Great for imitating famous cartoons of the past. Made from mixing Plushkik and
-    Laeli.
+    Your body will begin floating with this. Great for imitating famous cartoons
+    of the past. Made from mixing Plushkik and Laeli.
   _recipe:
   - {fileID: 11400000, guid: dc209f38b56491045a54d4c52815bdce, type: 2}
   - {fileID: 11400000, guid: 9d4de58eadec3574384a86d33e20aca8, type: 2}

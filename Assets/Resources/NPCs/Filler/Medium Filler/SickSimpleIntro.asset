@@ -37,7 +37,18 @@ MonoBehaviour:
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
     _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: b10337f2996f8504d927d329f0cc571b, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: I thdink... mixking a slimy thinbg with fruit shoulbd do it...
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 0
   _choices: []
   _isDepartingSequence: 0
   <SourceScript>k__BackingField: "IGM: Bugh\u2026 hellogh\u2026.\n\r\nIGM: Nmy nose
-    is all clogged\u2026. Got something simple that can unclog it\u2026.?\r\n"
+    is all clogged\u2026. Got something simple that can unclog it\u2026.?\n\nIGM:
+    I thdink... mixking a slimy thinbg with fruit shoulbd do it...\r\n"

@@ -174,8 +174,8 @@ MonoBehaviour:
     _hasSecondCharacterPoseIndex: 0
     _poseIndex: 0
     _poseIndexTwo: 0
-    _text: "C-could you maybe make\u2026 like two good health potions and combine
-      those together maybe? "
+    _text: "C-could you maybe make\u2026 mix another Plushroom with the potion to
+      make it stronger? "
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
     _delayBeforeContinuingInSeconds: 0
@@ -203,5 +203,5 @@ MonoBehaviour:
     made me.\r\n\r\nPlucky: Probably wouldn\u2019t be here without it actually. \r\n\r\nPlucky:
     So thank you. \r\n\r\nPlucky: A-and I\u2019m back for another. \n\nPlucky: M-maybe
     a stronger version of the one you gave me? \r\n\r\nPlucky: C-could you maybe
-    make\u2026 like two good health potions and combine those together maybe? \r\n\r\nPlucky:
+    make\u2026 mix another Plushroom with the potion to make it stronger? \r\n\r\nPlucky:
     Would that work, or am I crazy....? \r\n"

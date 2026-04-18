@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Speedup
   m_EditorClassIdentifier: Assembly-CSharp::CraftingAPI.ItemConfig
   _itemName: Plushkik Potion
-  _shortDescription: Speeds you up
+  _shortDescription: speeds you up
   _itemIconBackground: {fileID: 21300000, guid: dc9e0037bca9fa94a87a58bf3f323532, type: 3}
   _itemIconMiddle: {fileID: 21300000, guid: ec97229b72e557c428f083e4db20edd6, type: 3}
   _itemIconForeground: {fileID: 21300000, guid: 64d11b80839d03a4b956b1a91cee1012, type: 3}
@@ -21,8 +21,8 @@ MonoBehaviour:
   _middleColourTint: {r: 0.23495908, g: 0.9056604, b: 0.86547434, a: 1}
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: This potion is often used as an energy booster and
-    makes you move quicker. Mixing this will increase physical attributes. Made from
-    mixing Cespi and a Plushroom
+    makes you move quicker. Mixing this will have effects with your muscles and body.
+    Made from mixing Cespi and a Plushroom
   _recipe:
   - {fileID: 11400000, guid: 751f467c022f2dc4baee998d01eaf248, type: 2}
   - {fileID: 11400000, guid: 159ab75429d32e942a405250fdb2b4cf, type: 2}

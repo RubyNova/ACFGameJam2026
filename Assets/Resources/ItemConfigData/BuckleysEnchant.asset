@@ -21,8 +21,8 @@ MonoBehaviour:
   _middleColourTint: {r: 0.8717078, g: 0.113384366, b: 0.31819302, a: 1}
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: "This potion allows you to activate certain mystical
-    magical objects. Sometimes referred to as the \u201CMystic Melody\u201D potion.
-    Made from mixing Laeli and Buckem. "
+    magical objects by singing. Sometimes referred to as the \u201CMystic Melody\u201D
+    potion. Made from mixing Laeli and Buckem. "
   _recipe:
   - {fileID: 11400000, guid: dc209f38b56491045a54d4c52815bdce, type: 2}
   - {fileID: 11400000, guid: 2797aff07aa025d428a3e9907e50d6a0, type: 2}

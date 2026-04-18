@@ -43,11 +43,24 @@ MonoBehaviour:
     _hasSecondCharacterPoseIndex: 0
     _poseIndex: 0
     _poseIndexTwo: 0
-    _text: Just water.
+    _text: Just water. You can make it from something with a vial and something with
+      magic.
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: b10337f2996f8504d927d329f0cc571b, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: That's how you know water is both strong and magic.
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
     _delayBeforeContinuingInSeconds: 0
   _choices: []
   _isDepartingSequence: 0
   <SourceScript>k__BackingField: "IGM: It is I, the water enthusiast. \n\r\nIGM:
-    I want a water flavoured potion.\n\r\nIGM: Just water.\r\n"
+    I want a water flavoured potion.\n\r\nIGM: Just water. You can make it from something
+    with a vial and something with magic.\n\nIGM: That's how you know water is both
+    strong and magic.\r\n"
