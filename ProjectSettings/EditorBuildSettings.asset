@@ -50,6 +50,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game/Challenge/Endless.unity
     guid: ea9554acc0135781eb01152646211dbd
+  - enabled: 1
+    path: Assets/Scenes/Dev/CreditsSceneDev.unity
+    guid: 5ce7155f5a794564283ce9d22515d6eb
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
