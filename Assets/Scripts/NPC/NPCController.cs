@@ -222,7 +222,7 @@ namespace NPC
         {
             if(_footsteps != null)
             {
-                SoundManager.Instance.PlayAudioClip(_footsteps);
+                //SoundManager.Instance.PlayAudioClip(_footsteps);
             }
         }
     }
