@@ -94,11 +94,13 @@ namespace ACHNarrativeDriver
             {
                 _MainCharacterTextPrefab.SetActive(true);
                 _TextBubblePrefab.SetActive(false);
+                _TextBox.text = "";
             }
             else
             {
                 _MainCharacterTextPrefab.SetActive(false);
-                _TextBubblePrefab.SetActive(true);                
+                _TextBubblePrefab.SetActive(true);
+                _MainCharacterText.text = "";
             }
              
             _rollingTextRoutine =

@@ -170,19 +170,35 @@ namespace ACHNarrativeDriver
             if(characterDialogueInfo.NarratorSpeaking)
             {
                 if (_narratorTextBubblePrefab != null) _narratorTextBubblePrefab?.SetActive(true);
-                if (_leftTextBubblePrefab != null) _leftTextBubblePrefab?.SetActive(false);
+                if (_leftTextBubblePrefab != null) 
+                {
+                    _leftTextBubblePrefab?.SetActive(false);
+                    _leftCharacterTextBox.text = "";
+                }
                 if (_rightTextBubblePrefab != null) _rightTextBubblePrefab?.SetActive(false);
             }
             else if(characterDialogueInfo.LeftCharacterTalking)
             {
-                if (_narratorTextBubblePrefab != null) _narratorTextBubblePrefab?.SetActive(false);
+                if (_narratorTextBubblePrefab != null)
+                {
+                    _narratorTextBubblePrefab?.SetActive(false);
+                    _narrativeTextBox.text = "";
+                }
                 if (_leftTextBubblePrefab != null) _leftTextBubblePrefab?.SetActive(true);
                 if (_rightTextBubblePrefab != null) _rightTextBubblePrefab?.SetActive(false);
             }
             else
             {
-                if (_narratorTextBubblePrefab != null) _narratorTextBubblePrefab?.SetActive(false);
-                if (_leftTextBubblePrefab != null) _leftTextBubblePrefab?.SetActive(false);
+                if (_narratorTextBubblePrefab != null)
+                {
+                    _narratorTextBubblePrefab?.SetActive(false);
+                    _narrativeTextBox.text = "";
+                }
+                if (_leftTextBubblePrefab != null)
+                {
+                    _leftTextBubblePrefab?.SetActive(false);
+                    _leftCharacterTextBox.text = "";
+                }
                 if (_rightTextBubblePrefab != null) _rightTextBubblePrefab?.SetActive(true);
             }
             
