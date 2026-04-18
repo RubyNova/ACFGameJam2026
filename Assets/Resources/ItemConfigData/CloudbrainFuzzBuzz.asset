@@ -23,6 +23,4 @@ MonoBehaviour:
   _recipeBookEntryDescription: This potion makes you physically and emotionally feel
     the warm fuzzy feeling, and gives you a desire to spread that feeling with as
     many people as possible. Made from mixing Influenz and Suplush.
-  _recipe:
-  - {fileID: 11400000, guid: d1f01a817c78b2c449d9382c0d8434d0, type: 2}
-  - {fileID: 11400000, guid: 37e4baca959ef1141812513fc0454360, type: 2}
+  _recipe: []

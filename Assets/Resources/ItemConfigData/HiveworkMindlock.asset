@@ -23,6 +23,4 @@ MonoBehaviour:
   _recipeBookEntryDescription: This potion prevents curses that cause you to lose
     focus. Middle school bullies use these a lot, so students and teachers like to
     keep these on hand. Made from mixing Hexbegun and Regeneric.
-  _recipe:
-  - {fileID: 11400000, guid: 06797bbf4f469ce48949499a435df513, type: 2}
-  - {fileID: 11400000, guid: b68cb190151fc0841822f08e22aa4c69, type: 2}
+  _recipe: []

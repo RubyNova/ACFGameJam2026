@@ -23,6 +23,4 @@ MonoBehaviour:
   _recipeBookEntryDescription: This potion kinda makes you in the mood to be like
     someone who would buy a lot of candles. i.e. a lot of moms. Made from mixing
     Vivinex and Influnz.
-  _recipe:
-  - {fileID: 11400000, guid: 83478f75550d12842a28dd657ca0ebef, type: 2}
-  - {fileID: 11400000, guid: 37e4baca959ef1141812513fc0454360, type: 2}
+  _recipe: []

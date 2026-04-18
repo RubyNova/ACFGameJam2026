@@ -23,6 +23,4 @@ MonoBehaviour:
   _recipeBookEntryDescription: A Reguckem Potion. This potion lets you focus on your
     voice and your enunciation. This is actually incredibly important for spelling
     bees. Made from Regeneric and Buckem.
-  _recipe:
-  - {fileID: 11400000, guid: 2797aff07aa025d428a3e9907e50d6a0, type: 2}
-  - {fileID: 11400000, guid: b68cb190151fc0841822f08e22aa4c69, type: 2}
+  _recipe: []

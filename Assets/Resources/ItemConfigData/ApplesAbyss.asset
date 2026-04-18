@@ -23,6 +23,4 @@ MonoBehaviour:
   _recipeBookEntryDescription: This potion resets your emotions and the pain in your
     head. So it cleans a lot of your head. Its very effective at its job. Made from
     mixing Probufien and Zouzor.
-  _recipe:
-  - {fileID: 11400000, guid: c557b6f4d416ac94ebfc300058005f56, type: 2}
-  - {fileID: 11400000, guid: f13b696be4d1cb2479152b0b658cc368, type: 2}
+  _recipe: []

@@ -23,6 +23,4 @@ MonoBehaviour:
   _recipeBookEntryDescription: "You can rub this on your head and other parts to
     get rid of headaches and chronic pain, in case drinking it isn\u2019t your style.
     Made from mixing Probufien and Slisimle."
-  _recipe:
-  - {fileID: 11400000, guid: a6d86d55612570f4b93067768bef7bd5, type: 2}
-  - {fileID: 11400000, guid: f13b696be4d1cb2479152b0b658cc368, type: 2}
+  _recipe: []

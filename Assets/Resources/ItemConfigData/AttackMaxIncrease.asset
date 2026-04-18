@@ -23,6 +23,4 @@ MonoBehaviour:
   _recipeBookEntryDescription: This potion permanently increases your maximum strength
     permanently. However, there is an upper limit to this. The upper limit does not
     look pretty. Made from mixing Cespian and Laliluleilou.
-  _recipe:
-  - {fileID: 11400000, guid: 5a533b5e4e17df540ae9eabb05dc5d85, type: 2}
-  - {fileID: 11400000, guid: 7f2ba145cc235a54faa3ced84fc6da1a, type: 2}
+  _recipe: []

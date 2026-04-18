@@ -23,7 +23,7 @@ MonoBehaviour:
   _recipeBookEntryDescription: "This creates a magic aura in your room, giving it
     the sense you\u2019re in a fae forest. Some people prefer this smell more than
     others if they have good or bad memories of the fae. Made from mixing Relaxalax
-    and Laeli. "
+    and Laeli."
   _recipe:
   - {fileID: 11400000, guid: 7f2ba145cc235a54faa3ced84fc6da1a, type: 2}
   - {fileID: 11400000, guid: dc209f38b56491045a54d4c52815bdce, type: 2}

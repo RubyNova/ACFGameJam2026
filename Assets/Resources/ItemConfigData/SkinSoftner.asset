@@ -22,6 +22,4 @@ MonoBehaviour:
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: Not only cures your skin of ailments, it somehow makes
     it feel even nicer and softer than before! Made from mixing Heel'm and Slisimle.
-  _recipe:
-  - {fileID: 11400000, guid: 08917d11410a9644cbc2e7badc151115, type: 2}
-  - {fileID: 11400000, guid: a6d86d55612570f4b93067768bef7bd5, type: 2}
+  _recipe: []

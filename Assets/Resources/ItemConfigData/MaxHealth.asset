@@ -23,6 +23,4 @@ MonoBehaviour:
   _recipeBookEntryDescription: This potion increases your max health! Though, no
     one knows what the upper limit is. Some rich folks try to guzzle this stuff down
     like syrup. Gross. Made from Heel'm and Laliluleilou.
-  _recipe:
-  - {fileID: 11400000, guid: 08917d11410a9644cbc2e7badc151115, type: 2}
-  - {fileID: 11400000, guid: 7f2ba145cc235a54faa3ced84fc6da1a, type: 2}
+  _recipe: []

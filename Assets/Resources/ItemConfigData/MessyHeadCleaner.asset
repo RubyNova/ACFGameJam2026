@@ -23,6 +23,4 @@ MonoBehaviour:
   _recipeBookEntryDescription: Helps cleanse a messy headspace and allows for clearer
     thoughts. A favourite among those who spend too much time in their own head.
     Made from mixing Heel'm and Probufien.
-  _recipe:
-  - {fileID: 11400000, guid: 08917d11410a9644cbc2e7badc151115, type: 2}
-  - {fileID: 11400000, guid: f13b696be4d1cb2479152b0b658cc368, type: 2}
+  _recipe: []

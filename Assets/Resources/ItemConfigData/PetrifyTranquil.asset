@@ -23,6 +23,4 @@ MonoBehaviour:
   _recipeBookEntryDescription: 'Cures petrification and makes you come out in a relaxed
     haze. Both your body and your mind can relax with this! Made from mixing Shroomsli
     and Relaxalax. '
-  _recipe:
-  - {fileID: 11400000, guid: d07c0945d692eb94e8877ead4441f17a, type: 2}
-  - {fileID: 11400000, guid: 77eb8a62ffde5714aa8b2ae8501b0572, type: 2}
+  _recipe: []

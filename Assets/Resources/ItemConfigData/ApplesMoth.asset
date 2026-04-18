@@ -23,6 +23,4 @@ MonoBehaviour:
   _recipeBookEntryDescription: 'This potion will allow concentration and prevent
     headaches. Great for those who stare at bright things a lot as they work. Made
     from mixing Probufien and Regeneric. '
-  _recipe:
-  - {fileID: 11400000, guid: f13b696be4d1cb2479152b0b658cc368, type: 2}
-  - {fileID: 11400000, guid: b68cb190151fc0841822f08e22aa4c69, type: 2}
+  _recipe: []

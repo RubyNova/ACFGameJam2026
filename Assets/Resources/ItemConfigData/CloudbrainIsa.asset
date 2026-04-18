@@ -23,6 +23,4 @@ MonoBehaviour:
   _recipeBookEntryDescription: This potion allows you to feel and be emotionally
     strong. Great for those who wish to always be there for their loved ones. Made
     from mixing Influenz and Cespian.
-  _recipe:
-  - {fileID: 11400000, guid: 5a533b5e4e17df540ae9eabb05dc5d85, type: 2}
-  - {fileID: 11400000, guid: 37e4baca959ef1141812513fc0454360, type: 2}
+  _recipe: []

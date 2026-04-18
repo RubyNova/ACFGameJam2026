@@ -23,6 +23,4 @@ MonoBehaviour:
   _recipeBookEntryDescription: "Helps you focus by making you as still as a statue
     physically. Means that you can\u2019t get up and move though. Made from mixing
     Shroomsli and Regeneric."
-  _recipe:
-  - {fileID: 11400000, guid: b68cb190151fc0841822f08e22aa4c69, type: 2}
-  - {fileID: 11400000, guid: 77eb8a62ffde5714aa8b2ae8501b0572, type: 2}
+  _recipe: []

@@ -24,6 +24,4 @@ MonoBehaviour:
     you have to drink water to swallow it, but without the headache medicine being
     a solid. Great for kids or people who have a hard time swallowing headache medicine.
     Made from mixing Probufien and Mismatchm.
-  _recipe:
-  - {fileID: 11400000, guid: f893c66c6c538f341b7d5e6f5e0ce42f, type: 2}
-  - {fileID: 11400000, guid: f13b696be4d1cb2479152b0b658cc368, type: 2}
+  _recipe: []

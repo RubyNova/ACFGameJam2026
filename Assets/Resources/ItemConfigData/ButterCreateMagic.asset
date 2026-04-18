@@ -20,10 +20,8 @@ MonoBehaviour:
   _backgroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _middleColourTint: {r: 0.31181023, g: 0.8584906, b: 0.65096146, a: 1}
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
-  _recipeBookEntryDescription: "A Laslileu Potion. This potion transmits magical
-    properties to whatever or whoever you rub this on. It can give magical properties
-    to things that don\u2019t have it. This is an easy way to create magical objects
-    that can become enchanted. Made from mixing Slisimle and Laliluleilou."
-  _recipe:
-  - {fileID: 11400000, guid: a6d86d55612570f4b93067768bef7bd5, type: 2}
-  - {fileID: 11400000, guid: 7f2ba145cc235a54faa3ced84fc6da1a, type: 2}
+  _recipeBookEntryDescription: "This potion transmits magical properties to whatever
+    or whoever you rub this on. It can give magical properties to things that don\u2019t
+    have it. This is an easy way to create magical objects that can become enchanted.Made
+    from mixing Laeli and Slisimle."
+  _recipe: []

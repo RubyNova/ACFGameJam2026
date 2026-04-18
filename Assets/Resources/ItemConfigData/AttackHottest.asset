@@ -23,6 +23,4 @@ MonoBehaviour:
   _recipeBookEntryDescription: "This is the strongest power enhancing potion out
     there, as well as the spiciest. A \u201CLevel 7\u201D on the spice scale. Made
     from mixing Cespian with itself"
-  _recipe:
-  - {fileID: 11400000, guid: 5a533b5e4e17df540ae9eabb05dc5d85, type: 2}
-  - {fileID: 11400000, guid: 5a533b5e4e17df540ae9eabb05dc5d85, type: 2}
+  _recipe: []

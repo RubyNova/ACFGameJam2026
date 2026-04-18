@@ -23,6 +23,4 @@ MonoBehaviour:
   _recipeBookEntryDescription: Gives off a healing area of effect. Used as an incense
     in certain homes to give a healing and calming aura. Has no smell. Made from
     Heel'm and Hexbegun.
-  _recipe:
-  - {fileID: 11400000, guid: 08917d11410a9644cbc2e7badc151115, type: 2}
-  - {fileID: 11400000, guid: 06797bbf4f469ce48949499a435df513, type: 2}
+  _recipe: []

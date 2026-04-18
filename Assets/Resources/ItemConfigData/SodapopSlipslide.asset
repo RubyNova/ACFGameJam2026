@@ -23,6 +23,4 @@ MonoBehaviour:
   _recipeBookEntryDescription: This is a wet, slick potion. It can heal certain exposed
     wounds better than some other types of healing potions can. It is situational
     but preferred in medical situations. Made from mixing Mismatchm and Slisimle.
-  _recipe:
-  - {fileID: 11400000, guid: a6d86d55612570f4b93067768bef7bd5, type: 2}
-  - {fileID: 11400000, guid: f893c66c6c538f341b7d5e6f5e0ce42f, type: 2}
+  _recipe: []

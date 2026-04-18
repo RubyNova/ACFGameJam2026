@@ -24,6 +24,4 @@ MonoBehaviour:
     power! For the buff wizards and witches of the world. For the not-so-buff witches
     and wizards too, but won\u2019t be as effective. Made by mixing Plushkik and
     Laliluleilou."
-  _recipe:
-  - {fileID: 11400000, guid: 9d4de58eadec3574384a86d33e20aca8, type: 2}
-  - {fileID: 11400000, guid: 7f2ba145cc235a54faa3ced84fc6da1a, type: 2}
+  _recipe: []

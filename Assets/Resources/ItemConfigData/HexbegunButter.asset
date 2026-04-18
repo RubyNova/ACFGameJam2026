@@ -23,6 +23,4 @@ MonoBehaviour:
   _recipeBookEntryDescription: This potion can be rubbed and applied to cursed areas
     of the body and even inanimate objects to get rid of possession cases. Extremely
     useful for ghosthunters. Made from mixing Hexbegun and Slisimle.
-  _recipe:
-  - {fileID: 11400000, guid: a6d86d55612570f4b93067768bef7bd5, type: 2}
-  - {fileID: 11400000, guid: 06797bbf4f469ce48949499a435df513, type: 2}
+  _recipe: []

@@ -23,6 +23,4 @@ MonoBehaviour:
   _recipeBookEntryDescription: Puts someone in a distant haze, thinking nice warm
     happy healing thoughts. Its hard to snap someone out of though, so be careful.
     Made from mixing Heel'm and Influenz.
-  _recipe:
-  - {fileID: 11400000, guid: 37e4baca959ef1141812513fc0454360, type: 2}
-  - {fileID: 11400000, guid: 08917d11410a9644cbc2e7badc151115, type: 2}
+  _recipe: []

@@ -24,6 +24,4 @@ MonoBehaviour:
     warm and happy inside\u2026 if that\u2019s something you want to prevent for
     some reason? Not many curses that even do that exist. Made from mixing Hexbegun
     and Suplush."
-  _recipe:
-  - {fileID: 11400000, guid: d1f01a817c78b2c449d9382c0d8434d0, type: 2}
-  - {fileID: 11400000, guid: 06797bbf4f469ce48949499a435df513, type: 2}
+  _recipe: []

@@ -23,6 +23,4 @@ MonoBehaviour:
   _recipeBookEntryDescription: "Ever wanted to  have everyone in a room be super
     fast? Here\u2019s the potion for you! Can lead to unfortunate situations if you\u2019re
     fast when you don\u2019t want to be. Made by mixing Plushkik and Hexbegun."
-  _recipe:
-  - {fileID: 11400000, guid: 06797bbf4f469ce48949499a435df513, type: 2}
-  - {fileID: 11400000, guid: 9d4de58eadec3574384a86d33e20aca8, type: 2}
+  _recipe: []

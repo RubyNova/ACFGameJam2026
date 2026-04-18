@@ -22,7 +22,7 @@ MonoBehaviour:
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: "A warm fuzzy feeling amplified with absolute warmth.
     You\u2019ll be radiating comfortable warmth with this. Made from mixing a Suplush
-    Potion and a Plushroom"
+    Potion and a Plushroom."
   _recipe:
   - {fileID: 11400000, guid: 159ab75429d32e942a405250fdb2b4cf, type: 2}
   - {fileID: 11400000, guid: d1f01a817c78b2c449d9382c0d8434d0, type: 2}

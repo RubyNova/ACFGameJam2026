@@ -24,6 +24,4 @@ MonoBehaviour:
     turns at once, or running so fast you\u2019ll be gone in the blink of an eye!
     Colloquially known as the \u201CHustle Drink\u201D. Made from mixing Plushkik
     with itself."
-  _recipe:
-  - {fileID: 11400000, guid: 9d4de58eadec3574384a86d33e20aca8, type: 2}
-  - {fileID: 11400000, guid: 9d4de58eadec3574384a86d33e20aca8, type: 2}
+  _recipe: []

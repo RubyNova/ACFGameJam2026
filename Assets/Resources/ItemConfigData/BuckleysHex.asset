@@ -22,6 +22,4 @@ MonoBehaviour:
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: This potion removes any singing based curses in the
     area. Those curses mostly come from hecklers. Made from Hexbegun and Buckem.
-  _recipe:
-  - {fileID: 11400000, guid: 06797bbf4f469ce48949499a435df513, type: 2}
-  - {fileID: 11400000, guid: 2797aff07aa025d428a3e9907e50d6a0, type: 2}
+  _recipe: []

@@ -22,6 +22,4 @@ MonoBehaviour:
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: Gives off the smell of speed. Which is a sentence
     that makes no sense. Made from mixing Plushkik and Vivinex.
-  _recipe:
-  - {fileID: 11400000, guid: 9d4de58eadec3574384a86d33e20aca8, type: 2}
-  - {fileID: 11400000, guid: 83478f75550d12842a28dd657ca0ebef, type: 2}
+  _recipe: []

@@ -23,6 +23,4 @@ MonoBehaviour:
   _recipeBookEntryDescription: "Makes you immune to being a statue for a long while.
     You wouldn\u2019t think this is useful until you get turned into a statue yourself.
     Made from mixing Shroomsli and Hexbegun."
-  _recipe:
-  - {fileID: 11400000, guid: 77eb8a62ffde5714aa8b2ae8501b0572, type: 2}
-  - {fileID: 11400000, guid: 06797bbf4f469ce48949499a435df513, type: 2}
+  _recipe: []

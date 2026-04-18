@@ -23,6 +23,4 @@ MonoBehaviour:
   _recipeBookEntryDescription: "A healing, watery potion loved by traditional healers.
     Easy to store and easy to use. Often referred to as \u201CWater of Life\u201D
     by certain fae folk. Made from mixing Mismatchm and Suplush."
-  _recipe:
-  - {fileID: 11400000, guid: d1f01a817c78b2c449d9382c0d8434d0, type: 2}
-  - {fileID: 11400000, guid: f893c66c6c538f341b7d5e6f5e0ce42f, type: 2}
+  _recipe: []

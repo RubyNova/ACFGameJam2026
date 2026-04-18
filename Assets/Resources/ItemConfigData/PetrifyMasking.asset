@@ -23,6 +23,4 @@ MonoBehaviour:
   _recipeBookEntryDescription: 'This potion makes you cold and closed off, much like
     a stone statue. Can help you be more detached. Made from mixing Shroomsli and
     Influenz. '
-  _recipe:
-  - {fileID: 11400000, guid: 37e4baca959ef1141812513fc0454360, type: 2}
-  - {fileID: 11400000, guid: 77eb8a62ffde5714aa8b2ae8501b0572, type: 2}
+  _recipe: []

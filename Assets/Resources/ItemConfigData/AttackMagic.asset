@@ -23,4 +23,6 @@ MonoBehaviour:
   _recipeBookEntryDescription: "Fills you with immense magical power. Powers up all
     magical attacks. Can be extremely helpful\u2026 or extremely deadly. Made from
     mixing Laeli and Cespian."
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: 5a533b5e4e17df540ae9eabb05dc5d85, type: 2}
+  - {fileID: 11400000, guid: dc209f38b56491045a54d4c52815bdce, type: 2}

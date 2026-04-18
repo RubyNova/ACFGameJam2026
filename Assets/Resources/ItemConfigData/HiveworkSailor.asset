@@ -24,6 +24,4 @@ MonoBehaviour:
     make you swear like a sailor or like your father when he got upset. (Scratch
     this section from future recipe book reprints please.) Made from mixing Hexbegun
     with itself.
-  _recipe:
-  - {fileID: 11400000, guid: 06797bbf4f469ce48949499a435df513, type: 2}
-  - {fileID: 11400000, guid: 06797bbf4f469ce48949499a435df513, type: 2}
+  _recipe: []

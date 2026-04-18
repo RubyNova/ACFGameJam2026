@@ -23,6 +23,4 @@ MonoBehaviour:
   _recipeBookEntryDescription: "Makes your mood rapidly change quickly. Its a nightmare
     to be around someone who\u2019s drank this, honestly. Made by mixing Plushkik
     and Influenz."
-  _recipe:
-  - {fileID: 11400000, guid: 37e4baca959ef1141812513fc0454360, type: 2}
-  - {fileID: 11400000, guid: 9d4de58eadec3574384a86d33e20aca8, type: 2}
+  _recipe: []

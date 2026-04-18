@@ -23,6 +23,4 @@ MonoBehaviour:
   _recipeBookEntryDescription: "This potion neutralizes anything its rubbed on emotionally.
     Good for ensuring someone stops being mad at you if you\u2019re good at massaging
     temples. Made from mixing Slisimle and Zouzor."
-  _recipe:
-  - {fileID: 11400000, guid: a6d86d55612570f4b93067768bef7bd5, type: 2}
-  - {fileID: 11400000, guid: c557b6f4d416ac94ebfc300058005f56, type: 2}
+  _recipe: []

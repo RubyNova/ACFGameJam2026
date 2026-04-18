@@ -24,6 +24,4 @@ MonoBehaviour:
     that are particularly good or bad, but just neutral curses. They are the most
     common kind of curse and no one ever notices them. Made from mixing Hexbegun
     and Zouzor.
-  _recipe:
-  - {fileID: 11400000, guid: c557b6f4d416ac94ebfc300058005f56, type: 2}
-  - {fileID: 11400000, guid: 06797bbf4f469ce48949499a435df513, type: 2}
+  _recipe: []

@@ -23,6 +23,4 @@ MonoBehaviour:
   _recipeBookEntryDescription: You can either use this to rub what feels like hot
     wax on your skin or have a scent of aloe vera in your home. Your choice really.
     Made from mixing Vivinex and Slisimle.
-  _recipe:
-  - {fileID: 11400000, guid: a6d86d55612570f4b93067768bef7bd5, type: 2}
-  - {fileID: 11400000, guid: 83478f75550d12842a28dd657ca0ebef, type: 2}
+  _recipe: []

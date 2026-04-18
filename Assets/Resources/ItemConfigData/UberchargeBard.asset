@@ -20,7 +20,5 @@ MonoBehaviour:
   _backgroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _middleColourTint: {r: 0.2027857, g: 0.8773585, b: 0.6011527, a: 1}
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
-  _recipeBookEntryDescription: This potion will allow you to magically inspire someone
-    just by looking at them! This power is no longer just reserved for bards. Made
-    from mixing Regenric and Laeli.
+  _recipeBookEntryDescription: 
   _recipe: []

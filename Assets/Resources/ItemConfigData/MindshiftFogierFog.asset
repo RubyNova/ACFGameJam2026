@@ -23,6 +23,4 @@ MonoBehaviour:
   _recipeBookEntryDescription: This just creates misty water in a room. So fog, basically.
     Can barely be considered a magical concoction. Made from mixing Relaxalax and
     Mismatchm.
-  _recipe:
-  - {fileID: 11400000, guid: f893c66c6c538f341b7d5e6f5e0ce42f, type: 2}
-  - {fileID: 11400000, guid: d07c0945d692eb94e8877ead4441f17a, type: 2}
+  _recipe: []

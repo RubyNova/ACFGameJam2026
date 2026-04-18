@@ -23,6 +23,4 @@ MonoBehaviour:
   _recipeBookEntryDescription: This potion makes people have a much more spiritual
     mood, and may make them want to take up soul searching or yoga, or other such
     activities. Made from mixing Hexbegun and Influenz.
-  _recipe:
-  - {fileID: 11400000, guid: 37e4baca959ef1141812513fc0454360, type: 2}
-  - {fileID: 11400000, guid: 06797bbf4f469ce48949499a435df513, type: 2}
+  _recipe: []

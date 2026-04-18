@@ -23,6 +23,4 @@ MonoBehaviour:
   _recipeBookEntryDescription: This potion smells spiritually powerful and makes
     you think about the great beyond. Often used at funerals and religious gatherings.
     Made from mixing Vivinex and Hexbegun.
-  _recipe:
-  - {fileID: 11400000, guid: 83478f75550d12842a28dd657ca0ebef, type: 2}
-  - {fileID: 11400000, guid: 06797bbf4f469ce48949499a435df513, type: 2}
+  _recipe: []

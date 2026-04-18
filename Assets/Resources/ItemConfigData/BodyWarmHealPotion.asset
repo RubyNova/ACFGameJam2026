@@ -23,6 +23,4 @@ MonoBehaviour:
   _recipeBookEntryDescription: Makes your body feel nice and warm inside, and provides
     that nice healing boost! Grandmas love this one even more! A great soup broth
     too. Made from mixing Heel'm and Suplush.
-  _recipe:
-  - {fileID: 11400000, guid: d1f01a817c78b2c449d9382c0d8434d0, type: 2}
-  - {fileID: 11400000, guid: 08917d11410a9644cbc2e7badc151115, type: 2}
+  _recipe: []

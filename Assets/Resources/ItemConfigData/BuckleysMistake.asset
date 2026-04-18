@@ -22,5 +22,4 @@ MonoBehaviour:
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: This potion was a mistake. Don't make this for anyone.
     Ever. Can be made by mixing Mismatchm and Buckem. But don't make this.
-  _recipe:
-  - {fileID: 11400000, guid: 2797aff07aa025d428a3e9907e50d6a0, type: 2}
+  _recipe: []

@@ -23,6 +23,4 @@ MonoBehaviour:
   _recipeBookEntryDescription: 'This lets you cast spells to petrify others! Great
     to spread around if you want others to buy Shroomsli potion mixes. Made from
     mixing Shroomsli and Laliluleilou. '
-  _recipe:
-  - {fileID: 11400000, guid: 7f2ba145cc235a54faa3ced84fc6da1a, type: 2}
-  - {fileID: 11400000, guid: 77eb8a62ffde5714aa8b2ae8501b0572, type: 2}
+  _recipe: []

@@ -23,6 +23,4 @@ MonoBehaviour:
   _recipeBookEntryDescription: "This potion honestly integer overflows and makes
     you focus so hard that it makes you not focus on things. This might seem counterintuitive
     but there\u2019s a limit to these things. Made from mixing Regenric with itself."
-  _recipe:
-  - {fileID: 11400000, guid: b68cb190151fc0841822f08e22aa4c69, type: 2}
-  - {fileID: 11400000, guid: b68cb190151fc0841822f08e22aa4c69, type: 2}
+  _recipe: []

@@ -23,6 +23,4 @@ MonoBehaviour:
   _recipeBookEntryDescription: This potion creates an aura where everyone in the
     room can sing great, which is amazing for karaoke nights! Made from mixing Buckem
     and Relaxalax.
-  _recipe:
-  - {fileID: 11400000, guid: 06797bbf4f469ce48949499a435df513, type: 2}
-  - {fileID: 11400000, guid: 2797aff07aa025d428a3e9907e50d6a0, type: 2}
+  _recipe: []

@@ -23,6 +23,4 @@ MonoBehaviour:
   _recipeBookEntryDescription: This potion acts like holy water, and is great against
     ghosts, ghouls and other lost souls found on cold grounds. Made from mixing Hexbegun
     and Mismatchm.
-  _recipe:
-  - {fileID: 11400000, guid: f893c66c6c538f341b7d5e6f5e0ce42f, type: 2}
-  - {fileID: 11400000, guid: 06797bbf4f469ce48949499a435df513, type: 2}
+  _recipe: []

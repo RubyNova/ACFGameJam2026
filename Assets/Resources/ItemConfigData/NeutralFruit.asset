@@ -21,8 +21,8 @@ MonoBehaviour:
   _middleColourTint: {r: 0.71087253, g: 0.9056604, b: 0.58526164, a: 1}
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: This potion is both an emotional neutralizer and a
-    fruity taste! Eliminates everything but the fruitiness. Made from mixing Rouz
-    and Zouzor.
+    fruity taste! Eliminates everything in your mind but your thoughs of the fruitiness.
+    Made from mixing Rouz and Zouzor.
   _recipe:
   - {fileID: 11400000, guid: 8988c71254de98f4ea3a1c8d07d5869d, type: 2}
   - {fileID: 11400000, guid: c557b6f4d416ac94ebfc300058005f56, type: 2}

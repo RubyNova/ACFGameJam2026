@@ -23,6 +23,4 @@ MonoBehaviour:
   _recipeBookEntryDescription: "This potion tastes like tears. It can be somewhat\u2026
     sobering to taste. Its not very pleasant, would not be recommended regularly.
     Made from mixing Mismatchm and Zouzor."
-  _recipe:
-  - {fileID: 11400000, guid: f893c66c6c538f341b7d5e6f5e0ce42f, type: 2}
-  - {fileID: 11400000, guid: c557b6f4d416ac94ebfc300058005f56, type: 2}
+  _recipe: []

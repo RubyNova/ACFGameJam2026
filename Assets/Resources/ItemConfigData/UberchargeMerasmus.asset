@@ -24,5 +24,5 @@ MonoBehaviour:
     in on magical sources and letting you seek them out. Good for those looking to
     find new sources of power. Made from mixing Regenric and Laeli. '
   _recipe:
-  - {fileID: 11400000, guid: b68cb190151fc0841822f08e22aa4c69, type: 2}
   - {fileID: 11400000, guid: dc209f38b56491045a54d4c52815bdce, type: 2}
+  - {fileID: 11400000, guid: b68cb190151fc0841822f08e22aa4c69, type: 2}

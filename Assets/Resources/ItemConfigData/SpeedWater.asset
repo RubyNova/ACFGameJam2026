@@ -22,6 +22,4 @@ MonoBehaviour:
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: The cool refreshing taste of speed in an easily drinkable
     format. Might make you faster? Unsure. Made by mixing Plushkik and Mismatchm.
-  _recipe:
-  - {fileID: 11400000, guid: 9d4de58eadec3574384a86d33e20aca8, type: 2}
-  - {fileID: 11400000, guid: f893c66c6c538f341b7d5e6f5e0ce42f, type: 2}
+  _recipe: []

@@ -23,6 +23,4 @@ MonoBehaviour:
   _recipeBookEntryDescription: 'A Relaxalax potion, but in candle form so you can
     choose when the calming aroma will be in your home. Made from mixing Relaxalax
     and Vivinex. '
-  _recipe:
-  - {fileID: 11400000, guid: d07c0945d692eb94e8877ead4441f17a, type: 2}
-  - {fileID: 11400000, guid: 83478f75550d12842a28dd657ca0ebef, type: 2}
+  _recipe: []

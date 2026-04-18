@@ -23,6 +23,4 @@ MonoBehaviour:
   _recipeBookEntryDescription: "A potion that invokes a neutralizing, nostalgic feeling
     within someone\u2019s heart, and reminds them of home. Made from mixing Heel'm
     and Zouzor."
-  _recipe:
-  - {fileID: 11400000, guid: 08917d11410a9644cbc2e7badc151115, type: 2}
-  - {fileID: 11400000, guid: c557b6f4d416ac94ebfc300058005f56, type: 2}
+  _recipe: []

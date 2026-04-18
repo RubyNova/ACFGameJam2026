@@ -22,6 +22,4 @@ MonoBehaviour:
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: A Vivucken Potion. This potion smells like throats.
     Okay. Made by mixing Vivinex and Buckem.
-  _recipe:
-  - {fileID: 11400000, guid: 83478f75550d12842a28dd657ca0ebef, type: 2}
-  - {fileID: 11400000, guid: 2797aff07aa025d428a3e9907e50d6a0, type: 2}
+  _recipe: []

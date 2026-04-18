@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NPC.NPCCharacter
   _name: Plucky
   _idleSprite: {fileID: 4486930094371141866, guid: ec32c3a14819e6e4899c70d60461b9b5, type: 3}
-  _desiredItem: {fileID: 11400000, guid: 453a2a9892488bb408ffd1101367343b, type: 2}
+  _desiredItem: {fileID: 11400000, guid: d1f01a817c78b2c449d9382c0d8434d0, type: 2}
   _useExpandedSprite: 0
   _delayBeforeStartingDialogue: 0
   _numberOfRandomNpcAppearancesBeforeAllowedToShow: 4

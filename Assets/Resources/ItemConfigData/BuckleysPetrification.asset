@@ -23,6 +23,4 @@ MonoBehaviour:
   _recipeBookEntryDescription: This potion makes your singing amazing as a statue.
     Unfortunately, you cannot move your throat muscles as a statue. Not every potion
     is made equal. Made from mixing Buckem and Shroomsli.
-  _recipe:
-  - {fileID: 11400000, guid: a6d86d55612570f4b93067768bef7bd5, type: 2}
-  - {fileID: 11400000, guid: 2797aff07aa025d428a3e9907e50d6a0, type: 2}
+  _recipe: []

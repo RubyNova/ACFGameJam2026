@@ -23,6 +23,4 @@ MonoBehaviour:
   _recipeBookEntryDescription: This potion makes someone bounce off the wall, and
     without getting hurt too! Great for the adventurer in a hurry. Made from mixing
     Heel'm and Plushkik.
-  _recipe:
-  - {fileID: 11400000, guid: 08917d11410a9644cbc2e7badc151115, type: 2}
-  - {fileID: 11400000, guid: 9d4de58eadec3574384a86d33e20aca8, type: 2}
+  _recipe: []

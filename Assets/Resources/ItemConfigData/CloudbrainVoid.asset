@@ -23,6 +23,4 @@ MonoBehaviour:
   _recipeBookEntryDescription: This potion makes you feel both everything and nothing.
     Limitless emotional energy and none at all. A duality. Made from mixing Influenz
     and Zouzor.
-  _recipe:
-  - {fileID: 11400000, guid: c557b6f4d416ac94ebfc300058005f56, type: 2}
-  - {fileID: 11400000, guid: 37e4baca959ef1141812513fc0454360, type: 2}
+  _recipe: []

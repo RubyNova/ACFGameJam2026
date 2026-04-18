@@ -23,6 +23,4 @@ MonoBehaviour:
   _recipeBookEntryDescription: This potion comes to close to severing all emotional
     connection for a prolonged period of time. An emotionally dangerous time. Made
     from mixing Zouzor with itself.
-  _recipe:
-  - {fileID: 11400000, guid: c557b6f4d416ac94ebfc300058005f56, type: 2}
-  - {fileID: 11400000, guid: c557b6f4d416ac94ebfc300058005f56, type: 2}
+  _recipe: []

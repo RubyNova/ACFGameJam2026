@@ -23,6 +23,4 @@ MonoBehaviour:
   _recipeBookEntryDescription: "This potion makes you have the temperament of having
     a headache. Which is like, kinda ticked off but not really mad. Why would you
     want this\u2026? Made from Probufien and Influenz."
-  _recipe:
-  - {fileID: 11400000, guid: f13b696be4d1cb2479152b0b658cc368, type: 2}
-  - {fileID: 11400000, guid: 37e4baca959ef1141812513fc0454360, type: 2}
+  _recipe: []

@@ -24,6 +24,4 @@ MonoBehaviour:
     its attack power. Used to increase the strength of specific limbs, or even certain
     types of weapons. Popular among physical attackers who wield swords, hammers,
     or axes. Made from mixing Cespian and Limesli.
-  _recipe:
-  - {fileID: 11400000, guid: a6d86d55612570f4b93067768bef7bd5, type: 2}
-  - {fileID: 11400000, guid: 5a533b5e4e17df540ae9eabb05dc5d85, type: 2}
+  _recipe: []

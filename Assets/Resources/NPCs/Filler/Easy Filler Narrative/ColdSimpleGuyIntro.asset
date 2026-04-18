@@ -23,8 +23,7 @@ MonoBehaviour:
     _hasSecondCharacterPoseIndex: 0
     _poseIndex: 0
     _poseIndexTwo: 0
-    _text: "I\u2019m feeling all cold and hard\u2026 not in the petrification way.
-      Or other ways it could be interpreted."
+    _text: I wanna drink something that gives me the feeling of a hug...
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
     _delayBeforeContinuingInSeconds: 0
@@ -50,7 +49,6 @@ MonoBehaviour:
     _delayBeforeContinuingInSeconds: 0
   _choices: []
   _isDepartingSequence: 0
-  <SourceScript>k__BackingField: "IGM: I\u2019m feeling all cold and hard\u2026 not
-    in the petrification way. Or other ways it could be interpreted.\n\nIGM: I just
-    need something simple to make me feel all warm and fuzzy inside\u2026\n\nIGM:
-    I know Plushrooms give off that warmth..."
+  <SourceScript>k__BackingField: "IGM: I wanna drink something that gives me the
+    feeling of a hug...\n\nIGM: I just need something simple to make me feel all
+    warm and fuzzy inside\u2026\n\nIGM: I know Plushrooms give off that warmth..."

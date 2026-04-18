@@ -23,6 +23,4 @@ MonoBehaviour:
   _recipeBookEntryDescription: Not only relieves chronic body pain, but powers up
     your muscles! Quite the handy tool for those who often get stuck feeling tired
     mid-workout. Made from mixing Plushkik and Probufien.
-  _recipe:
-  - {fileID: 11400000, guid: 9d4de58eadec3574384a86d33e20aca8, type: 2}
-  - {fileID: 11400000, guid: f13b696be4d1cb2479152b0b658cc368, type: 2}
+  _recipe: []

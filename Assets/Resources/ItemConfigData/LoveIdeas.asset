@@ -23,6 +23,4 @@ MonoBehaviour:
   _recipeBookEntryDescription: This potion will make you focus on those nice lovey
     healing thoughts or people in your life. A truly uplifting potion. Made from
     mixing Heel'm and Regeneric.
-  _recipe:
-  - {fileID: 11400000, guid: b68cb190151fc0841822f08e22aa4c69, type: 2}
-  - {fileID: 11400000, guid: 08917d11410a9644cbc2e7badc151115, type: 2}
+  _recipe: []

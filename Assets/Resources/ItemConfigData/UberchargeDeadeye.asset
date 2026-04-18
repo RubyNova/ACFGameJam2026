@@ -23,6 +23,4 @@ MonoBehaviour:
   _recipeBookEntryDescription: Ever hear of the phrase, looks kill? With how powerful
     your gaze will be with this potion, you will maybe kill someone. Or at least
     hurt them pretty badly. Made from mixing Regeneric and Cespian.
-  _recipe:
-  - {fileID: 11400000, guid: b68cb190151fc0841822f08e22aa4c69, type: 2}
-  - {fileID: 11400000, guid: 5a533b5e4e17df540ae9eabb05dc5d85, type: 2}
+  _recipe: []

@@ -22,6 +22,4 @@ MonoBehaviour:
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: This potion makes your head feel nice and soft to
     yourself. Good for the hardheaded-type. Made from mixing Probufien and Suplush.
-  _recipe:
-  - {fileID: 11400000, guid: f13b696be4d1cb2479152b0b658cc368, type: 2}
-  - {fileID: 11400000, guid: d1f01a817c78b2c449d9382c0d8434d0, type: 2}
+  _recipe: []

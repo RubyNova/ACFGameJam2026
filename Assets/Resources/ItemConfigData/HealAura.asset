@@ -23,6 +23,4 @@ MonoBehaviour:
   _recipeBookEntryDescription: "Creates an area of effect healing aura. Great for
     when you don\u2019t want your low level or low defence party members to constantly
     need potions or healing effects. Made from mixing Heel'm and Hexbegun."
-  _recipe:
-  - {fileID: 11400000, guid: 08917d11410a9644cbc2e7badc151115, type: 2}
-  - {fileID: 11400000, guid: 06797bbf4f469ce48949499a435df513, type: 2}
+  _recipe: []
