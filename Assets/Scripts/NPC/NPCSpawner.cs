@@ -262,7 +262,7 @@ namespace NPC
                 _currentCharacterController.CharacterGoneEvent.AddListener(CharacterGone);
 
                 _characterSpawned = true;
-                SoundManager.Instance.PlayAudioClip(_customerWalkingAudio);
+                //SoundManager.Instance.PlayAudioClip(_customerWalkingAudio);
             
         }
     }
