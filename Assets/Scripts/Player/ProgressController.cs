@@ -189,7 +189,7 @@ namespace Player
             score += (int)(_itemsCrafted * _scoreMultiplierForItemsCrafted);
             score += (int)(_itemsDiscovered * _scoreMultiplierForItemsDiscovered);
             
-            int percent = (int)(_itemsDeliveredSuccessfully / _itemsDelivered * 100);
+            int percent = _itemsDelivered == 0 ? 0 : (int)(_itemsDeliveredSuccessfully / _itemsDelivered * 100);
             if(percent >= 50)
             {
                 int overage = 100 - percent;
@@ -218,7 +218,7 @@ namespace Player
             _itemsCraftedText.text = $"{_itemsCrafted}";
             _itemsDiscoveredText.text = $"{_itemsDiscovered}";
 
-            int customerHappinessAmt = (int)((_itemsDeliveredSuccessfully / _itemsDelivered)*100);
+            int customerHappinessAmt = _itemsDelivered == 0? 0 : (int)((_itemsDeliveredSuccessfully / _itemsDelivered)*100);
 
             var score = GenerateScore();
             if(_perfMode)
