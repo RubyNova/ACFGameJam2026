@@ -39,11 +39,33 @@
                 },
                 {
                     "name": "",
+                    "id": "5c80f933-5418-40f3-b9d2-935163a5bb4f",
+                    "path": "<Touchscreen>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MousePositionPoll",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "c5abbd66-c9f9-4568-be1a-bf96a14ea1da",
                     "path": "<Mouse>/leftButton",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
+                    "action": "MouseLMBDown",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "bb58ebdc-fd0d-4afb-8f8c-343aa64cc08d",
+                    "path": "<Touchscreen>/primaryTouch/press",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
                     "action": "MouseLMBDown",
                     "isComposite": false,
                     "isPartOfComposite": false
