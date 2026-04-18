@@ -82,6 +82,8 @@ namespace GameUI
                     RecipeUIInactive -= (Action)actionObject;
                 }
             }
+
+            ItemDatabase.Instance.ItemDiscovered -= OnItemDiscovered;
         }
 
         private void OnItemDiscovered(ItemConfig item)
