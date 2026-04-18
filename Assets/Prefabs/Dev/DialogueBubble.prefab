@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3838617613718169420
 RectTransform:
   m_ObjectHideFlags: 0
@@ -26,16 +26,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1177305247999763781}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.7045002, y: 1.2426991, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -3}
+  m_LocalScale: {x: 1.22008, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 125266813118327021}
+  m_Father: {fileID: 5005041319333480045}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0309, y: -0.08}
-  m_SizeDelta: {x: 13.6377, y: 3.417}
+  m_AnchoredPosition: {x: 1.49228, y: -1.82}
+  m_SizeDelta: {x: 13.6377, y: 34.5074}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &1967600083501375352
 MeshRenderer:
@@ -133,8 +133,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 5
-  m_fontSizeBase: 5
+  m_fontSize: 4
+  m_fontSizeBase: 4
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 10
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -0.11006284, y: -0.024234891, z: -0.051031113, w: 0.11426926}
+  m_margin: {x: 0.7977849, y: 17.8089, z: 0.72245836, w: 14.83176}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -470,7 +470,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &125266813118327021
 Transform:
   m_ObjectHideFlags: 0
@@ -483,8 +483,7 @@ Transform:
   m_LocalPosition: {x: 1.539, y: -3.31, z: -3}
   m_LocalScale: {x: 1.511973, y: 0.43692696, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 3838617613718169420}
+  m_Children: []
   m_Father: {fileID: 5005041319333480045}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8393957162619914066
@@ -577,5 +576,6 @@ Transform:
   m_Children:
   - {fileID: 3385991541324475329}
   - {fileID: 125266813118327021}
+  - {fileID: 3838617613718169420}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
