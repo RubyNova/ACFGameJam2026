@@ -40,13 +40,13 @@ public class OptionsMenu : MonoBehaviour
     private void LoadSliderData()
     {
         //ChangeMasterVolume(PlayerPrefs.GetFloat("MasterSavedVolume", 1f));
-        _masterVolumeSlider.value = PlayerPrefs.GetFloat("MasterSavedVolume");
+        _masterVolumeSlider.value = PlayerPrefs.GetFloat("MasterSavedVolume", 1f);
 
         //ChangeBgmVolume(PlayerPrefs.GetFloat("BgmSavedVolume", 1f));
-        _bgmVolumeSlider.value = PlayerPrefs.GetFloat("BgmSavedVolume");
+        _bgmVolumeSlider.value = PlayerPrefs.GetFloat("BgmSavedVolume", 1f);
 
         //ChangeSfxVolume(PlayerPrefs.GetFloat("SfxSavedVolume", 1f));
-        _sfxVolumeSlider.value = PlayerPrefs.GetFloat("SfxSavedVolume");
+        _sfxVolumeSlider.value = PlayerPrefs.GetFloat("SfxSavedVolume", 1f);
     }
 
 
