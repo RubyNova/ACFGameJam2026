@@ -722,6 +722,10 @@ PrefabInstance:
       propertyPath: _skyrollTransform
       value: 
       objectReference: {fileID: 1160050735}
+    - target: {fileID: 5977274093058590392, guid: 3fbc80cf39ce6434b8d04671d925c9d3, type: 3}
+      propertyPath: _secondsBeforeLevelIsOver
+      value: 360
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -854,7 +858,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1241443014591845071, guid: bba48788e39c5d147982a0d221a38974, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 2271400077849292619, guid: bba48788e39c5d147982a0d221a38974, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: bba48788e39c5d147982a0d221a38974, type: 3}
 --- !u!114 &2853749184577359257 stripped
 MonoBehaviour:

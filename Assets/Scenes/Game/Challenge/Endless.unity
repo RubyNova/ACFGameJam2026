@@ -1165,7 +1165,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 738546212711536671, guid: cd7cc9733cbda3448a383c515fe4d345, type: 3}
       propertyPath: _randomNpcsToSpawn.Array.size
-      value: 4
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 738546212711536671, guid: cd7cc9733cbda3448a383c515fe4d345, type: 3}
       propertyPath: _dedicatedNpcsToSpawn.Array.size
@@ -1182,11 +1182,47 @@ PrefabInstance:
     - target: {fileID: 738546212711536671, guid: cd7cc9733cbda3448a383c515fe4d345, type: 3}
       propertyPath: '_randomNpcsToSpawn.Array.data[2]'
       value: 
-      objectReference: {fileID: 11400000, guid: a7870ee269c418445b758ac080643057, type: 2}
+      objectReference: {fileID: 11400000, guid: 398db75ab2347c84f8f259949ddb518a, type: 2}
     - target: {fileID: 738546212711536671, guid: cd7cc9733cbda3448a383c515fe4d345, type: 3}
       propertyPath: '_randomNpcsToSpawn.Array.data[3]'
       value: 
-      objectReference: {fileID: 11400000, guid: aeeb3f9fa705d20419651a2f038fba0b, type: 2}
+      objectReference: {fileID: 11400000, guid: 6e4c333335e0ff84ca2ae631a0d99184, type: 2}
+    - target: {fileID: 738546212711536671, guid: cd7cc9733cbda3448a383c515fe4d345, type: 3}
+      propertyPath: '_randomNpcsToSpawn.Array.data[4]'
+      value: 
+      objectReference: {fileID: 11400000, guid: b6708c94b74b4e542a2280bfba470902, type: 2}
+    - target: {fileID: 738546212711536671, guid: cd7cc9733cbda3448a383c515fe4d345, type: 3}
+      propertyPath: '_randomNpcsToSpawn.Array.data[5]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 59de7f48c1fcd1649bba0dbbda6ebf61, type: 2}
+    - target: {fileID: 738546212711536671, guid: cd7cc9733cbda3448a383c515fe4d345, type: 3}
+      propertyPath: '_randomNpcsToSpawn.Array.data[6]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 577d6ea09fef8af4ba981cb998f4c3e1, type: 2}
+    - target: {fileID: 738546212711536671, guid: cd7cc9733cbda3448a383c515fe4d345, type: 3}
+      propertyPath: '_randomNpcsToSpawn.Array.data[7]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 99f2d37aa3fa93144a6537f7828f8c93, type: 2}
+    - target: {fileID: 738546212711536671, guid: cd7cc9733cbda3448a383c515fe4d345, type: 3}
+      propertyPath: '_randomNpcsToSpawn.Array.data[8]'
+      value: 
+      objectReference: {fileID: 11400000, guid: d0f7e5b1c8d34ec4ba553862bb8593ae, type: 2}
+    - target: {fileID: 738546212711536671, guid: cd7cc9733cbda3448a383c515fe4d345, type: 3}
+      propertyPath: '_randomNpcsToSpawn.Array.data[9]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 0f56475294cc50d498dba0ae5b28277a, type: 2}
+    - target: {fileID: 738546212711536671, guid: cd7cc9733cbda3448a383c515fe4d345, type: 3}
+      propertyPath: '_randomNpcsToSpawn.Array.data[10]'
+      value: 
+      objectReference: {fileID: 11400000, guid: c14e412d94ef5a04ba39aff8b8eca083, type: 2}
+    - target: {fileID: 738546212711536671, guid: cd7cc9733cbda3448a383c515fe4d345, type: 3}
+      propertyPath: '_randomNpcsToSpawn.Array.data[11]'
+      value: 
+      objectReference: {fileID: 11400000, guid: b28271ce192a225438a0b6f269144b29, type: 2}
+    - target: {fileID: 738546212711536671, guid: cd7cc9733cbda3448a383c515fe4d345, type: 3}
+      propertyPath: '_randomNpcsToSpawn.Array.data[12]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 1b1117a3110f5114a91d022d89eea6c5, type: 2}
     - target: {fileID: 738546212711536671, guid: cd7cc9733cbda3448a383c515fe4d345, type: 3}
       propertyPath: '_dedicatedNpcsToSpawn.Array.data[0]'
       value: 

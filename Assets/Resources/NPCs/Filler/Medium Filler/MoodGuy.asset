@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: MoodGuy
   m_EditorClassIdentifier: Assembly-CSharp::NPC.NPCCharacter
   _name: Linekk
-  _idleSprite: {fileID: 0}
+  _idleSprite: {fileID: 808330458099412177, guid: a1350af8855682d4b8f70b9ded9cbcfc, type: 3}
   _desiredItem: {fileID: 11400000, guid: 37e4baca959ef1141812513fc0454360, type: 2}
-  _useExpandedSprite: 0
+  _useExpandedSprite: 1
   _delayBeforeStartingDialogue: 0
   _numberOfRandomNpcAppearancesBeforeAllowedToShow: 4
   _arrivalSequence: {fileID: 11400000, guid: ce8663439dc34684b861695d5f5ce422, type: 2}

@@ -726,6 +726,10 @@ PrefabInstance:
       propertyPath: _skyrollTransform
       value: 
       objectReference: {fileID: 1160050735}
+    - target: {fileID: 5977274093058590392, guid: 3fbc80cf39ce6434b8d04671d925c9d3, type: 3}
+      propertyPath: _secondsBeforeLevelIsOver
+      value: 240
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

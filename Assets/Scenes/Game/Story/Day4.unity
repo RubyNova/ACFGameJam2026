@@ -728,7 +728,7 @@ PrefabInstance:
       objectReference: {fileID: 1160050735}
     - target: {fileID: 5977274093058590392, guid: 3fbc80cf39ce6434b8d04671d925c9d3, type: 3}
       propertyPath: _secondsBeforeLevelIsOver
-      value: 180
+      value: 300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -862,7 +862,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1241443014591845071, guid: bba48788e39c5d147982a0d221a38974, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 2271400077849292619, guid: bba48788e39c5d147982a0d221a38974, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: bba48788e39c5d147982a0d221a38974, type: 3}
 --- !u!114 &2853749184577359257 stripped
 MonoBehaviour:
@@ -1140,7 +1146,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 738546212711536671, guid: cd7cc9733cbda3448a383c515fe4d345, type: 3}
       propertyPath: _randomNpcsToSpawn.Array.size
-      value: 2
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 738546212711536671, guid: cd7cc9733cbda3448a383c515fe4d345, type: 3}
       propertyPath: _dedicatedNpcsToSpawn.Array.size
@@ -1149,9 +1155,25 @@ PrefabInstance:
     - target: {fileID: 738546212711536671, guid: cd7cc9733cbda3448a383c515fe4d345, type: 3}
       propertyPath: '_randomNpcsToSpawn.Array.data[0]'
       value: 
-      objectReference: {fileID: 11400000, guid: a9b32636c2f0b1f4caa536e6cdac0ea5, type: 2}
+      objectReference: {fileID: 11400000, guid: 99f2d37aa3fa93144a6537f7828f8c93, type: 2}
     - target: {fileID: 738546212711536671, guid: cd7cc9733cbda3448a383c515fe4d345, type: 3}
       propertyPath: '_randomNpcsToSpawn.Array.data[1]'
+      value: 
+      objectReference: {fileID: 11400000, guid: d0f7e5b1c8d34ec4ba553862bb8593ae, type: 2}
+    - target: {fileID: 738546212711536671, guid: cd7cc9733cbda3448a383c515fe4d345, type: 3}
+      propertyPath: '_randomNpcsToSpawn.Array.data[2]'
+      value: 
+      objectReference: {fileID: 11400000, guid: c14e412d94ef5a04ba39aff8b8eca083, type: 2}
+    - target: {fileID: 738546212711536671, guid: cd7cc9733cbda3448a383c515fe4d345, type: 3}
+      propertyPath: '_randomNpcsToSpawn.Array.data[3]'
+      value: 
+      objectReference: {fileID: 11400000, guid: b28271ce192a225438a0b6f269144b29, type: 2}
+    - target: {fileID: 738546212711536671, guid: cd7cc9733cbda3448a383c515fe4d345, type: 3}
+      propertyPath: '_randomNpcsToSpawn.Array.data[4]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 1b1117a3110f5114a91d022d89eea6c5, type: 2}
+    - target: {fileID: 738546212711536671, guid: cd7cc9733cbda3448a383c515fe4d345, type: 3}
+      propertyPath: '_randomNpcsToSpawn.Array.data[5]'
       value: 
       objectReference: {fileID: 11400000, guid: 4c8412dfabc28fc44a9df480ea840a31, type: 2}
     - target: {fileID: 738546212711536671, guid: cd7cc9733cbda3448a383c515fe4d345, type: 3}
