@@ -45,11 +45,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ItemIconForeground:
-        m_Texture: {fileID: 2800000, guid: 4b952d84ac23c3d44b0f36ceb48f001c, type: 3}
+        m_Texture: {fileID: 2800000, guid: 701239c9e4a139643a224d90e524790d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ItemIconMiddle:
-        m_Texture: {fileID: 2800000, guid: 7d43b65852c37d044b905fcd2d0f3358, type: 3}
+        m_Texture: {fileID: 2800000, guid: c5a8c337457015e469e438335e1934b6, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:

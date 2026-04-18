@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: HeadacheGuy
   m_EditorClassIdentifier: Assembly-CSharp::NPC.NPCCharacter
   _name: Jadon
-  _idleSprite: {fileID: 0}
+  _idleSprite: {fileID: 808330458099412177, guid: a1350af8855682d4b8f70b9ded9cbcfc, type: 3}
   _desiredItem: {fileID: 11400000, guid: f13b696be4d1cb2479152b0b658cc368, type: 2}
-  _useExpandedSprite: 0
+  _useExpandedSprite: 1
   _delayBeforeStartingDialogue: 0
   _numberOfRandomNpcAppearancesBeforeAllowedToShow: 4
   _arrivalSequence: {fileID: 11400000, guid: f40beb2a3f09a6441ad7a39e078ac5dd, type: 2}
