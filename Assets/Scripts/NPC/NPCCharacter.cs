@@ -11,8 +11,11 @@ namespace NPC
     {
         public class NPCAppearanceCondition
         {
+            [SerializeField]
             public NPCAppearanceConditionType Condition = NPCAppearanceConditionType.None;
+            [SerializeField]
             public NPCAppearanceComparisonType ComparisonType = NPCAppearanceComparisonType.EqualTo;
+            [SerializeField]
             public float ComparisonValue = 0.0f;
         }
 
@@ -54,7 +57,7 @@ namespace NPC
         private AnimationClip _spawnInAnimation;
 
         [SerializeField]
-        private NPCAppearanceCondition _conditionForAppearing;
+        private NPCAppearanceCondition _conditionForAppearing = new();
 
         [SerializeField]
         private int _negativeInteractionsBeforeLeaving = 5;

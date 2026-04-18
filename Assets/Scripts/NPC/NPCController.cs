@@ -1,6 +1,5 @@
 using System.Collections;
 using ACHNarrativeDriver;
-using ACHNarrativeDriver.ScriptableObjects;
 using GameAudio;
 using GameElements;
 using UnityEngine;
@@ -74,7 +73,7 @@ namespace NPC
                 if (!_hasEntered)
                 {
                     DontPlayStartClockAudio = false;
-                    if (!SoundManager.Instance.SfxAudioSource.isPlaying)  //  will play multiple times without, causing horrible overlapping
+                    if (SoundManager.Instance.SfxAudioSource != null && !SoundManager.Instance.SfxAudioSource.isPlaying)  //  will play multiple times without, causing horrible overlapping
                     {
                         PlayFootsteps();
                     }

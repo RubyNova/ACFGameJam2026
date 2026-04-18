@@ -858,7 +858,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1241443014591845071, guid: bba48788e39c5d147982a0d221a38974, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 2271400077849292619, guid: bba48788e39c5d147982a0d221a38974, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: bba48788e39c5d147982a0d221a38974, type: 3}
 --- !u!114 &2853749184577359257 stripped
 MonoBehaviour:
@@ -1136,7 +1142,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 738546212711536671, guid: cd7cc9733cbda3448a383c515fe4d345, type: 3}
       propertyPath: _randomNpcsToSpawn.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 738546212711536671, guid: cd7cc9733cbda3448a383c515fe4d345, type: 3}
       propertyPath: _dedicatedNpcsToSpawn.Array.size
@@ -1145,11 +1151,15 @@ PrefabInstance:
     - target: {fileID: 738546212711536671, guid: cd7cc9733cbda3448a383c515fe4d345, type: 3}
       propertyPath: '_randomNpcsToSpawn.Array.data[0]'
       value: 
-      objectReference: {fileID: 11400000, guid: a9b32636c2f0b1f4caa536e6cdac0ea5, type: 2}
+      objectReference: {fileID: 11400000, guid: 6e4c333335e0ff84ca2ae631a0d99184, type: 2}
     - target: {fileID: 738546212711536671, guid: cd7cc9733cbda3448a383c515fe4d345, type: 3}
       propertyPath: '_randomNpcsToSpawn.Array.data[1]'
       value: 
-      objectReference: {fileID: 11400000, guid: 4c8412dfabc28fc44a9df480ea840a31, type: 2}
+      objectReference: {fileID: 11400000, guid: 577d6ea09fef8af4ba981cb998f4c3e1, type: 2}
+    - target: {fileID: 738546212711536671, guid: cd7cc9733cbda3448a383c515fe4d345, type: 3}
+      propertyPath: '_randomNpcsToSpawn.Array.data[2]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 59de7f48c1fcd1649bba0dbbda6ebf61, type: 2}
     - target: {fileID: 738546212711536671, guid: cd7cc9733cbda3448a383c515fe4d345, type: 3}
       propertyPath: '_dedicatedNpcsToSpawn.Array.data[0]'
       value: 
