@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7f8908c837a045e47ac98c38fa85f59d, type: 3}
-  m_Name: SoreThroatGuyIntro1
+  m_Name: NerdIntro
   m_EditorClassIdentifier: Assembly-CSharp::ACHNarrativeDriver.ScriptableObjects.NarrativeSequence
   _backgroundSprite: {fileID: 0}
   _nextSequence: {fileID: 0}
@@ -23,8 +23,7 @@ MonoBehaviour:
     _hasSecondCharacterPoseIndex: 0
     _poseIndex: 0
     _poseIndexTwo: 0
-    _text: "hey\u2026.. My throat\u2026\u2026. Hurts\u2026\u2026\u2026. A lot\u2026\u2026\u2026\u2026
-      can you make something to heal it\u2026.."
+    _text: "Hey so I accidentally didn\u2019t work on a project until the last minute?"
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
     _delayBeforeContinuingInSeconds: 0
@@ -34,12 +33,23 @@ MonoBehaviour:
     _hasSecondCharacterPoseIndex: 0
     _poseIndex: 0
     _poseIndexTwo: 0
-    _text: Ahhhh!!~ My vocal chords have been restored!! Thank you, ever so!!~
+    _text: Now I need to write like, close to 250 paragraphs in one night.
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: b10337f2996f8504d927d329f0cc571b, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: I need something to help me focus. Nothing else. Just simply focusing.
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
     _delayBeforeContinuingInSeconds: 0
   _choices: []
   _isDepartingSequence: 0
-  <SourceScript>k__BackingField: "IGM: hey\u2026.. My throat\u2026\u2026. Hurts\u2026\u2026\u2026.
-    A lot\u2026\u2026\u2026\u2026 can you make something to heal it\u2026..\n\nIGM:
-    Ahhhh!!~ My vocal chords have been restored!! Thank you, ever so!!~"
+  <SourceScript>k__BackingField: "IGM: Hey so I accidentally didn\u2019t work on
+    a project until the last minute?\n\r\nIGM: Now I need to write like, close to
+    250 paragraphs in one night.\n\r\nIGM: I need something to help me focus. Nothing
+    else. Just simply focusing.\r\n"

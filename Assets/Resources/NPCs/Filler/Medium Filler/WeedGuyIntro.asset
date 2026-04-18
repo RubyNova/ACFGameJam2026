@@ -10,25 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7f8908c837a045e47ac98c38fa85f59d, type: 3}
-  m_Name: SunburnGuyIntro
+  m_Name: WeedGuyIntro
   m_EditorClassIdentifier: Assembly-CSharp::ACHNarrativeDriver.ScriptableObjects.NarrativeSequence
   _backgroundSprite: {fileID: 0}
   _nextSequence: {fileID: 0}
   _musicFiles: []
   _soundEffectFiles: []
-  _characterDialoguePairs:
-  - _character: {fileID: 11400000, guid: b10337f2996f8504d927d329f0cc571b, type: 2}
-    _characterTwo: {fileID: 0}
-    _hasPoseIndex: 0
-    _hasSecondCharacterPoseIndex: 0
-    _poseIndex: 0
-    _poseIndexTwo: 0
-    _text: "I\u2019VE GOT SUNBURNS ALL OVER ME I NEED SOMETHING THAT HEALS SUNBURNS
-      PLEASE."
-    _leftCharacterTalking: 1
-    _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 0
+  _characterDialoguePairs: []
   _choices: []
   _isDepartingSequence: 0
-  <SourceScript>k__BackingField: "IGM: I\u2019VE GOT SUNBURNS ALL OVER ME I NEED
-    SOMETHING THAT HEALS SUNBURNS PLEASE."
+  <SourceScript>k__BackingField: "IGM: Hey man\u2026\u2026.. \n\r\nIGM: You got any
+    of that\u2026\u2026 Relaxalax man\u2026\u2026?\n\r\nIGM: Rouz and Plushroom\u2026
+    that\u2019s the stuff that hits the spot\u2026\u2026.\r\n"

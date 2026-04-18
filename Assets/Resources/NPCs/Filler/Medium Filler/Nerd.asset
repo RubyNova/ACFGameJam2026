@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c5a9b9afdf8e59b4082e0231e993318a, type: 3}
-  m_Name: ColdSimpleGuy
+  m_Name: Nerd
   m_EditorClassIdentifier: Assembly-CSharp::NPC.NPCCharacter
-  _name: Quinn
+  _name: Carrie
   _idleSprite: {fileID: 0}
-  _desiredItem: {fileID: 11400000, guid: d1f01a817c78b2c449d9382c0d8434d0, type: 2}
-  _useExpandedSprite: 1
+  _desiredItem: {fileID: 11400000, guid: f893c66c6c538f341b7d5e6f5e0ce42f, type: 2}
+  _useExpandedSprite: 0
   _delayBeforeStartingDialogue: 0
   _numberOfRandomNpcAppearancesBeforeAllowedToShow: 4
-  _arrivalSequence: {fileID: 11400000, guid: e31be6b359c66274b8e48da9618c70ae, type: 2}
-  _departingSequence: {fileID: 11400000, guid: fa75cd13a5b984a4dbef4e4246494ae7, type: 2}
+  _arrivalSequence: {fileID: 11400000, guid: 0c56cb1a6094c5b4ba440305e16ccc0f, type: 2}
+  _departingSequence: {fileID: 11400000, guid: a4e2f119d574d9f4b98d251e595c95dc, type: 2}
   _negativeSequences: []
-  _animator: {fileID: 9100000, guid: d8034e8aaba9ea345928fbab2399e781, type: 2}
-  _spawnInAnimation: {fileID: 7400000, guid: dd19788569db4db41a8fac48544b7b97, type: 2}
+  _animator: {fileID: 0}
+  _spawnInAnimation: {fileID: 0}
   _negativeInteractionsBeforeLeaving: 5
