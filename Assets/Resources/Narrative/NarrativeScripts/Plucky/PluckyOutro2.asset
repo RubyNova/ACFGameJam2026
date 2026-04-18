@@ -17,7 +17,7 @@ MonoBehaviour:
   _musicFiles: []
   _soundEffectFiles: []
   _characterDialoguePairs:
-  - _character: {fileID: 11400000, guid: 9386325197a551e4fb73753368901d97, type: 2}
+  - _character: {fileID: 11400000, guid: 65e2c6f3ee2b1f84c8b572ecdeddace1, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
     _hasSecondCharacterPoseIndex: 0
@@ -27,7 +27,7 @@ MonoBehaviour:
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
     _delayBeforeContinuingInSeconds: 2
-  - _character: {fileID: 11400000, guid: 9386325197a551e4fb73753368901d97, type: 2}
+  - _character: {fileID: 11400000, guid: 65e2c6f3ee2b1f84c8b572ecdeddace1, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
     _hasSecondCharacterPoseIndex: 0
@@ -37,7 +37,7 @@ MonoBehaviour:
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
     _delayBeforeContinuingInSeconds: 2
-  - _character: {fileID: 11400000, guid: 9386325197a551e4fb73753368901d97, type: 2}
+  - _character: {fileID: 11400000, guid: 65e2c6f3ee2b1f84c8b572ecdeddace1, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
     _hasSecondCharacterPoseIndex: 0
@@ -48,18 +48,18 @@ MonoBehaviour:
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
     _delayBeforeContinuingInSeconds: 2
-  - _character: {fileID: 11400000, guid: 9386325197a551e4fb73753368901d97, type: 2}
+  - _character: {fileID: 11400000, guid: 65e2c6f3ee2b1f84c8b572ecdeddace1, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
     _hasSecondCharacterPoseIndex: 0
     _poseIndex: 0
     _poseIndexTwo: 0
-    _text: "Guess that\u2019s not really my job though\u2026 so uh, I\u2019ll get
+    _text: "Guess that\u2019s not really my job though\u2026 so uh, I\u2019ll let
       you get back to it. "
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
     _delayBeforeContinuingInSeconds: 2
-  - _character: {fileID: 11400000, guid: 9386325197a551e4fb73753368901d97, type: 2}
+  - _character: {fileID: 11400000, guid: 65e2c6f3ee2b1f84c8b572ecdeddace1, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
     _hasSecondCharacterPoseIndex: 0
@@ -69,7 +69,7 @@ MonoBehaviour:
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
     _delayBeforeContinuingInSeconds: 2
-  - _character: {fileID: 11400000, guid: 9386325197a551e4fb73753368901d97, type: 2}
+  - _character: {fileID: 11400000, guid: 65e2c6f3ee2b1f84c8b572ecdeddace1, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
     _hasSecondCharacterPoseIndex: 0
@@ -89,7 +89,7 @@ MonoBehaviour:
     _leftCharacterTalking: 1
     _narratorSpeaking: 1
     _delayBeforeContinuingInSeconds: 2
-  - _character: {fileID: 11400000, guid: 9386325197a551e4fb73753368901d97, type: 2}
+  - _character: {fileID: 11400000, guid: 65e2c6f3ee2b1f84c8b572ecdeddace1, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
     _hasSecondCharacterPoseIndex: 0
@@ -99,7 +99,7 @@ MonoBehaviour:
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
     _delayBeforeContinuingInSeconds: 2
-  - _character: {fileID: 11400000, guid: 9386325197a551e4fb73753368901d97, type: 2}
+  - _character: {fileID: 11400000, guid: 65e2c6f3ee2b1f84c8b572ecdeddace1, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
     _hasSecondCharacterPoseIndex: 0
@@ -109,7 +109,7 @@ MonoBehaviour:
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
     _delayBeforeContinuingInSeconds: 2
-  - _character: {fileID: 11400000, guid: 9386325197a551e4fb73753368901d97, type: 2}
+  - _character: {fileID: 11400000, guid: 65e2c6f3ee2b1f84c8b572ecdeddace1, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
     _hasSecondCharacterPoseIndex: 0
@@ -120,10 +120,11 @@ MonoBehaviour:
     _narratorSpeaking: 0
     _delayBeforeContinuingInSeconds: 2
   _choices: []
+  _isDepartingSequence: 0
   <SourceScript>k__BackingField: "Plucky: W-Woah! That looks amazing! /d2\r\n\r\nPlucky:
     You\u2019re truly the best witch I\u2019ve seen! /d2\r\n\r\nPlucky: I\u2026 wonder
     if combining potions together like that could work even with other potions? /d2\r\n\r\nPlucky:
-    Guess that\u2019s not really my job though\u2026 so uh, I\u2019ll get you get
+    Guess that\u2019s not really my job though\u2026 so uh, I\u2019ll let you get
     back to it. /d2\r\n\r\nPlucky: But um\u2026 thank you, again. /d2\r\n\r\nPlucky:
     Um, what was your name? /d2\r\n\r\nNarrator: Uh... I don't have one right now.
     It was stolen. /d2\r\n\r\nPlucky: Wait, what?! I\u2019m so sorry! I hope you\u2019re

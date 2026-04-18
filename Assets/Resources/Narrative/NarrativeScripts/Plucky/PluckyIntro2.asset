@@ -124,7 +124,7 @@ MonoBehaviour:
     _hasSecondCharacterPoseIndex: 0
     _poseIndex: 0
     _poseIndexTwo: 0
-    _text: 'I just really, um. Appreciate the potion. '
+    _text: I just really, um. Appreciate the potion you made me.
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
     _delayBeforeContinuingInSeconds: 0
@@ -199,9 +199,9 @@ MonoBehaviour:
     wanna go out for revenge on the stupid orc mage who cursed you. \r\n\r\nPlucky:
     Just some advice. That I could have used. \r\n\r\nPlucky: Maybe I didn\u2019t
     even need it if I wasn\u2019t stupid. \r\n\r\nPlucky: \u2026s-sorry, I don\u2019t
-    mean to ramble. \r\n\r\nPlucky: I just really, um. Appreciate the potion. \r\n\r\nPlucky:
-    Probably wouldn\u2019t be here without it actually. \r\n\r\nPlucky: So thank
-    you. \r\n\r\nPlucky: A-and I\u2019m back for another. \n\nPlucky: M-maybe a stronger
-    version of the one you gave me? \r\n\r\nPlucky: C-could you maybe make\u2026
-    like two good health potions and combine those together maybe? \r\n\r\nPlucky:
+    mean to ramble. \r\n\r\nPlucky: I just really, um. Appreciate the potion you
+    made me.\r\n\r\nPlucky: Probably wouldn\u2019t be here without it actually. \r\n\r\nPlucky:
+    So thank you. \r\n\r\nPlucky: A-and I\u2019m back for another. \n\nPlucky: M-maybe
+    a stronger version of the one you gave me? \r\n\r\nPlucky: C-could you maybe
+    make\u2026 like two good health potions and combine those together maybe? \r\n\r\nPlucky:
     Would that work, or am I crazy....? \r\n"
