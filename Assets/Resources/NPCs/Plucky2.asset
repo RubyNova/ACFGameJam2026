@@ -24,4 +24,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: df779e2bc519858489928749bcef9b6e, type: 2}
   _animator: {fileID: 9100000, guid: d8034e8aaba9ea345928fbab2399e781, type: 2}
   _spawnInAnimation: {fileID: 7400000, guid: dd19788569db4db41a8fac48544b7b97, type: 2}
-  _negativeInteractionsBeforeLeaving: 10
+  _negativeInteractionsBeforeLeaving: 9999

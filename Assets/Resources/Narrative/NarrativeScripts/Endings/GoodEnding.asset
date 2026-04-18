@@ -84,7 +84,7 @@ MonoBehaviour:
     _hasSecondCharacterPoseIndex: 0
     _poseIndex: 0
     _poseIndexTwo: 0
-    _text: "(Well\u2026 Rosa and Ursa met up with me and Plucky.)"
+    _text: "(Well\u2026 Ursa met up with me and Plucky.)"
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
     _delayBeforeContinuingInSeconds: 0
@@ -158,44 +158,13 @@ MonoBehaviour:
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
     _delayBeforeContinuingInSeconds: 0
-  - _character: {fileID: 11400000, guid: 3d59eca314e37e34186872fca332f088, type: 2}
-    _characterTwo: {fileID: 0}
-    _hasPoseIndex: 0
-    _hasSecondCharacterPoseIndex: 0
-    _poseIndex: 0
-    _poseIndexTwo: 0
-    _text: "(Though\u2026)"
-    _leftCharacterTalking: 1
-    _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 0
-  - _character: {fileID: 11400000, guid: 3d59eca314e37e34186872fca332f088, type: 2}
-    _characterTwo: {fileID: 0}
-    _hasPoseIndex: 0
-    _hasSecondCharacterPoseIndex: 0
-    _poseIndex: 0
-    _poseIndexTwo: 0
-    _text: "(I don\u2019t think he picked up on why Ursa and Rosa were initially
-      just going alone\u2026 )"
-    _leftCharacterTalking: 1
-    _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 0
-  - _character: {fileID: 11400000, guid: 3d59eca314e37e34186872fca332f088, type: 2}
-    _characterTwo: {fileID: 0}
-    _hasPoseIndex: 0
-    _hasSecondCharacterPoseIndex: 0
-    _poseIndex: 0
-    _poseIndexTwo: 0
-    _text: "heh, heh\u2026"
-    _leftCharacterTalking: 1
-    _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: 7279c6ca5ad205d419789771dbd57d5c, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
     _hasSecondCharacterPoseIndex: 0
     _poseIndex: 0
     _poseIndexTwo: 0
-    _text: "(Wait\u2026 you all came to check in on me?)"
+    _text: Wait... really? You all wanted to check in on... me?
     _leftCharacterTalking: 1
     _narratorSpeaking: 1
     _delayBeforeContinuingInSeconds: 0
@@ -267,18 +236,16 @@ MonoBehaviour:
     that you would have made enough money to buy back your name by this time.)\r\n\r\nCrystalpher:
     (Was she correct?)\r\n\r\nNarrator: Heh\u2026 yeah. She was.\r\n\r\nNarrator:
     \u2026why are you here though? Can I get you something?\r\n\r\nCrystalpher: (Well\u2026
-    Rosa and Ursa met up with me and Plucky.)\r\n\r\nCrystalpher: (Plucky and I had
-    met during a spelunking session he was doing.)\r\n\r\nCrystalpher: (\u2026I did
-    not appreciate him mistaking me for treasure at first.)\r\n\r\nCrystalpher: (\u2026but
-    he is very kind.)\n\nCrystalpher: (You seem to have a knack for both making potions
+    Ursa met up with me and Plucky.)\r\n\r\nCrystalpher: (Plucky and I had met during
+    a spelunking session he was doing.)\r\n\r\nCrystalpher: (\u2026I did not appreciate
+    him mistaking me for treasure at first.)\r\n\r\nCrystalpher: (\u2026but he is
+    very kind.)\n\nCrystalpher: (You seem to have a knack for both making potions
     and finding kind people.)\r\n\r\nCrystalpher: (So... Plucky recognized both Ursa
     and Rosa from being from Felconry...)\n\nCrystalpher: (...so we decided to meet
-    up together.)\n\nCrystalpher: (We all wanted to come over and check in on you.)\r\n\r\nCrystalpher:
-    (Though\u2026)\n\nCrystalpher: (I don\u2019t think he picked up on why Ursa and
-    Rosa were initially just going alone\u2026 )\n\nCrystalpher: heh, heh\u2026\r\n\r\nNarrator:
-    (Wait\u2026 you all came to check in on me?)\r\n\r\nCrystalpher: (And congratulate
-    you, of course.)\r\n\r\nCrystalpher: (After all, we were all talking about how
-    kind you were to us.)\r\n\r\nCrystalpher: (It only makes sense to return the
-    favour.)\r\n\r\nCrystalpher: (Perhaps we could go get your name back together
+    up together.)\n\nCrystalpher: (We all wanted to come over and check in on you.)\r\n\r\nNarrator:
+    Wait... really? You all wanted to check in on... me?\r\n\r\nCrystalpher: (And
+    congratulate you, of course.)\r\n\r\nCrystalpher: (After all, we were all talking
+    about how kind you were to us.)\r\n\r\nCrystalpher: (It only makes sense to return
+    the favour.)\r\n\r\nCrystalpher: (Perhaps we could go get your name back together
     and then come back and chat?)\r\n\r\nNarrator: \u2026.\r\n\r\nNarrator: Yeah\u2026
     that sounds lovely\u2026\r\n"

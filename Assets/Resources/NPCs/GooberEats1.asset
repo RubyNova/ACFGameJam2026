@@ -22,7 +22,7 @@ MonoBehaviour:
   _departingSequence: {fileID: 11400000, guid: 4ca46cfc1e1dcbc43ae0fbf8c3a8a7d2, type: 2}
   _negativeSequences:
   - {fileID: 11400000, guid: 031971211afc17b4088d51301ba175ec, type: 2}
-  - {fileID: 11400000, guid: 54740fda5e836da4a8d20fd9df25cada, type: 2}
+  - {fileID: 11400000, guid: 6795e4b89867fec40b48922a2aa10290, type: 2}
   _animator: {fileID: 9100000, guid: d8034e8aaba9ea345928fbab2399e781, type: 2}
   _spawnInAnimation: {fileID: 7400000, guid: dd19788569db4db41a8fac48544b7b97, type: 2}
   _negativeInteractionsBeforeLeaving: 3

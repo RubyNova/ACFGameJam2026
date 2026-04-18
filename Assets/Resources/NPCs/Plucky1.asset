@@ -15,11 +15,13 @@ MonoBehaviour:
   _name: Plucky
   _idleSprite: {fileID: 4486930094371141866, guid: ec32c3a14819e6e4899c70d60461b9b5, type: 3}
   _desiredItem: {fileID: 11400000, guid: 08917d11410a9644cbc2e7badc151115, type: 2}
+  _useExpandedSprite: 0
   _delayBeforeStartingDialogue: 0
   _numberOfRandomNpcAppearancesBeforeAllowedToShow: 0
   _arrivalSequence: {fileID: 11400000, guid: 93068ddc55d9bd040b1d25080b7a04be, type: 2}
   _departingSequence: {fileID: 11400000, guid: e1e5a2dc1c8c97a4fa7e980bdfe985f8, type: 2}
-  _negativeSequences: []
+  _negativeSequences:
+  - {fileID: 11400000, guid: f2d68bce83336f046b90b2d5cdebecb6, type: 2}
   _animator: {fileID: 9100000, guid: d8034e8aaba9ea345928fbab2399e781, type: 2}
   _spawnInAnimation: {fileID: 7400000, guid: dd19788569db4db41a8fac48544b7b97, type: 2}
   _negativeInteractionsBeforeLeaving: 9999

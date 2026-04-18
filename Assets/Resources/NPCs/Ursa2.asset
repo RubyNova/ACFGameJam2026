@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NPC.NPCCharacter
   _name: Ursa
   _idleSprite: {fileID: 2586632406200613912, guid: b3491260c72808743b378e8c76ac37aa, type: 3}
-  _desiredItem: {fileID: 11400000, guid: 08917d11410a9644cbc2e7badc151115, type: 2}
+  _desiredItem: {fileID: 11400000, guid: cc8eee4a8f3317a4a938b9619798fdb9, type: 2}
   _useExpandedSprite: 0
   _delayBeforeStartingDialogue: 0
   _numberOfRandomNpcAppearancesBeforeAllowedToShow: 5

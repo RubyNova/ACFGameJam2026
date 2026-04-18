@@ -84,8 +84,7 @@ MonoBehaviour:
     _hasSecondCharacterPoseIndex: 0
     _poseIndex: 0
     _poseIndexTwo: 0
-    _text: "But\u2026 people seemed friendly and nice at least. That\u2019s a plus.
-      You were tipped pretty well."
+    _text: "But\u2026 that person seemed nice at least. And they tipped well!"
     _leftCharacterTalking: 1
     _narratorSpeaking: 1
     _delayBeforeContinuingInSeconds: 0
@@ -116,7 +115,6 @@ MonoBehaviour:
     you tend to prefer to do your brewery alone at home.\r\n\r\nNarration: You don\u2019t
     like the idea of people seeing the process of you making potions.\r\n\r\nNarration:
     The pressure gets to you, if only a bit.\r\n\r\nNarration: At least you don\u2019t
-    have to deal with it again until tomorrow.\r\n\r\nNarration: But\u2026 people
-    seemed friendly and nice at least. That\u2019s a plus. You were tipped pretty
-    well.\r\n\r\nNarration: Hopefully this doesn\u2019t change as the days go on.\r\n\nNarration:
-    Time to sleep..."
+    have to deal with it again until tomorrow.\r\n\r\nNarration: But\u2026 that person
+    seemed nice at least. And they tipped well!\r\n\r\nNarration: Hopefully this
+    doesn\u2019t change as the days go on.\r\n\nNarration: Time to sleep..."
