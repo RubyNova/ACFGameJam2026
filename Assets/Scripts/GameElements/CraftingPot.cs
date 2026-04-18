@@ -28,7 +28,6 @@ namespace GameElements
         private void Awake()
         {
             _itemsInPot = new();
-            _itemToIgnore = null;
             playSound += SoundManager.Instance.PlayAudioClip;
         }
 
@@ -36,11 +35,6 @@ namespace GameElements
         {
             if(!_paused)
             {
-                if (collision.gameObject == _itemToIgnore)
-                {
-                    return;
-                }
-
                 if (collision.gameObject.TryGetComponent<ItemInstance>(out var instance))
                 {
                     _itemsInPot.Add(instance.BackingConfig);
@@ -51,24 +45,10 @@ namespace GameElements
                     if (result.Success)
                     {
                         playSound?.Invoke(_createdPotion);
-                        _itemToIgnore = Instantiate(_itemInstancePrefab);
-                        _itemToIgnore.GetComponent<ItemInstance>().InitialiseWithItemConfig(result.Item);
+                        Instantiate(_itemInstancePrefab).GetComponent<ItemInstance>().InitialiseWithItemConfig(result.Item);
                         _itemsInPot.Clear();
                     }                
                 }
-            }
-        }
-
-        private void OnTriggerExit2D(Collider2D collision)
-        {
-            if(!_paused)
-            {
-                if (collision.gameObject != _itemToIgnore)
-                {
-                    return;
-                }
-
-                _itemToIgnore = null;
             }
         }
 

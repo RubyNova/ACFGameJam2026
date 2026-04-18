@@ -118,8 +118,8 @@ namespace GameUI
             }
 
             imageInstance.material.SetColor("_BaseMapColour", ingredient.BackgroundColourTint);
-            imageInstance.material.SetColor("_ItemIconMiddleColourTint", ingredient.MiddleColourTint);
-            imageInstance.material.SetColor("_ItemIconForegroundColourTint", ingredient.ForegroundColourTint);
+            imageInstance.material.SetColor("_ItemIconMiddleColour", ingredient.MiddleColourTint);
+            imageInstance.material.SetColor("_ItemIconForegroundColour", ingredient.ForegroundColourTint);
         }
 
         public void ReturnToItemList()
