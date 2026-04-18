@@ -67,8 +67,8 @@ namespace GameUI
             }
 
             _runtimeMaterial.SetColor("_BaseMapColour", _item.BackgroundColourTint);
-            _runtimeMaterial.SetColor("_ItemIconMiddleColourTint", _item.MiddleColourTint);
-            _runtimeMaterial.SetColor("_ItemIconForegroundColourTint", _item.ForegroundColourTint);
+            _runtimeMaterial.SetColor("_ItemIconMiddleColour", _item.MiddleColourTint);
+            _runtimeMaterial.SetColor("_ItemIconForegroundColour", _item.ForegroundColourTint);
         }
 
         public void OpenCraftableItemInfo()
