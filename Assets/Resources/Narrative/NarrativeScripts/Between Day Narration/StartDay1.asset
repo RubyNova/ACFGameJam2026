@@ -23,7 +23,7 @@ MonoBehaviour:
     _hasSecondCharacterPoseIndex: 0
     _poseIndex: 0
     _poseIndexTwo: 0
-    _text: ...you just fell for the oldest fae trick in the book.
+    _text: ...You just fell for the oldest fae trick in the book.
     _leftCharacterTalking: 1
     _narratorSpeaking: 1
     _delayBeforeContinuingInSeconds: 0
@@ -53,7 +53,7 @@ MonoBehaviour:
     _hasSecondCharacterPoseIndex: 0
     _poseIndex: 0
     _poseIndexTwo: 0
-    _text: But its hard to make money in this day and age quick if you aren't an
+    _text: But it's hard to make money in this day and age quick if you aren't an
       adventurer...
     _leftCharacterTalking: 1
     _narratorSpeaking: 1
@@ -141,7 +141,7 @@ MonoBehaviour:
     _delayBeforeContinuingInSeconds: 0
   _choices: []
   _isDepartingSequence: 0
-  <SourceScript>k__BackingField: 'Narration: ...you just fell for the oldest fae
+  <SourceScript>k__BackingField: 'Narration: ...You just fell for the oldest fae
     trick in the book.
 
 
@@ -153,7 +153,7 @@ MonoBehaviour:
 
 
     Narration: But
-    its hard to make money in this day and age quick if you aren''t an adventurer...
+    it''s hard to make money in this day and age quick if you aren''t an adventurer...
 
 
     Narration:

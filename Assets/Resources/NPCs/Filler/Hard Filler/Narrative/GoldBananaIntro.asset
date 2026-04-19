@@ -49,9 +49,21 @@ MonoBehaviour:
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
     _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: b10337f2996f8504d927d329f0cc571b, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: Could you mix a curse potion and something with it to rid yourself of
+      THIS PAIN???
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 0
   _choices: []
   _isDepartingSequence: 0
   <SourceScript>k__BackingField: "IGM: I\u2019m under The Curse of the Golden Banana\u2026
     \n\nIGM: ...and now I can\u2019t stop dancing and singing about The Curse of
     the Golden Banana!\n\r\nIGM: Isn\u2019t there ANY WAY to rid yourself of FRUIT
-    BASED CURSES through POTIONS??\r\n"
+    BASED CURSES through POTIONS??\n\nIGM: Could you mix a curse potion and something
+    with it to rid yourself of THIS PAIN???\r\n"
