@@ -20,8 +20,7 @@ MonoBehaviour:
   _numberOfRandomNpcAppearancesBeforeAllowedToShow: 4
   _arrivalSequence: {fileID: 11400000, guid: 3352f85e098de53419169badf28e49ed, type: 2}
   _departingSequence: {fileID: 11400000, guid: 510cb55d6bdc7df46bbab7683bb38d2f, type: 2}
-  _negativeSequences:
-  - {fileID: 11400000, guid: f2d68bce83336f046b90b2d5cdebecb6, type: 2}
+  _negativeSequences: []
   _animator: {fileID: 9100000, guid: d8034e8aaba9ea345928fbab2399e781, type: 2}
   _spawnInAnimation: {fileID: 7400000, guid: dd19788569db4db41a8fac48544b7b97, type: 2}
-  _negativeInteractionsBeforeLeaving: 5
+  _negativeInteractionsBeforeLeaving: 999

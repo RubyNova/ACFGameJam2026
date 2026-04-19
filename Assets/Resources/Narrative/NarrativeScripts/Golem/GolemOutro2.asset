@@ -16,21 +16,204 @@ MonoBehaviour:
   _nextSequence: {fileID: 0}
   _musicFiles: []
   _soundEffectFiles: []
-  _characterDialoguePairs: []
+  _characterDialoguePairs:
+  - _character: {fileID: 11400000, guid: 3d59eca314e37e34186872fca332f088, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: "(Wow\u2026 This might be the highest quality elixir I have ever seen.)"
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: 3d59eca314e37e34186872fca332f088, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: (Many thanks for your assistance.)
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: 3d59eca314e37e34186872fca332f088, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: (Many are not as kind to me as you are.)
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: 3d59eca314e37e34186872fca332f088, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: (I thank you again for your patience in dealing with me.)
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: 7279c6ca5ad205d419789771dbd57d5c, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: "Hey\u2026 its all good. "
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 1
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: 7279c6ca5ad205d419789771dbd57d5c, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: "With what it seems you\u2019ve gone through, you should have more patience
+      for others."
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 1
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: 3d59eca314e37e34186872fca332f088, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: "(\u2026a naive perspective.)"
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: 3d59eca314e37e34186872fca332f088, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: '(I used to not have a lot of patience.) '
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: 3d59eca314e37e34186872fca332f088, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: (That is why I ended up this way.
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: 3d59eca314e37e34186872fca332f088, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: "(I find it is easier to lead life with a heart tempered with understanding
+      and kindness\u2026)"
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: 3d59eca314e37e34186872fca332f088, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: "(\u2026rather than carelessness and indifference.)"
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: 3d59eca314e37e34186872fca332f088, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: "(But\u2026 I appreciate your sentiment nonetheless.)"
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: 3d59eca314e37e34186872fca332f088, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: (I hope you will let this old soul return every once in a while for his
+      needs.)
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: 7279c6ca5ad205d419789771dbd57d5c, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: Of course.
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 1
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: 7279c6ca5ad205d419789771dbd57d5c, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: Thank you for shopping here at all.
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 1
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: 7279c6ca5ad205d419789771dbd57d5c, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: It helps me out a lot too.
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 1
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: 3d59eca314e37e34186872fca332f088, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: (If I can help anyone, then that means the world to me.)
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: 3d59eca314e37e34186872fca332f088, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: (Take care. We shall meet again, kind witch.)
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 0
   _choices: []
   _isDepartingSequence: 0
-  <SourceScript>k__BackingField: "Cystalpher: (Wow\u2026 This might be the highest
-    quality elixir I have ever seen.)\r\n\r\nCystalpher: (Many thanks for your assistance.)\r\n\r\nCystalpher:
-    (Many are not as kind to me as you are.)\r\n\r\nCystalpher: (I thank you again
+  <SourceScript>k__BackingField: "Crystalpher: (Wow\u2026 This might be the highest
+    quality elixir I have ever seen.)\r\n\r\nCrystalpher: (Many thanks for your assistance.)\r\n\r\nCrystalpher:
+    (Many are not as kind to me as you are.)\r\n\r\nCrystalpher: (I thank you again
     for your patience in dealing with me.)\r\n\r\nNarrator: Hey\u2026 its all good.
     \r\n\r\nNarrator: With what it seems you\u2019ve gone through, you should have
-    more patience for others.\r\n\r\nCystalpher: (\u2026a naive perspective.)\r\n\r\nCystalpher:
-    (I used to not have a lot of patience.) \r\n\r\nCystalpher: (That is why I ended
-    up this way.\r\n\r\nCystalpher: (I find it is easier to lead life with a heart
-    tempered with understanding and kindness\u2026)\r\n\r\nCystalpher: (\u2026rather
-    than carelessness and indifference.)\r\n\r\nCystalpher: (But\u2026 I appreciate
-    your sentiment nonetheless.)\r\n\r\nCystalpher: (I hope you will let this old
+    more patience for others.\r\n\r\nCrystalpher: (\u2026a naive perspective.)\r\n\r\nCrystalpher:
+    (I used to not have a lot of patience.) \r\n\r\nCrystalpher: (That is why I ended
+    up this way.\r\n\r\nCrystalpher: (I find it is easier to lead life with a heart
+    tempered with understanding and kindness\u2026)\r\n\r\nCrystalpher: (\u2026rather
+    than carelessness and indifference.)\r\n\r\nCrystalpher: (But\u2026 I appreciate
+    your sentiment nonetheless.)\r\n\r\nCrystalpher: (I hope you will let this old
     soul return every once in a while for his needs.)\r\n\r\nNarrator: Of course.\r\n\r\nNarrator:
-    Thank you for shopping here at all.\r\n\r\nNarrator: It helps me out a lot too.\r\n\r\nCystalpher:
-    (If I can help anyone, then that means the world to me.)\r\n\r\nCystalpher: (Take
-    care. We shall meet again.)\r\n"
+    Thank you for shopping here at all.\r\n\r\nNarrator: It helps me out a lot too.\r\n\r\nCrystalpher:
+    (If I can help anyone, then that means the world to me.)\r\n\r\nCrystalpher:
+    (Take care. We shall meet again, kind witch.)\r\n"
