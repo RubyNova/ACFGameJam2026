@@ -33,7 +33,7 @@ MonoBehaviour:
     _hasSecondCharacterPoseIndex: 0
     _poseIndex: 0
     _poseIndexTwo: 0
-    _text: It might feel like a headache at first, but add some magic and then...
+    _text: Mix something that heals a headache... and then just add magic!
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
     _delayBeforeContinuingInSeconds: 0
@@ -53,8 +53,8 @@ MonoBehaviour:
 
 
     IGM:
-    It might feel like a headache at first, but add some magic and then...
+    Mix something that heals a headache... and then just add magic!
 
 
-    IGM:
-    Get the hint? Then get to it!!'
+    IGM: Get
+    the hint? Then get to it!!'
