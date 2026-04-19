@@ -7,8 +7,8 @@ public class CreditsScroll : MonoBehaviour
 
     private RectTransform _rectTransform;
 
-    private int _yAxisStopPoint = 6040;
-    private int _startingPoint = -1030;
+    private int _yAxisStopPoint = 6284;
+    private int _startingPoint = -1950;
 
 
 
