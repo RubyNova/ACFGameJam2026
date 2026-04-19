@@ -7,7 +7,7 @@ public class MainMenu : MonoBehaviour
 {
     public void StartGame()
     {
-        LevelManager.Instance.LoadScene("Day1");
+        LevelManager.Instance.LoadScene("NameStealingScene");
         SoundManager.Instance.PlayStartAudio();
     }
 
