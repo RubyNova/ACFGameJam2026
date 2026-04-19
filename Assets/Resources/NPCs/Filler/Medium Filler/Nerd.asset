@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NPC.NPCCharacter
   _name: Carrie
   _idleSprite: {fileID: 808330458099412177, guid: a1350af8855682d4b8f70b9ded9cbcfc, type: 3}
-  _desiredItem: {fileID: 11400000, guid: f893c66c6c538f341b7d5e6f5e0ce42f, type: 2}
+  _desiredItem: {fileID: 11400000, guid: b68cb190151fc0841822f08e22aa4c69, type: 2}
   _useExpandedSprite: 1
   _delayBeforeStartingDialogue: 0
   _numberOfRandomNpcAppearancesBeforeAllowedToShow: 4
