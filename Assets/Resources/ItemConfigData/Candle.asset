@@ -24,5 +24,5 @@ MonoBehaviour:
     decongestion. Used as a candle substitute. Mixing with this will change its scent.
     Made from Limesli and Rouz.
   _recipe:
-  - {fileID: 11400000}
+  - {fileID: 11400000, guid: e4bd1f38257ab9d4b93ea17750bde1b5, type: 2}
   - {fileID: 11400000, guid: 8988c71254de98f4ea3a1c8d07d5869d, type: 2}
