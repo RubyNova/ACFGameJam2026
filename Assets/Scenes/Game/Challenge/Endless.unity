@@ -479,6 +479,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1344162069224804038, guid: 3d7097b1edec21948b7762f6ab681ebe, type: 3}
   m_PrefabInstance: {fileID: 3052669037368491947}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1231765039 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4064492496353378308, guid: 1be39131abfb05d40bf853fe60aee79a, type: 3}
+  m_PrefabInstance: {fileID: 1103808649}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f3f321df3d060746a336308da64143e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PauseMenu
 --- !u!114 &1294996447 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4653547968659581278, guid: e9908ccea2bbccedf92f5ed3ff4fec43, type: 3}
@@ -1919,6 +1930,14 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1562268719}
+    - target: {fileID: 2239412890202162850, guid: 4de49d0ece76c0362ac80bb965789ddc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1231765039}
+    - target: {fileID: 2239412890202162850, guid: 4de49d0ece76c0362ac80bb965789ddc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: TogglePause
+      objectReference: {fileID: 0}
     - target: {fileID: 2643216459065684416, guid: 4de49d0ece76c0362ac80bb965789ddc, type: 3}
       propertyPath: m_Pivot.x
       value: 0
