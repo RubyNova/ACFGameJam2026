@@ -1178,7 +1178,7 @@ PrefabInstance:
     - target: {fileID: 738546212711536671, guid: cd7cc9733cbda3448a383c515fe4d345, type: 3}
       propertyPath: '_randomNpcsToSpawn.Array.data[1]'
       value: 
-      objectReference: {fileID: 11400000, guid: 4c8412dfabc28fc44a9df480ea840a31, type: 2}
+      objectReference: {fileID: 11400000, guid: 543bdc344f06e8344956b6c273273f28, type: 2}
     - target: {fileID: 738546212711536671, guid: cd7cc9733cbda3448a383c515fe4d345, type: 3}
       propertyPath: '_randomNpcsToSpawn.Array.data[2]'
       value: 
