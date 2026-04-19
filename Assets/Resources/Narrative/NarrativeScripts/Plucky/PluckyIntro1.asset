@@ -160,13 +160,13 @@ MonoBehaviour:
     _delayBeforeContinuingInSeconds: 0
   _choices: []
   _isDepartingSequence: 0
-  <SourceScript>k__BackingField: "Plucky: Um\u2026 hi? $PlayerName \r\n\r\nPlucky:
-    (Gosh I\u2019m so nervous I\u2019ve never ordered from one of these places?)
-    \r\n\r\nPlucky: Sorry uh, can I get\u2026 \r\n\r\nPlucky: Uhhhhh\u2026 \r\n\r\nPlucky:
-    Hold on, can I get a\u2026 \r\n\r\nPlucky: ...\r\n\r\nPlucky: Umm\u2026 oh yeah!
-    \r\n\r\nPlucky: A healing potion! \r\n\r\nPlucky: If you could make one of those
-    for me, I\u2019d super appreciate it\u2026 \r\n\r\nPlucky: I used to have pretty
-    high stats\u2026 \n\nPlucky: but then I got cursed to lose all of my EXP...\r\n\r\nPlucky:
-    I\u2019m going out on an adventuring quest today. \n\nPlucky: For the first time.
-    In a while. All the way back at Lv. 1\u2026\r\n\r\nPlucky: But yeah\u2026 if
-    you could make a healing potion I\u2019d really appreciate it\u2026\r\n"
+  <SourceScript>k__BackingField: "Plucky: Um\u2026 hi? \r\n\r\nPlucky: (Gosh I\u2019m
+    so nervous I\u2019ve never ordered from one of these places?) \r\n\r\nPlucky:
+    Sorry uh, can I get\u2026 \r\n\r\nPlucky: Uhhhhh\u2026 \r\n\r\nPlucky: Hold on,
+    can I get a\u2026 \r\n\r\nPlucky: ...\r\n\r\nPlucky: Umm\u2026 oh yeah! \r\n\r\nPlucky:
+    A healing potion! \r\n\r\nPlucky: If you could make one of those for me, I\u2019d
+    super appreciate it\u2026 \r\n\r\nPlucky: I used to have pretty high stats\u2026
+    \n\nPlucky: but then I got cursed to lose all of my EXP...\r\n\r\nPlucky: I\u2019m
+    going out on an adventuring quest today. \n\nPlucky: For the first time. In a
+    while. All the way back at Lv. 1\u2026\r\n\r\nPlucky: But yeah\u2026 if you could
+    make a healing potion I\u2019d really appreciate it\u2026\r\n"
