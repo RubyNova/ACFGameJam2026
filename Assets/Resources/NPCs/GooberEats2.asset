@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NPC.NPCCharacter
   _name: Goober
   _idleSprite: {fileID: -3539811419900543807, guid: 727d56f0c8bd8ef4c96aabf53e2a1067, type: 3}
-  _desiredItem: {fileID: 11400000, guid: 453a2a9892488bb408ffd1101367343b, type: 2}
-  _useExpandedSprite: 1
+  _desiredItem: {fileID: 11400000, guid: 19032f6448cde9f41b62f5f0f839dc56, type: 2}
+  _useExpandedSprite: 0
   _delayBeforeStartingDialogue: 0
   _numberOfRandomNpcAppearancesBeforeAllowedToShow: 3
   _arrivalSequence: {fileID: 11400000, guid: ec42981c17d1e6a4fbec327a9826fb7b, type: 2}

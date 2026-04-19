@@ -33,7 +33,7 @@ MonoBehaviour:
     _hasSecondCharacterPoseIndex: 0
     _poseIndex: 0
     _poseIndexTwo: 0
-    _text: 'Got an order for a nostalgic owl far from home!  '
+    _text: 'Got an order for an owl far from home!  '
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
     _delayBeforeContinuingInSeconds: 2
@@ -43,13 +43,25 @@ MonoBehaviour:
     _hasSecondCharacterPoseIndex: 0
     _poseIndex: 0
     _poseIndexTwo: 0
-    _text: 'They''re asking for something to help ground them and to help them feel
-      better. Got anything in mind? '
+    _text: 'They need something "relaxing" but they also want to be put in a better
+      mood after. '
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 2
+  - _character: {fileID: 11400000, guid: d32a2c80ce77cdb41ae63b7b96553068, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: 'I''m no expert but that would mean mixing Relaxalax and a mood ingredient,
+      right? '
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
     _delayBeforeContinuingInSeconds: 2
   _choices: []
   _isDepartingSequence: 0
   <SourceScript>k__BackingField: "Goober: Goober Eats here! /d1\n\nGoober: Got an
-    order for a nostalgic owl far from home! /d2 \n\nGoober: They're asking for something
-    to help ground them and to help them feel better. Got anything in mind? /d2"
+    order for an owl far from home! /d2 \n\nGoober: They need something \"relaxing\"
+    but they also want to be put in a better mood after. /d2\n\nGoober: I'm no expert
+    but that would mean mixing Relaxalax and a mood ingredient, right? /d2"
