@@ -33,7 +33,17 @@ MonoBehaviour:
     _hasSecondCharacterPoseIndex: 0
     _poseIndex: 0
     _poseIndexTwo: 0
-    _text: My name is
+    _text: My name is $PlayerName.
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 1
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: bb973c0748022e4479b0b0bdec1dd006, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: It's so nice to meet you all!
     _leftCharacterTalking: 1
     _narratorSpeaking: 1
     _delayBeforeContinuingInSeconds: 0
@@ -43,4 +53,8 @@ MonoBehaviour:
     myself to you all.
 
 
-    Narration: My name is'
+    Narration: My name is $PlayerName.
+
+
+    Narration:
+    It''s so nice to meet you all!'
