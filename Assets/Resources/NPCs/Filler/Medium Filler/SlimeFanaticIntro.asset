@@ -19,4 +19,12 @@ MonoBehaviour:
   _characterDialoguePairs: []
   _choices: []
   _isDepartingSequence: 0
-  <SourceScript>k__BackingField: 
+  <SourceScript>k__BackingField: 'IGM: Hey... ever wanted to smell like a slime...?
+
+
+    IGM:
+    Well... I do...
+
+
+    IGM: Make a scent based potion... then add slime. Then
+    I''ll be happy.'

@@ -19,4 +19,9 @@ MonoBehaviour:
   _characterDialoguePairs: []
   _choices: []
   _isDepartingSequence: 0
-  <SourceScript>k__BackingField: 
+  <SourceScript>k__BackingField: 'IGM: Hey. Kinda a weird request but.
+
+
+    IGM:
+    You got any potions that remove headaches and make you kinda fruity? Or make
+    you think about fruit?'

@@ -33,8 +33,18 @@ MonoBehaviour:
     _hasSecondCharacterPoseIndex: 0
     _poseIndex: 0
     _poseIndexTwo: 0
-    _text: Oh, my apologies. It is not very forthcoming of me to present myself in
-      such an unkempt fashion to members of the public.
+    _text: 'Oh, my apologies. '
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: b10337f2996f8504d927d329f0cc571b, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: It is not very forthcoming of me to present myself in such an unkempt
+      fashion.
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
     _delayBeforeContinuingInSeconds: 0
@@ -101,9 +111,9 @@ MonoBehaviour:
   _choices: []
   _isDepartingSequence: 0
   <SourceScript>k__BackingField: "Rosa: Gosh, am I winded\u2026 crud\u2026 \r\n\r\nRosa:
-    Oh, my apologies. It is not very forthcoming of me to present myself in such
-    an unkempt fashion to members of the public.\r\n\r\nRosa: I am Rosa, a high ranking
-    knight in the legion of Felconry.\r\n\r\nRosa: And I am quite parched.\r\n\r\nRosa:
-    I would rather not have my squadron see me in such a sorry condition.\r\n\r\nRosa:
-    Something nice and clear, something refreshing\u2026\n\nRosa: Perhaps something...
-    like water?\r\n\r\nRosa: That would be greatly appreciated."
+    Oh, my apologies. \n\nIGM: It is not very forthcoming of me to present myself
+    in such an unkempt fashion.\r\n\r\nRosa: I am Rosa, a high ranking knight in
+    the legion of Felconry.\r\n\r\nRosa: And I am quite parched.\r\n\r\nRosa: I would
+    rather not have my squadron see me in such a sorry condition.\r\n\r\nRosa: Something
+    nice and clear, something refreshing\u2026\n\nRosa: Perhaps something... like
+    water?\r\n\r\nRosa: That would be greatly appreciated."

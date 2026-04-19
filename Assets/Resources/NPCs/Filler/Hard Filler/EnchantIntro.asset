@@ -19,4 +19,13 @@ MonoBehaviour:
   _characterDialoguePairs: []
   _choices: []
   _isDepartingSequence: 0
-  <SourceScript>k__BackingField: 
+  <SourceScript>k__BackingField: 'IGM: Hey, I wanna start enchanting some of the
+    furniture in my house.
+
+
+    IGM: But apparently the only way to do that is to
+    rub some magic ointment on it...
+
+
+    IGM: Does magic ointment really exist...?
+    Can you make it?'

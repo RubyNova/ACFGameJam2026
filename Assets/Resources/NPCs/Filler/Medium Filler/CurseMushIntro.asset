@@ -19,4 +19,16 @@ MonoBehaviour:
   _characterDialoguePairs: []
   _choices: []
   _isDepartingSequence: 0
-  <SourceScript>k__BackingField: 
+  <SourceScript>k__BackingField: 'IGM: Hey so. I know you can''t see under this cloak.
+
+
+    IGM:
+    But mushrooms are all over my skin like hives.
+
+
+    IGM: I think I fell victim
+    to some sort of mushroom-type curse.
+
+
+    IGM: Do you have any hex or curse-be-gone
+    potions? And could you mix that with a mushroom?'

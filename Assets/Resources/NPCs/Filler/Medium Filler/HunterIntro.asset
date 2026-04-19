@@ -19,4 +19,34 @@ MonoBehaviour:
   _characterDialoguePairs: []
   _choices: []
   _isDepartingSequence: 0
-  <SourceScript>k__BackingField: 
+  <SourceScript>k__BackingField: 'IGM: Hello. I have a bit of a complicated request.
+
+
+    IGM:
+    You see, I''m a hunter of magical creatures.
+
+
+    IGM: I''m currently hunting
+    this bipedal cheetah.
+
+
+    IGM: He uses a bow and arrow. He''s known for making
+    funny faces.
+
+
+    IGM: I want his face on my wall.
+
+
+    IGM: I''ll need a scent
+    potion to coax him out...
+
+
+    IGM: ...so something that smells like perfume
+    or a candle would be needed.
+
+
+    IGM: But it would need a tinge of magic added.
+
+
+    IGM:
+    Please make this for me.'

@@ -19,4 +19,13 @@ MonoBehaviour:
   _characterDialoguePairs: []
   _choices: []
   _isDepartingSequence: 0
-  <SourceScript>k__BackingField: 
+  <SourceScript>k__BackingField: 'IGM: I''m a magical investigator. I work near a
+    lot of Magic Crime Scenes.
+
+
+    IGM: I''m going to need a magical-type potion
+    that will let me see curses.
+
+
+    IGM: Mixing a magical ingredient with a curse
+    or hex-type potion should work.'

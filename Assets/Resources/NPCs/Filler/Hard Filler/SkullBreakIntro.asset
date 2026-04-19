@@ -19,4 +19,20 @@ MonoBehaviour:
   _characterDialoguePairs: []
   _choices: []
   _isDepartingSequence: 0
-  <SourceScript>k__BackingField: 
+  <SourceScript>k__BackingField: 'IGM: Hey so. A buddy got in an adventuring accident.
+    Larrrrge skull fracture.
+
+
+    IGM: Gonna need something... probably medicine-y?
+
+
+    IGM:
+    Probably related to like. Healing headaches too.
+
+
+    IGM: A skull fracture
+    is the biggest headache you can have right?
+
+
+    IGM: Just mix a headache potion
+    with something medicine-y.'
