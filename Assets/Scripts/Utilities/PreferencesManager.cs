@@ -34,6 +34,17 @@ namespace Utilities
             LoadScores();
         }
 
+        public void CreateNewRun()
+        {
+            var run = new RunData()
+            {
+                StartDateTime = DateTime.UtcNow.Ticks,
+                levelScores = new()
+            };
+
+            SaveScores(run);
+        }
+
         public void SaveScores(RunData data)
         {
             Debug.Log("Saving story scores...");
@@ -86,7 +97,7 @@ namespace Utilities
 
         public RunData GetLatestRun()
         {
-            var run = _runJson.Runs.OrderByDescending(run => run.StartDateTime).FirstOrDefault(run => run.levelScores.Count > 0);
+            var run = _runJson.Runs.OrderByDescending(run => run.StartDateTime).FirstOrDefault();
             if (run == null)
             {
                 run = new()
