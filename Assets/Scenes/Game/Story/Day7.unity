@@ -728,7 +728,7 @@ PrefabInstance:
       objectReference: {fileID: 1160050735}
     - target: {fileID: 5977274093058590392, guid: 3fbc80cf39ce6434b8d04671d925c9d3, type: 3}
       propertyPath: _secondsBeforeLevelIsOver
-      value: 360
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -995,9 +995,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1030586252}
     - target: {fileID: 4308305790724328942, guid: a1bbcf412d644f0c4b95caf699f0cfd9, type: 3}
+      propertyPath: _bestEndingSceneName
+      value: BestEnding
+      objectReference: {fileID: 0}
+    - target: {fileID: 4308305790724328942, guid: a1bbcf412d644f0c4b95caf699f0cfd9, type: 3}
       propertyPath: _itemsDiscoveredText
       value: 
       objectReference: {fileID: 1692928629}
+    - target: {fileID: 4308305790724328942, guid: a1bbcf412d644f0c4b95caf699f0cfd9, type: 3}
+      propertyPath: _okayEndingSceneName
+      value: OkayEnding
+      objectReference: {fileID: 0}
     - target: {fileID: 4308305790724328942, guid: a1bbcf412d644f0c4b95caf699f0cfd9, type: 3}
       propertyPath: _customerHappinessRateText
       value: 

@@ -252,6 +252,7 @@ namespace Player
         public void ContinueToEndScene()
         {
             var run = PreferencesManager.Instance.GetLatestRun();
+
             var overallHappiness = run.levelScores.Average(level => level.CustomerHappinessPercentage);
 
             if(overallHappiness >= _customerHappinessPercentageForBestEnding)

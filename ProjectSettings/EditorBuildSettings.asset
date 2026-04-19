@@ -51,6 +51,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Game/Story/Day7.unity
     guid: 48042743e695396c8a27fe9db663d9d4
   - enabled: 1
+    path: Assets/Scenes/Game/Story/Endings/BestEnding.unity
+    guid: 9c609281147f9a242b6dbbfaac1018b0
+  - enabled: 1
+    path: Assets/Scenes/Game/Story/Endings/OkayEnding.unity
+    guid: 1b70c476ea1f6f547bac97a07bca706b
+  - enabled: 1
     path: Assets/Scenes/Game/Challenge/Endless.unity
     guid: ea9554acc0135781eb01152646211dbd
   - enabled: 1

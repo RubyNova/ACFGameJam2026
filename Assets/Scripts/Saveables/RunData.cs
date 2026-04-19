@@ -3,19 +3,21 @@ using System.Collections.Generic;
 
 namespace Saveables 
 {
+    [Serializable]
     public class LevelScore
     {
-        public int Level { get; set; } = 0;
-        public int TimeRemaining { get; set; } = 0;
-        public int ItemsCrafted { get; set; } = 0;
-        public int ItemsDiscovered { get; set; } = 0;
-        public int CustomerHappinessPercentage { get; set; } = 0;
-        public float TotalScore { get; set; } = 0;
+        public int Level;
+        public int TimeRemaining;
+        public int ItemsCrafted;
+        public int ItemsDiscovered;
+        public int CustomerHappinessPercentage;
+        public float TotalScore;
     }
 
+    [Serializable]
     public class RunData
     {
-        public DateTime StartDateTime { get; set; } = DateTime.UtcNow;
-        public List<LevelScore> levelScores { get; set; } = new();
+        public long StartDateTime;
+        public List<LevelScore> levelScores;
     }
 }

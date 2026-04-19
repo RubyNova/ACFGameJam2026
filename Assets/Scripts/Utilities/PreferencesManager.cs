@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Saveables;
@@ -8,6 +9,12 @@ namespace Utilities
 {
     public class PreferencesManager : MonoSingleton<PreferencesManager>
     {
+        [Serializable]
+        public class RunJson
+        {
+            public List<RunData> Runs;
+        }
+
         [HideInInspector]
         public UnityEvent<PreferencesManager> SettingsUpdated;
         
@@ -19,91 +26,74 @@ namespace Utilities
 
         public Preferences Settings = new();
 
-        public List<RunData> Runs = new();
+        private RunJson _runJson = new();
 
         protected override void OnInit()
         {
-            SettingsUpdated ??= new();
             ScoresUpdated ??= new();
-            LoadPrefs();
             LoadScores();
-        }
-
-        public void SaveSettings(Preferences preferredPrefs)
-        {
-            Settings = preferredPrefs;
-            var json = JsonUtility.ToJson(Settings);
-            PlayerPrefs.SetString(_playerPrefencesName, json);
-            SettingsUpdated.Invoke(this);
         }
 
         public void SaveScores(RunData data)
         {
-            if(!Runs.Any(run => run.StartDateTime == data.StartDateTime))
+            Debug.Log("Saving story scores...");
+            if (_runJson.Runs == null)
             {
-                Runs.Append(data);
+               _runJson.Runs = new();
+            }
+
+            if(!_runJson.Runs.Any(run => run.StartDateTime == data.StartDateTime))
+            {
+                _runJson.Runs.Add(data);
             }
             else
             {
-                var tempRun = Runs.First(run => run.StartDateTime == data.StartDateTime);
-                Runs.Remove(tempRun);
-                Runs.Append(data);
+                var tempRun = _runJson.Runs.First(run => run.StartDateTime == data.StartDateTime);
+                _runJson.Runs.Remove(tempRun);
+                _runJson.Runs.Add(data);
             }
 
-            var json = JsonUtility.ToJson(Runs);
+            var json = JsonUtility.ToJson(_runJson);
             PlayerPrefs.SetString(_scoresPrefsName, json);
             ScoresUpdated.Invoke(this);
-        }
-
-        public void LoadPrefs()
-        {
-            var json = PlayerPrefs.GetString(_playerPrefencesName);
-
-            if(string.IsNullOrWhiteSpace(json))
-            {
-                Debug.Log("Could not load settings - recreating!");
-                
-                //Should create defaults here;
-                Settings = new();
-                
-                PlayerPrefs.SetString(_playerPrefencesName, JsonUtility.ToJson(Settings));
-                SettingsUpdated.Invoke(this);
-                return;
-            }
-            else
-            {
-                Settings = JsonUtility.FromJson<Preferences>(json);
-                SettingsUpdated.Invoke(this);
-            }
+            Debug.Log("Updated scores");
         }
 
         public void LoadScores()
         {
+            Debug.Log("Loading scores");
             var json = PlayerPrefs.GetString(_scoresPrefsName);
 
             if(string.IsNullOrWhiteSpace(json))
             {
                 Debug.Log("Could not load scores - recreating!");
 
-                Runs = new();
+                _runJson = new()
+                {
+                    Runs = new()
+                };
                 
-                PlayerPrefs.SetString(_scoresPrefsName, JsonUtility.ToJson(Settings));
+                PlayerPrefs.SetString(_scoresPrefsName, JsonUtility.ToJson(_runJson));
                 ScoresUpdated.Invoke(this);
                 return;
             }
             else
             {
-                Runs = JsonUtility.FromJson<List<RunData>>(json);
+                _runJson = JsonUtility.FromJson<RunJson>(json);
                 ScoresUpdated.Invoke(this);
             }
         }
 
         public RunData GetLatestRun()
         {
-            var run = Runs.OrderByDescending(run => run.StartDateTime).FirstOrDefault();
+            var run = _runJson.Runs.OrderByDescending(run => run.StartDateTime).FirstOrDefault(run => run.levelScores.Count > 0);
             if (run == null)
             {
-                run = new();
+                run = new()
+                {
+                    StartDateTime = DateTime.UtcNow.Ticks,
+                    levelScores = new()
+                };
             }
             return run;
         }
