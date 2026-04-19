@@ -15,7 +15,13 @@ namespace RandomDevThings
         private List<NPCCharacter> _npcs = new();
         private List<ItemConfig> _items = new();
         private Dictionary<string, string> _itemNpcPairs = new();
+
         private Vector2 _scrollValue = new(0, 1);
+        private Vector2 _scrollValueTwoElectricBoogaloo = new(0, 1);
+
+        private bool _shouldShowClashingItems = false;
+
+        private List<ItemConfig> _offendingItems = new();
 
         [MenuItem("Tools/ItemConfigReview")]
         public static void ShowWindow()
@@ -23,7 +29,7 @@ namespace RandomDevThings
             EditorWindow wnd = GetWindow<ItemConfigReviewWindow>();
             wnd.titleContent = new GUIContent("ItemConfigReview");
         }
- 
+
         private void OnGUI()
         {
             if (GUILayout.Button("Load Items"))
@@ -49,11 +55,11 @@ namespace RandomDevThings
                 }
             }
 
-            if(GUILayout.Button("Save to CSV"))
+            if (GUILayout.Button("Save to CSV"))
             {
                 StringBuilder sb = new();
                 sb.AppendLine("InternalName;Name;SpriteAssigned;IngredientsAssigned;NPCsAssignedTo");
-                
+
                 for (int i = 0; i < _items.Count; i++)
                 {
                     string ingredients = "NONE";
@@ -69,7 +75,7 @@ namespace RandomDevThings
                     }
 
                     string npcs = "NONE";
-                    if(_itemNpcPairs.TryGetValue(item.name, out string val))
+                    if (_itemNpcPairs.TryGetValue(item.name, out string val))
                     {
                         npcs = val;
                     }
@@ -112,7 +118,7 @@ namespace RandomDevThings
                 }
 
                 string npcs = "NONE";
-                if(_itemNpcPairs.TryGetValue(item.name, out string val))
+                if (_itemNpcPairs.TryGetValue(item.name, out string val))
                 {
                     npcs = val;
                 }
@@ -127,7 +133,40 @@ namespace RandomDevThings
             }
 
             EditorGUILayout.EndScrollView();
+
+            if (GUILayout.Button("Toggle display items with Recipe conflicts"))
+            {
+                _shouldShowClashingItems = !_shouldShowClashingItems;
+
+                if (_shouldShowClashingItems)
+                {
+                    _offendingItems = _items
+                    .Where(x => x.Recipe.Any() && _items.Any(y => !ReferenceEquals(x, y)
+                    && x.Recipe.OrderBy(u => u)
+                        .SequenceEqual(y.Recipe
+                            .OrderBy(u => u))))
+                    .ToList();
+                }
+            }
+
+            if (_shouldShowClashingItems)
+            {
+                _scrollValueTwoElectricBoogaloo = GUILayout.BeginScrollView(_scrollValueTwoElectricBoogaloo);
+
+                EditorGUILayout.BeginHorizontal(GUI.skin.box);
+                GUILayout.Label("InternalName");
+                EditorGUILayout.EndHorizontal();
+
+                foreach (var item in _offendingItems)
+                {
+                    GUILayout.BeginHorizontal();
+                    GUILayout.Label(item.name);
+                    GUILayout.EndHorizontal();
+                }
+
+                EditorGUILayout.EndScrollView();
+            }
         }
-        
+
     }
 }
