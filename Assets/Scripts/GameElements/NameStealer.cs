@@ -14,9 +14,9 @@ public class NameStealer : MonoBehaviour
     [SerializeField]
     private RectTransform _paperSprite;
 
-    private int _delay = 3;
+    //private int _delay = 3;
 
-    private int _shrinkSpeed;
+    private float _shrinkSpeed = 0.04f;
 
     private float _scale = 1f;
 
@@ -40,7 +40,7 @@ public class NameStealer : MonoBehaviour
         {
             _scale -= 0.03f;
             _paperSprite.localScale = new Vector3(_scale, _scale, 0);
-            yield return new WaitForSecondsRealtime(0.04f);
+            yield return new WaitForSecondsRealtime(_shrinkSpeed);
         };
 
         LoadDay1();
