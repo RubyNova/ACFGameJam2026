@@ -240,6 +240,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshPro
+--- !u!4 &550301776 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2723308520218516829, guid: f4ab36f872a49da42aca00571fba5b11, type: 3}
+  m_PrefabInstance: {fileID: 5952851270939351393}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &554506730 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4311748852327206883, guid: e9908ccea2bbccedf92f5ed3ff4fec43, type: 3}
@@ -720,10 +725,10 @@ PrefabInstance:
     - target: {fileID: 5977274093058590392, guid: 3fbc80cf39ce6434b8d04671d925c9d3, type: 3}
       propertyPath: _skyrollTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 550301776}
     - target: {fileID: 5977274093058590392, guid: 3fbc80cf39ce6434b8d04671d925c9d3, type: 3}
       propertyPath: _secondsBeforeLevelIsOver
-      value: 240
+      value: 600
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
