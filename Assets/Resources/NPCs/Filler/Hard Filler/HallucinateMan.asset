@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: HallucinateMan
   m_EditorClassIdentifier: Assembly-CSharp::NPC.NPCCharacter
   _name: 
-  _idleSprite: {fileID: 0}
+  _idleSprite: {fileID: 808330458099412177, guid: a1350af8855682d4b8f70b9ded9cbcfc, type: 3}
   _desiredItem: {fileID: 11400000, guid: 2f0763e4601e55640a938795df58209c, type: 2}
   _useExpandedSprite: 0
   _delayBeforeStartingDialogue: 0

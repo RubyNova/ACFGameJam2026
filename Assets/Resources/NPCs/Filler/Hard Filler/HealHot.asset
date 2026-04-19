@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: HealHot
   m_EditorClassIdentifier: Assembly-CSharp::NPC.NPCCharacter
   _name: PECKSHOT
-  _idleSprite: {fileID: 0}
+  _idleSprite: {fileID: 808330458099412177, guid: a1350af8855682d4b8f70b9ded9cbcfc, type: 3}
   _desiredItem: {fileID: 11400000, guid: d4dd810574e0f2c4cb0e8a6cacf9e113, type: 2}
   _useExpandedSprite: 0
   _delayBeforeStartingDialogue: 0

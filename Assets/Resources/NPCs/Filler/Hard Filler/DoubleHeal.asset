@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: DoubleHeal
   m_EditorClassIdentifier: Assembly-CSharp::NPC.NPCCharacter
   _name: Jerimiah
-  _idleSprite: {fileID: 0}
+  _idleSprite: {fileID: 808330458099412177, guid: a1350af8855682d4b8f70b9ded9cbcfc, type: 3}
   _desiredItem: {fileID: 11400000, guid: 7cdece7354ac33b44b9d11c7d31306ff, type: 2}
   _useExpandedSprite: 0
   _delayBeforeStartingDialogue: 0

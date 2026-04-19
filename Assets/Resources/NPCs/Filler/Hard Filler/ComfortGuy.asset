@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: ComfortGuy
   m_EditorClassIdentifier: Assembly-CSharp::NPC.NPCCharacter
   _name: 
-  _idleSprite: {fileID: 0}
+  _idleSprite: {fileID: 808330458099412177, guid: a1350af8855682d4b8f70b9ded9cbcfc, type: 3}
   _desiredItem: {fileID: 11400000, guid: 29f5137929e7f974f95f73bc1c357b02, type: 2}
   _useExpandedSprite: 0
   _delayBeforeStartingDialogue: 0
