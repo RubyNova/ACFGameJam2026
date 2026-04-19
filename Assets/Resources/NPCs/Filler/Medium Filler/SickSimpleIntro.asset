@@ -33,7 +33,8 @@ MonoBehaviour:
     _hasSecondCharacterPoseIndex: 0
     _poseIndex: 0
     _poseIndexTwo: 0
-    _text: "Nmy nose is all clogged\u2026. Got something simple that can unclog it\u2026.?"
+    _text: "Nmy nose is all clogged\u2026. Got a simble scent potion that can unclog
+      it\u2026.?"
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
     _delayBeforeContinuingInSeconds: 0
@@ -50,5 +51,5 @@ MonoBehaviour:
   _choices: []
   _isDepartingSequence: 0
   <SourceScript>k__BackingField: "IGM: Bugh\u2026 hellogh\u2026.\n\r\nIGM: Nmy nose
-    is all clogged\u2026. Got something simple that can unclog it\u2026.?\n\nIGM:
+    is all clogged\u2026. Got a simble scent potion that can unclog it\u2026.?\n\nIGM:
     I thdink... mixking a slimy thinbg with fruit shoulbd do it...\r\n"
