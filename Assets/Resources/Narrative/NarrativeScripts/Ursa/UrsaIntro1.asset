@@ -54,7 +54,17 @@ MonoBehaviour:
     _hasSecondCharacterPoseIndex: 0
     _poseIndex: 0
     _poseIndexTwo: 0
-    _text: I would love a good scent potion... something nice and fruity!
+    _text: 'I would love a good scent potion... '
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: 018b214c291fad44b8f16c214f264d0c, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: Then you should add something nice and fruity!
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
     _delayBeforeContinuingInSeconds: 0
@@ -70,22 +80,9 @@ MonoBehaviour:
     _delayBeforeContinuingInSeconds: 0
   _choices: []
   _isDepartingSequence: 0
-  <SourceScript>k__BackingField: 'Ursa: Good afternoon. I sensed that a good potion
-    maker was nearby.
-
-
-    Ursa: I am Ursa, foreseer of future events through intensive
-    study of celestial bodies.
-
-
-    Ursa: Though, today I am intensively studying
-    your menu, ohoho!
-
-
-    Ursa: I would love a good scent potion... something nice
-    and fruity!
-
-
-    Ursa: I love good fruity smells a lot, ohoho~
-
-'
+  <SourceScript>k__BackingField: "Ursa: Good afternoon. I sensed that a good potion
+    maker was nearby.\n\nUrsa: I am Ursa, foreseer of future events through intensive
+    study of celestial bodies.\n\nUrsa: Though, today I am intensively studying your
+    menu, ohoho!\n\nUrsa: I would love a good scent potion... \n\nUrsa: Then you
+    should add something nice and fruity!\n\nUrsa: I love good fruity smells a lot,
+    ohoho~\n"

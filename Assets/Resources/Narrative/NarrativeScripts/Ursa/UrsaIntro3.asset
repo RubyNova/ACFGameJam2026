@@ -43,8 +43,7 @@ MonoBehaviour:
     _hasSecondCharacterPoseIndex: 0
     _poseIndex: 0
     _poseIndexTwo: 0
-    _text: "I wish I could have foretold this event\u2026 but it seems her rashness
-      in decision making made that unclear to me\u2026"
+    _text: "I wish I could have foretold this event\u2026 "
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
     _delayBeforeContinuingInSeconds: 0
@@ -54,8 +53,17 @@ MonoBehaviour:
     _hasSecondCharacterPoseIndex: 0
     _poseIndex: 0
     _poseIndexTwo: 0
-    _text: "\u2026please. Please, if you have something reviving\u2026 not to the
-      extent of the potion you made for her, mind you\u2026"
+    _text: "but it seems her rashness in decision making made that unclear to me\u2026"
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: 018b214c291fad44b8f16c214f264d0c, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: "\u2026please. Please, if you have something reviving\u2026 "
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
     _delayBeforeContinuingInSeconds: 0
@@ -69,12 +77,22 @@ MonoBehaviour:
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
     _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: 018b214c291fad44b8f16c214f264d0c, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: Maybe you'd need to mix something magic after making the healing potion...
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 0
   _choices: []
   _isDepartingSequence: 0
   <SourceScript>k__BackingField: "Ursa: Oh my goodness, thank the stars your caravan
     is still open!\r\n\r\nUrsa: Its\u2026 its Rosa. During training, she suddenly
     collapsed in exhaustion.\r\n\r\nUrsa: I wish I could have foretold this event\u2026
-    but it seems her rashness in decision making made that unclear to me\u2026\r\n\r\nUrsa:
-    \u2026please. Please, if you have something reviving\u2026 not to the extent
-    of the potion you made for her, mind you\u2026\r\n\r\nUrsa: Perhaps something
-    more\u2026 natural? Healing? If you know what I mean\u2026?\r\n"
+    \n\nUrsa: but it seems her rashness in decision making made that unclear to me\u2026\r\n\r\nUrsa:
+    \u2026please. Please, if you have something reviving\u2026 \r\n\r\nUrsa: Perhaps
+    something more\u2026 natural? Healing? If you know what I mean\u2026?\n\nUrsa:
+    Maybe you'd need to mix something magic after making the healing potion...\r\n"
