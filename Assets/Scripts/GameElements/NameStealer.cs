@@ -29,7 +29,7 @@ public class NameStealer : MonoBehaviour
 
     private void LoadDay1()
     {
-        LevelManager.Instance.LoadScene("Day1");
+        LevelManager.Instance.LoadScene("BetweenDay0");
     }
 
     private IEnumerator LoadingProcess()
