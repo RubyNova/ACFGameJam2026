@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5a9b9afdf8e59b4082e0231e993318a, type: 3}
   m_Name: WeakMans
   m_EditorClassIdentifier: Assembly-CSharp::NPC.NPCCharacter
-  _name: 
-  _idleSprite: {fileID: 0}
+  _name: Weeek
+  _idleSprite: {fileID: 808330458099412177, guid: a1350af8855682d4b8f70b9ded9cbcfc, type: 3}
   _desiredItem: {fileID: 11400000, guid: 3b179af57461efa418104bf51950011b, type: 2}
-  _useExpandedSprite: 0
+  _useExpandedSprite: 1
   _delayBeforeStartingDialogue: 0
   _numberOfRandomNpcAppearancesBeforeAllowedToShow: 4
   _arrivalSequence: {fileID: 11400000, guid: 6fded3f0aeb511347bac5fbf720df436, type: 2}

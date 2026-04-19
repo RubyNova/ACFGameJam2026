@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5a9b9afdf8e59b4082e0231e993318a, type: 3}
   m_Name: ShroomSellGuy
   m_EditorClassIdentifier: Assembly-CSharp::NPC.NPCCharacter
-  _name: 
-  _idleSprite: {fileID: 0}
+  _name: Shroo
+  _idleSprite: {fileID: 808330458099412177, guid: a1350af8855682d4b8f70b9ded9cbcfc, type: 3}
   _desiredItem: {fileID: 11400000, guid: e1151a13b5738c244bfcfe18cc623b10, type: 2}
-  _useExpandedSprite: 0
+  _useExpandedSprite: 1
   _delayBeforeStartingDialogue: 0
   _numberOfRandomNpcAppearancesBeforeAllowedToShow: 4
   _arrivalSequence: {fileID: 11400000, guid: 6896383da274d3d4f98ab14e679de016, type: 2}

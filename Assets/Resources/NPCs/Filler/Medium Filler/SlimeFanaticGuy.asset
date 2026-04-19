@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5a9b9afdf8e59b4082e0231e993318a, type: 3}
   m_Name: SlimeFanaticGuy
   m_EditorClassIdentifier: Assembly-CSharp::NPC.NPCCharacter
-  _name: 
-  _idleSprite: {fileID: 0}
+  _name: Slim
+  _idleSprite: {fileID: -3539811419900543807, guid: 727d56f0c8bd8ef4c96aabf53e2a1067, type: 3}
   _desiredItem: {fileID: 11400000, guid: 752e1539d59ceec49bedf21397e046be, type: 2}
-  _useExpandedSprite: 0
+  _useExpandedSprite: 1
   _delayBeforeStartingDialogue: 0
   _numberOfRandomNpcAppearancesBeforeAllowedToShow: 4
   _arrivalSequence: {fileID: 11400000, guid: 71134e44f703c124ca7f192789a63609, type: 2}

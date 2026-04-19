@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5a9b9afdf8e59b4082e0231e993318a, type: 3}
   m_Name: HunterGuy
   m_EditorClassIdentifier: Assembly-CSharp::NPC.NPCCharacter
-  _name: 
-  _idleSprite: {fileID: 0}
+  _name: Hunter
+  _idleSprite: {fileID: 808330458099412177, guid: a1350af8855682d4b8f70b9ded9cbcfc, type: 3}
   _desiredItem: {fileID: 11400000, guid: 63eb860bec1e1864ab0d265bc23b1373, type: 2}
-  _useExpandedSprite: 0
+  _useExpandedSprite: 1
   _delayBeforeStartingDialogue: 0
   _numberOfRandomNpcAppearancesBeforeAllowedToShow: 4
   _arrivalSequence: {fileID: 11400000, guid: 3201c2c4b736f944baa8ba07f8be4dfa, type: 2}

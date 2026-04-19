@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: SickSimple
   m_EditorClassIdentifier: Assembly-CSharp::NPC.NPCCharacter
   _name: Snivelson
-  _idleSprite: {fileID: 0}
+  _idleSprite: {fileID: 808330458099412177, guid: a1350af8855682d4b8f70b9ded9cbcfc, type: 3}
   _desiredItem: {fileID: 11400000, guid: 83478f75550d12842a28dd657ca0ebef, type: 2}
-  _useExpandedSprite: 0
+  _useExpandedSprite: 1
   _delayBeforeStartingDialogue: 0
   _numberOfRandomNpcAppearancesBeforeAllowedToShow: 4
   _arrivalSequence: {fileID: 11400000, guid: 48f69d7b900bb0444a3f1adde5000690, type: 2}

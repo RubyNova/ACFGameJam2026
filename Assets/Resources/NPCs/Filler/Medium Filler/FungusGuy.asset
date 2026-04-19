@@ -12,14 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5a9b9afdf8e59b4082e0231e993318a, type: 3}
   m_Name: FungusGuy
   m_EditorClassIdentifier: Assembly-CSharp::NPC.NPCCharacter
-  _name: 
-  _idleSprite: {fileID: 0}
+  _name: Fungi
+  _idleSprite: {fileID: 808330458099412177, guid: a1350af8855682d4b8f70b9ded9cbcfc, type: 3}
   _desiredItem: {fileID: 11400000, guid: 65cac0185d5408546b2ee2a6e367e2f1, type: 2}
-  _useExpandedSprite: 0
+  _useExpandedSprite: 1
   _delayBeforeStartingDialogue: 0
   _numberOfRandomNpcAppearancesBeforeAllowedToShow: 4
-  _arrivalSequence: {fileID: 0}
-  _departingSequence: {fileID: 0}
+  _arrivalSequence: {fileID: 11400000, guid: c42f0c1e709a4044a983363f41a8879c, type: 2}
+  _departingSequence: {fileID: 11400000, guid: c0704c3edafe2034191063f65e7c048a, type: 2}
   _negativeSequences: []
   _animator: {fileID: 9100000, guid: d8034e8aaba9ea345928fbab2399e781, type: 2}
   _spawnInAnimation: {fileID: 7400000, guid: dd19788569db4db41a8fac48544b7b97, type: 2}
