@@ -579,7 +579,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -110, y: -450}
+  m_AnchoredPosition: {x: -110, y: -492}
   m_SizeDelta: {x: 75, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &162768563
@@ -655,7 +655,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -110, y: -250}
+  m_AnchoredPosition: {x: -110, y: -353}
   m_SizeDelta: {x: 75, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &249840129
@@ -807,7 +807,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -110, y: -200}
+  m_AnchoredPosition: {x: -110, y: -283}
   m_SizeDelta: {x: 75, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &316715724
@@ -905,11 +905,16 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Gameplay Programming
+  m_text: 'Animation
 
     DevOps
 
-    Playtesting'
+    Gameplay Programming
+
+    Playtesting
+
+    UI
+    Programming'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 342a3bc7d81bb6cd0b934596fc3aee7e, type: 2}
   m_sharedMaterial: {fileID: 5649157174629447932, guid: 342a3bc7d81bb6cd0b934596fc3aee7e, type: 2}
@@ -1100,7 +1105,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -3714}
+  m_AnchoredPosition: {x: 0, y: -4564.999}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &419322811
@@ -1137,7 +1142,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -200.90002, y: -320}
+  m_AnchoredPosition: {x: -200.90002, y: -402}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &419322813
@@ -1305,9 +1310,12 @@ MonoBehaviour:
 
     Gameplay Programming
 
-    Graphics Programming
+    Graphics
+    Programming
 
-    Playtesting'
+    Playtesting
+
+    UI Programming'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 342a3bc7d81bb6cd0b934596fc3aee7e, type: 2}
   m_sharedMaterial: {fileID: 5649157174629447932, guid: 342a3bc7d81bb6cd0b934596fc3aee7e, type: 2}
@@ -1696,7 +1704,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -110, y: -360}
+  m_AnchoredPosition: {x: -110, y: -402}
   m_SizeDelta: {x: 75, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &775474995
@@ -2135,6 +2143,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CreditsScroll
   _scrollSpeed: 80
+  _yAxisStopPoint: 7582
 --- !u!1 &1044046372
 GameObject:
   m_ObjectHideFlags: 0
@@ -2389,7 +2398,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -4504}
+  m_AnchoredPosition: {x: 0, y: -5519.999}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1220132104
@@ -3051,7 +3060,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -2754}
+  m_AnchoredPosition: {x: 0, y: -3433.999}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1394748642
@@ -3916,9 +3925,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Audio Programming
+  m_text: 'Animation
 
-    Playtesting'
+    Audio Programming
+
+    Playtesting
+
+    UI Programming'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 342a3bc7d81bb6cd0b934596fc3aee7e, type: 2}
   m_sharedMaterial: {fileID: 5649157174629447932, guid: 342a3bc7d81bb6cd0b934596fc3aee7e, type: 2}
@@ -4446,6 +4459,7 @@ GameObject:
   - component: {fileID: 1847528330}
   - component: {fileID: 1847528329}
   - component: {fileID: 1847528328}
+  - component: {fileID: 1847528331}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -4527,6 +4541,50 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1847528331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1847528327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalCameraData
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_TaaSettings:
+    m_Quality: 3
+    m_FrameInfluence: 0.1
+    m_JitterScale: 1
+    m_MipBias: 0
+    m_VarianceClampScale: 0.9
+    m_ContrastAdaptiveSharpening: 0
+  m_Version: 2
 --- !u!1 &1901412027
 GameObject:
   m_ObjectHideFlags: 0
@@ -4563,7 +4621,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -1184}
+  m_AnchoredPosition: {x: 0, y: -1395.9988}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1912483328
@@ -4741,7 +4799,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -200.90002, y: 5}
+  m_AnchoredPosition: {x: -200.90002, y: -9}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1958967749
@@ -4766,11 +4824,14 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Background Art
 
-    Illustrations
-
     Character Sprites
 
-    Potion Sprites
+    Game Logo
+
+    Illustrations
+
+    Potion
+    Sprites
 
     Playtesting
 
@@ -4890,7 +4951,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -5424}
+  m_AnchoredPosition: {x: 0, y: -6590.999}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1989945297
@@ -5217,7 +5278,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -1984}
+  m_AnchoredPosition: {x: 0, y: -2439.999}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1660057539 &9223372036854775807

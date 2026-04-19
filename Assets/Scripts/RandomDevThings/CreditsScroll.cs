@@ -7,6 +7,7 @@ public class CreditsScroll : MonoBehaviour
 
     private RectTransform _rectTransform;
 
+    [SerializeField]
     private int _yAxisStopPoint = 6284;
     private int _startingPoint = -1950;
 
