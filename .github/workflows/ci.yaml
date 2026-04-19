@@ -82,6 +82,14 @@ jobs:
       id-token: write
     runs-on: windows-2022
     steps:
+      - name: Docker issue workaround
+        id: docker-workaround
+        run: |
+          $dockerState = Get-Service -Name "docker"
+          if ($dockerState.Status -ne "Running") {
+            Start-Service -Name "docker"
+          }
+
       # Checkout
       - name: Checkout repository
         uses: actions/checkout@v6
