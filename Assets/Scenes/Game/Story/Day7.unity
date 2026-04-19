@@ -996,7 +996,7 @@ PrefabInstance:
       objectReference: {fileID: 1030586252}
     - target: {fileID: 4308305790724328942, guid: a1bbcf412d644f0c4b95caf699f0cfd9, type: 3}
       propertyPath: _bestEndingSceneName
-      value: BestEnding
+      value: BestEnding1
       objectReference: {fileID: 0}
     - target: {fileID: 4308305790724328942, guid: a1bbcf412d644f0c4b95caf699f0cfd9, type: 3}
       propertyPath: _itemsDiscoveredText
