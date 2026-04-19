@@ -100,6 +100,7 @@ jobs:
           path: |
             Library
             build/StandaloneWindows64/StandaloneWindows64_BackUpThisFolder_ButDontShipItWithYourGame
+            build/StandaloneWindows64/Faechemical_BackUpThisFolder_ButDontShipItWithYourGame
           key: Library-Win64-${{ hashFiles('Assets/**', 'Packages/**', 'ProjectSettings/**') }}
           restore-keys: |
             Library-Win64-
@@ -119,13 +120,14 @@ jobs:
       - name: Cleanup Artifact
         shell: pwsh
         run: |
-          rm -Recurse build/StandaloneWindows64/ACFGameJam2026_BurstDebugInformation_DoNotShip
-        #   rm -Recurse build/StandaloneWindows64/StandaloneWindows64_BackUpThisFolder_ButDontShipItWithYourGame
+          rm -Recurse build/StandaloneWindows64/ACFGameJam2026_BurstDebugInformation_DoNotShip -ErrorAction Ignore
+          rm -Recurse build/StandaloneWindows64/Faechemical_BurstDebugInformation_DoNotShip -ErrorAction Ignore
+          rm -Recurse build/StandaloneWindows64/Faechemical_BackUpThisFolder_ButDontShipItWithYourGame -ErrorAction Ignore
 
       - name: Upload Windows Build as Artifact
         uses: actions/upload-artifact@v6
         with:
-          name: Team1-ACFGameJam2026-Windows-${{ github.sha }}
+          name: Team1-Faechemical-Windows-${{ github.sha }}
           path: build/StandaloneWindows64
           retention-days: 3
   
