@@ -47,6 +47,8 @@ public class LevelManager : MonoSingleton<LevelManager>
         {
             yield return null;
         }
+
+        _fade.SetTrigger("End");
     }
 
     public void LoadMainMenu()
