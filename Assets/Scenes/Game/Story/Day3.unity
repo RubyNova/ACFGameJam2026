@@ -385,6 +385,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3515141790252963288, guid: 1be39131abfb05d40bf853fe60aee79a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4064492496353378308, guid: 1be39131abfb05d40bf853fe60aee79a, type: 3}
       propertyPath: _recipeBookUI
       value: 
@@ -666,6 +670,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshPro
+--- !u!114 &2134592649 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4064492496353378308, guid: 1be39131abfb05d40bf853fe60aee79a, type: 3}
+  m_PrefabInstance: {fileID: 1103808649}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f3f321df3d060746a336308da64143e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PauseMenu
 --- !u!1001 &1338317595455894750
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1455,6 +1470,14 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1562268719}
+    - target: {fileID: 2239412890202162850, guid: 4de49d0ece76c0362ac80bb965789ddc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2134592649}
+    - target: {fileID: 2239412890202162850, guid: 4de49d0ece76c0362ac80bb965789ddc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: TogglePause
+      objectReference: {fileID: 0}
     - target: {fileID: 2643216459065684416, guid: 4de49d0ece76c0362ac80bb965789ddc, type: 3}
       propertyPath: m_Pivot.x
       value: 0
