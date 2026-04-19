@@ -261,6 +261,7 @@ namespace Player
             }
             else
             {
+                SoundManager.Instance.PlayBGM(true);
                 ContinueToNextLevel(_okayEndingSceneName);
             }
         }

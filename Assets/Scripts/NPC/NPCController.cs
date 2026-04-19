@@ -57,9 +57,14 @@ namespace NPC
 
         public NPCCharacter NPCConfiguration { get; private set; }
 
+        public bool StoryMode {get; set;} = false;
+
         public void InitialiseWithNPCConfiguration(NPCCharacter npc, GameObject mainCraftingUI)
         {
-            _mainCrafingUI = mainCraftingUI;
+            if (!StoryMode)
+            {
+                _mainCrafingUI = mainCraftingUI;
+            }
             NPCConfiguration = npc;
             _spriteRenderer.sprite = NPCConfiguration.IdleSprite;
             _animator.runtimeAnimatorController = NPCConfiguration.AnimController;
@@ -153,8 +158,11 @@ namespace NPC
         private void PrepForServing(bool _)
         {
             NarrativeController.Finished.RemoveListener(PrepForServing);
-            _mainCrafingUI.SetActive(true);
-            _collider.enabled = true;
+            if(!StoryMode)
+            {
+                _mainCrafingUI.SetActive(true);
+                _collider.enabled = true;    
+            }
             _beingServed = true;
         }
 
@@ -199,7 +207,10 @@ namespace NPC
                         {
                             _beingServed = false;
                             _leaving = true;
-                            _mainCrafingUI.SetActive(false);
+                            if(!StoryMode)
+                            {
+                                _mainCrafingUI.SetActive(false);
+                            }
                         }
                         SoundManager.Instance.PlayAudioClip(_incorrectOrder);
                     }
@@ -207,7 +218,10 @@ namespace NPC
                     {
                         _beingServed = false;
                         _leaving = true;
-                        _mainCrafingUI.SetActive(false);
+                        if(!StoryMode)
+                        {
+                            _mainCrafingUI.SetActive(false);
+                        }
                         SoundManager.Instance.PlayAudioClip(_correctOrder);
                     }
                 }

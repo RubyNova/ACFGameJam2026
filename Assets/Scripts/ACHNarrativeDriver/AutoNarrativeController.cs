@@ -72,6 +72,7 @@ namespace ACHNarrativeDriver
                     _isCurrentlyExecuting = false;
                     _currentNarrativeSequence = null;
                     Finished.Invoke(_isEndForCharacter);
+                    _postNarrativeEvent.Invoke();
                     return;
                 }
 

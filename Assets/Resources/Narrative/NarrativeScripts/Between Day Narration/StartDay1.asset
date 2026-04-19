@@ -119,6 +119,26 @@ MonoBehaviour:
     _leftCharacterTalking: 1
     _narratorSpeaking: 1
     _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: bb973c0748022e4479b0b0bdec1dd006, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: Hoodelum Village isn't far and they love potions...
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 1
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: bb973c0748022e4479b0b0bdec1dd006, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: Alright. Lets do this.
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 1
+    _delayBeforeContinuingInSeconds: 0
   _choices: []
   _isDepartingSequence: 0
   <SourceScript>k__BackingField: 'Narration: ...you just fell for the oldest fae
@@ -155,4 +175,12 @@ MonoBehaviour:
     the money to the fae...
 
 
-    Narration: ...and get your name back!'
+    Narration: ...and get your name back!
+
+
+    Narration:
+    Hoodelum Village isn''t far and they love potions...
+
+
+    Narration: Alright.
+    Lets do this.'

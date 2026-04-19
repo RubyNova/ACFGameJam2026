@@ -10,7 +10,8 @@ namespace NPC
     {
         [SerializeField]
         private bool _challengeMode;
-
+        [SerializeField]
+        private bool _storyMode;
 
         [SerializeField]
         private NPCCharacter[] _randomNpcsToSpawn;
@@ -258,6 +259,7 @@ namespace NPC
                 var npc = Instantiate(prefab, _spawnLocationObject.transform.position, Quaternion.identity, transform);
                 _currentCharacterController = npc.GetComponent<NPCController>();
                 _currentCharacterController.NarrativeController = _narrativeController;
+                _currentCharacterController.StoryMode = _storyMode;
                 _currentCharacterController.InitialiseWithNPCConfiguration(character, _mainCraftingUI);
                 _currentCharacterController.CharacterGoneEvent.AddListener(CharacterGone);
 
