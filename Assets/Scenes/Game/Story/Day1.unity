@@ -119,6 +119,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &100046114 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4064492496353378308, guid: 1be39131abfb05d40bf853fe60aee79a, type: 3}
+  m_PrefabInstance: {fileID: 1103808649}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f3f321df3d060746a336308da64143e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PauseMenu
 --- !u!114 &118318796 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3104216504436026962, guid: e9908ccea2bbccedf92f5ed3ff4fec43, type: 3}
@@ -384,6 +395,10 @@ PrefabInstance:
     - target: {fileID: 2484548261876581048, guid: 1be39131abfb05d40bf853fe60aee79a, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3515141790252963288, guid: 1be39131abfb05d40bf853fe60aee79a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4064492496353378308, guid: 1be39131abfb05d40bf853fe60aee79a, type: 3}
       propertyPath: _recipeBookUI
@@ -1427,6 +1442,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1562268719}
+    - target: {fileID: 2239412890202162850, guid: 4de49d0ece76c0362ac80bb965789ddc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 100046114}
     - target: {fileID: 2643216459065684416, guid: 4de49d0ece76c0362ac80bb965789ddc, type: 3}
       propertyPath: m_Pivot.x
       value: 0

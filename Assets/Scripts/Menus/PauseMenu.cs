@@ -46,9 +46,13 @@ public class PauseMenu : MonoBehaviour
             _pauseMenuUI.SetActive(true);
             Time.timeScale = 0f;
             gamePaused = true;
-            if (!_worldController.IsPaused && !_recipeBookUI.activeInHierarchy)
+
+            if (_worldController != null && _recipeBookUI  != null)
             {
-                _worldController.FlipPause();
+                if (!_worldController.IsPaused && !_recipeBookUI.activeInHierarchy)
+                {
+                    _worldController.FlipPause();
+                }
             }
         }
     }
@@ -60,9 +64,13 @@ public class PauseMenu : MonoBehaviour
             _pauseMenuUI.SetActive(false);
             Time.timeScale = _timeScale;
             gamePaused = false;
-            if(_worldController.IsPaused && !_recipeBookUI.activeInHierarchy)
+
+            if (_worldController != null && _recipeBookUI != null)
             {
-                _worldController.FlipPause();
+                if (_worldController.IsPaused && !_recipeBookUI.activeInHierarchy)
+                {
+                    _worldController.FlipPause();
+                }
             }
             SoundManager.Instance.PlayStartAudio();
         }  
