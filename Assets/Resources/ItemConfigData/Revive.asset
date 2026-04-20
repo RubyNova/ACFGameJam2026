@@ -15,8 +15,8 @@ MonoBehaviour:
   _itemName: Heelaili Potion
   _shortDescription: Revive potion
   _itemIconBackground: {fileID: 21300000, guid: ea14edabe08c6eb43bf58110bd97db44, type: 3}
-  _itemIconMiddle: {fileID: 21300000, guid: ae46d027c9b726b46beb0421ad800b15, type: 3}
-  _itemIconForeground: {fileID: 21300000, guid: 1a78aa72c4eaa6647bd0326797afd79d, type: 3}
+  _itemIconMiddle: {fileID: 21300000, guid: b439c5537b9a33f45a66cd1c132eb051, type: 3}
+  _itemIconForeground: {fileID: 0}
   _backgroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _middleColourTint: {r: 0.36773348, g: 0.764151, b: 0.27033645, a: 1}
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}

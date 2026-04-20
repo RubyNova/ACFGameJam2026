@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CraftingAPI.ItemConfig
   _itemName: Ceslime Potion
   _shortDescription: strong ointment
-  _itemIconBackground: {fileID: 21300000, guid: 1cd2c8975e0459d4383b4f8ad2a091cd, type: 3}
-  _itemIconMiddle: {fileID: 21300000, guid: 7d43b65852c37d044b905fcd2d0f3358, type: 3}
-  _itemIconForeground: {fileID: 21300000, guid: 4b952d84ac23c3d44b0f36ceb48f001c, type: 3}
+  _itemIconBackground: {fileID: 21300000, guid: 4bc1e63d7c3156c4388375150c1868fc, type: 3}
+  _itemIconMiddle: {fileID: 0}
+  _itemIconForeground: {fileID: 0}
   _backgroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _middleColourTint: {r: 0.18382876, g: 0.32281983, b: 0.764151, a: 1}
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}

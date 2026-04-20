@@ -1161,7 +1161,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 738546212711536671, guid: cd7cc9733cbda3448a383c515fe4d345, type: 3}
       propertyPath: _randomNpcsToSpawn.Array.size
-      value: 17
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 738546212711536671, guid: cd7cc9733cbda3448a383c515fe4d345, type: 3}
       propertyPath: _dedicatedNpcsToSpawn.Array.size
@@ -1238,11 +1238,15 @@ PrefabInstance:
     - target: {fileID: 738546212711536671, guid: cd7cc9733cbda3448a383c515fe4d345, type: 3}
       propertyPath: '_randomNpcsToSpawn.Array.data[17]'
       value: 
-      objectReference: {fileID: 11400000, guid: 398db75ab2347c84f8f259949ddb518a, type: 2}
+      objectReference: {fileID: 11400000, guid: fe02b3f7b88f2e146b1fbc3e2d11d024, type: 2}
     - target: {fileID: 738546212711536671, guid: cd7cc9733cbda3448a383c515fe4d345, type: 3}
       propertyPath: '_randomNpcsToSpawn.Array.data[18]'
       value: 
-      objectReference: {fileID: 11400000, guid: 398db75ab2347c84f8f259949ddb518a, type: 2}
+      objectReference: {fileID: 11400000, guid: 1bbe563e42af0474895b37caa6d6c08c, type: 2}
+    - target: {fileID: 738546212711536671, guid: cd7cc9733cbda3448a383c515fe4d345, type: 3}
+      propertyPath: '_randomNpcsToSpawn.Array.data[19]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 3a52dc4b53df1a54e98ba6ba6f2c8116, type: 2}
     - target: {fileID: 738546212711536671, guid: cd7cc9733cbda3448a383c515fe4d345, type: 3}
       propertyPath: '_dedicatedNpcsToSpawn.Array.data[0]'
       value: 
