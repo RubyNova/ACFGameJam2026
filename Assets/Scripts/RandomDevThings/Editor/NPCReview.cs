@@ -14,6 +14,7 @@ namespace RandomDevThings
     {
         private List<NPCCharacter> _npcs = new();
         private Vector2 _scrollValue = new(0, 1);
+        private Vector2 _scrollValueTwo = new(0, 1);
 
         [MenuItem("Tools/NPCReview")]
         public static void ShowWindow()
@@ -89,6 +90,28 @@ namespace RandomDevThings
             }
 
             EditorGUILayout.EndScrollView();
+
+            if (_npcs == null || _npcs.Count == 0)
+            {
+                return;
+            }
+
+            _scrollValueTwo = GUILayout.BeginScrollView(_scrollValueTwo);
+            EditorGUILayout.BeginHorizontal(GUI.skin.box);
+            GUILayout.Label("ImpossibleNPCInternalName");
+            EditorGUILayout.EndHorizontal();
+
+            foreach (var npc in _npcs)
+            {
+                if (npc.DesiredItem == null || npc.DesiredItem.Recipe == null || npc.DesiredItem.Recipe.Count == 0)
+                {
+                    EditorGUILayout.BeginHorizontal();
+                    GUILayout.Label(npc.name);
+                    EditorGUILayout.EndHorizontal();
+                }
+            }
+
+            GUILayout.EndScrollView();
         }
         
     }
