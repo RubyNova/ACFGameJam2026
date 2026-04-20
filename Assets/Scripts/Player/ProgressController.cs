@@ -192,7 +192,8 @@ namespace Player
             score += (int)(_itemsCrafted * _scoreMultiplierForItemsCrafted);
             score += (int)(_itemsDiscovered * _scoreMultiplierForItemsDiscovered);
             
-            int percent = (int)(_informedNpcSuccessRateValue * 100);
+            var success = _spawner != null ? _spawner.NPCSuccessRate : _informedNpcSuccessRateValue;
+            int percent = (int)(success * 100);
             if(percent >= 50)
             {
                 int overage = 100 - percent;
@@ -221,7 +222,8 @@ namespace Player
             _itemsCraftedText.text = $"{_itemsCrafted}";
             _itemsDiscoveredText.text = $"{_itemsDiscovered}";
 
-            int customerHappinessAmt = (int)(_informedNpcSuccessRateValue * 100);
+            var success = _spawner != null ? _spawner.NPCSuccessRate : _informedNpcSuccessRateValue;
+            int customerHappinessAmt = (int)(success * 100);
 
             var score = GenerateScore();
             if(_perfMode)
