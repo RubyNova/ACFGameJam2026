@@ -24,4 +24,6 @@ MonoBehaviour:
     or whoever you rub this on. It can give magical properties to things that don\u2019t
     have it. This is an easy way to create magical objects that can become enchanted.Made
     from mixing Laeli and Slisimle."
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: a6d86d55612570f4b93067768bef7bd5, type: 2}
+  - {fileID: 11400000, guid: dc209f38b56491045a54d4c52815bdce, type: 2}
