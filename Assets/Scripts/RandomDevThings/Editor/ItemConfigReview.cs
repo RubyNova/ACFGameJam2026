@@ -18,10 +18,14 @@ namespace RandomDevThings
 
         private Vector2 _scrollValue = new(0, 1);
         private Vector2 _scrollValueTwoElectricBoogaloo = new(0, 1);
+        private Vector2 _scrollValueThree = new(0, 1);
 
         private bool _shouldShowClashingItems = false;
 
+        private bool _shouldShowImpossibleItems = false;
+
         private List<ItemConfig> _offendingItems = new();
+        private List<ItemConfig> _impossibleItems = new();
 
         [MenuItem("Tools/ItemConfigReview")]
         public static void ShowWindow()
@@ -92,7 +96,7 @@ namespace RandomDevThings
                     writer.Write(sb.ToString());
                 }
             }
-
+/*
             _scrollValue = GUILayout.BeginScrollView(_scrollValue);
 
             EditorGUILayout.BeginHorizontal(GUI.skin.box);
@@ -133,6 +137,7 @@ namespace RandomDevThings
             }
 
             EditorGUILayout.EndScrollView();
+            */
 
             if (GUILayout.Button("Toggle display items with Recipe conflicts"))
             {
@@ -149,6 +154,17 @@ namespace RandomDevThings
                 }
             }
 
+            if (GUILayout.Button("Toggle view items with no recipe"))
+            {
+                _shouldShowImpossibleItems = !_shouldShowImpossibleItems;
+
+                if (_shouldShowImpossibleItems)
+                {
+                    _impossibleItems = _items.Where(x => !x.Recipe.Any() && _items.Any(y => y.Recipe.Contains(x))).ToList();
+                }
+
+            }
+
             if (_shouldShowClashingItems)
             {
                 _scrollValueTwoElectricBoogaloo = GUILayout.BeginScrollView(_scrollValueTwoElectricBoogaloo);
@@ -158,6 +174,24 @@ namespace RandomDevThings
                 EditorGUILayout.EndHorizontal();
 
                 foreach (var item in _offendingItems)
+                {
+                    GUILayout.BeginHorizontal();
+                    GUILayout.Label(item.name);
+                    GUILayout.EndHorizontal();
+                }
+
+                EditorGUILayout.EndScrollView();
+            }
+
+            if (_shouldShowImpossibleItems)
+            {
+                _scrollValueThree = GUILayout.BeginScrollView(_scrollValueThree);
+
+                EditorGUILayout.BeginHorizontal(GUI.skin.box);
+                GUILayout.Label("InternalName");
+                EditorGUILayout.EndHorizontal();
+
+                foreach (var item in _impossibleItems)
                 {
                     GUILayout.BeginHorizontal();
                     GUILayout.Label(item.name);

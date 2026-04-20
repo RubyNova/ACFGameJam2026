@@ -56,7 +56,7 @@ namespace RandomDevThings
                     writer.Write(sb.ToString());
                 }
             }
-
+/*
             _scrollValue = GUILayout.BeginScrollView(_scrollValue);
 
             EditorGUILayout.BeginHorizontal(GUI.skin.box);
@@ -90,6 +90,8 @@ namespace RandomDevThings
             }
 
             EditorGUILayout.EndScrollView();
+
+*/
 
             if (_npcs == null || _npcs.Count == 0)
             {
