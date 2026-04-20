@@ -59,7 +59,9 @@ namespace NPC
         private NPCController _currentCharacterController;
 
         public bool MoreNPCsAvailable => !_noMoreNpcs;
-        public float NPCSuccessRate => _informedNpcSuccessRateValue;
+        public float NPCSuccessRate => !_challengeMode ? 
+            ((float)_goodDeliveries / (float)_totalExpectedNpcsToSpawn) :
+            (ItemsDelivered > 0 ? (float)_goodDeliveries / (float)ItemsDelivered : 0);
         public int ItemsDeliveredSuccessfully => _goodDeliveries;
         public int ItemsDelivered => _goodDeliveries + _badDeliveries;
 
@@ -115,7 +117,6 @@ namespace NPC
 
         public void CharacterGone(bool happyCustomer)
         {
-            _currentCharacterController?.CharacterGoneEvent.RemoveListener(CharacterGone);
             _characterSpawned = false;
             if(happyCustomer)
             {
@@ -125,6 +126,9 @@ namespace NPC
             {
                 _badDeliveries++;
             }
+            var lol = NPCSuccessRate;
+            Debug.Log("Current NPC Success Rate: "+ (NPCSuccessRate*100));
+            _currentCharacterController?.CharacterGoneEvent.RemoveListener(CharacterGone);
         }
 
         public void UpdateItemsCraftedValue(float value) => _informedItemsCraftedValue = value;

@@ -96,6 +96,8 @@ namespace Player
         [SerializeField]
         private GameObject _recipeBookUI;
 
+
+        private float _informedNpcSuccessRateValue;
         public string Mode => _challengeMode ? "Challenge" : _perfMode ? "Perf Tracking" : "w/o Perf Tracking";
 
         // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -111,6 +113,7 @@ namespace Player
         void Update()
         {
             _itemsDelivered = _spawner.ItemsDelivered;
+            _informedNpcSuccessRateValue = _spawner.NPCSuccessRate;
             _itemsDeliveredSuccessfully = _spawner.ItemsDeliveredSuccessfully;
             if(_paused)
             {
@@ -189,7 +192,7 @@ namespace Player
             score += (int)(_itemsCrafted * _scoreMultiplierForItemsCrafted);
             score += (int)(_itemsDiscovered * _scoreMultiplierForItemsDiscovered);
             
-            int percent = _itemsDelivered == 0 ? 0 : (int)(_itemsDeliveredSuccessfully / _itemsDelivered * 100);
+            int percent = (int)(_informedNpcSuccessRateValue * 100);
             if(percent >= 50)
             {
                 int overage = 100 - percent;
@@ -218,7 +221,7 @@ namespace Player
             _itemsCraftedText.text = $"{_itemsCrafted}";
             _itemsDiscoveredText.text = $"{_itemsDiscovered}";
 
-            int customerHappinessAmt = _itemsDelivered == 0? 0 : (int)((_itemsDeliveredSuccessfully / _itemsDelivered)*100);
+            int customerHappinessAmt = (int)(_informedNpcSuccessRateValue * 100);
 
             var score = GenerateScore();
             if(_perfMode)
