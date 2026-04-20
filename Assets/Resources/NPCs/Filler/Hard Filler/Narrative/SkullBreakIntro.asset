@@ -16,7 +16,57 @@ MonoBehaviour:
   _nextSequence: {fileID: 0}
   _musicFiles: []
   _soundEffectFiles: []
-  _characterDialoguePairs: []
+  _characterDialoguePairs:
+  - _character: {fileID: 11400000, guid: b10337f2996f8504d927d329f0cc571b, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: Hey so. A buddy got in an adventuring accident. Larrrrge skull fracture.
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: b10337f2996f8504d927d329f0cc571b, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: Gonna need something... probably medicine-y?
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: b10337f2996f8504d927d329f0cc571b, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: Probably related to like. Healing headaches too.
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: b10337f2996f8504d927d329f0cc571b, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: A skull fracture is the biggest headache you can have right?
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: b10337f2996f8504d927d329f0cc571b, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: Just mix a headache potion with something medicine-y.
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 0
   _choices: []
   _isDepartingSequence: 0
   <SourceScript>k__BackingField: 'IGM: Hey so. A buddy got in an adventuring accident.

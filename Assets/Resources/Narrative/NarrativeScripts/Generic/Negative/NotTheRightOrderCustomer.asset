@@ -26,7 +26,7 @@ MonoBehaviour:
     _text: Come on... that's not the customer's order...
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   _choices: []
   _isDepartingSequence: 0
   <SourceScript>k__BackingField: 'Goober: Come on... that''s not the customer''s

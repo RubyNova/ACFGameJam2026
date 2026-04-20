@@ -47,6 +47,13 @@ namespace ACHNarrativeDriver.Api
                         $"Invalid narrative script was provided to the interpreter. {splitLines.Length} arguments were provided when the maximum is 5. Invalid line number: {index + 1}");
                 }
 
+/*
+                else if (splitLines.Length < 2 && character == null)
+                {
+                    throw new FormatException(
+                        $"Invalid narrative script was provided to the interpreter. {splitLines.Length} arguments were provided when the minimum is two when no previous character context has been provided. Invalid line number: {index + 1}");
+                }
+*/
                 //Set Characters
                 var characterName = splitLines[0];
                 string secondCharacterName = string.Empty;

@@ -17,7 +17,7 @@ MonoBehaviour:
   _musicFiles: []
   _soundEffectFiles: []
   _characterDialoguePairs:
-  - _character: {fileID: 11400000, guid: 9386325197a551e4fb73753368901d97, type: 2}
+  - _character: {fileID: 11400000, guid: 65e2c6f3ee2b1f84c8b572ecdeddace1, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
     _hasSecondCharacterPoseIndex: 0
@@ -26,8 +26,8 @@ MonoBehaviour:
     _text: 'Wow!! This looks great!! Thank you so so much!! '
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
-  - _character: {fileID: 11400000, guid: 9386325197a551e4fb73753368901d97, type: 2}
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: 65e2c6f3ee2b1f84c8b572ecdeddace1, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
     _hasSecondCharacterPoseIndex: 0
@@ -36,19 +36,28 @@ MonoBehaviour:
     _text: "Um\u2026 do these taste good? Or is this like a cough potion taste\u2026 "
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
-  - _character: {fileID: 11400000, guid: 9386325197a551e4fb73753368901d97, type: 2}
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: 65e2c6f3ee2b1f84c8b572ecdeddace1, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
     _hasSecondCharacterPoseIndex: 0
     _poseIndex: 0
     _poseIndexTwo: 0
-    _text: "Well! Um! Hopefully I don\u2019t have to find out! But I\u2019m glad
-      I came to you anyway! "
+    _text: "Well! Um! Hopefully I don\u2019t have to find out! "
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
-  - _character: {fileID: 11400000, guid: 9386325197a551e4fb73753368901d97, type: 2}
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: 65e2c6f3ee2b1f84c8b572ecdeddace1, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: "But I\u2019m glad I came to you anyway! "
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: 65e2c6f3ee2b1f84c8b572ecdeddace1, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
     _hasSecondCharacterPoseIndex: 0
@@ -57,7 +66,7 @@ MonoBehaviour:
     _text: 'Have a good day! '
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   _choices: []
   _isDepartingSequence: 0
   <SourceScript>k__BackingField: "Plucky: Wow!! This looks great!! Thank you so so

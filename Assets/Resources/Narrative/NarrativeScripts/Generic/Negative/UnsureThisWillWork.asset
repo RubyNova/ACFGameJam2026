@@ -17,7 +17,7 @@ MonoBehaviour:
   _musicFiles: []
   _soundEffectFiles: []
   _characterDialoguePairs:
-  - _character: {fileID: 11400000, guid: b10337f2996f8504d927d329f0cc571b, type: 2}
+  - _character: {fileID: 11400000, guid: 7279c6ca5ad205d419789771dbd57d5c, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
     _hasSecondCharacterPoseIndex: 0
@@ -25,9 +25,9 @@ MonoBehaviour:
     _poseIndexTwo: 0
     _text: Hmm...
     _leftCharacterTalking: 1
-    _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
-  - _character: {fileID: 11400000, guid: b10337f2996f8504d927d329f0cc571b, type: 2}
+    _narratorSpeaking: 1
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: 7279c6ca5ad205d419789771dbd57d5c, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
     _hasSecondCharacterPoseIndex: 0
@@ -35,7 +35,7 @@ MonoBehaviour:
     _poseIndexTwo: 0
     _text: 'I''m unsure this will work... '
     _leftCharacterTalking: 1
-    _narratorSpeaking: 0
+    _narratorSpeaking: 1
     _delayBeforeContinuingInSeconds: 3
   _choices: []
   _isDepartingSequence: 0

@@ -26,7 +26,7 @@ MonoBehaviour:
     _text: 'Hey... '
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 4
   - _character: {fileID: 11400000, guid: 962a28b77181db848aa23b24e94162d3, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
@@ -47,26 +47,6 @@ MonoBehaviour:
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
     _delayBeforeContinuingInSeconds: 3
-  - _character: {fileID: 11400000, guid: 962a28b77181db848aa23b24e94162d3, type: 2}
-    _characterTwo: {fileID: 0}
-    _hasPoseIndex: 0
-    _hasSecondCharacterPoseIndex: 0
-    _poseIndex: 0
-    _poseIndexTwo: 0
-    _text: '...PLEASE.... '
-    _leftCharacterTalking: 1
-    _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
-  - _character: {fileID: 11400000, guid: 962a28b77181db848aa23b24e94162d3, type: 2}
-    _characterTwo: {fileID: 0}
-    _hasPoseIndex: 0
-    _hasSecondCharacterPoseIndex: 0
-    _poseIndex: 0
-    _poseIndexTwo: 0
-    _text: '...I don''t even care if it''s wet... '
-    _leftCharacterTalking: 1
-    _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
   _choices: []
   _isDepartingSequence: 0
   <SourceScript>k__BackingField: 'Sappeh: Hey... /d4

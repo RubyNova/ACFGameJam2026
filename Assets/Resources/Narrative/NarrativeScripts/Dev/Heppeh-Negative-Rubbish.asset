@@ -28,4 +28,5 @@ MonoBehaviour:
     _narratorSpeaking: 0
     _delayBeforeContinuingInSeconds: 4
   _choices: []
+  _isDepartingSequence: 0
   <SourceScript>k__BackingField: 'Heppeh: Do not feed me such rubbish please.../d4'

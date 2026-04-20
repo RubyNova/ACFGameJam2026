@@ -16,7 +16,97 @@ MonoBehaviour:
   _nextSequence: {fileID: 0}
   _musicFiles: []
   _soundEffectFiles: []
-  _characterDialoguePairs: []
+  _characterDialoguePairs:
+  - _character: {fileID: 11400000, guid: b10337f2996f8504d927d329f0cc571b, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: Hello. I have a bit of a complicated request.
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: b10337f2996f8504d927d329f0cc571b, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: You see, I'm a hunter of magical creatures.
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: b10337f2996f8504d927d329f0cc571b, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: I'm currently hunting this bipedal cheetah.
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: b10337f2996f8504d927d329f0cc571b, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: He uses a bow and arrow. He's known for making funny faces.
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: b10337f2996f8504d927d329f0cc571b, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: I want his face on my wall.
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: b10337f2996f8504d927d329f0cc571b, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: I'll need a scent potion to coax him out...
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: b10337f2996f8504d927d329f0cc571b, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: ...so something that smells like perfume or a candle would be needed.
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: b10337f2996f8504d927d329f0cc571b, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: But it would need a tinge of magic added.
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: b10337f2996f8504d927d329f0cc571b, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: Please make this for me.
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 0
   _choices: []
   _isDepartingSequence: 0
   <SourceScript>k__BackingField: 'IGM: Hello. I have a bit of a complicated request.
