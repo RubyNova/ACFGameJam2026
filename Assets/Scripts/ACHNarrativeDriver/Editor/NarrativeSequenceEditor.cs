@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using ACHNarrativeDriver.Api;
 using ACHNarrativeDriver.ScriptableObjects;
 using UnityEditor;
@@ -21,6 +22,18 @@ namespace ACHNarrativeDriver.Editor
         private void OnGUI()
         {
             GUILayout.Label("Narrative Sequence Editor", EditorStyles.boldLabel);
+
+            if (GUILayout.Button("Compile all source scripts"))
+            {
+                var assets = AssetDatabase.FindAssets("t:NarrativeSequence").Select(x => AssetDatabase.LoadAssetAtPath<NarrativeSequence>(AssetDatabase.GUIDToAssetPath(x))).ToArray();
+
+                foreach (var asset in assets)
+                {
+                    CompileWithCurrentSettings(asset);
+                    EditorUtility.SetDirty(asset);
+                }
+            }
+
             _currentNarrativeSequence = (NarrativeSequence)EditorGUILayout.ObjectField("Target",
                 _currentNarrativeSequence, typeof(NarrativeSequence), false);
 
@@ -118,27 +131,39 @@ namespace ACHNarrativeDriver.Editor
             }
 
             bool compiledScriptChanged = false;
-            if (GUILayout.Button("Save Source Script"))
+            if (GUILayout.Button("Compile Source Script"))
             {
                 compiledScriptChanged = true;
-                var listOfStuff = _interpreter.Interpret(_currentNarrativeSequence.SourceScript, _predefinedVariables, _currentNarrativeSequence.MusicFiles.Count, _currentNarrativeSequence.SoundEffectFiles.Count);
-                _currentNarrativeSequence.CharacterDialoguePairs = listOfStuff;
-
-                if (_currentNarrativeSequence.Choices is not null && _predefinedVariables is not null)
-                {
-                    foreach (var choice in _currentNarrativeSequence.Choices)
-                    {
-                        choice.ChoiceText =
-                            _interpreter.ResolvePredefinedVariables(choice.ChoiceText, _predefinedVariables);
-                    }
-                }
+                CompileWithCurrentSettings(_currentNarrativeSequence);
             }
 
             if (sourceScriptChanged || nextNarrativeSequenceModified || compiledScriptChanged)
             {
                 EditorUtility.SetDirty(_currentNarrativeSequence);
             }
+
             GUILayout.EndScrollView();
+        }
+
+        private void CompileWithCurrentSettings(NarrativeSequence target)
+        {
+            if (target == null || string.IsNullOrWhiteSpace(target.SourceScript))
+            {
+                Debug.LogWarning($"Asset {target.name} doesn't have a source script to compile, and will be ignored.");
+                return;
+            }
+
+            var listOfStuff = _interpreter.Interpret(target.SourceScript, _predefinedVariables, target.MusicFiles.Count, target.SoundEffectFiles.Count);
+            target.CharacterDialoguePairs = listOfStuff;
+
+            if (target.Choices is not null && _predefinedVariables is not null)
+            {
+                foreach (var choice in target.Choices)
+                {
+                    choice.ChoiceText =
+                        _interpreter.ResolvePredefinedVariables(choice.ChoiceText, _predefinedVariables);
+                }
+            }
         }
 
         [MenuItem("Window / ACH Narrative Driver / Narrative Sequence Editor")]

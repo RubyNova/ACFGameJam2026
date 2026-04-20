@@ -84,17 +84,7 @@ MonoBehaviour:
     _hasSecondCharacterPoseIndex: 0
     _poseIndex: 0
     _poseIndexTwo: 0
-    _text: 'Something... neutralizing. '
-    _leftCharacterTalking: 1
-    _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 0
-  - _character: {fileID: 11400000, guid: 65e2c6f3ee2b1f84c8b572ecdeddace1, type: 2}
-    _characterTwo: {fileID: 0}
-    _hasPoseIndex: 0
-    _hasSecondCharacterPoseIndex: 0
-    _poseIndex: 0
-    _poseIndexTwo: 0
-    _text: But something that makes you feel warm inside.
+    _text: Something... that makes you feel warm inside.
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
     _delayBeforeContinuingInSeconds: 0

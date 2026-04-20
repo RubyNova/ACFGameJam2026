@@ -26,7 +26,7 @@ MonoBehaviour:
     _text: My, my, what a pleasantly aromatic smell.
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: a44fa812616be0a4e9c695826540ab0a, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
@@ -37,7 +37,7 @@ MonoBehaviour:
       this bottle\u2026"
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: a44fa812616be0a4e9c695826540ab0a, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
@@ -48,7 +48,7 @@ MonoBehaviour:
       if I\u2019m being honest."
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   - _character: {fileID: 11400000, guid: a44fa812616be0a4e9c695826540ab0a, type: 2}
     _characterTwo: {fileID: 0}
     _hasPoseIndex: 0
@@ -58,7 +58,7 @@ MonoBehaviour:
     _text: In any case, may the winds of fate treat you kindly.
     _leftCharacterTalking: 1
     _narratorSpeaking: 0
-    _delayBeforeContinuingInSeconds: 2
+    _delayBeforeContinuingInSeconds: 0
   _choices: []
   _isDepartingSequence: 0
   <SourceScript>k__BackingField: "Rosa: My, my, what a pleasantly aromatic smell.\r\n\r\nRosa:

@@ -16,7 +16,37 @@ MonoBehaviour:
   _nextSequence: {fileID: 0}
   _musicFiles: []
   _soundEffectFiles: []
-  _characterDialoguePairs: []
+  _characterDialoguePairs:
+  - _character: {fileID: 11400000, guid: b10337f2996f8504d927d329f0cc571b, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: I'm a magical investigator. I work near a lot of Magic Crime Scenes.
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: b10337f2996f8504d927d329f0cc571b, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: I'm going to need a magical-type potion that will let me see curses.
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 0
+  - _character: {fileID: 11400000, guid: b10337f2996f8504d927d329f0cc571b, type: 2}
+    _characterTwo: {fileID: 0}
+    _hasPoseIndex: 0
+    _hasSecondCharacterPoseIndex: 0
+    _poseIndex: 0
+    _poseIndexTwo: 0
+    _text: Mixing a magical ingredient with a curse or hex-type potion should work.
+    _leftCharacterTalking: 1
+    _narratorSpeaking: 0
+    _delayBeforeContinuingInSeconds: 0
   _choices: []
   _isDepartingSequence: 0
   <SourceScript>k__BackingField: 'IGM: I''m a magical investigator. I work near a
