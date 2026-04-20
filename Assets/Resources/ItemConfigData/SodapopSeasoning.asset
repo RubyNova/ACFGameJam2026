@@ -22,4 +22,6 @@ MonoBehaviour:
   _foregroundColourTint: {r: 1, g: 1, b: 1, a: 1}
   _recipeBookEntryDescription: Yep, that sure is spiced water. Made from mixing Mismatcm
     and Cespi.
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: 751f467c022f2dc4baee998d01eaf248, type: 2}
+  - {fileID: 11400000, guid: f893c66c6c538f341b7d5e6f5e0ce42f, type: 2}

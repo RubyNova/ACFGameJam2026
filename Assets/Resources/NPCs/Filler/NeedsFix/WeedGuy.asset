@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NPC.NPCCharacter
   _name: Shagg
   _idleSprite: {fileID: 0}
-  _desiredItem: {fileID: 0}
+  _desiredItem: {fileID: 11400000, guid: d07c0945d692eb94e8877ead4441f17a, type: 2}
   _useExpandedSprite: 0
   _delayBeforeStartingDialogue: 0
   _numberOfRandomNpcAppearancesBeforeAllowedToShow: 4

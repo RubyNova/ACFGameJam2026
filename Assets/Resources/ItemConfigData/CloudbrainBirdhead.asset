@@ -23,4 +23,5 @@ MonoBehaviour:
   _recipeBookEntryDescription: This potion is known for giving people delusions of
     magical grandeur. Many villains drink this potion en masse to keep their ego
     up. Made from mixing Influenz and Laeli.
-  _recipe: []
+  _recipe:
+  - {fileID: 11400000, guid: dc209f38b56491045a54d4c52815bdce, type: 2}
