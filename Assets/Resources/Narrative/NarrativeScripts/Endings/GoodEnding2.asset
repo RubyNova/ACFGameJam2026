@@ -33,7 +33,7 @@ MonoBehaviour:
     _hasSecondCharacterPoseIndex: 0
     _poseIndex: 0
     _poseIndexTwo: 0
-    _text: My name is $PlayerName.
+    _text: My name is $PlayerName
     _leftCharacterTalking: 1
     _narratorSpeaking: 1
     _delayBeforeContinuingInSeconds: 0
@@ -53,8 +53,8 @@ MonoBehaviour:
     myself to you all.
 
 
-    Narration: My name is $PlayerName.
+    Narration: My name is $PlayerName
 
 
-    Narration:
-    It''s so nice to meet you all!'
+    Narration: It''s
+    so nice to meet you all!'
