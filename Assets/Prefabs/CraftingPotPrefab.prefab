@@ -912,6 +912,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GameElements.RecipeBook
   _discoveryAnimator: {fileID: 1884397264575164688}
   _discoveryTextBox: {fileID: 8482825007782271601}
+  _notificationAnimTime: 4
 --- !u!70 &1091651210437593093
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
